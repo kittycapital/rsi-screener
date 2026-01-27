@@ -1,0 +1,36 @@
+name: Update RSI Screener
+
+on:
+  schedule:
+    # Run at UTC 22:00 Mon-Fri (= KST 07:00 Tue-Sat)
+    - cron: '0 22 * * 1-5'
+  workflow_dispatch:
+
+jobs:
+  update-rsi:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install pandas numpy yfinance lxml html5lib
+      
+      - name: Fetch RSI data
+        run: python fetch_rsi.py
+        timeout-minutes: 30
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data.json
+          git diff --staged --quiet || git commit -m "Update RSI data - $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push
