@@ -49,6 +49,145 @@
             color: #71717a;
         }
 
+        /* Search Box */
+        .search-section {
+            background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
+            border: 1px solid #22c55e33;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+
+        .search-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #71717a;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 16px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 16px 50px 16px 20px;
+            font-size: 1.1rem;
+            font-family: 'JetBrains Mono', monospace;
+            background: #0a0a0a;
+            border: 1px solid #333333;
+            border-radius: 12px;
+            color: #ffffff;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-input:focus {
+            border-color: #22c55e;
+        }
+
+        .search-input::placeholder {
+            color: #52525b;
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 36px;
+            height: 36px;
+            background: #22c55e;
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+
+        .search-btn:hover {
+            background: #16a34a;
+        }
+
+        .search-btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .autocomplete-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #111111;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            margin-top: 4px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 100;
+            display: none;
+        }
+
+        .autocomplete-list.show {
+            display: block;
+        }
+
+        .autocomplete-item {
+            padding: 12px 16px;
+            cursor: pointer;
+            font-family: 'JetBrains Mono', monospace;
+            border-bottom: 1px solid #222222;
+        }
+
+        .autocomplete-item:last-child {
+            border-bottom: none;
+        }
+
+        .autocomplete-item:hover,
+        .autocomplete-item.selected {
+            background: #1a1a1a;
+            color: #22c55e;
+        }
+
+        .quick-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .quick-btn {
+            padding: 10px 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            font-weight: 600;
+            background: #1a1a1a;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            color: #e4e4e7;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .quick-btn:hover {
+            background: #22c55e22;
+            border-color: #22c55e;
+            color: #22c55e;
+        }
+
+        .quick-btn.active {
+            background: #22c55e;
+            border-color: #22c55e;
+            color: #000;
+        }
+
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -441,6 +580,8 @@
             th, td { padding: 10px 8px; }
             #price-chart { height: 250px; }
             #rsi-chart { height: 100px; }
+            .quick-buttons { gap: 6px; }
+            .quick-btn { padding: 8px 14px; font-size: 0.8rem; }
         }
     </style>
 </head>
@@ -448,7 +589,60 @@
     <div class="container">
         <div class="header">
             <h1>RSI Screener</h1>
-            <p>S&P 500 과매도/과매수 신호 분석 (3년 백테스트)</p>
+            <p>S&P 500 + ETF 과매도/과매수 신호 분석 (3년 백테스트)</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <label class="search-label">Ticker Symbol</label>
+            <div class="search-container">
+                <input type="text" id="search-input" class="search-input" placeholder="AAPL" autocomplete="off">
+                <button class="search-btn" onclick="searchTicker()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <div id="autocomplete-list" class="autocomplete-list"></div>
+            </div>
+            <div class="quick-buttons">
+                <button class="quick-btn" onclick="loadChart('SPY')">SPY</button>
+                <button class="quick-btn" onclick="loadChart('QQQ')">QQQ</button>
+                <button class="quick-btn" onclick="loadChart('IWM')">IWM</button>
+                <button class="quick-btn" onclick="loadChart('DIA')">DIA</button>
+                <button class="quick-btn" onclick="loadChart('NVDA')">NVDA</button>
+                <button class="quick-btn" onclick="loadChart('AAPL')">AAPL</button>
+                <button class="quick-btn" onclick="loadChart('TSLA')">TSLA</button>
+                <button class="quick-btn" onclick="loadChart('MSFT')">MSFT</button>
+            </div>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="chart-section">
+            <div class="chart-header">
+                <div class="chart-title">
+                    📈 <span id="chart-ticker-display">차트</span>
+                </div>
+            </div>
+            <div id="chart-placeholder" class="chart-placeholder">
+                티커를 검색하거나 버튼을 클릭하면 차트가 표시됩니다
+            </div>
+            <div id="chart-loading" class="chart-loading" style="display:none;">
+                차트 로딩 중...
+            </div>
+            <div id="chart-container">
+                <div id="price-chart"></div>
+                <div id="rsi-chart"></div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-marker oversold"></div>
+                        <span>과매도 시그널 (RSI &lt; 20)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-marker overbought"></div>
+                        <span>과매수 시그널 (RSI &gt; 80)</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="stats-grid">
@@ -521,34 +715,6 @@
                     </div>
                     <div id="current-overbought-list">
                         <div class="current-item">로딩 중...</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="chart-section">
-            <div class="chart-header">
-                <div class="chart-title">
-                    📈 <span id="chart-ticker-display">차트</span>
-                </div>
-            </div>
-            <div id="chart-placeholder" class="chart-placeholder">
-                티커를 클릭하면 차트가 표시됩니다
-            </div>
-            <div id="chart-loading" class="chart-loading" style="display:none;">
-                차트 로딩 중...
-            </div>
-            <div id="chart-container">
-                <div id="price-chart"></div>
-                <div id="rsi-chart"></div>
-                <div class="chart-legend">
-                    <div class="legend-item">
-                        <div class="legend-marker oversold"></div>
-                        <span>과매도 시그널 (RSI &lt; 20)</span>
-                    </div>
-                    <div class="legend-item">
-                        <div class="legend-marker overbought"></div>
-                        <span>과매수 시그널 (RSI &gt; 80)</span>
                     </div>
                 </div>
             </div>
@@ -634,7 +800,7 @@
 
         <div class="footer">
             <div class="last-updated" id="last-updated"></div>
-            <div class="disclaimer">* S&P 500 구성 종목 대상, 3년 일봉 데이터 기준. 투자 권유가 아닙니다.</div>
+            <div class="disclaimer">* S&P 500 + ETF 대상, 3년 일봉 데이터 기준. 투자 권유가 아닙니다.</div>
         </div>
     </div>
 
@@ -644,6 +810,8 @@
         let rsiChart = null;
         let currentTicker = null;
         let chartData = null;
+        let availableTickers = [];
+        let selectedAutocompleteIndex = -1;
 
         function toggleGuide() {
             guideExpanded = !guideExpanded;
@@ -656,9 +824,97 @@
             return sign + value.toFixed(2) + '%';
         }
 
+        // Search functionality
+        var searchInput = document.getElementById('search-input');
+        var autocompleteList = document.getElementById('autocomplete-list');
+
+        searchInput.addEventListener('input', function() {
+            var query = this.value.toUpperCase().trim();
+            selectedAutocompleteIndex = -1;
+            
+            if (query.length === 0) {
+                autocompleteList.classList.remove('show');
+                return;
+            }
+
+            var matches = availableTickers.filter(function(ticker) {
+                return ticker.startsWith(query);
+            }).slice(0, 8);
+
+            if (matches.length === 0) {
+                autocompleteList.classList.remove('show');
+                return;
+            }
+
+            autocompleteList.innerHTML = matches.map(function(ticker, index) {
+                return '<div class="autocomplete-item" data-index="' + index + '" onclick="selectTicker(\'' + ticker + '\')">' + ticker + '</div>';
+            }).join('');
+            autocompleteList.classList.add('show');
+        });
+
+        searchInput.addEventListener('keydown', function(e) {
+            var items = autocompleteList.querySelectorAll('.autocomplete-item');
+            
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                selectedAutocompleteIndex = Math.min(selectedAutocompleteIndex + 1, items.length - 1);
+                updateAutocompleteSelection(items);
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                selectedAutocompleteIndex = Math.max(selectedAutocompleteIndex - 1, -1);
+                updateAutocompleteSelection(items);
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                if (selectedAutocompleteIndex >= 0 && items[selectedAutocompleteIndex]) {
+                    selectTicker(items[selectedAutocompleteIndex].textContent);
+                } else {
+                    searchTicker();
+                }
+            } else if (e.key === 'Escape') {
+                autocompleteList.classList.remove('show');
+            }
+        });
+
+        function updateAutocompleteSelection(items) {
+            items.forEach(function(item, index) {
+                item.classList.toggle('selected', index === selectedAutocompleteIndex);
+            });
+        }
+
+        function selectTicker(ticker) {
+            searchInput.value = ticker;
+            autocompleteList.classList.remove('show');
+            loadChart(ticker);
+        }
+
+        function searchTicker() {
+            var ticker = searchInput.value.toUpperCase().trim();
+            if (ticker && availableTickers.includes(ticker)) {
+                loadChart(ticker);
+            } else if (ticker) {
+                alert(ticker + ' 종목을 찾을 수 없습니다. S&P 500 또는 ETF 종목만 검색 가능합니다.');
+            }
+            autocompleteList.classList.remove('show');
+        }
+
+        // Close autocomplete when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !autocompleteList.contains(e.target)) {
+                autocompleteList.classList.remove('show');
+            }
+        });
+
+        // Update quick buttons active state
+        function updateQuickButtons(ticker) {
+            document.querySelectorAll('.quick-btn').forEach(function(btn) {
+                btn.classList.toggle('active', btn.textContent === ticker);
+            });
+        }
+
         async function loadChart(ticker, signalDate) {
-            if (currentTicker === ticker && !signalDate) return;
             currentTicker = ticker;
+            updateQuickButtons(ticker);
+            searchInput.value = ticker;
 
             document.getElementById('chart-placeholder').style.display = 'none';
             document.getElementById('chart-loading').style.display = 'flex';
@@ -855,6 +1111,9 @@
                 var response = await fetch('data.json');
                 if (!response.ok) throw new Error('data.json을 찾을 수 없습니다');
                 var data = await response.json();
+
+                // Store available tickers for autocomplete
+                availableTickers = data.availableTickers || [];
 
                 if (data.oversoldStats) {
                     document.getElementById('oversold-count').textContent = data.oversoldStats.count.toLocaleString();
