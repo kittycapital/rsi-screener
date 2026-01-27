@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.45.1/dist/apexcharts.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -307,7 +307,7 @@
         }
 
         .chart-placeholder {
-            height: 400px;
+            height: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -317,18 +317,21 @@
             border-radius: 8px;
         }
 
-        .chart-container { display: none; }
-        .chart-container.active { display: block; }
+        #chart-container {
+            display: none;
+        }
+
+        #chart-container.active {
+            display: block;
+        }
 
         #price-chart {
-            height: 300px;
-            width: 100%;
+            height: 350px;
         }
 
         #rsi-chart {
-            height: 100px;
-            width: 100%;
-            margin-top: 8px;
+            height: 150px;
+            margin-top: -30px;
         }
 
         .chart-legend {
@@ -356,7 +359,7 @@
         .legend-marker.overbought { background: #ef4444; }
 
         .chart-loading {
-            height: 400px;
+            height: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -434,8 +437,8 @@
             .stat-metric-value { font-size: 1.2rem; }
             table { font-size: 0.8rem; }
             th, td { padding: 10px 8px; }
-            #price-chart { height: 250px; }
-            #rsi-chart { height: 80px; }
+            #price-chart { height: 280px; }
+            #rsi-chart { height: 120px; }
         }
     </style>
 </head>
@@ -533,7 +536,7 @@
             <div id="chart-loading" class="chart-loading" style="display:none;">
                 차트 로딩 중...
             </div>
-            <div id="chart-container" class="chart-container">
+            <div id="chart-container">
                 <div id="price-chart"></div>
                 <div id="rsi-chart"></div>
                 <div class="chart-legend">
@@ -637,10 +640,6 @@
         let guideExpanded = false;
         let priceChart = null;
         let rsiChart = null;
-        let candleSeries = null;
-        let rsiSeries = null;
-        let rsi20Line = null;
-        let rsi80Line = null;
         let currentTicker = null;
 
         function toggleGuide() {
@@ -654,148 +653,192 @@
             return sign + value.toFixed(2) + '%';
         }
 
-        function initCharts() {
-            const priceContainer = document.getElementById('price-chart');
-            const rsiContainer = document.getElementById('rsi-chart');
-
-            priceChart = LightweightCharts.createChart(priceContainer, {
-                layout: {
-                    background: { type: 'solid', color: 'transparent' },
-                    textColor: '#71717a',
-                },
-                grid: {
-                    vertLines: { color: '#1a1a1a' },
-                    horzLines: { color: '#1a1a1a' },
-                },
-                crosshair: {
-                    mode: LightweightCharts.CrosshairMode.Normal,
-                },
-                rightPriceScale: {
-                    borderColor: '#333333',
-                },
-                timeScale: {
-                    borderColor: '#333333',
-                    timeVisible: true,
-                },
-            });
-
-            candleSeries = priceChart.addCandlestickSeries({
-                upColor: '#22c55e',
-                downColor: '#ef4444',
-                borderVisible: false,
-                wickUpColor: '#22c55e',
-                wickDownColor: '#ef4444',
-            });
-
-            rsiChart = LightweightCharts.createChart(rsiContainer, {
-                layout: {
-                    background: { type: 'solid', color: 'transparent' },
-                    textColor: '#71717a',
-                },
-                grid: {
-                    vertLines: { color: '#1a1a1a' },
-                    horzLines: { color: '#1a1a1a' },
-                },
-                rightPriceScale: {
-                    borderColor: '#333333',
-                    scaleMargins: { top: 0.1, bottom: 0.1 },
-                },
-                timeScale: {
-                    borderColor: '#333333',
-                    visible: false,
-                },
-            });
-
-            rsiSeries = rsiChart.addLineSeries({
-                color: '#a855f7',
-                lineWidth: 2,
-            });
-
-            rsi20Line = rsiChart.addLineSeries({
-                color: '#22c55e66',
-                lineWidth: 1,
-                lineStyle: 2,
-            });
-
-            rsi80Line = rsiChart.addLineSeries({
-                color: '#ef444466',
-                lineWidth: 1,
-                lineStyle: 2,
-            });
-
-            priceChart.timeScale().subscribeVisibleTimeRangeChange(() => {
-                const range = priceChart.timeScale().getVisibleRange();
-                if (range) {
-                    rsiChart.timeScale().setVisibleRange(range);
-                }
-            });
-        }
-
-        async function loadChart(ticker, signalDate = null) {
+        async function loadChart(ticker, signalDate) {
             if (currentTicker === ticker && !signalDate) return;
             currentTicker = ticker;
 
             document.getElementById('chart-placeholder').style.display = 'none';
             document.getElementById('chart-loading').style.display = 'flex';
             document.getElementById('chart-container').classList.remove('active');
-            document.getElementById('chart-ticker-display').innerHTML = `<span class="chart-ticker">${ticker}</span> 차트`;
+            document.getElementById('chart-ticker-display').innerHTML = '<span class="chart-ticker">' + ticker + '</span> 차트';
 
             try {
-                const response = await fetch(`charts/${ticker}.json`);
+                const response = await fetch('charts/' + ticker + '.json');
                 if (!response.ok) throw new Error('차트 데이터를 찾을 수 없습니다');
                 const chartData = await response.json();
 
-                if (!priceChart) {
-                    initCharts();
-                }
+                // Destroy existing charts
+                if (priceChart) priceChart.destroy();
+                if (rsiChart) rsiChart.destroy();
 
-                const ohlcData = chartData.ohlc.map(d => ({
-                    time: d.time,
-                    open: d.open,
-                    high: d.high,
-                    low: d.low,
-                    close: d.close,
-                }));
+                // Prepare candlestick data
+                const ohlcData = chartData.ohlc.map(function(d) {
+                    return {
+                        x: new Date(d.time).getTime(),
+                        y: [d.open, d.high, d.low, d.close]
+                    };
+                });
 
+                // Prepare RSI data
                 const rsiData = chartData.ohlc
-                    .filter(d => d.rsi !== null)
-                    .map(d => ({ time: d.time, value: d.rsi }));
+                    .filter(function(d) { return d.rsi !== null; })
+                    .map(function(d) {
+                        return {
+                            x: new Date(d.time).getTime(),
+                            y: d.rsi
+                        };
+                    });
 
-                candleSeries.setData(ohlcData);
-                rsiSeries.setData(rsiData);
+                // Prepare signal annotations
+                const annotations = chartData.signals.map(function(signal) {
+                    return {
+                        x: new Date(signal.date).getTime(),
+                        borderColor: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
+                        label: {
+                            borderColor: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
+                            style: {
+                                color: '#fff',
+                                background: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
+                                fontSize: '10px'
+                            },
+                            text: 'RSI ' + signal.rsi
+                        }
+                    };
+                });
 
-                // RSI 20/80 lines
-                const line20Data = rsiData.map(d => ({ time: d.time, value: 20 }));
-                const line80Data = rsiData.map(d => ({ time: d.time, value: 80 }));
-                rsi20Line.setData(line20Data);
-                rsi80Line.setData(line80Data);
+                // Price chart options
+                var priceOptions = {
+                    series: [{
+                        name: 'Price',
+                        data: ohlcData
+                    }],
+                    chart: {
+                        type: 'candlestick',
+                        height: 350,
+                        id: 'price-chart',
+                        background: 'transparent',
+                        toolbar: { show: true, tools: { download: false } },
+                        zoom: { enabled: true },
+                        animations: { enabled: false }
+                    },
+                    plotOptions: {
+                        candlestick: {
+                            colors: {
+                                upward: '#22c55e',
+                                downward: '#ef4444'
+                            },
+                            wick: {
+                                useFillColor: true
+                            }
+                        }
+                    },
+                    xaxis: {
+                        type: 'datetime',
+                        labels: {
+                            style: { colors: '#71717a' },
+                            datetimeFormatter: {
+                                year: 'yyyy',
+                                month: "MMM 'yy",
+                                day: 'dd MMM'
+                            }
+                        },
+                        axisBorder: { color: '#333' },
+                        axisTicks: { color: '#333' }
+                    },
+                    yaxis: {
+                        tooltip: { enabled: true },
+                        labels: {
+                            style: { colors: '#71717a' },
+                            formatter: function(val) { return '$' + val.toFixed(2); }
+                        }
+                    },
+                    grid: {
+                        borderColor: '#1a1a1a'
+                    },
+                    annotations: {
+                        xaxis: annotations
+                    },
+                    tooltip: {
+                        theme: 'dark'
+                    }
+                };
 
-                // Signal markers
-                const markers = chartData.signals.map(signal => ({
-                    time: signal.date,
-                    position: signal.type === 'oversold' ? 'belowBar' : 'aboveBar',
-                    color: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
-                    shape: signal.type === 'oversold' ? 'arrowUp' : 'arrowDown',
-                    text: `RSI ${signal.rsi}`,
-                }));
+                // RSI chart options
+                var rsiOptions = {
+                    series: [{
+                        name: 'RSI',
+                        data: rsiData
+                    }],
+                    chart: {
+                        type: 'line',
+                        height: 150,
+                        id: 'rsi-chart',
+                        background: 'transparent',
+                        toolbar: { show: false },
+                        brush: {
+                            target: 'price-chart',
+                            enabled: true
+                        },
+                        selection: {
+                            enabled: true,
+                            xaxis: {}
+                        },
+                        animations: { enabled: false }
+                    },
+                    colors: ['#a855f7'],
+                    stroke: {
+                        width: 2
+                    },
+                    xaxis: {
+                        type: 'datetime',
+                        labels: { show: false },
+                        axisBorder: { show: false },
+                        axisTicks: { show: false }
+                    },
+                    yaxis: {
+                        min: 0,
+                        max: 100,
+                        tickAmount: 4,
+                        labels: {
+                            style: { colors: '#71717a' },
+                            formatter: function(val) { return val.toFixed(0); }
+                        }
+                    },
+                    grid: {
+                        borderColor: '#1a1a1a'
+                    },
+                    annotations: {
+                        yaxis: [
+                            {
+                                y: 20,
+                                borderColor: '#22c55e',
+                                strokeDashArray: 4,
+                                label: {
+                                    text: '20',
+                                    style: { color: '#22c55e', background: 'transparent' }
+                                }
+                            },
+                            {
+                                y: 80,
+                                borderColor: '#ef4444',
+                                strokeDashArray: 4,
+                                label: {
+                                    text: '80',
+                                    style: { color: '#ef4444', background: 'transparent' }
+                                }
+                            }
+                        ]
+                    },
+                    tooltip: {
+                        theme: 'dark'
+                    }
+                };
 
-                candleSeries.setMarkers(markers);
+                priceChart = new ApexCharts(document.getElementById('price-chart'), priceOptions);
+                rsiChart = new ApexCharts(document.getElementById('rsi-chart'), rsiOptions);
 
-                if (signalDate) {
-                    const signalTime = new Date(signalDate).getTime() / 1000;
-                    const fromTime = signalTime - (60 * 24 * 60 * 60);
-                    const toTime = signalTime + (60 * 24 * 60 * 60);
-                    
-                    setTimeout(() => {
-                        priceChart.timeScale().setVisibleRange({
-                            from: fromTime,
-                            to: toTime,
-                        });
-                    }, 100);
-                } else {
-                    priceChart.timeScale().fitContent();
-                }
-                rsiChart.timeScale().fitContent();
+                priceChart.render();
+                rsiChart.render();
 
                 document.getElementById('chart-loading').style.display = 'none';
                 document.getElementById('chart-container').classList.add('active');
@@ -804,51 +847,51 @@
                 console.error('Error loading chart:', error);
                 document.getElementById('chart-loading').style.display = 'none';
                 document.getElementById('chart-placeholder').style.display = 'flex';
-                document.getElementById('chart-placeholder').textContent = `${ticker} 차트를 불러올 수 없습니다`;
+                document.getElementById('chart-placeholder').textContent = ticker + ' 차트를 불러올 수 없습니다';
             }
         }
 
         function renderTable(tableId, data, isOversold) {
-            const tbody = document.getElementById(tableId);
+            var tbody = document.getElementById(tableId);
             
             if (!data || data.length === 0) {
                 tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;">데이터 없음</td></tr>';
                 return;
             }
 
-            tbody.innerHTML = data.map((item, index) => `
-                <tr class="clickable" onclick="loadChart('${item.ticker}', '${item.date}')">
-                    <td class="rank">${index + 1}</td>
-                    <td class="ticker">${item.ticker}</td>
-                    <td class="date">${item.date}</td>
-                    <td class="price">$${item.price.toLocaleString()}</td>
-                    <td><span class="rsi ${isOversold ? 'oversold' : 'overbought'}">${item.rsi}</span></td>
-                    <td class="return ${item.forward_return >= 0 ? 'positive' : 'negative'}">${formatReturn(item.forward_return)}</td>
-                </tr>
-            `).join('');
+            tbody.innerHTML = data.map(function(item, index) {
+                return '<tr class="clickable" onclick="loadChart(\'' + item.ticker + '\', \'' + item.date + '\')">' +
+                    '<td class="rank">' + (index + 1) + '</td>' +
+                    '<td class="ticker">' + item.ticker + '</td>' +
+                    '<td class="date">' + item.date + '</td>' +
+                    '<td class="price">$' + item.price.toLocaleString() + '</td>' +
+                    '<td><span class="rsi ' + (isOversold ? 'oversold' : 'overbought') + '">' + item.rsi + '</span></td>' +
+                    '<td class="return ' + (item.forward_return >= 0 ? 'positive' : 'negative') + '">' + formatReturn(item.forward_return) + '</td>' +
+                '</tr>';
+            }).join('');
         }
 
         function renderCurrentList(listId, data, isOversold) {
-            const container = document.getElementById(listId);
+            var container = document.getElementById(listId);
             
             if (!data || data.length === 0) {
                 container.innerHTML = '<div class="current-item" style="color:#71717a;cursor:default;">현재 신호 없음</div>';
                 return;
             }
 
-            container.innerHTML = data.slice(0, 10).map(item => `
-                <div class="current-item" onclick="loadChart('${item.ticker}')">
-                    <span class="current-ticker">${item.ticker}</span>
-                    <span class="current-rsi ${isOversold ? 'oversold' : 'overbought'}">RSI ${item.rsi}</span>
-                </div>
-            `).join('');
+            container.innerHTML = data.slice(0, 10).map(function(item) {
+                return '<div class="current-item" onclick="loadChart(\'' + item.ticker + '\')">' +
+                    '<span class="current-ticker">' + item.ticker + '</span>' +
+                    '<span class="current-rsi ' + (isOversold ? 'oversold' : 'overbought') + '">RSI ' + item.rsi + '</span>' +
+                '</div>';
+            }).join('');
         }
 
         async function loadData() {
             try {
-                const response = await fetch('data.json');
+                var response = await fetch('data.json');
                 if (!response.ok) throw new Error('data.json을 찾을 수 없습니다');
-                const data = await response.json();
+                var data = await response.json();
 
                 if (data.oversoldStats) {
                     document.getElementById('oversold-count').textContent = data.oversoldStats.count.toLocaleString();
@@ -868,15 +911,16 @@
                 renderCurrentList('current-overbought-list', data.currentOverbought, false);
 
                 if (data.lastUpdated) {
-                    const date = new Date(data.lastUpdated);
+                    var date = new Date(data.lastUpdated);
                     document.getElementById('last-updated').textContent = 
-                        `마지막 업데이트: ${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일 ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')} UTC`;
+                        '마지막 업데이트: ' + date.getFullYear() + '년 ' + (date.getMonth() + 1) + '월 ' + date.getDate() + '일 ' + 
+                        date.getHours().toString().padStart(2, '0') + ':' + date.getMinutes().toString().padStart(2, '0') + ' UTC';
                 }
 
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.getElementById('oversold-table').innerHTML = 
-                    `<tr><td colspan="6" style="text-align:center;color:#ef4444;">데이터 로딩 실패: ${error.message}</td></tr>`;
+                    '<tr><td colspan="6" style="text-align:center;color:#ef4444;">데이터 로딩 실패: ' + error.message + '</td></tr>';
             }
         }
 
