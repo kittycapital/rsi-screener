@@ -24,7 +24,10 @@ OVERBOUGHT_THRESHOLD = 80
 
 
 def get_sp500_tickers():
-    """Fetch S&P 500 tickers from Wikipedia"""
+    """Fetch S&P 500 tickers from Wikipedia + popular ETFs"""
+    # Popular ETFs to include
+    etfs = ['SPY', 'QQQ', 'IWM', 'DIA']
+    
     try:
         url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
         tables = pd.read_html(url)
@@ -32,12 +35,16 @@ def get_sp500_tickers():
         tickers = df['Symbol'].tolist()
         # Clean tickers (replace . with -)
         tickers = [t.replace('.', '-') for t in tickers]
-        print(f"  Found {len(tickers)} S&P 500 tickers")
+        # Add ETFs
+        tickers = etfs + tickers
+        # Remove duplicates while preserving order
+        tickers = list(dict.fromkeys(tickers))
+        print(f"  Found {len(tickers)} tickers (S&P 500 + ETFs)")
         return tickers
     except Exception as e:
         print(f"  Error fetching S&P 500 list: {e}")
-        # Fallback to major tickers
-        return ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA', 'BRK-B', 'JPM', 'V']
+        # Fallback to major tickers + ETFs
+        return etfs + ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA', 'BRK-B', 'JPM', 'V']
 
 
 def calculate_rsi(prices, period=14):
@@ -320,7 +327,10 @@ def main():
     
     # Save chart files
     print("\n5. Saving chart files...")
-    save_chart_files(all_ohlc, all_data, ticker_signals)
+    saved_count = save_chart_files(all_ohlc, all_data, ticker_signals)
+    
+    # Get list of available tickers (those with chart files)
+    available_tickers = sorted([t for t in all_ohlc.keys() if t in all_data])
     
     # Build output
     output = {
@@ -330,6 +340,7 @@ def main():
         'currentOverbought': sorted(current_overbought, key=lambda x: x['rsi'], reverse=True)[:20],
         'oversoldStats': oversold_stats,
         'overboughtStats': overbought_stats,
+        'availableTickers': available_tickers,
         'config': {
             'rsiPeriod': RSI_PERIOD,
             'forwardDays': FORWARD_DAYS,
