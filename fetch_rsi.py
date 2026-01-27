@@ -10,10 +10,12 @@ import numpy as np
 import yfinance as yf
 from datetime import datetime, timedelta
 import time
+import os
 import warnings
 warnings.filterwarnings('ignore')
 
 DATA_FILE = 'data.json'
+CHARTS_DIR = 'charts'
 LOOKBACK_YEARS = 3
 RSI_PERIOD = 14
 FORWARD_DAYS = 63  # ~3 months
@@ -57,6 +59,7 @@ def fetch_stock_data(tickers, years=3):
     print(f"  Fetching data from {start_date.date()} to {end_date.date()}")
     
     all_data = {}
+    all_ohlc = {}
     failed = []
     
     # Batch download for efficiency
@@ -73,14 +76,23 @@ def fetch_stock_data(tickers, years=3):
                 # Single ticker returns different format
                 if not data.empty:
                     all_data[batch[0]] = data['Close']
+                    all_ohlc[batch[0]] = data[['Open', 'High', 'Low', 'Close']].copy()
             else:
                 # Multiple tickers
                 for ticker in batch:
                     try:
                         if ticker in data['Close'].columns:
-                            ticker_data = data['Close'][ticker].dropna()
-                            if len(ticker_data) > RSI_PERIOD + FORWARD_DAYS:
-                                all_data[ticker] = ticker_data
+                            ticker_close = data['Close'][ticker].dropna()
+                            if len(ticker_close) > RSI_PERIOD + FORWARD_DAYS:
+                                all_data[ticker] = ticker_close
+                                # Get OHLC for this ticker
+                                ohlc_df = pd.DataFrame({
+                                    'Open': data['Open'][ticker],
+                                    'High': data['High'][ticker],
+                                    'Low': data['Low'][ticker],
+                                    'Close': data['Close'][ticker]
+                                }).dropna()
+                                all_ohlc[ticker] = ohlc_df
                     except:
                         failed.append(ticker)
             
@@ -92,7 +104,7 @@ def fetch_stock_data(tickers, years=3):
             failed.extend(batch)
     
     print(f"  Successfully fetched {len(all_data)} tickers, {len(failed)} failed")
-    return all_data
+    return all_data, all_ohlc
 
 
 def find_signals(all_data):
@@ -101,6 +113,7 @@ def find_signals(all_data):
     overbought_signals = []
     current_oversold = []
     current_overbought = []
+    ticker_signals = {}  # Store all signals per ticker
     
     today = datetime.now().date()
     three_years_ago = today - timedelta(days=LOOKBACK_YEARS * 365)
@@ -124,29 +137,38 @@ def find_signals(all_data):
             # Filter to last 3 years
             df = df[df.index >= pd.Timestamp(three_years_ago)]
             
+            # Initialize ticker signals
+            ticker_signals[ticker] = []
+            
             # Find oversold signals (RSI < 20)
             oversold = df[df['rsi'] < OVERSOLD_THRESHOLD].copy()
             for idx, row in oversold.iterrows():
+                signal_data = {
+                    'ticker': ticker,
+                    'date': idx.strftime('%Y-%m-%d'),
+                    'price': round(row['close'], 2),
+                    'rsi': round(row['rsi'], 1),
+                    'type': 'oversold'
+                }
                 if pd.notna(row['forward_return']):
-                    oversold_signals.append({
-                        'ticker': ticker,
-                        'date': idx.strftime('%Y-%m-%d'),
-                        'price': round(row['close'], 2),
-                        'rsi': round(row['rsi'], 1),
-                        'forward_return': round(row['forward_return'] * 100, 2)
-                    })
+                    signal_data['forward_return'] = round(row['forward_return'] * 100, 2)
+                    oversold_signals.append(signal_data.copy())
+                ticker_signals[ticker].append(signal_data)
             
             # Find overbought signals (RSI > 80)
             overbought = df[df['rsi'] > OVERBOUGHT_THRESHOLD].copy()
             for idx, row in overbought.iterrows():
+                signal_data = {
+                    'ticker': ticker,
+                    'date': idx.strftime('%Y-%m-%d'),
+                    'price': round(row['close'], 2),
+                    'rsi': round(row['rsi'], 1),
+                    'type': 'overbought'
+                }
                 if pd.notna(row['forward_return']):
-                    overbought_signals.append({
-                        'ticker': ticker,
-                        'date': idx.strftime('%Y-%m-%d'),
-                        'price': round(row['close'], 2),
-                        'rsi': round(row['rsi'], 1),
-                        'forward_return': round(row['forward_return'] * 100, 2)
-                    })
+                    signal_data['forward_return'] = round(row['forward_return'] * 100, 2)
+                    overbought_signals.append(signal_data.copy())
+                ticker_signals[ticker].append(signal_data)
             
             # Check current RSI (most recent)
             latest_rsi = df['rsi'].iloc[-1] if len(df) > 0 else None
@@ -172,7 +194,7 @@ def find_signals(all_data):
         except Exception as e:
             continue
     
-    return oversold_signals, overbought_signals, current_oversold, current_overbought
+    return oversold_signals, overbought_signals, current_oversold, current_overbought, ticker_signals
 
 
 def get_top_signals(signals, top_n=10, best=True):
@@ -190,17 +212,79 @@ def calculate_statistics(signals):
     if not signals:
         return {'count': 0, 'avg_return': 0, 'win_rate': 0}
     
-    returns = [s['forward_return'] for s in signals]
+    returns = [s['forward_return'] for s in signals if 'forward_return' in s]
+    if not returns:
+        return {'count': 0, 'avg_return': 0, 'win_rate': 0}
+    
     wins = len([r for r in returns if r > 0])
     
     return {
-        'count': len(signals),
+        'count': len(returns),
         'avg_return': round(np.mean(returns), 2),
         'median_return': round(np.median(returns), 2),
-        'win_rate': round(wins / len(signals) * 100, 1),
+        'win_rate': round(wins / len(returns) * 100, 1),
         'best_return': round(max(returns), 2),
         'worst_return': round(min(returns), 2)
     }
+
+
+def save_chart_files(all_ohlc, all_data, ticker_signals):
+    """Save individual chart JSON files for each ticker"""
+    os.makedirs(CHARTS_DIR, exist_ok=True)
+    
+    saved_count = 0
+    
+    for ticker in all_ohlc.keys():
+        try:
+            ohlc_df = all_ohlc[ticker].copy()
+            prices = all_data.get(ticker)
+            
+            if prices is None or len(ohlc_df) < 50:
+                continue
+            
+            # Calculate RSI
+            rsi = calculate_rsi(prices, RSI_PERIOD)
+            
+            # Keep last 1 year of data for chart (approximately 252 trading days)
+            ohlc_df = ohlc_df.tail(300)
+            
+            # Build OHLC array for Lightweight Charts
+            ohlc_data = []
+            for idx, row in ohlc_df.iterrows():
+                date_str = idx.strftime('%Y-%m-%d')
+                rsi_value = rsi.get(idx, None)
+                
+                ohlc_data.append({
+                    'time': date_str,
+                    'open': round(row['Open'], 2),
+                    'high': round(row['High'], 2),
+                    'low': round(row['Low'], 2),
+                    'close': round(row['Close'], 2),
+                    'rsi': round(rsi_value, 1) if pd.notna(rsi_value) else None
+                })
+            
+            # Get signals for this ticker
+            signals = ticker_signals.get(ticker, [])
+            
+            # Build chart file
+            chart_data = {
+                'ticker': ticker,
+                'ohlc': ohlc_data,
+                'signals': signals
+            }
+            
+            # Save to file
+            filepath = os.path.join(CHARTS_DIR, f'{ticker}.json')
+            with open(filepath, 'w') as f:
+                json.dump(chart_data, f)
+            
+            saved_count += 1
+            
+        except Exception as e:
+            continue
+    
+    print(f"  Saved {saved_count} chart files")
+    return saved_count
 
 
 def main():
@@ -214,11 +298,11 @@ def main():
     
     # Fetch historical data
     print("\n2. Downloading price data...")
-    all_data = fetch_stock_data(tickers, LOOKBACK_YEARS)
+    all_data, all_ohlc = fetch_stock_data(tickers, LOOKBACK_YEARS)
     
     # Find signals
     print("\n3. Analyzing RSI signals...")
-    oversold_signals, overbought_signals, current_oversold, current_overbought = find_signals(all_data)
+    oversold_signals, overbought_signals, current_oversold, current_overbought, ticker_signals = find_signals(all_data)
     
     print(f"  Found {len(oversold_signals)} oversold signals (RSI < {OVERSOLD_THRESHOLD})")
     print(f"  Found {len(overbought_signals)} overbought signals (RSI > {OVERBOUGHT_THRESHOLD})")
@@ -233,6 +317,10 @@ def main():
     # Calculate statistics
     oversold_stats = calculate_statistics(oversold_signals)
     overbought_stats = calculate_statistics(overbought_signals)
+    
+    # Save chart files
+    print("\n5. Saving chart files...")
+    save_chart_files(all_ohlc, all_data, ticker_signals)
     
     # Build output
     output = {
