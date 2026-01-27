@@ -166,9 +166,75 @@
   "currentOversold": [
     {
       "ticker": "ABT",
-      "date": "2026-01-26",
-      "price": 108.77,
-      "rsi": 14.2
+      "date": "2026-01-27",
+      "price": 108.27,
+      "rsi": 8.9
+    },
+    {
+      "ticker": "ISRG",
+      "date": "2026-01-27",
+      "price": 525.04,
+      "rsi": 9.6
+    },
+    {
+      "ticker": "ROP",
+      "date": "2026-01-27",
+      "price": 369.27,
+      "rsi": 9.8
+    },
+    {
+      "ticker": "V",
+      "date": "2026-01-27",
+      "price": 325.26,
+      "rsi": 12.2
+    },
+    {
+      "ticker": "MA",
+      "date": "2026-01-27",
+      "price": 520.41,
+      "rsi": 12.5
+    },
+    {
+      "ticker": "QCOM",
+      "date": "2026-01-27",
+      "price": 153.04,
+      "rsi": 13.4
+    },
+    {
+      "ticker": "HUM",
+      "date": "2026-01-27",
+      "price": 207.93,
+      "rsi": 15.0
+    },
+    {
+      "ticker": "FIS",
+      "date": "2026-01-27",
+      "price": 58.06,
+      "rsi": 15.6
+    },
+    {
+      "ticker": "HPQ",
+      "date": "2026-01-27",
+      "price": 19.37,
+      "rsi": 16.9
+    },
+    {
+      "ticker": "TRMB",
+      "date": "2026-01-27",
+      "price": 70.01,
+      "rsi": 18.4
+    },
+    {
+      "ticker": "GDDY",
+      "date": "2026-01-27",
+      "price": 103.85,
+      "rsi": 18.8
+    },
+    {
+      "ticker": "CCL",
+      "date": "2026-01-27",
+      "price": 28.69,
+      "rsi": 19.0
     }
   ],
   "currentOverbought": [
@@ -179,80 +245,122 @@
       "rsi": 94.1
     },
     {
-      "ticker": "ROL",
-      "date": "2026-01-26",
-      "price": 63.26,
-      "rsi": 91.1
+      "ticker": "AZO",
+      "date": "2026-01-27",
+      "price": 3799.99,
+      "rsi": 90.9
     },
     {
-      "ticker": "NEM",
-      "date": "2026-01-26",
-      "price": 125.92,
-      "rsi": 89.7
+      "ticker": "ROL",
+      "date": "2026-01-27",
+      "price": 63.49,
+      "rsi": 90.4
     },
     {
       "ticker": "BG",
-      "date": "2026-01-26",
-      "price": 113.89,
-      "rsi": 89.3
+      "date": "2026-01-27",
+      "price": 116.15,
+      "rsi": 89.8
     },
     {
-      "ticker": "AZO",
-      "date": "2026-01-26",
-      "price": 3786.03,
-      "rsi": 87.6
+      "ticker": "TSN",
+      "date": "2026-01-27",
+      "price": 65.75,
+      "rsi": 89.6
     },
     {
-      "ticker": "COST",
-      "date": "2026-01-26",
-      "price": 977.67,
-      "rsi": 85.9
+      "ticker": "MO",
+      "date": "2026-01-27",
+      "price": 63.62,
+      "rsi": 89.2
     },
     {
-      "ticker": "CL",
-      "date": "2026-01-26",
-      "price": 85.2,
-      "rsi": 84.5
+      "ticker": "NEM",
+      "date": "2026-01-27",
+      "price": 127.0,
+      "rsi": 87.7
     },
     {
       "ticker": "CLX",
-      "date": "2026-01-26",
-      "price": 112.87,
-      "rsi": 83.5
+      "date": "2026-01-27",
+      "price": 113.19,
+      "rsi": 87.1
+    },
+    {
+      "ticker": "CL",
+      "date": "2026-01-27",
+      "price": 85.76,
+      "rsi": 84.8
     },
     {
       "ticker": "ORLY",
-      "date": "2026-01-26",
-      "price": 100.24,
-      "rsi": 82.8
+      "date": "2026-01-27",
+      "price": 100.62,
+      "rsi": 84.3
     },
     {
       "ticker": "JNJ",
-      "date": "2026-01-26",
-      "price": 221.49,
+      "date": "2026-01-27",
+      "price": 224.44,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "CTRA",
+      "date": "2026-01-27",
+      "price": 27.52,
+      "rsi": 82.8
+    },
+    {
+      "ticker": "PM",
+      "date": "2026-01-27",
+      "price": 178.88,
       "rsi": 82.4
     },
     {
-      "ticker": "HD",
-      "date": "2026-01-26",
-      "price": 386.53,
-      "rsi": 81.3
+      "ticker": "XOM",
+      "date": "2026-01-27",
+      "price": 136.83,
+      "rsi": 82.3
+    },
+    {
+      "ticker": "CVX",
+      "date": "2026-01-27",
+      "price": 169.05,
+      "rsi": 82.2
     },
     {
       "ticker": "LHX",
-      "date": "2026-01-26",
-      "price": 354.2,
-      "rsi": 81.3
+      "date": "2026-01-27",
+      "price": 360.54,
+      "rsi": 82.1
     },
     {
-      "ticker": "LOW",
-      "date": "2026-01-26",
-      "price": 277.91,
-      "rsi": 80.2
+      "ticker": "KMI",
+      "date": "2026-01-27",
+      "price": 29.59,
+      "rsi": 81.4
+    },
+    {
+      "ticker": "SLB",
+      "date": "2026-01-27",
+      "price": 50.66,
+      "rsi": 81.0
+    },
+    {
+      "ticker": "KO",
+      "date": "2026-01-27",
+      "price": 73.55,
+      "rsi": 80.9
+    },
+    {
+      "ticker": "GLW",
+      "date": "2026-01-27",
+      "price": 109.74,
+      "rsi": 80.4
     }
   ],
   "oversoldStats": {
-    "count": 9522,
+    "count": 9531,
     "avg_return": 4.29,
     "median_return": 3.34,
     "win_rate": 59.6,
@@ -260,10 +368,10 @@
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18079,
+    "count": 18078,
     "avg_return": 4.49,
     "median_return": 3.45,
-    "win_rate": 61.4,
+    "win_rate": 61.3,
     "best_return": 121.93,
     "worst_return": -52.4
   },
@@ -774,5 +882,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-01-27T08:17:44.354430Z"
+  "lastUpdated": "2026-01-27T22:46:07.858382Z"
 }
