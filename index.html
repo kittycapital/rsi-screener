@@ -307,7 +307,7 @@
         }
 
         .chart-placeholder {
-            height: 450px;
+            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -325,8 +325,15 @@
             display: block;
         }
 
-        #combined-chart {
-            height: 500px;
+        #price-chart {
+            height: 320px;
+        }
+
+        #rsi-chart {
+            height: 120px;
+            margin-top: 10px;
+            border-top: 1px solid #222;
+            padding-top: 10px;
         }
 
         .chart-legend {
@@ -354,7 +361,7 @@
         .legend-marker.overbought { background: #ef4444; }
 
         .chart-loading {
-            height: 450px;
+            height: 400px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -432,7 +439,8 @@
             .stat-metric-value { font-size: 1.2rem; }
             table { font-size: 0.8rem; }
             th, td { padding: 10px 8px; }
-            #combined-chart { height: 400px; }
+            #price-chart { height: 250px; }
+            #rsi-chart { height: 100px; }
         }
     </style>
 </head>
@@ -531,7 +539,8 @@
                 차트 로딩 중...
             </div>
             <div id="chart-container">
-                <div id="combined-chart"></div>
+                <div id="price-chart"></div>
+                <div id="rsi-chart"></div>
                 <div class="chart-legend">
                     <div class="legend-item">
                         <div class="legend-marker oversold"></div>
@@ -631,8 +640,10 @@
 
     <script>
         let guideExpanded = false;
-        let combinedChart = null;
+        let priceChart = null;
+        let rsiChart = null;
         let currentTicker = null;
+        let chartData = null;
 
         function toggleGuide() {
             guideExpanded = !guideExpanded;
@@ -657,11 +668,10 @@
             try {
                 var response = await fetch('charts/' + ticker + '.json');
                 if (!response.ok) throw new Error('차트 데이터를 찾을 수 없습니다');
-                var chartData = await response.json();
+                chartData = await response.json();
 
-                if (combinedChart) {
-                    combinedChart.destroy();
-                }
+                if (priceChart) priceChart.destroy();
+                if (rsiChart) rsiChart.destroy();
 
                 // Prepare candlestick data
                 var ohlcData = chartData.ohlc.map(function(d) {
@@ -681,169 +691,117 @@
                         };
                     });
 
-                // Prepare point annotations for signals
-                var pointAnnotations = chartData.signals.map(function(signal) {
-                    var matchingOhlc = chartData.ohlc.find(function(d) { return d.time === signal.date; });
-                    var yValue = matchingOhlc ? (signal.type === 'oversold' ? matchingOhlc.low * 0.97 : matchingOhlc.high * 1.03) : 0;
-                    
+                // Signal annotations for price chart
+                var priceAnnotations = chartData.signals.map(function(signal) {
                     return {
                         x: new Date(signal.date).getTime(),
-                        y: yValue,
-                        marker: {
-                            size: 8,
-                            fillColor: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
-                            strokeColor: '#fff',
-                            strokeWidth: 2,
-                            shape: 'circle'
-                        },
+                        borderColor: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
+                        strokeDashArray: 0,
                         label: {
                             borderColor: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
                             style: {
                                 color: '#fff',
                                 background: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
-                                fontSize: '10px',
-                                fontWeight: 'bold',
-                                padding: { left: 5, right: 5, top: 2, bottom: 2 }
+                                fontSize: '11px',
+                                fontWeight: 'bold'
                             },
                             text: 'RSI ' + signal.rsi,
-                            offsetY: signal.type === 'oversold' ? 25 : -25
+                            position: 'top'
                         }
                     };
                 });
 
-                var options = {
-                    series: [
-                        {
-                            name: 'Price',
-                            type: 'candlestick',
-                            data: ohlcData
-                        },
-                        {
-                            name: 'RSI',
-                            type: 'line',
-                            data: rsiData
-                        }
-                    ],
+                // Price chart options
+                var priceOptions = {
+                    series: [{
+                        name: 'Price',
+                        data: ohlcData
+                    }],
                     chart: {
-                        type: 'line',
-                        height: 500,
+                        type: 'candlestick',
+                        height: 320,
+                        id: 'priceChart',
+                        group: 'sync',
                         background: 'transparent',
                         toolbar: {
                             show: true,
-                            tools: {
-                                download: false,
-                                selection: true,
-                                zoom: true,
-                                zoomin: true,
-                                zoomout: true,
-                                pan: true,
-                                reset: true
-                            },
-                            autoSelected: 'zoom'
+                            tools: { download: false, selection: true, zoom: true, zoomin: true, zoomout: true, pan: true, reset: true }
                         },
-                        animations: { enabled: false }
+                        animations: { enabled: false },
+                        zoom: { enabled: true }
                     },
                     plotOptions: {
                         candlestick: {
-                            colors: {
-                                upward: '#22c55e',
-                                downward: '#ef4444'
-                            },
+                            colors: { upward: '#22c55e', downward: '#ef4444' },
                             wick: { useFillColor: true }
                         }
                     },
-                    stroke: {
-                        width: [1, 2],
-                        curve: 'smooth'
-                    },
-                    colors: ['#22c55e', '#a855f7'],
                     xaxis: {
                         type: 'datetime',
-                        labels: {
-                            style: { colors: '#71717a' },
-                            datetimeUTC: false
-                        },
+                        labels: { style: { colors: '#71717a' } },
                         axisBorder: { color: '#333' },
                         axisTicks: { color: '#333' }
                     },
-                    yaxis: [
-                        {
-                            seriesName: 'Price',
-                            title: { text: 'Price ($)', style: { color: '#71717a' } },
-                            labels: {
-                                style: { colors: '#71717a' },
-                                formatter: function(val) {
-                                    if (val === undefined || val === null) return '';
-                                    return '$' + val.toFixed(2);
-                                }
-                            },
-                            tooltip: { enabled: true }
+                    yaxis: {
+                        labels: {
+                            style: { colors: '#71717a' },
+                            formatter: function(val) { return '$' + val.toFixed(2); }
                         },
-                        {
-                            seriesName: 'RSI',
-                            opposite: true,
-                            min: 0,
-                            max: 100,
-                            title: { text: 'RSI', style: { color: '#a855f7' } },
-                            labels: {
-                                style: { colors: '#a855f7' },
-                                formatter: function(val) {
-                                    if (val === undefined || val === null) return '';
-                                    return val.toFixed(0);
-                                }
-                            }
-                        }
-                    ],
-                    grid: {
-                        borderColor: '#1a1a1a'
+                        tooltip: { enabled: true }
                     },
-                    annotations: {
-                        yaxis: [
-                            {
-                                y: 20,
-                                y2: null,
-                                yAxisIndex: 1,
-                                borderColor: '#22c55e',
-                                strokeDashArray: 4,
-                                label: {
-                                    text: 'Oversold (20)',
-                                    position: 'left',
-                                    style: { color: '#22c55e', background: 'transparent', fontSize: '10px' }
-                                }
-                            },
-                            {
-                                y: 80,
-                                y2: null,
-                                yAxisIndex: 1,
-                                borderColor: '#ef4444',
-                                strokeDashArray: 4,
-                                label: {
-                                    text: 'Overbought (80)',
-                                    position: 'left',
-                                    style: { color: '#ef4444', background: 'transparent', fontSize: '10px' }
-                                }
-                            }
-                        ],
-                        points: pointAnnotations
-                    },
-                    tooltip: {
-                        theme: 'dark',
-                        shared: true,
-                        intersect: false,
-                        x: {
-                            format: 'yyyy-MM-dd'
-                        }
-                    },
-                    legend: {
-                        show: true,
-                        position: 'top',
-                        horizontalAlign: 'left',
-                        labels: { colors: '#71717a' }
-                    }
+                    grid: { borderColor: '#1a1a1a' },
+                    annotations: { xaxis: priceAnnotations },
+                    tooltip: { theme: 'dark' }
                 };
 
-                combinedChart = new ApexCharts(document.getElementById('combined-chart'), options);
-                combinedChart.render();
+                // RSI chart options
+                var rsiOptions = {
+                    series: [{
+                        name: 'RSI',
+                        data: rsiData
+                    }],
+                    chart: {
+                        type: 'line',
+                        height: 120,
+                        id: 'rsiChart',
+                        group: 'sync',
+                        background: 'transparent',
+                        toolbar: { show: false },
+                        animations: { enabled: false },
+                        zoom: { enabled: true }
+                    },
+                    colors: ['#a855f7'],
+                    stroke: { width: 2, curve: 'smooth' },
+                    xaxis: {
+                        type: 'datetime',
+                        labels: { show: false },
+                        axisBorder: { show: false },
+                        axisTicks: { show: false }
+                    },
+                    yaxis: {
+                        min: 0,
+                        max: 100,
+                        tickAmount: 2,
+                        labels: {
+                            style: { colors: '#71717a' },
+                            formatter: function(val) { return val.toFixed(0); }
+                        }
+                    },
+                    grid: { borderColor: '#1a1a1a' },
+                    annotations: {
+                        yaxis: [
+                            { y: 20, borderColor: '#22c55e', strokeDashArray: 4 },
+                            { y: 80, borderColor: '#ef4444', strokeDashArray: 4 }
+                        ]
+                    },
+                    tooltip: { theme: 'dark' }
+                };
+
+                priceChart = new ApexCharts(document.getElementById('price-chart'), priceOptions);
+                rsiChart = new ApexCharts(document.getElementById('rsi-chart'), rsiOptions);
+
+                priceChart.render();
+                rsiChart.render();
 
                 document.getElementById('chart-loading').style.display = 'none';
                 document.getElementById('chart-container').classList.add('active');
