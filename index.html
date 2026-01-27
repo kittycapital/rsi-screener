@@ -889,10 +889,8 @@
 
         function searchTicker() {
             var ticker = searchInput.value.toUpperCase().trim();
-            if (ticker && availableTickers.includes(ticker)) {
+            if (ticker) {
                 loadChart(ticker);
-            } else if (ticker) {
-                alert(ticker + ' 종목을 찾을 수 없습니다. S&P 500 또는 ETF 종목만 검색 가능합니다.');
             }
             autocompleteList.classList.remove('show');
         }
