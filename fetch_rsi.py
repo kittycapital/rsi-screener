@@ -1,0 +1,286 @@
+"""
+S&P 500 RSI Screener
+Finds oversold (RSI < 20) and overbought (RSI > 80) signals
+and calculates 63-day forward returns.
+"""
+
+import json
+import pandas as pd
+import numpy as np
+import yfinance as yf
+from datetime import datetime, timedelta
+import time
+import warnings
+warnings.filterwarnings('ignore')
+
+DATA_FILE = 'data.json'
+LOOKBACK_YEARS = 3
+RSI_PERIOD = 14
+FORWARD_DAYS = 63  # ~3 months
+OVERSOLD_THRESHOLD = 20
+OVERBOUGHT_THRESHOLD = 80
+
+
+def get_sp500_tickers():
+    """Fetch S&P 500 tickers from Wikipedia"""
+    try:
+        url = 'https://en.wikipedia.org/wiki/List_of_S%26P_500_companies'
+        tables = pd.read_html(url)
+        df = tables[0]
+        tickers = df['Symbol'].tolist()
+        # Clean tickers (replace . with -)
+        tickers = [t.replace('.', '-') for t in tickers]
+        print(f"  Found {len(tickers)} S&P 500 tickers")
+        return tickers
+    except Exception as e:
+        print(f"  Error fetching S&P 500 list: {e}")
+        # Fallback to major tickers
+        return ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'NVDA', 'META', 'TSLA', 'BRK-B', 'JPM', 'V']
+
+
+def calculate_rsi(prices, period=14):
+    """Calculate RSI indicator"""
+    delta = prices.diff()
+    gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
+    loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
+    
+    rs = gain / loss
+    rsi = 100 - (100 / (1 + rs))
+    return rsi
+
+
+def fetch_stock_data(tickers, years=3):
+    """Fetch historical data for all tickers"""
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=years * 365 + FORWARD_DAYS + 30)
+    
+    print(f"  Fetching data from {start_date.date()} to {end_date.date()}")
+    
+    all_data = {}
+    failed = []
+    
+    # Batch download for efficiency
+    batch_size = 50
+    for i in range(0, len(tickers), batch_size):
+        batch = tickers[i:i + batch_size]
+        batch_str = ' '.join(batch)
+        
+        try:
+            data = yf.download(batch_str, start=start_date, end=end_date, 
+                             progress=False, threads=True)
+            
+            if len(batch) == 1:
+                # Single ticker returns different format
+                if not data.empty:
+                    all_data[batch[0]] = data['Close']
+            else:
+                # Multiple tickers
+                for ticker in batch:
+                    try:
+                        if ticker in data['Close'].columns:
+                            ticker_data = data['Close'][ticker].dropna()
+                            if len(ticker_data) > RSI_PERIOD + FORWARD_DAYS:
+                                all_data[ticker] = ticker_data
+                    except:
+                        failed.append(ticker)
+            
+            print(f"  Processed {min(i + batch_size, len(tickers))}/{len(tickers)} tickers")
+            time.sleep(0.5)  # Rate limiting
+            
+        except Exception as e:
+            print(f"  Batch error: {e}")
+            failed.extend(batch)
+    
+    print(f"  Successfully fetched {len(all_data)} tickers, {len(failed)} failed")
+    return all_data
+
+
+def find_signals(all_data):
+    """Find oversold and overbought signals with forward returns"""
+    oversold_signals = []
+    overbought_signals = []
+    current_oversold = []
+    current_overbought = []
+    
+    today = datetime.now().date()
+    three_years_ago = today - timedelta(days=LOOKBACK_YEARS * 365)
+    
+    for ticker, prices in all_data.items():
+        try:
+            rsi = calculate_rsi(prices, RSI_PERIOD)
+            
+            # Combine into dataframe
+            df = pd.DataFrame({
+                'close': prices,
+                'rsi': rsi
+            }).dropna()
+            
+            if len(df) < FORWARD_DAYS + 10:
+                continue
+            
+            # Calculate forward returns (63 days later)
+            df['forward_return'] = df['close'].shift(-FORWARD_DAYS) / df['close'] - 1
+            
+            # Filter to last 3 years
+            df = df[df.index >= pd.Timestamp(three_years_ago)]
+            
+            # Find oversold signals (RSI < 20)
+            oversold = df[df['rsi'] < OVERSOLD_THRESHOLD].copy()
+            for idx, row in oversold.iterrows():
+                if pd.notna(row['forward_return']):
+                    oversold_signals.append({
+                        'ticker': ticker,
+                        'date': idx.strftime('%Y-%m-%d'),
+                        'price': round(row['close'], 2),
+                        'rsi': round(row['rsi'], 1),
+                        'forward_return': round(row['forward_return'] * 100, 2)
+                    })
+            
+            # Find overbought signals (RSI > 80)
+            overbought = df[df['rsi'] > OVERBOUGHT_THRESHOLD].copy()
+            for idx, row in overbought.iterrows():
+                if pd.notna(row['forward_return']):
+                    overbought_signals.append({
+                        'ticker': ticker,
+                        'date': idx.strftime('%Y-%m-%d'),
+                        'price': round(row['close'], 2),
+                        'rsi': round(row['rsi'], 1),
+                        'forward_return': round(row['forward_return'] * 100, 2)
+                    })
+            
+            # Check current RSI (most recent)
+            latest_rsi = df['rsi'].iloc[-1] if len(df) > 0 else None
+            latest_price = df['close'].iloc[-1] if len(df) > 0 else None
+            latest_date = df.index[-1].strftime('%Y-%m-%d') if len(df) > 0 else None
+            
+            if latest_rsi is not None:
+                if latest_rsi < OVERSOLD_THRESHOLD:
+                    current_oversold.append({
+                        'ticker': ticker,
+                        'date': latest_date,
+                        'price': round(latest_price, 2),
+                        'rsi': round(latest_rsi, 1)
+                    })
+                elif latest_rsi > OVERBOUGHT_THRESHOLD:
+                    current_overbought.append({
+                        'ticker': ticker,
+                        'date': latest_date,
+                        'price': round(latest_price, 2),
+                        'rsi': round(latest_rsi, 1)
+                    })
+                    
+        except Exception as e:
+            continue
+    
+    return oversold_signals, overbought_signals, current_oversold, current_overbought
+
+
+def get_top_signals(signals, top_n=10, best=True):
+    """Get top N signals by forward return"""
+    if not signals:
+        return []
+    
+    # Sort by forward return
+    sorted_signals = sorted(signals, key=lambda x: x['forward_return'], reverse=best)
+    return sorted_signals[:top_n]
+
+
+def calculate_statistics(signals):
+    """Calculate statistics for signals"""
+    if not signals:
+        return {'count': 0, 'avg_return': 0, 'win_rate': 0}
+    
+    returns = [s['forward_return'] for s in signals]
+    wins = len([r for r in returns if r > 0])
+    
+    return {
+        'count': len(signals),
+        'avg_return': round(np.mean(returns), 2),
+        'median_return': round(np.median(returns), 2),
+        'win_rate': round(wins / len(signals) * 100, 1),
+        'best_return': round(max(returns), 2),
+        'worst_return': round(min(returns), 2)
+    }
+
+
+def main():
+    print("=" * 50)
+    print("S&P 500 RSI Screener")
+    print("=" * 50)
+    
+    # Get S&P 500 tickers
+    print("\n1. Fetching S&P 500 tickers...")
+    tickers = get_sp500_tickers()
+    
+    # Fetch historical data
+    print("\n2. Downloading price data...")
+    all_data = fetch_stock_data(tickers, LOOKBACK_YEARS)
+    
+    # Find signals
+    print("\n3. Analyzing RSI signals...")
+    oversold_signals, overbought_signals, current_oversold, current_overbought = find_signals(all_data)
+    
+    print(f"  Found {len(oversold_signals)} oversold signals (RSI < {OVERSOLD_THRESHOLD})")
+    print(f"  Found {len(overbought_signals)} overbought signals (RSI > {OVERBOUGHT_THRESHOLD})")
+    print(f"  Currently oversold: {len(current_oversold)} stocks")
+    print(f"  Currently overbought: {len(current_overbought)} stocks")
+    
+    # Get top performers
+    print("\n4. Selecting top signals...")
+    top_oversold = get_top_signals(oversold_signals, 10, best=True)  # Best bounces
+    top_overbought = get_top_signals(overbought_signals, 10, best=False)  # Worst crashes
+    
+    # Calculate statistics
+    oversold_stats = calculate_statistics(oversold_signals)
+    overbought_stats = calculate_statistics(overbought_signals)
+    
+    # Build output
+    output = {
+        'topOversold': top_oversold,
+        'topOverbought': top_overbought,
+        'currentOversold': sorted(current_oversold, key=lambda x: x['rsi'])[:20],
+        'currentOverbought': sorted(current_overbought, key=lambda x: x['rsi'], reverse=True)[:20],
+        'oversoldStats': oversold_stats,
+        'overboughtStats': overbought_stats,
+        'config': {
+            'rsiPeriod': RSI_PERIOD,
+            'forwardDays': FORWARD_DAYS,
+            'oversoldThreshold': OVERSOLD_THRESHOLD,
+            'overboughtThreshold': OVERBOUGHT_THRESHOLD,
+            'lookbackYears': LOOKBACK_YEARS
+        },
+        'lastUpdated': datetime.utcnow().isoformat() + 'Z'
+    }
+    
+    # Print summary
+    print("\n" + "=" * 50)
+    print("RESULTS SUMMARY")
+    print("=" * 50)
+    
+    print(f"\n📉 Oversold (RSI < {OVERSOLD_THRESHOLD}) Statistics:")
+    print(f"   Total signals: {oversold_stats['count']}")
+    print(f"   Average 3-month return: {oversold_stats['avg_return']}%")
+    print(f"   Win rate: {oversold_stats['win_rate']}%")
+    
+    print(f"\n📈 Overbought (RSI > {OVERBOUGHT_THRESHOLD}) Statistics:")
+    print(f"   Total signals: {overbought_stats['count']}")
+    print(f"   Average 3-month return: {overbought_stats['avg_return']}%")
+    print(f"   Win rate: {overbought_stats['win_rate']}%")
+    
+    print(f"\n🔥 Top 10 Oversold Bounces (Best 3-month returns):")
+    for i, s in enumerate(top_oversold[:5], 1):
+        print(f"   {i}. {s['ticker']} | {s['date']} | RSI {s['rsi']} | +{s['forward_return']}%")
+    
+    print(f"\n💥 Top 10 Overbought Crashes (Worst 3-month returns):")
+    for i, s in enumerate(top_overbought[:5], 1):
+        print(f"   {i}. {s['ticker']} | {s['date']} | RSI {s['rsi']} | {s['forward_return']}%")
+    
+    # Save to JSON
+    with open(DATA_FILE, 'w') as f:
+        json.dump(output, f, indent=2)
+    
+    print(f"\n✅ Saved to {DATA_FILE}")
+
+
+if __name__ == '__main__':
+    main()
