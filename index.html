@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lightweight-charts@4.1.0/dist/lightweight-charts.standalone.production.js"></script>
     <style>
         * {
             margin: 0;
@@ -27,7 +28,6 @@
             margin: 0 auto;
         }
 
-        /* Header */
         .header {
             text-align: center;
             margin-bottom: 32px;
@@ -49,7 +49,6 @@
             color: #71717a;
         }
 
-        /* Stats Cards */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -64,13 +63,8 @@
             padding: 24px;
         }
 
-        .stat-card.oversold {
-            border-color: #22c55e33;
-        }
-
-        .stat-card.overbought {
-            border-color: #ef444433;
-        }
+        .stat-card.oversold { border-color: #22c55e33; }
+        .stat-card.overbought { border-color: #ef444433; }
 
         .stat-card-header {
             display: flex;
@@ -89,13 +83,8 @@
             font-size: 1.5rem;
         }
 
-        .stat-card.oversold .stat-card-icon {
-            background: #22c55e22;
-        }
-
-        .stat-card.overbought .stat-card-icon {
-            background: #ef444422;
-        }
+        .stat-card.oversold .stat-card-icon { background: #22c55e22; }
+        .stat-card.overbought .stat-card-icon { background: #ef444422; }
 
         .stat-card-title {
             font-size: 1.1rem;
@@ -114,9 +103,7 @@
             gap: 16px;
         }
 
-        .stat-metric {
-            text-align: center;
-        }
+        .stat-metric { text-align: center; }
 
         .stat-metric-value {
             font-family: 'JetBrains Mono', monospace;
@@ -124,13 +111,8 @@
             font-weight: 600;
         }
 
-        .stat-card.oversold .stat-metric-value {
-            color: #22c55e;
-        }
-
-        .stat-card.overbought .stat-metric-value {
-            color: #ef4444;
-        }
+        .stat-card.oversold .stat-metric-value { color: #22c55e; }
+        .stat-card.overbought .stat-metric-value { color: #ef4444; }
 
         .stat-metric-label {
             font-size: 0.7rem;
@@ -138,10 +120,7 @@
             margin-top: 4px;
         }
 
-        /* Section */
-        .section {
-            margin-bottom: 32px;
-        }
+        .section { margin-bottom: 32px; }
 
         .section-header {
             display: flex;
@@ -166,17 +145,9 @@
             font-weight: 500;
         }
 
-        .section-badge.oversold {
-            background: #22c55e22;
-            color: #22c55e;
-        }
+        .section-badge.oversold { background: #22c55e22; color: #22c55e; }
+        .section-badge.overbought { background: #ef444422; color: #ef4444; }
 
-        .section-badge.overbought {
-            background: #ef444422;
-            color: #ef4444;
-        }
-
-        /* Table */
         .table-container {
             background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
             border: 1px solid #222222;
@@ -206,24 +177,24 @@
             font-size: 0.9rem;
         }
 
-        tr:hover {
-            background: #111111;
-        }
+        tr:hover { background: #111111; }
+        tr.clickable { cursor: pointer; }
+        tr.clickable:hover { background: #1a1a1a; }
 
         .ticker {
             font-family: 'JetBrains Mono', monospace;
             font-weight: 600;
-            color: #ffffff;
+            color: #22d3ee;
         }
+
+        .ticker:hover { text-decoration: underline; }
 
         .date {
             color: #71717a;
             font-size: 0.8rem;
         }
 
-        .price {
-            font-family: 'JetBrains Mono', monospace;
-        }
+        .price { font-family: 'JetBrains Mono', monospace; }
 
         .rsi {
             font-family: 'JetBrains Mono', monospace;
@@ -232,28 +203,16 @@
             font-size: 0.8rem;
         }
 
-        .rsi.oversold {
-            background: #22c55e22;
-            color: #22c55e;
-        }
-
-        .rsi.overbought {
-            background: #ef444422;
-            color: #ef4444;
-        }
+        .rsi.oversold { background: #22c55e22; color: #22c55e; }
+        .rsi.overbought { background: #ef444422; color: #ef4444; }
 
         .return {
             font-family: 'JetBrains Mono', monospace;
             font-weight: 600;
         }
 
-        .return.positive {
-            color: #22c55e;
-        }
-
-        .return.negative {
-            color: #ef4444;
-        }
+        .return.positive { color: #22c55e; }
+        .return.negative { color: #ef4444; }
 
         .rank {
             font-family: 'JetBrains Mono', monospace;
@@ -261,7 +220,6 @@
             font-size: 0.8rem;
         }
 
-        /* Current Signals */
         .current-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -291,16 +249,22 @@
             align-items: center;
             padding: 8px 0;
             border-bottom: 1px solid #1a1a1a;
+            cursor: pointer;
         }
 
-        .current-item:last-child {
-            border-bottom: none;
+        .current-item:hover {
+            background: #111111;
+            margin: 0 -8px;
+            padding: 8px;
+            border-radius: 4px;
         }
+
+        .current-item:last-child { border-bottom: none; }
 
         .current-ticker {
             font-family: 'JetBrains Mono', monospace;
             font-weight: 500;
-            color: #ffffff;
+            color: #22d3ee;
         }
 
         .current-rsi {
@@ -310,17 +274,95 @@
             border-radius: 4px;
         }
 
-        .current-rsi.oversold {
-            background: #22c55e22;
-            color: #22c55e;
+        .current-rsi.oversold { background: #22c55e22; color: #22c55e; }
+        .current-rsi.overbought { background: #ef444422; color: #ef4444; }
+
+        .chart-section {
+            background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+            border: 1px solid #222222;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 32px;
         }
 
-        .current-rsi.overbought {
-            background: #ef444422;
-            color: #ef4444;
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
         }
 
-        /* Guide Section */
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .chart-ticker {
+            font-family: 'JetBrains Mono', monospace;
+            color: #22d3ee;
+        }
+
+        .chart-placeholder {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #52525b;
+            font-size: 0.9rem;
+            border: 1px dashed #333333;
+            border-radius: 8px;
+        }
+
+        .chart-container { display: none; }
+        .chart-container.active { display: block; }
+
+        #price-chart {
+            height: 300px;
+            width: 100%;
+        }
+
+        #rsi-chart {
+            height: 100px;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .chart-legend {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 12px;
+            font-size: 0.75rem;
+            color: #71717a;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-marker {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .legend-marker.oversold { background: #22c55e; }
+        .legend-marker.overbought { background: #ef4444; }
+
+        .chart-loading {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #71717a;
+        }
+
         .guide-section {
             background: linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
             border: 1px solid #222222;
@@ -355,9 +397,7 @@
             margin-top: 16px;
         }
 
-        .guide-content.show {
-            display: block;
-        }
+        .guide-content.show { display: block; }
 
         .guide-text {
             font-size: 0.85rem;
@@ -365,19 +405,10 @@
             line-height: 1.8;
         }
 
-        .guide-text strong {
-            color: #ffffff;
-        }
+        .guide-text strong { color: #ffffff; }
+        .guide-text .green { color: #22c55e; }
+        .guide-text .red { color: #ef4444; }
 
-        .guide-text .green {
-            color: #22c55e;
-        }
-
-        .guide-text .red {
-            color: #ef4444;
-        }
-
-        /* Footer */
         .footer {
             text-align: center;
             margin-top: 24px;
@@ -394,40 +425,17 @@
             margin-top: 8px;
         }
 
-        /* Responsive */
         @media (max-width: 768px) {
-            body {
-                padding: 16px;
-            }
-
-            .header h1 {
-                font-size: 1.8rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .current-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .stat-metrics {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 8px;
-            }
-
-            .stat-metric-value {
-                font-size: 1.2rem;
-            }
-
-            table {
-                font-size: 0.8rem;
-            }
-
-            th, td {
-                padding: 10px 8px;
-            }
+            body { padding: 16px; }
+            .header h1 { font-size: 1.8rem; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .current-grid { grid-template-columns: 1fr; }
+            .stat-metrics { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+            .stat-metric-value { font-size: 1.2rem; }
+            table { font-size: 0.8rem; }
+            th, td { padding: 10px 8px; }
+            #price-chart { height: 250px; }
+            #rsi-chart { height: 80px; }
         }
     </style>
 </head>
@@ -438,7 +446,6 @@
             <p>S&P 500 과매도/과매수 신호 분석 (3년 백테스트)</p>
         </div>
 
-        <!-- Stats Cards -->
         <div class="stats-grid">
             <div class="stat-card oversold">
                 <div class="stat-card-header">
@@ -488,7 +495,6 @@
             </div>
         </div>
 
-        <!-- Current Signals -->
         <div class="section">
             <div class="section-header">
                 <div class="section-title">🔔 현재 RSI 신호</div>
@@ -515,7 +521,34 @@
             </div>
         </div>
 
-        <!-- Top Oversold Bounces -->
+        <div class="chart-section">
+            <div class="chart-header">
+                <div class="chart-title">
+                    📈 <span id="chart-ticker-display">차트</span>
+                </div>
+            </div>
+            <div id="chart-placeholder" class="chart-placeholder">
+                티커를 클릭하면 차트가 표시됩니다
+            </div>
+            <div id="chart-loading" class="chart-loading" style="display:none;">
+                차트 로딩 중...
+            </div>
+            <div id="chart-container" class="chart-container">
+                <div id="price-chart"></div>
+                <div id="rsi-chart"></div>
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-marker oversold"></div>
+                        <span>과매도 시그널 (RSI &lt; 20)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-marker overbought"></div>
+                        <span>과매수 시그널 (RSI &gt; 80)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="section">
             <div class="section-header">
                 <div class="section-title">
@@ -542,7 +575,6 @@
             </div>
         </div>
 
-        <!-- Top Overbought Crashes -->
         <div class="section">
             <div class="section-header">
                 <div class="section-title">
@@ -569,7 +601,6 @@
             </div>
         </div>
 
-        <!-- Guide -->
         <div class="guide-section">
             <div class="guide-header" onclick="toggleGuide()">
                 <div class="guide-title">📊 RSI 활용 가이드</div>
@@ -604,6 +635,13 @@
 
     <script>
         let guideExpanded = false;
+        let priceChart = null;
+        let rsiChart = null;
+        let candleSeries = null;
+        let rsiSeries = null;
+        let rsi20Line = null;
+        let rsi80Line = null;
+        let currentTicker = null;
 
         function toggleGuide() {
             guideExpanded = !guideExpanded;
@@ -616,6 +654,160 @@
             return sign + value.toFixed(2) + '%';
         }
 
+        function initCharts() {
+            const priceContainer = document.getElementById('price-chart');
+            const rsiContainer = document.getElementById('rsi-chart');
+
+            priceChart = LightweightCharts.createChart(priceContainer, {
+                layout: {
+                    background: { type: 'solid', color: 'transparent' },
+                    textColor: '#71717a',
+                },
+                grid: {
+                    vertLines: { color: '#1a1a1a' },
+                    horzLines: { color: '#1a1a1a' },
+                },
+                crosshair: {
+                    mode: LightweightCharts.CrosshairMode.Normal,
+                },
+                rightPriceScale: {
+                    borderColor: '#333333',
+                },
+                timeScale: {
+                    borderColor: '#333333',
+                    timeVisible: true,
+                },
+            });
+
+            candleSeries = priceChart.addCandlestickSeries({
+                upColor: '#22c55e',
+                downColor: '#ef4444',
+                borderVisible: false,
+                wickUpColor: '#22c55e',
+                wickDownColor: '#ef4444',
+            });
+
+            rsiChart = LightweightCharts.createChart(rsiContainer, {
+                layout: {
+                    background: { type: 'solid', color: 'transparent' },
+                    textColor: '#71717a',
+                },
+                grid: {
+                    vertLines: { color: '#1a1a1a' },
+                    horzLines: { color: '#1a1a1a' },
+                },
+                rightPriceScale: {
+                    borderColor: '#333333',
+                    scaleMargins: { top: 0.1, bottom: 0.1 },
+                },
+                timeScale: {
+                    borderColor: '#333333',
+                    visible: false,
+                },
+            });
+
+            rsiSeries = rsiChart.addLineSeries({
+                color: '#a855f7',
+                lineWidth: 2,
+            });
+
+            rsi20Line = rsiChart.addLineSeries({
+                color: '#22c55e66',
+                lineWidth: 1,
+                lineStyle: 2,
+            });
+
+            rsi80Line = rsiChart.addLineSeries({
+                color: '#ef444466',
+                lineWidth: 1,
+                lineStyle: 2,
+            });
+
+            priceChart.timeScale().subscribeVisibleTimeRangeChange(() => {
+                const range = priceChart.timeScale().getVisibleRange();
+                if (range) {
+                    rsiChart.timeScale().setVisibleRange(range);
+                }
+            });
+        }
+
+        async function loadChart(ticker, signalDate = null) {
+            if (currentTicker === ticker && !signalDate) return;
+            currentTicker = ticker;
+
+            document.getElementById('chart-placeholder').style.display = 'none';
+            document.getElementById('chart-loading').style.display = 'flex';
+            document.getElementById('chart-container').classList.remove('active');
+            document.getElementById('chart-ticker-display').innerHTML = `<span class="chart-ticker">${ticker}</span> 차트`;
+
+            try {
+                const response = await fetch(`charts/${ticker}.json`);
+                if (!response.ok) throw new Error('차트 데이터를 찾을 수 없습니다');
+                const chartData = await response.json();
+
+                if (!priceChart) {
+                    initCharts();
+                }
+
+                const ohlcData = chartData.ohlc.map(d => ({
+                    time: d.time,
+                    open: d.open,
+                    high: d.high,
+                    low: d.low,
+                    close: d.close,
+                }));
+
+                const rsiData = chartData.ohlc
+                    .filter(d => d.rsi !== null)
+                    .map(d => ({ time: d.time, value: d.rsi }));
+
+                candleSeries.setData(ohlcData);
+                rsiSeries.setData(rsiData);
+
+                // RSI 20/80 lines
+                const line20Data = rsiData.map(d => ({ time: d.time, value: 20 }));
+                const line80Data = rsiData.map(d => ({ time: d.time, value: 80 }));
+                rsi20Line.setData(line20Data);
+                rsi80Line.setData(line80Data);
+
+                // Signal markers
+                const markers = chartData.signals.map(signal => ({
+                    time: signal.date,
+                    position: signal.type === 'oversold' ? 'belowBar' : 'aboveBar',
+                    color: signal.type === 'oversold' ? '#22c55e' : '#ef4444',
+                    shape: signal.type === 'oversold' ? 'arrowUp' : 'arrowDown',
+                    text: `RSI ${signal.rsi}`,
+                }));
+
+                candleSeries.setMarkers(markers);
+
+                if (signalDate) {
+                    const signalTime = new Date(signalDate).getTime() / 1000;
+                    const fromTime = signalTime - (60 * 24 * 60 * 60);
+                    const toTime = signalTime + (60 * 24 * 60 * 60);
+                    
+                    setTimeout(() => {
+                        priceChart.timeScale().setVisibleRange({
+                            from: fromTime,
+                            to: toTime,
+                        });
+                    }, 100);
+                } else {
+                    priceChart.timeScale().fitContent();
+                }
+                rsiChart.timeScale().fitContent();
+
+                document.getElementById('chart-loading').style.display = 'none';
+                document.getElementById('chart-container').classList.add('active');
+
+            } catch (error) {
+                console.error('Error loading chart:', error);
+                document.getElementById('chart-loading').style.display = 'none';
+                document.getElementById('chart-placeholder').style.display = 'flex';
+                document.getElementById('chart-placeholder').textContent = `${ticker} 차트를 불러올 수 없습니다`;
+            }
+        }
+
         function renderTable(tableId, data, isOversold) {
             const tbody = document.getElementById(tableId);
             
@@ -625,7 +817,7 @@
             }
 
             tbody.innerHTML = data.map((item, index) => `
-                <tr>
+                <tr class="clickable" onclick="loadChart('${item.ticker}', '${item.date}')">
                     <td class="rank">${index + 1}</td>
                     <td class="ticker">${item.ticker}</td>
                     <td class="date">${item.date}</td>
@@ -640,12 +832,12 @@
             const container = document.getElementById(listId);
             
             if (!data || data.length === 0) {
-                container.innerHTML = '<div class="current-item" style="color:#71717a;">현재 신호 없음</div>';
+                container.innerHTML = '<div class="current-item" style="color:#71717a;cursor:default;">현재 신호 없음</div>';
                 return;
             }
 
             container.innerHTML = data.slice(0, 10).map(item => `
-                <div class="current-item">
+                <div class="current-item" onclick="loadChart('${item.ticker}')">
                     <span class="current-ticker">${item.ticker}</span>
                     <span class="current-rsi ${isOversold ? 'oversold' : 'overbought'}">RSI ${item.rsi}</span>
                 </div>
@@ -658,7 +850,6 @@
                 if (!response.ok) throw new Error('data.json을 찾을 수 없습니다');
                 const data = await response.json();
 
-                // Stats
                 if (data.oversoldStats) {
                     document.getElementById('oversold-count').textContent = data.oversoldStats.count.toLocaleString();
                     document.getElementById('oversold-avg').textContent = '+' + data.oversoldStats.avg_return + '%';
@@ -671,15 +862,11 @@
                     document.getElementById('overbought-winrate').textContent = data.overboughtStats.win_rate + '%';
                 }
 
-                // Tables
                 renderTable('oversold-table', data.topOversold, true);
                 renderTable('overbought-table', data.topOverbought, false);
-
-                // Current signals
                 renderCurrentList('current-oversold-list', data.currentOversold, true);
                 renderCurrentList('current-overbought-list', data.currentOverbought, false);
 
-                // Last updated
                 if (data.lastUpdated) {
                     const date = new Date(data.lastUpdated);
                     document.getElementById('last-updated').textContent = 
@@ -693,7 +880,6 @@
             }
         }
 
-        // Initialize
         loadData();
     </script>
 </body>
