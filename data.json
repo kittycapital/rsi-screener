@@ -33,6 +33,22 @@
       "forward_return": 37.32
     },
     {
+      "ticker": "IWM",
+      "date": "2025-04-08",
+      "price": 173.26,
+      "rsi": 17.2,
+      "type": "oversold",
+      "forward_return": 28.94
+    },
+    {
+      "ticker": "SPY",
+      "date": "2025-04-08",
+      "price": 492.19,
+      "rsi": 18.7,
+      "type": "oversold",
+      "forward_return": 26.42
+    },
+    {
       "ticker": "AMZN",
       "date": "2023-02-23",
       "price": 95.82,
@@ -49,36 +65,20 @@
       "forward_return": 19.85
     },
     {
+      "ticker": "DIA",
+      "date": "2025-04-08",
+      "price": 371.96,
+      "rsi": 19.0,
+      "type": "oversold",
+      "forward_return": 19.09
+    },
+    {
       "ticker": "AMZN",
       "date": "2023-10-03",
       "price": 124.72,
       "rsi": 17.9,
       "type": "oversold",
       "forward_return": 19.04
-    },
-    {
-      "ticker": "JPM",
-      "date": "2025-03-12",
-      "price": 223.32,
-      "rsi": 15.2,
-      "type": "oversold",
-      "forward_return": 18.39
-    },
-    {
-      "ticker": "GOOGL",
-      "date": "2024-09-10",
-      "price": 147.91,
-      "rsi": 17.1,
-      "type": "oversold",
-      "forward_return": 18.1
-    },
-    {
-      "ticker": "JPM",
-      "date": "2025-03-11",
-      "price": 224.54,
-      "rsi": 12.7,
-      "type": "oversold",
-      "forward_return": 17.94
     }
   ],
   "topOverbought": [
@@ -166,21 +166,37 @@
   "currentOversold": [],
   "currentOverbought": [],
   "oversoldStats": {
-    "count": 90,
-    "avg_return": 4.43,
-    "median_return": 5.88,
-    "win_rate": 66.7,
+    "count": 128,
+    "avg_return": 5.0,
+    "median_return": 6.26,
+    "win_rate": 69.5,
     "best_return": 62.99,
     "worst_return": -31.97
   },
   "overboughtStats": {
-    "count": 517,
-    "avg_return": 9.18,
-    "median_return": 7.5,
-    "win_rate": 73.3,
+    "count": 698,
+    "avg_return": 8.31,
+    "median_return": 6.9,
+    "win_rate": 77.5,
     "best_return": 78.64,
     "worst_return": -48.97
   },
+  "availableTickers": [
+    "AAPL",
+    "AMZN",
+    "BRK-B",
+    "DIA",
+    "GOOGL",
+    "IWM",
+    "JPM",
+    "META",
+    "MSFT",
+    "NVDA",
+    "QQQ",
+    "SPY",
+    "TSLA",
+    "V"
+  ],
   "config": {
     "rsiPeriod": 14,
     "forwardDays": 63,
@@ -188,5 +204,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-01-27T02:53:13.766375Z"
+  "lastUpdated": "2026-01-27T07:49:13.560035Z"
 }
