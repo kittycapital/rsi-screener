@@ -1,52 +1,185 @@
 {
   "topOversold": [
-    {"ticker": "SMCI", "date": "2024-08-07", "price": 443.21, "rsi": 18.5, "forward_return": 89.45},
-    {"ticker": "NVDA", "date": "2024-08-05", "price": 98.34, "rsi": 19.2, "forward_return": 72.31},
-    {"ticker": "AMD", "date": "2024-08-05", "price": 116.89, "rsi": 17.8, "forward_return": 58.92},
-    {"ticker": "ENPH", "date": "2023-10-26", "price": 67.32, "rsi": 15.4, "forward_return": 55.67},
-    {"ticker": "TSLA", "date": "2024-04-22", "price": 142.05, "rsi": 18.9, "forward_return": 48.23},
-    {"ticker": "META", "date": "2022-11-03", "price": 90.54, "rsi": 16.7, "forward_return": 45.89},
-    {"ticker": "MRNA", "date": "2023-11-09", "price": 68.21, "rsi": 19.5, "forward_return": 42.15},
-    {"ticker": "PYPL", "date": "2024-08-02", "price": 57.89, "rsi": 18.3, "forward_return": 38.76},
-    {"ticker": "CRM", "date": "2022-12-28", "price": 121.34, "rsi": 17.2, "forward_return": 35.42},
-    {"ticker": "GOOGL", "date": "2022-11-03", "price": 86.12, "rsi": 19.8, "forward_return": 32.18}
+    {
+      "ticker": "TSLA",
+      "date": "2023-04-21",
+      "price": 165.08,
+      "rsi": 17.9,
+      "type": "oversold",
+      "forward_return": 62.99
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2025-03-11",
+      "price": 230.58,
+      "rsi": 14.5,
+      "type": "oversold",
+      "forward_return": 41.42
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2025-03-10",
+      "price": 222.15,
+      "rsi": 13.6,
+      "type": "oversold",
+      "forward_return": 38.91
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2023-02-28",
+      "price": 89.38,
+      "rsi": 13.6,
+      "type": "oversold",
+      "forward_return": 37.32
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2023-02-23",
+      "price": 95.82,
+      "rsi": 18.0,
+      "type": "oversold",
+      "forward_return": 21.84
+    },
+    {
+      "ticker": "JPM",
+      "date": "2025-03-13",
+      "price": 220.67,
+      "rsi": 15.2,
+      "type": "oversold",
+      "forward_return": 19.85
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2023-10-03",
+      "price": 124.72,
+      "rsi": 17.9,
+      "type": "oversold",
+      "forward_return": 19.04
+    },
+    {
+      "ticker": "JPM",
+      "date": "2025-03-12",
+      "price": 223.32,
+      "rsi": 15.2,
+      "type": "oversold",
+      "forward_return": 18.39
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2024-09-10",
+      "price": 147.91,
+      "rsi": 17.1,
+      "type": "oversold",
+      "forward_return": 18.1
+    },
+    {
+      "ticker": "JPM",
+      "date": "2025-03-11",
+      "price": 224.54,
+      "rsi": 12.7,
+      "type": "oversold",
+      "forward_return": 17.94
+    }
   ],
   "topOverbought": [
-    {"ticker": "SMCI", "date": "2024-03-08", "price": 1188.07, "rsi": 89.5, "forward_return": -68.23},
-    {"ticker": "ENPH", "date": "2022-11-21", "price": 316.89, "rsi": 85.2, "forward_return": -52.45},
-    {"ticker": "SEDG", "date": "2022-11-11", "price": 289.45, "rsi": 82.7, "forward_return": -48.92},
-    {"ticker": "MRNA", "date": "2023-05-04", "price": 168.34, "rsi": 84.1, "forward_return": -42.67},
-    {"ticker": "AMD", "date": "2024-03-07", "price": 227.30, "rsi": 81.3, "forward_return": -35.21},
-    {"ticker": "NVDA", "date": "2024-06-20", "price": 130.78, "rsi": 86.9, "forward_return": -28.45},
-    {"ticker": "TSLA", "date": "2023-07-19", "price": 291.26, "rsi": 83.4, "forward_return": -25.87},
-    {"ticker": "AVGO", "date": "2024-06-13", "price": 1796.72, "rsi": 88.2, "forward_return": -22.34},
-    {"ticker": "ADBE", "date": "2024-02-16", "price": 596.85, "rsi": 81.8, "forward_return": -18.92},
-    {"ticker": "ORCL", "date": "2024-03-12", "price": 127.54, "rsi": 84.6, "forward_return": -15.67}
+    {
+      "ticker": "TSLA",
+      "date": "2024-12-16",
+      "price": 463.02,
+      "rsi": 88.8,
+      "type": "overbought",
+      "forward_return": -48.97
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2024-12-17",
+      "price": 479.86,
+      "rsi": 90.0,
+      "type": "overbought",
+      "forward_return": -48.17
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2025-02-04",
+      "price": 242.06,
+      "rsi": 81.7,
+      "type": "overbought",
+      "forward_return": -23.57
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2025-02-24",
+      "price": 246.26,
+      "rsi": 80.2,
+      "type": "overbought",
+      "forward_return": -20.87
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2024-12-16",
+      "price": 195.89,
+      "rsi": 82.7,
+      "type": "overbought",
+      "forward_return": -17.12
+    },
+    {
+      "ticker": "META",
+      "date": "2025-02-07",
+      "price": 712.27,
+      "rsi": 100.0,
+      "type": "overbought",
+      "forward_return": -17.0
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2023-02-09",
+      "price": 207.32,
+      "rsi": 88.3,
+      "type": "overbought",
+      "forward_return": -17.0
+    },
+    {
+      "ticker": "META",
+      "date": "2025-02-04",
+      "price": 701.98,
+      "rsi": 95.2,
+      "type": "overbought",
+      "forward_return": -16.52
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2024-12-16",
+      "price": 232.93,
+      "rsi": 84.7,
+      "type": "overbought",
+      "forward_return": -16.31
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2023-02-08",
+      "price": 201.29,
+      "rsi": 88.4,
+      "type": "overbought",
+      "forward_return": -16.27
+    }
   ],
-  "currentOversold": [
-    {"ticker": "INTC", "date": "2025-01-24", "price": 19.45, "rsi": 18.2},
-    {"ticker": "PFE", "date": "2025-01-24", "price": 25.67, "rsi": 19.5}
-  ],
-  "currentOverbought": [
-    {"ticker": "PLTR", "date": "2025-01-24", "price": 78.92, "rsi": 85.3},
-    {"ticker": "AXON", "date": "2025-01-24", "price": 692.15, "rsi": 82.7},
-    {"ticker": "VST", "date": "2025-01-24", "price": 156.78, "rsi": 81.2}
-  ],
+  "currentOversold": [],
+  "currentOverbought": [],
   "oversoldStats": {
-    "count": 847,
-    "avg_return": 12.45,
-    "median_return": 8.92,
-    "win_rate": 68.5,
-    "best_return": 89.45,
-    "worst_return": -45.23
+    "count": 90,
+    "avg_return": 4.43,
+    "median_return": 5.88,
+    "win_rate": 66.7,
+    "best_return": 62.99,
+    "worst_return": -31.97
   },
   "overboughtStats": {
-    "count": 1253,
-    "avg_return": 2.18,
-    "median_return": 1.54,
-    "win_rate": 52.3,
-    "best_return": 48.67,
-    "worst_return": -68.23
+    "count": 517,
+    "avg_return": 9.18,
+    "median_return": 7.5,
+    "win_rate": 73.3,
+    "best_return": 78.64,
+    "worst_return": -48.97
   },
   "config": {
     "rsiPeriod": 14,
@@ -55,5 +188,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2025-01-25T22:00:00Z"
+  "lastUpdated": "2026-01-27T01:00:31.171471Z"
 }
