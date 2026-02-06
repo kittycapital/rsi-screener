@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -53,23 +54,12 @@
 
         .container { max-width: 960px; margin: 0 auto; }
 
-        /* ═══════════ HEADER ═══════════ */
+        /* ═══ HEADER ═══ */
         .header { text-align: center; margin-bottom: 8px; }
+        .header h1 { font-size: 1.75rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; }
+        .header-sub { font-size: 0.78rem; color: var(--text-dim); margin-top: 4px; }
 
-        .header h1 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: #ffffff;
-            letter-spacing: -0.02em;
-        }
-
-        .header-sub {
-            font-size: 0.78rem;
-            color: var(--text-dim);
-            margin-top: 4px;
-        }
-
-        /* ═══════════ GUIDE (below title, collapsed) ═══════════ */
+        /* ═══ GUIDE ═══ */
         .guide {
             background: var(--surface);
             border: 1px solid var(--border);
@@ -77,443 +67,215 @@
             margin-bottom: var(--section-gap);
             overflow: hidden;
         }
-
         .guide-toggle {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 14px 16px;
-            cursor: pointer;
-            -webkit-tap-highlight-color: transparent;
-            user-select: none;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 14px 16px; cursor: pointer;
+            -webkit-tap-highlight-color: transparent; user-select: none;
         }
-
         .guide-toggle:active { background: var(--surface2); }
-
-        .guide-toggle-title {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .guide-arrow {
-            font-size: 0.72rem;
-            color: var(--text-dim);
-            transition: transform 0.25s ease;
-        }
-
+        .guide-toggle-title { font-size: 0.85rem; font-weight: 600; color: #fff; display: flex; align-items: center; gap: 6px; }
+        .guide-arrow { font-size: 0.72rem; color: var(--text-dim); transition: transform 0.25s ease; }
         .guide.open .guide-arrow { transform: rotate(180deg); }
-
-        .guide-body {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.35s ease;
-        }
-
+        .guide-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
         .guide.open .guide-body { max-height: 600px; }
-
-        .guide-inner {
-            padding: 0 16px 16px;
-            font-size: 0.82rem;
-            color: #a1a1aa;
-            line-height: 1.75;
-        }
-
-        .guide-inner strong { color: #ffffff; }
+        .guide-inner { padding: 0 16px 16px; font-size: 0.82rem; color: #a1a1aa; line-height: 1.75; }
+        .guide-inner strong { color: #fff; }
         .guide-inner .g { color: var(--green); }
         .guide-inner .r { color: var(--red); }
 
-        /* ═══════════ SEARCH ═══════════ */
+        /* ═══ SEARCH ═══ */
         .search-section {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 16px;
-            margin-bottom: var(--section-gap);
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 16px; margin-bottom: var(--section-gap);
         }
-
-        .search-row {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 12px;
-        }
-
-        .search-input-wrap {
-            flex: 1;
-            position: relative;
-        }
-
+        .search-row { display: flex; gap: 8px; margin-bottom: 12px; }
+        .search-input-wrap { flex: 1; position: relative; }
         .search-input {
-            width: 100%;
-            height: 48px;
-            padding: 0 16px;
-            font-size: 1rem;
-            font-family: var(--mono);
-            font-weight: 500;
-            background: var(--bg);
-            border: 1px solid var(--border-hover);
-            border-radius: var(--radius-sm);
-            color: #ffffff;
-            outline: none;
-            transition: border-color 0.2s;
-            -webkit-appearance: none;
+            width: 100%; height: 48px; padding: 0 16px;
+            font-size: 1rem; font-family: var(--mono); font-weight: 500;
+            background: var(--bg); border: 1px solid var(--border-hover);
+            border-radius: var(--radius-sm); color: #fff; outline: none;
+            transition: border-color 0.2s; -webkit-appearance: none;
         }
-
         .search-input:focus { border-color: var(--green); }
         .search-input::placeholder { color: var(--text-muted); }
-
         .search-btn {
-            width: 48px;
-            height: 48px;
-            flex-shrink: 0;
-            background: var(--green);
-            border: none;
-            border-radius: var(--radius-sm);
-            color: #000;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.2s;
+            width: 48px; height: 48px; flex-shrink: 0;
+            background: var(--green); border: none; border-radius: var(--radius-sm);
+            color: #000; cursor: pointer; display: flex; align-items: center; justify-content: center;
             -webkit-tap-highlight-color: transparent;
         }
-
         .search-btn:active { background: #16a34a; }
         .search-btn svg { width: 20px; height: 20px; }
-
         .autocomplete-list {
-            position: absolute;
-            top: 100%;
-            left: 0; right: 0;
-            background: var(--surface2);
-            border: 1px solid var(--border-hover);
-            border-radius: var(--radius-sm);
-            margin-top: 4px;
-            max-height: 200px;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-            z-index: 100;
-            display: none;
+            position: absolute; top: 100%; left: 0; right: 0;
+            background: var(--surface2); border: 1px solid var(--border-hover);
+            border-radius: var(--radius-sm); margin-top: 4px;
+            max-height: 200px; overflow-y: auto; -webkit-overflow-scrolling: touch;
+            z-index: 100; display: none;
         }
-
         .autocomplete-list.show { display: block; }
-
         .autocomplete-item {
-            padding: 14px 16px;
-            cursor: pointer;
-            font-family: var(--mono);
-            font-size: 0.92rem;
-            border-bottom: 1px solid var(--border);
+            padding: 14px 16px; cursor: pointer; font-family: var(--mono);
+            font-size: 0.92rem; border-bottom: 1px solid var(--border);
             -webkit-tap-highlight-color: transparent;
         }
-
         .autocomplete-item:last-child { border-bottom: none; }
         .autocomplete-item:active, .autocomplete-item.selected { background: var(--border); color: var(--green); }
-
         .quick-buttons { display: flex; gap: 8px; }
-
         .quick-btn {
-            flex: 1;
-            height: 44px;
-            font-family: var(--mono);
-            font-size: 0.85rem;
-            font-weight: 600;
-            background: var(--border);
-            border: 1px solid var(--border-hover);
-            border-radius: var(--radius-sm);
-            color: var(--text);
-            cursor: pointer;
-            transition: all 0.15s;
-            -webkit-tap-highlight-color: transparent;
+            flex: 1; height: 44px; font-family: var(--mono);
+            font-size: 0.85rem; font-weight: 600;
+            background: var(--border); border: 1px solid var(--border-hover);
+            border-radius: var(--radius-sm); color: var(--text); cursor: pointer;
+            transition: all 0.15s; -webkit-tap-highlight-color: transparent;
         }
-
         .quick-btn:active { transform: scale(0.96); }
         .quick-btn.active { background: var(--green); border-color: var(--green); color: #000; }
 
-        /* ═══════════ CHART ═══════════ */
+        /* ═══ CHART ═══ */
         .chart-section {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            overflow: hidden;
-            margin-bottom: var(--section-gap);
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: var(--radius); overflow: hidden; margin-bottom: var(--section-gap);
         }
-
         .chart-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 14px 16px;
-            border-bottom: 1px solid var(--border);
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 14px 16px; border-bottom: 1px solid var(--border);
         }
-
-        .chart-title {
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
+        .chart-title { font-size: 0.95rem; font-weight: 600; color: #fff; display: flex; align-items: center; gap: 6px; }
         .chart-ticker { font-family: var(--mono); color: var(--cyan); }
 
-        .chart-rsi-badge {
-            font-family: var(--mono);
-            font-size: 0.75rem;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-weight: 600;
+        .signal-tag {
+            font-family: var(--mono); font-size: 0.72rem; font-weight: 600;
+            padding: 4px 10px; border-radius: 4px; display: none; align-items: center; gap: 4px;
         }
-
-        .badge-oversold { background: var(--green-dim); color: var(--green); }
-        .badge-overbought { background: var(--red-dim); color: var(--red); }
-        .badge-neutral { background: rgba(63,63,70,0.3); color: var(--text-dim); }
+        .signal-tag.oversold { background: var(--green-dim); color: var(--green); display: inline-flex; }
+        .signal-tag.overbought { background: var(--red-dim); color: var(--red); display: inline-flex; }
 
         .chart-placeholder {
-            height: 420px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            padding: 20px;
-            text-align: center;
+            height: 420px; display: flex; align-items: center; justify-content: center;
+            color: var(--text-muted); font-size: 0.85rem; padding: 20px; text-align: center;
+        }
+        .chart-loading {
+            height: 420px; display: none; align-items: center; justify-content: center;
+            color: var(--text-dim); font-size: 0.85rem;
+        }
+        .chart-loading.active { display: flex; }
+
+        #price-chart { height: 320px; }
+        #rsi-chart { height: 100px; border-top: 1px solid var(--border); }
+
+        .chart-container { display: none; }
+        .chart-container.active { display: block; }
+
+        .chart-legend {
+            display: flex; justify-content: center; gap: 20px;
+            padding: 10px 16px; font-size: 0.72rem; color: var(--text-dim);
+        }
+        .legend-dot {
+            display: inline-block; width: 8px; height: 8px;
+            border-radius: 50%; margin-right: 5px; vertical-align: middle;
         }
 
-        #tv-widget { height: 420px; display: none; }
-        #tv-widget.active { display: block; }
-
-        /* ═══════════ STATS ═══════════ */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--gap);
-            margin-bottom: var(--section-gap);
-        }
-
+        /* ═══ STATS ═══ */
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-bottom: var(--section-gap); }
         .stat-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 16px;
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: var(--radius); padding: 16px;
         }
-
         .stat-card.oversold { border-left: 3px solid var(--green); }
         .stat-card.overbought { border-left: 3px solid var(--red); }
-
-        .stat-card-head {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 14px;
-        }
-
+        .stat-card-head { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
         .stat-card-emoji { font-size: 1.2rem; }
-
-        .stat-card-label {
-            font-size: 0.78rem;
-            font-weight: 600;
-            color: #ffffff;
-            line-height: 1.3;
-        }
-
+        .stat-card-label { font-size: 0.78rem; font-weight: 600; color: #fff; line-height: 1.3; }
         .stat-card-sub { font-size: 0.68rem; color: var(--text-dim); }
-
-        .stat-row {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
-            text-align: center;
-        }
-
-        .stat-val {
-            font-family: var(--mono);
-            font-size: 1.15rem;
-            font-weight: 700;
-        }
-
+        .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; }
+        .stat-val { font-family: var(--mono); font-size: 1.15rem; font-weight: 700; }
         .stat-card.oversold .stat-val { color: var(--green); }
         .stat-card.overbought .stat-val { color: var(--red); }
-
         .stat-lbl { font-size: 0.65rem; color: var(--text-dim); margin-top: 2px; }
 
-        /* ═══════════ CURRENT SIGNALS ═══════════ */
+        /* ═══ CURRENT SIGNALS ═══ */
         .section-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 12px;
+            display: flex; align-items: center; gap: 8px;
         }
-
-        .badge {
-            font-size: 0.68rem;
-            padding: 3px 7px;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-
+        .badge { font-size: 0.68rem; padding: 3px 7px; border-radius: 4px; font-weight: 600; }
         .badge-g { background: var(--green-dim); color: var(--green); }
         .badge-r { background: var(--red-dim); color: var(--red); }
-
-        .current-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--gap);
-            margin-bottom: var(--section-gap);
-        }
-
-        .current-panel {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            overflow: hidden;
-        }
-
+        .current-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-bottom: var(--section-gap); }
+        .current-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
         .current-panel-head {
-            padding: 12px 14px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            color: #ffffff;
-            background: var(--surface2);
-            display: flex;
-            align-items: center;
-            gap: 6px;
+            padding: 12px 14px; font-size: 0.82rem; font-weight: 600; color: #fff;
+            background: var(--surface2); display: flex; align-items: center; gap: 6px;
         }
-
-        .current-scroll {
-            max-height: 340px;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-
+        .current-scroll { max-height: 340px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
         .current-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 14px;
-            border-bottom: 1px solid var(--border);
-            cursor: pointer;
-            -webkit-tap-highlight-color: transparent;
-            transition: background 0.12s;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 12px 14px; border-bottom: 1px solid var(--border);
+            cursor: pointer; -webkit-tap-highlight-color: transparent; transition: background 0.12s;
         }
-
         .current-item:active { background: var(--surface2); }
         .current-item:last-child { border-bottom: none; }
-
         .c-ticker { font-family: var(--mono); font-weight: 600; color: var(--cyan); font-size: 0.88rem; }
-
-        .c-rsi {
-            font-family: var(--mono);
-            font-size: 0.75rem;
-            padding: 3px 7px;
-            border-radius: 4px;
-            font-weight: 600;
-        }
-
+        .c-rsi { font-family: var(--mono); font-size: 0.75rem; padding: 3px 7px; border-radius: 4px; font-weight: 600; }
         .c-rsi.oversold { background: var(--green-dim); color: var(--green); }
         .c-rsi.overbought { background: var(--red-dim); color: var(--red); }
 
-        /* ═══════════ TABLES ═══════════ */
+        /* ═══ TABLES ═══ */
         .table-wrap {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            overflow: hidden;
-            margin-bottom: var(--section-gap);
+            background: var(--surface); border: 1px solid var(--border);
+            border-radius: var(--radius); overflow: hidden; margin-bottom: var(--section-gap);
         }
-
-        .table-scroll {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-
+        .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
         table { width: 100%; border-collapse: collapse; min-width: 520px; }
-
         th {
-            background: var(--surface2);
-            padding: 11px 12px;
-            text-align: left;
-            font-size: 0.7rem;
-            font-weight: 600;
-            color: var(--text-dim);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            white-space: nowrap;
+            background: var(--surface2); padding: 11px 12px; text-align: left;
+            font-size: 0.7rem; font-weight: 600; color: var(--text-dim);
+            text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap;
         }
-
-        td {
-            padding: 12px;
-            border-top: 1px solid var(--border);
-            font-size: 0.85rem;
-            white-space: nowrap;
-        }
-
+        td { padding: 12px; border-top: 1px solid var(--border); font-size: 0.85rem; white-space: nowrap; }
         tr.clickable { cursor: pointer; -webkit-tap-highlight-color: transparent; }
         tr.clickable:active { background: var(--surface2); }
-
         .t-rank { font-family: var(--mono); color: var(--text-dim); font-size: 0.78rem; }
         .t-ticker { font-family: var(--mono); font-weight: 600; color: var(--cyan); }
         .t-date { color: var(--text-dim); font-size: 0.78rem; }
         .t-price { font-family: var(--mono); }
-
-        .t-rsi {
-            font-family: var(--mono);
-            padding: 3px 7px;
-            border-radius: 4px;
-            font-size: 0.78rem;
-            font-weight: 600;
-        }
-
+        .t-rsi { font-family: var(--mono); padding: 3px 7px; border-radius: 4px; font-size: 0.78rem; font-weight: 600; }
         .t-rsi.oversold { background: var(--green-dim); color: var(--green); }
         .t-rsi.overbought { background: var(--red-dim); color: var(--red); }
-
         .t-ret { font-family: var(--mono); font-weight: 600; }
         .t-ret.pos { color: var(--green); }
         .t-ret.neg { color: var(--red); }
 
-        /* ═══════════ FOOTER ═══════════ */
+        /* ═══ FOOTER ═══ */
         .footer { text-align: center; padding: 8px 0 4px; }
         .footer-updated { font-size: 0.72rem; color: var(--text-muted); }
         .footer-disc { font-size: 0.66rem; color: #3f3f46; margin-top: 4px; }
 
-        /* ═══════════ DESKTOP ═══════════ */
+        /* ═══ DESKTOP ═══ */
         @media (min-width: 769px) {
             body { padding: 32px 24px; }
             .header h1 { font-size: 2.2rem; }
-            #tv-widget { height: 500px; }
-            .chart-placeholder { height: 500px; }
+            #price-chart { height: 380px; }
+            #rsi-chart { height: 120px; }
             .stat-val { font-size: 1.4rem; }
             .quick-btn { flex: none; width: 80px; }
             .quick-buttons { justify-content: flex-start; }
         }
 
-        /* ═══════════ SMALL MOBILE ═══════════ */
+        /* ═══ SMALL MOBILE ═══ */
         @media (max-width: 480px) {
             .stats-grid { grid-template-columns: 1fr; }
             .current-grid { grid-template-columns: 1fr; }
-            #tv-widget { height: 360px; }
-            .chart-placeholder { height: 360px; }
+            #price-chart { height: 260px; }
+            #rsi-chart { height: 80px; }
             .stat-val { font-size: 1.05rem; }
         }
 
-        /* ═══════════ FADE-IN ═══════════ */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(12px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .fade-up {
-            animation: fadeUp 0.4s ease forwards;
-            opacity: 0;
-        }
-
+        /* ═══ FADE ═══ */
+        @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+        .fade-up { animation: fadeUp 0.4s ease forwards; opacity: 0; }
         .fade-up:nth-child(1) { animation-delay: 0s; }
         .fade-up:nth-child(2) { animation-delay: 0.05s; }
         .fade-up:nth-child(3) { animation-delay: 0.1s; }
@@ -525,341 +287,455 @@
     </style>
 </head>
 <body>
-    <div class="container">
+<div class="container">
 
-        <!-- 1. HEADER -->
-        <div class="header fade-up">
-            <h1>RSI 스캐너</h1>
-            <div class="header-sub">S&P 500 + ETF 과매도/과매수 신호 분석 (3년 백테스트)</div>
+    <!-- HEADER -->
+    <div class="header fade-up">
+        <h1>RSI 스캐너</h1>
+        <div class="header-sub">S&P 500 + ETF 과매도/과매수 신호 분석 (3년 백테스트)</div>
+    </div>
+
+    <!-- GUIDE -->
+    <div class="guide fade-up" id="guide">
+        <div class="guide-toggle" onclick="toggleGuide()">
+            <div class="guide-toggle-title">📊 RSI 활용 가이드</div>
+            <span class="guide-arrow">▼</span>
         </div>
-
-        <!-- 2. GUIDE (collapsed) -->
-        <div class="guide fade-up" id="guide">
-            <div class="guide-toggle" onclick="toggleGuide()">
-                <div class="guide-toggle-title">📊 RSI 활용 가이드</div>
-                <span class="guide-arrow" id="guide-arrow">▼</span>
+        <div class="guide-body">
+            <div class="guide-inner">
+                <strong>RSI (Relative Strength Index)</strong>란?<br>
+                주가의 상승/하락 강도를 0~100 사이 수치로 나타낸 지표입니다.<br><br>
+                <strong class="g">📉 과매도 (RSI &lt; 20)</strong><br>
+                주가가 과도하게 하락한 상태. 역사적으로 이 시점에서 매수하면 <strong class="g">평균 수익률이 높음</strong>.<br>
+                "공포에 사라"는 전략의 근거가 됩니다.<br><br>
+                <strong class="r">📈 과매수 (RSI &gt; 80)</strong><br>
+                주가가 과도하게 상승한 상태. 역사적으로 이 시점에서 매수하면 <strong class="r">평균 수익률이 낮음</strong>.<br>
+                단기 차익실현 또는 신규 진입 대기가 유리할 수 있습니다.<br><br>
+                <strong>⚠️ 주의사항</strong><br>
+                이 데이터는 과거 실적이며 미래 수익을 보장하지 않습니다.
+                RSI 단독으로 투자 결정을 내리지 마세요.
+                개별 종목의 펀더멘털과 시장 상황을 함께 고려하세요.
             </div>
-            <div class="guide-body">
-                <div class="guide-inner">
-                    <strong>RSI (Relative Strength Index)</strong>란?<br>
-                    주가의 상승/하락 강도를 0~100 사이 수치로 나타낸 지표입니다.<br><br>
-
-                    <strong class="g">📉 과매도 (RSI &lt; 20)</strong><br>
-                    주가가 과도하게 하락한 상태. 역사적으로 이 시점에서 매수하면 <strong class="g">평균 수익률이 높음</strong>.<br>
-                    "공포에 사라"는 전략의 근거가 됩니다.<br><br>
-
-                    <strong class="r">📈 과매수 (RSI &gt; 80)</strong><br>
-                    주가가 과도하게 상승한 상태. 역사적으로 이 시점에서 매수하면 <strong class="r">평균 수익률이 낮음</strong>.<br>
-                    단기 차익실현 또는 신규 진입 대기가 유리할 수 있습니다.<br><br>
-
-                    <strong>⚠️ 주의사항</strong><br>
-                    이 데이터는 과거 실적이며 미래 수익을 보장하지 않습니다.
-                    RSI 단독으로 투자 결정을 내리지 마세요.
-                    개별 종목의 펀더멘털과 시장 상황을 함께 고려하세요.
-                </div>
-            </div>
-        </div>
-
-        <!-- 3. SEARCH + QUICK BUTTONS -->
-        <div class="search-section fade-up">
-            <div class="search-row">
-                <div class="search-input-wrap">
-                    <input type="text" id="search-input" class="search-input" placeholder="티커 입력 (예: AAPL)" autocomplete="off" autocapitalize="characters" spellcheck="false">
-                    <div id="autocomplete-list" class="autocomplete-list"></div>
-                </div>
-                <button class="search-btn" onclick="searchTicker()" aria-label="검색">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="quick-buttons">
-                <button class="quick-btn" onclick="loadChart('SPY')">SPY</button>
-                <button class="quick-btn" onclick="loadChart('QQQ')">QQQ</button>
-                <button class="quick-btn" onclick="loadChart('NVDA')">NVDA</button>
-                <button class="quick-btn" onclick="loadChart('TSLA')">TSLA</button>
-            </div>
-        </div>
-
-        <!-- 4. TRADINGVIEW CHART -->
-        <div class="chart-section fade-up">
-            <div class="chart-bar">
-                <div class="chart-title">📈 <span id="chart-label">차트</span></div>
-                <span id="chart-badge" class="chart-rsi-badge" style="display:none"></span>
-            </div>
-            <div id="chart-placeholder" class="chart-placeholder">
-                티커를 검색하거나 버튼을 클릭하세요
-            </div>
-            <div id="tv-widget"></div>
-        </div>
-
-        <!-- 5. STATS -->
-        <div class="stats-grid fade-up">
-            <div class="stat-card oversold">
-                <div class="stat-card-head">
-                    <span class="stat-card-emoji">📉</span>
-                    <div>
-                        <div class="stat-card-label">과매도 (RSI&lt;20)</div>
-                        <div class="stat-card-sub">3개월 후 수익률</div>
-                    </div>
-                </div>
-                <div class="stat-row">
-                    <div><div class="stat-val" id="os-count">-</div><div class="stat-lbl">총 시그널</div></div>
-                    <div><div class="stat-val" id="os-avg">-</div><div class="stat-lbl">평균 수익률</div></div>
-                    <div><div class="stat-val" id="os-wr">-</div><div class="stat-lbl">승률</div></div>
-                </div>
-            </div>
-            <div class="stat-card overbought">
-                <div class="stat-card-head">
-                    <span class="stat-card-emoji">📈</span>
-                    <div>
-                        <div class="stat-card-label">과매수 (RSI&gt;80)</div>
-                        <div class="stat-card-sub">3개월 후 수익률</div>
-                    </div>
-                </div>
-                <div class="stat-row">
-                    <div><div class="stat-val" id="ob-count">-</div><div class="stat-lbl">총 시그널</div></div>
-                    <div><div class="stat-val" id="ob-avg">-</div><div class="stat-lbl">평균 수익률</div></div>
-                    <div><div class="stat-val" id="ob-wr">-</div><div class="stat-lbl">승률</div></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 6. CURRENT SIGNALS -->
-        <div class="fade-up">
-            <div class="section-title">🔔 현재 RSI 신호</div>
-            <div class="current-grid">
-                <div class="current-panel">
-                    <div class="current-panel-head"><span class="badge badge-g">RSI&lt;20</span> 과매도</div>
-                    <div class="current-scroll" id="cur-os">
-                        <div class="current-item" style="cursor:default;color:var(--text-dim);justify-content:center">로딩 중...</div>
-                    </div>
-                </div>
-                <div class="current-panel">
-                    <div class="current-panel-head"><span class="badge badge-r">RSI&gt;80</span> 과매수</div>
-                    <div class="current-scroll" id="cur-ob">
-                        <div class="current-item" style="cursor:default;color:var(--text-dim);justify-content:center">로딩 중...</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 7. TOP OVERSOLD -->
-        <div class="fade-up">
-            <div class="section-title">🚀 Top 10 과매도 반등 <span class="badge badge-g">Best Bounces</span></div>
-            <div class="table-wrap">
-                <div class="table-scroll">
-                    <table>
-                        <thead><tr><th>#</th><th>티커</th><th>날짜</th><th>가격</th><th>RSI</th><th>3개월 수익률</th></tr></thead>
-                        <tbody id="tb-os"><tr><td colspan="6" style="text-align:center;color:var(--text-dim)">로딩 중...</td></tr></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- 8. TOP OVERBOUGHT -->
-        <div class="fade-up">
-            <div class="section-title">💥 Top 10 과매수 하락 <span class="badge badge-r">Worst Crashes</span></div>
-            <div class="table-wrap">
-                <div class="table-scroll">
-                    <table>
-                        <thead><tr><th>#</th><th>티커</th><th>날짜</th><th>가격</th><th>RSI</th><th>3개월 수익률</th></tr></thead>
-                        <tbody id="tb-ob"><tr><td colspan="6" style="text-align:center;color:var(--text-dim)">로딩 중...</td></tr></tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <!-- FOOTER -->
-        <div class="footer">
-            <div class="footer-updated" id="last-updated"></div>
-            <div class="footer-disc">* S&P 500 + ETF 대상, 3년 일봉 데이터 기준. 투자 권유가 아닙니다.</div>
         </div>
     </div>
 
-    <!-- TradingView -->
-    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-    <script>
-        // If inside iframe → hide overflow (parent scrolls). Standalone → normal scroll.
-        if (window.self !== window.top) {
-            document.documentElement.classList.add('in-iframe');
+    <!-- SEARCH -->
+    <div class="search-section fade-up">
+        <div class="search-row">
+            <div class="search-input-wrap">
+                <input type="text" id="search-input" class="search-input" placeholder="티커 입력 (예: AAPL)" autocomplete="off" autocapitalize="characters" spellcheck="false">
+                <div id="autocomplete-list" class="autocomplete-list"></div>
+            </div>
+            <button class="search-btn" onclick="searchTicker()" aria-label="검색">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="quick-buttons">
+            <button class="quick-btn" onclick="loadChart('SPY')">SPY</button>
+            <button class="quick-btn" onclick="loadChart('QQQ')">QQQ</button>
+            <button class="quick-btn" onclick="loadChart('NVDA')">NVDA</button>
+            <button class="quick-btn" onclick="loadChart('TSLA')">TSLA</button>
+        </div>
+    </div>
+
+    <!-- CHART -->
+    <div class="chart-section fade-up">
+        <div class="chart-bar">
+            <div class="chart-title">📈 <span id="chart-label">차트</span></div>
+            <span id="signal-tag" class="signal-tag"></span>
+        </div>
+        <div id="chart-placeholder" class="chart-placeholder">티커를 검색하거나 버튼을 클릭하세요</div>
+        <div id="chart-loading" class="chart-loading">차트 로딩 중...</div>
+        <div id="chart-wrap" class="chart-container">
+            <div id="price-chart"></div>
+            <div id="rsi-chart"></div>
+            <div class="chart-legend">
+                <span><span class="legend-dot" style="background:var(--green)"></span>과매도 신호</span>
+                <span><span class="legend-dot" style="background:var(--red)"></span>과매수 신호</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats-grid fade-up">
+        <div class="stat-card oversold">
+            <div class="stat-card-head">
+                <span class="stat-card-emoji">📉</span>
+                <div><div class="stat-card-label">과매도 (RSI&lt;20)</div><div class="stat-card-sub">3개월 후 수익률</div></div>
+            </div>
+            <div class="stat-row">
+                <div><div class="stat-val" id="os-count">-</div><div class="stat-lbl">총 시그널</div></div>
+                <div><div class="stat-val" id="os-avg">-</div><div class="stat-lbl">평균 수익률</div></div>
+                <div><div class="stat-val" id="os-wr">-</div><div class="stat-lbl">승률</div></div>
+            </div>
+        </div>
+        <div class="stat-card overbought">
+            <div class="stat-card-head">
+                <span class="stat-card-emoji">📈</span>
+                <div><div class="stat-card-label">과매수 (RSI&gt;80)</div><div class="stat-card-sub">3개월 후 수익률</div></div>
+            </div>
+            <div class="stat-row">
+                <div><div class="stat-val" id="ob-count">-</div><div class="stat-lbl">총 시그널</div></div>
+                <div><div class="stat-val" id="ob-avg">-</div><div class="stat-lbl">평균 수익률</div></div>
+                <div><div class="stat-val" id="ob-wr">-</div><div class="stat-lbl">승률</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CURRENT SIGNALS -->
+    <div class="fade-up">
+        <div class="section-title">🔔 현재 RSI 신호</div>
+        <div class="current-grid">
+            <div class="current-panel">
+                <div class="current-panel-head"><span class="badge badge-g">RSI&lt;20</span> 과매도</div>
+                <div class="current-scroll" id="cur-os">
+                    <div class="current-item" style="cursor:default;color:var(--text-dim);justify-content:center">로딩 중...</div>
+                </div>
+            </div>
+            <div class="current-panel">
+                <div class="current-panel-head"><span class="badge badge-r">RSI&gt;80</span> 과매수</div>
+                <div class="current-scroll" id="cur-ob">
+                    <div class="current-item" style="cursor:default;color:var(--text-dim);justify-content:center">로딩 중...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOP OVERSOLD -->
+    <div class="fade-up">
+        <div class="section-title">🚀 Top 10 과매도 반등 <span class="badge badge-g">Best Bounces</span></div>
+        <div class="table-wrap"><div class="table-scroll">
+            <table>
+                <thead><tr><th>#</th><th>티커</th><th>날짜</th><th>가격</th><th>RSI</th><th>3개월 수익률</th></tr></thead>
+                <tbody id="tb-os"><tr><td colspan="6" style="text-align:center;color:var(--text-dim)">로딩 중...</td></tr></tbody>
+            </table>
+        </div></div>
+    </div>
+
+    <!-- TOP OVERBOUGHT -->
+    <div class="fade-up">
+        <div class="section-title">💥 Top 10 과매수 하락 <span class="badge badge-r">Worst Crashes</span></div>
+        <div class="table-wrap"><div class="table-scroll">
+            <table>
+                <thead><tr><th>#</th><th>티커</th><th>날짜</th><th>가격</th><th>RSI</th><th>3개월 수익률</th></tr></thead>
+                <tbody id="tb-ob"><tr><td colspan="6" style="text-align:center;color:var(--text-dim)">로딩 중...</td></tr></tbody>
+            </table>
+        </div></div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-updated" id="last-updated"></div>
+        <div class="footer-disc">* S&P 500 + ETF 대상, 3년 일봉 데이터 기준. 투자 권유가 아닙니다.</div>
+    </div>
+</div>
+
+<script>
+    // iframe detection
+    if (window.self !== window.top) document.documentElement.classList.add('in-iframe');
+    else document.documentElement.classList.add('standalone');
+
+    /* ═══ State ═══ */
+    let availableTickers = [];
+    let rsiLookup = {};
+    let selectedIdx = -1;
+    let priceChartObj = null;
+    let rsiChartObj = null;
+    let candleSeries = null;
+    let rsiSeries = null;
+    let currentTicker = null;
+
+    const $ = id => document.getElementById(id);
+    const fmtRet = v => v == null ? '-' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
+
+    function toggleGuide() { $('guide').classList.toggle('open'); }
+
+    /* ═══ Search ═══ */
+    const sInput = $('search-input');
+    const acList = $('autocomplete-list');
+
+    sInput.addEventListener('input', function() {
+        const q = this.value.toUpperCase().trim();
+        selectedIdx = -1;
+        if (!q) { acList.classList.remove('show'); return; }
+        const m = availableTickers.filter(t => t.startsWith(q)).slice(0, 6);
+        if (!m.length) { acList.classList.remove('show'); return; }
+        acList.innerHTML = m.map((t, i) =>
+            `<div class="autocomplete-item" data-i="${i}" onclick="pick('${t}')">${t}</div>`
+        ).join('');
+        acList.classList.add('show');
+    });
+
+    sInput.addEventListener('keydown', function(e) {
+        const items = acList.querySelectorAll('.autocomplete-item');
+        if (e.key === 'ArrowDown') { e.preventDefault(); selectedIdx = Math.min(selectedIdx + 1, items.length - 1); hilite(items); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); selectedIdx = Math.max(selectedIdx - 1, -1); hilite(items); }
+        else if (e.key === 'Enter') { e.preventDefault(); selectedIdx >= 0 && items[selectedIdx] ? pick(items[selectedIdx].textContent) : searchTicker(); }
+        else if (e.key === 'Escape') acList.classList.remove('show');
+    });
+
+    function hilite(items) { items.forEach((el, i) => el.classList.toggle('selected', i === selectedIdx)); }
+    function pick(t) { sInput.value = t; acList.classList.remove('show'); loadChart(t); }
+    function searchTicker() { const t = sInput.value.toUpperCase().trim(); if (t) loadChart(t); acList.classList.remove('show'); }
+    document.addEventListener('click', e => {
+        if (!sInput.contains(e.target) && !acList.contains(e.target)) acList.classList.remove('show');
+    });
+
+    function setActive(ticker) {
+        document.querySelectorAll('.quick-btn').forEach(b => b.classList.toggle('active', b.textContent === ticker));
+    }
+
+    /* ═══ Chart ═══ */
+    function destroyCharts() {
+        if (priceChartObj) { priceChartObj.remove(); priceChartObj = null; candleSeries = null; }
+        if (rsiChartObj) { rsiChartObj.remove(); rsiChartObj = null; rsiSeries = null; }
+        $('price-chart').innerHTML = '';
+        $('rsi-chart').innerHTML = '';
+    }
+
+    async function loadChart(ticker, signalDate, signalType, signalRsi, signalReturn) {
+        currentTicker = ticker;
+        setActive(ticker);
+        sInput.value = ticker;
+
+        // UI state
+        $('chart-placeholder').style.display = 'none';
+        $('chart-wrap').classList.remove('active');
+        $('chart-loading').classList.add('active');
+        $('chart-label').innerHTML = `<span class="chart-ticker">${ticker}</span> 차트`;
+
+        // Signal tag
+        const tag = $('signal-tag');
+        if (signalDate && signalType) {
+            tag.className = 'signal-tag ' + signalType;
+            let tagText = `${signalDate} · RSI ${signalRsi}`;
+            if (signalReturn != null) tagText += ` · ${fmtRet(signalReturn)}`;
+            tag.textContent = tagText;
         } else {
-            document.documentElement.classList.add('standalone');
-        }
-    </script>
-
-    <script>
-        let availableTickers = [];
-        let rsiLookup = {};
-        let selectedIdx = -1;
-
-        function toggleGuide() { document.getElementById('guide').classList.toggle('open'); }
-
-        const $ = id => document.getElementById(id);
-        const fmtRet = v => v == null ? '-' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
-
-        /* ── Search ── */
-        const sInput = $('search-input');
-        const acList = $('autocomplete-list');
-
-        sInput.addEventListener('input', function() {
-            const q = this.value.toUpperCase().trim();
-            selectedIdx = -1;
-            if (!q) { acList.classList.remove('show'); return; }
-            const m = availableTickers.filter(t => t.startsWith(q)).slice(0, 6);
-            if (!m.length) { acList.classList.remove('show'); return; }
-            acList.innerHTML = m.map((t, i) =>
-                `<div class="autocomplete-item" data-i="${i}" onclick="pick('${t}')">${t}</div>`
-            ).join('');
-            acList.classList.add('show');
-        });
-
-        sInput.addEventListener('keydown', function(e) {
-            const items = acList.querySelectorAll('.autocomplete-item');
-            if (e.key === 'ArrowDown') { e.preventDefault(); selectedIdx = Math.min(selectedIdx + 1, items.length - 1); hilite(items); }
-            else if (e.key === 'ArrowUp') { e.preventDefault(); selectedIdx = Math.max(selectedIdx - 1, -1); hilite(items); }
-            else if (e.key === 'Enter') { e.preventDefault(); selectedIdx >= 0 && items[selectedIdx] ? pick(items[selectedIdx].textContent) : searchTicker(); }
-            else if (e.key === 'Escape') acList.classList.remove('show');
-        });
-
-        function hilite(items) { items.forEach((el, i) => el.classList.toggle('selected', i === selectedIdx)); }
-        function pick(t) { sInput.value = t; acList.classList.remove('show'); loadChart(t); }
-        function searchTicker() { const t = sInput.value.toUpperCase().trim(); if (t) loadChart(t); acList.classList.remove('show'); }
-
-        document.addEventListener('click', e => {
-            if (!sInput.contains(e.target) && !acList.contains(e.target)) acList.classList.remove('show');
-        });
-
-        function setActive(ticker) {
-            document.querySelectorAll('.quick-btn').forEach(b => b.classList.toggle('active', b.textContent === ticker));
+            tag.className = 'signal-tag';
+            tag.style.display = 'none';
         }
 
-        /* ── TradingView ── */
-        function loadChart(ticker) {
-            setActive(ticker);
-            sInput.value = ticker;
+        try {
+            const res = await fetch('charts/' + ticker + '.json');
+            if (!res.ok) throw new Error('차트 데이터 없음');
+            const data = await res.json();
 
-            $('chart-placeholder').style.display = 'none';
-            const w = $('tv-widget');
-            w.innerHTML = '';
-            w.classList.add('active');
+            destroyCharts();
+            $('chart-loading').classList.remove('active');
+            $('chart-wrap').classList.add('active');
 
-            $('chart-label').innerHTML = `<span class="chart-ticker">${ticker}</span> 차트`;
+            const priceEl = $('price-chart');
+            const rsiEl = $('rsi-chart');
 
-            const badge = $('chart-badge');
-            const rsi = rsiLookup[ticker];
-            if (rsi != null) {
-                badge.style.display = '';
-                badge.textContent = 'RSI ' + rsi;
-                badge.className = 'chart-rsi-badge ' + (rsi < 20 ? 'badge-oversold' : rsi > 80 ? 'badge-overbought' : 'badge-neutral');
-            } else {
-                badge.style.display = 'none';
-            }
-
-            new TradingView.widget({
-                autosize: true,
-                symbol: ticker,
-                interval: 'D',
-                timezone: 'Asia/Seoul',
-                theme: 'dark',
-                style: '1',
-                locale: 'kr',
-                backgroundColor: 'rgba(0,0,0,0)',
-                gridColor: 'rgba(26,26,26,0.6)',
-                hide_top_toolbar: false,
-                hide_legend: false,
-                allow_symbol_change: true,
-                save_image: false,
-                studies: ['RSI@tv-basicstudies'],
-                container_id: 'tv-widget',
-                hide_volume: false,
-                support_host: 'https://www.tradingview.com'
+            // ── Price Chart ──
+            priceChartObj = LightweightCharts.createChart(priceEl, {
+                layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#71717a', fontFamily: "'JetBrains Mono', monospace", fontSize: 11 },
+                grid: { vertLines: { color: '#1a1a1a' }, horzLines: { color: '#1a1a1a' } },
+                crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+                rightPriceScale: { borderColor: '#1a1a1a' },
+                timeScale: { borderColor: '#1a1a1a', timeVisible: false },
+                handleScroll: { vertTouchDrag: false },
             });
 
-            if (window.innerWidth < 769) {
-                setTimeout(() => {
-                    document.querySelector('.chart-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 200);
+            candleSeries = priceChartObj.addLineSeries({
+                color: '#22d3ee', lineWidth: 2,
+                crosshairMarkerRadius: 4,
+                crosshairMarkerBorderColor: '#22d3ee',
+                crosshairMarkerBackgroundColor: '#000',
+                priceFormat: { type: 'price', precision: 2, minMove: 0.01 },
+            });
+
+            const ohlcData = data.ohlc.map(d => ({
+                time: d.time, value: d.close
+            }));
+            candleSeries.setData(ohlcData);
+
+            // ── Markers: all signals from chart data + highlight the clicked one ──
+            const markers = [];
+            if (data.signals && data.signals.length > 0) {
+                data.signals.forEach(sig => {
+                    const isHighlighted = signalDate && sig.date === signalDate;
+                    const isOversold = sig.type === 'oversold';
+                    markers.push({
+                        time: sig.date,
+                        position: isOversold ? 'belowBar' : 'aboveBar',
+                        color: isOversold ? '#22c55e' : '#ef4444',
+                        shape: isOversold ? 'arrowUp' : 'arrowDown',
+                        text: isHighlighted ? ('RSI ' + sig.rsi) : '',
+                        size: isHighlighted ? 2 : 0.5,
+                    });
+                });
             }
-        }
 
-        /* ── Render ── */
-        function renderTable(id, data, isOS) {
-            const tb = $(id);
-            if (!data?.length) { tb.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-dim)">데이터 없음</td></tr>'; return; }
-            tb.innerHTML = data.map((d, i) =>
-                `<tr class="clickable" onclick="loadChart('${d.ticker}')">
-                    <td class="t-rank">${i+1}</td>
-                    <td class="t-ticker">${d.ticker}</td>
-                    <td class="t-date">${d.date}</td>
-                    <td class="t-price">$${d.price.toLocaleString()}</td>
-                    <td><span class="t-rsi ${isOS?'oversold':'overbought'}">${d.rsi}</span></td>
-                    <td class="t-ret ${d.forward_return>=0?'pos':'neg'}">${fmtRet(d.forward_return)}</td>
-                </tr>`
-            ).join('');
-        }
+            // Sort markers by time (required by Lightweight Charts)
+            markers.sort((a, b) => a.time < b.time ? -1 : a.time > b.time ? 1 : 0);
+            candleSeries.setMarkers(markers);
 
-        function renderCurrent(id, data, isOS) {
-            const el = $(id);
-            if (!data?.length) { el.innerHTML = '<div class="current-item" style="cursor:default;color:var(--text-dim);justify-content:center">신호 없음</div>'; return; }
-            el.innerHTML = data.slice(0, 10).map(d =>
-                `<div class="current-item" onclick="loadChart('${d.ticker}')">
-                    <span class="c-ticker">${d.ticker}</span>
-                    <span class="c-rsi ${isOS?'oversold':'overbought'}">RSI ${d.rsi}</span>
-                </div>`
-            ).join('');
-        }
-
-        /* ── Init ── */
-        async function init() {
-            try {
-                const res = await fetch('data.json');
-                if (!res.ok) throw new Error('data.json 로드 실패');
-                const data = await res.json();
-
-                availableTickers = data.availableTickers || [];
-                (data.currentOversold || []).forEach(s => rsiLookup[s.ticker] = s.rsi);
-                (data.currentOverbought || []).forEach(s => rsiLookup[s.ticker] = s.rsi);
-
-                if (data.oversoldStats) {
-                    $('os-count').textContent = data.oversoldStats.count.toLocaleString();
-                    $('os-avg').textContent = '+' + data.oversoldStats.avg_return + '%';
-                    $('os-wr').textContent = data.oversoldStats.win_rate + '%';
+            // If we have a signal date, scroll to center it
+            if (signalDate) {
+                priceChartObj.timeScale().scrollToPosition(-Math.max(0, ohlcData.findIndex(d => d.time === signalDate) - ohlcData.length + 30), false);
+                // Better approach: set visible range around signal
+                const sigIdx = ohlcData.findIndex(d => d.time === signalDate);
+                if (sigIdx >= 0) {
+                    const from = Math.max(0, sigIdx - 40);
+                    const to = Math.min(ohlcData.length - 1, sigIdx + 40);
+                    priceChartObj.timeScale().setVisibleRange({
+                        from: ohlcData[from].time,
+                        to: ohlcData[to].time
+                    });
                 }
-                if (data.overboughtStats) {
-                    $('ob-count').textContent = data.overboughtStats.count.toLocaleString();
-                    $('ob-avg').textContent = data.overboughtStats.avg_return + '%';
-                    $('ob-wr').textContent = data.overboughtStats.win_rate + '%';
-                }
-
-                renderTable('tb-os', data.topOversold, true);
-                renderTable('tb-ob', data.topOverbought, false);
-                renderCurrent('cur-os', data.currentOversold, true);
-                renderCurrent('cur-ob', data.currentOverbought, false);
-
-                if (data.lastUpdated) {
-                    const d = new Date(data.lastUpdated);
-                    $('last-updated').textContent =
-                        `마지막 업데이트: ${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')} UTC`;
-                }
-            } catch (e) {
-                console.error(e);
-                $('tb-os').innerHTML = `<tr><td colspan="6" style="text-align:center;color:var(--red)">${e.message}</td></tr>`;
+            } else {
+                priceChartObj.timeScale().fitContent();
             }
+
+            // ── RSI Chart ──
+            rsiChartObj = LightweightCharts.createChart(rsiEl, {
+                layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#71717a', fontFamily: "'JetBrains Mono', monospace", fontSize: 10 },
+                grid: { vertLines: { color: '#1a1a1a' }, horzLines: { color: '#1a1a1a' } },
+                crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+                rightPriceScale: { borderColor: '#1a1a1a', scaleMargins: { top: 0.05, bottom: 0.05 } },
+                timeScale: { borderColor: '#1a1a1a', timeVisible: false, visible: false },
+                handleScroll: { vertTouchDrag: false },
+            });
+
+            rsiSeries = rsiChartObj.addLineSeries({
+                color: '#a855f7', lineWidth: 2,
+                priceFormat: { type: 'custom', formatter: v => v.toFixed(0) },
+            });
+
+            const rsiData = data.ohlc
+                .filter(d => d.rsi != null)
+                .map(d => ({ time: d.time, value: d.rsi }));
+            rsiSeries.setData(rsiData);
+
+            // RSI threshold lines
+            const oversoldLine = rsiChartObj.addLineSeries({ color: '#22c55e44', lineWidth: 1, lineStyle: 2, crosshairMarkerVisible: false, priceLineVisible: false, lastValueVisible: false });
+            const overboughtLine = rsiChartObj.addLineSeries({ color: '#ef444444', lineWidth: 1, lineStyle: 2, crosshairMarkerVisible: false, priceLineVisible: false, lastValueVisible: false });
+            if (rsiData.length > 0) {
+                const first = rsiData[0].time;
+                const last = rsiData[rsiData.length - 1].time;
+                oversoldLine.setData([{ time: first, value: 20 }, { time: last, value: 20 }]);
+                overboughtLine.setData([{ time: first, value: 80 }, { time: last, value: 80 }]);
+            }
+
+            // Sync time scales
+            priceChartObj.timeScale().subscribeVisibleLogicalRangeChange(range => {
+                if (range) rsiChartObj.timeScale().setVisibleLogicalRange(range);
+            });
+            rsiChartObj.timeScale().subscribeVisibleLogicalRangeChange(range => {
+                if (range) priceChartObj.timeScale().setVisibleLogicalRange(range);
+            });
+
+            // Sync crosshairs
+            priceChartObj.subscribeCrosshairMove(param => {
+                if (param.time) rsiChartObj.setCrosshairPosition(undefined, param.time, rsiSeries);
+                else rsiChartObj.clearCrosshairPosition();
+            });
+            rsiChartObj.subscribeCrosshairMove(param => {
+                if (param.time) priceChartObj.setCrosshairPosition(undefined, param.time, candleSeries);
+                else priceChartObj.clearCrosshairPosition();
+            });
+
+            // Resize handler
+            const resizeObserver = new ResizeObserver(() => {
+                priceChartObj.applyOptions({ width: priceEl.clientWidth, height: priceEl.clientHeight });
+                rsiChartObj.applyOptions({ width: rsiEl.clientWidth, height: rsiEl.clientHeight });
+            });
+            resizeObserver.observe(priceEl);
+            resizeObserver.observe(rsiEl);
+
+        } catch (err) {
+            console.error(err);
+            $('chart-loading').classList.remove('active');
+            $('chart-placeholder').style.display = 'flex';
+            $('chart-placeholder').textContent = ticker + ' 차트를 불러올 수 없습니다';
         }
 
-        init();
-
-        /* ── Auto-resize: tell parent (imweb iframe) our height ── */
-        function reportHeight() {
-            const h = document.documentElement.scrollHeight;
-            window.parent.postMessage({ type: 'rsi-resize', height: h }, '*');
+        // Scroll on mobile
+        if (window.innerWidth < 769) {
+            setTimeout(() => document.querySelector('.chart-section').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
         }
-        // Report on load, resize, and periodically (for dynamic content like TradingView)
-        window.addEventListener('load', () => setTimeout(reportHeight, 500));
-        window.addEventListener('resize', reportHeight);
-        new MutationObserver(reportHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
-        setInterval(reportHeight, 1000);
-    </script>
+    }
+
+    /* ═══ Render ═══ */
+    function renderTable(id, data, isOS) {
+        const tb = $(id);
+        if (!data?.length) { tb.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-dim)">데이터 없음</td></tr>'; return; }
+        tb.innerHTML = data.map((d, i) =>
+            `<tr class="clickable" onclick="loadChart('${d.ticker}','${d.date}','${d.type}',${d.rsi},${d.forward_return})">
+                <td class="t-rank">${i+1}</td>
+                <td class="t-ticker">${d.ticker}</td>
+                <td class="t-date">${d.date}</td>
+                <td class="t-price">$${d.price.toLocaleString()}</td>
+                <td><span class="t-rsi ${isOS?'oversold':'overbought'}">${d.rsi}</span></td>
+                <td class="t-ret ${d.forward_return>=0?'pos':'neg'}">${fmtRet(d.forward_return)}</td>
+            </tr>`
+        ).join('');
+    }
+
+    function renderCurrent(id, data, isOS) {
+        const el = $(id);
+        if (!data?.length) { el.innerHTML = '<div class="current-item" style="cursor:default;color:var(--text-dim);justify-content:center">신호 없음</div>'; return; }
+        el.innerHTML = data.slice(0, 10).map(d =>
+            `<div class="current-item" onclick="loadChart('${d.ticker}')">
+                <span class="c-ticker">${d.ticker}</span>
+                <span class="c-rsi ${isOS?'oversold':'overbought'}">RSI ${d.rsi}</span>
+            </div>`
+        ).join('');
+    }
+
+    /* ═══ Init ═══ */
+    async function init() {
+        try {
+            const res = await fetch('data.json');
+            if (!res.ok) throw new Error('data.json 로드 실패');
+            const data = await res.json();
+
+            availableTickers = data.availableTickers || [];
+            (data.currentOversold || []).forEach(s => rsiLookup[s.ticker] = s.rsi);
+            (data.currentOverbought || []).forEach(s => rsiLookup[s.ticker] = s.rsi);
+
+            if (data.oversoldStats) {
+                $('os-count').textContent = data.oversoldStats.count.toLocaleString();
+                $('os-avg').textContent = '+' + data.oversoldStats.avg_return + '%';
+                $('os-wr').textContent = data.oversoldStats.win_rate + '%';
+            }
+            if (data.overboughtStats) {
+                $('ob-count').textContent = data.overboughtStats.count.toLocaleString();
+                $('ob-avg').textContent = data.overboughtStats.avg_return + '%';
+                $('ob-wr').textContent = data.overboughtStats.win_rate + '%';
+            }
+
+            renderTable('tb-os', data.topOversold, true);
+            renderTable('tb-ob', data.topOverbought, false);
+            renderCurrent('cur-os', data.currentOversold, true);
+            renderCurrent('cur-ob', data.currentOverbought, false);
+
+            if (data.lastUpdated) {
+                const d = new Date(data.lastUpdated);
+                $('last-updated').textContent =
+                    `마지막 업데이트: ${d.getFullYear()}년 ${d.getMonth()+1}월 ${d.getDate()}일 ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')} UTC`;
+            }
+        } catch (e) {
+            console.error(e);
+            $('tb-os').innerHTML = `<tr><td colspan="6" style="text-align:center;color:var(--red)">${e.message}</td></tr>`;
+        }
+    }
+
+    init();
+
+    /* ═══ iframe auto-resize ═══ */
+    function reportHeight() {
+        const h = document.documentElement.scrollHeight;
+        window.parent.postMessage({ type: 'rsi-resize', height: h }, '*');
+    }
+    window.addEventListener('load', () => setTimeout(reportHeight, 500));
+    window.addEventListener('resize', reportHeight);
+    new MutationObserver(reportHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+    setInterval(reportHeight, 1000);
+</script>
 </body>
 </html>
