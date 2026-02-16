@@ -54,36 +54,12 @@
 
         .container { max-width: 960px; margin: 0 auto; }
 
-        /* ═══ HEADER ═══ */
+        /* HEADER */
         .header { text-align: center; margin-bottom: 8px; }
         .header h1 { font-size: 1.75rem; font-weight: 700; color: #ffffff; letter-spacing: -0.02em; }
         .header-sub { font-size: 0.78rem; color: var(--text-dim); margin-top: 4px; }
 
-        /* ═══ GUIDE ═══ */
-        .guide {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            margin-bottom: var(--section-gap);
-            overflow: hidden;
-        }
-        .guide-toggle {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 14px 16px; cursor: pointer;
-            -webkit-tap-highlight-color: transparent; user-select: none;
-        }
-        .guide-toggle:active { background: var(--surface2); }
-        .guide-toggle-title { font-size: 0.85rem; font-weight: 600; color: #fff; display: flex; align-items: center; gap: 6px; }
-        .guide-arrow { font-size: 0.72rem; color: var(--text-dim); transition: transform 0.25s ease; }
-        .guide.open .guide-arrow { transform: rotate(180deg); }
-        .guide-body { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-        .guide.open .guide-body { max-height: 600px; }
-        .guide-inner { padding: 0 16px 16px; font-size: 0.82rem; color: #a1a1aa; line-height: 1.75; }
-        .guide-inner strong { color: #fff; }
-        .guide-inner .g { color: var(--green); }
-        .guide-inner .r { color: var(--red); }
-
-        /* ═══ SEARCH ═══ */
+        /* SEARCH */
         .search-section {
             background: var(--surface); border: 1px solid var(--border);
             border-radius: var(--radius); padding: 16px; margin-bottom: var(--section-gap);
@@ -133,7 +109,7 @@
         .quick-btn:active { transform: scale(0.96); }
         .quick-btn.active { background: var(--green); border-color: var(--green); color: #000; }
 
-        /* ═══ CHART ═══ */
+        /* CHART */
         .chart-section {
             background: var(--surface); border: 1px solid var(--border);
             border-radius: var(--radius); overflow: hidden; margin-bottom: var(--section-gap);
@@ -177,7 +153,7 @@
             border-radius: 50%; margin-right: 5px; vertical-align: middle;
         }
 
-        /* ═══ STATS ═══ */
+        /* STATS */
         .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--gap); margin-bottom: var(--section-gap); }
         .stat-card {
             background: var(--surface); border: 1px solid var(--border);
@@ -186,7 +162,6 @@
         .stat-card.oversold { border-left: 3px solid var(--green); }
         .stat-card.overbought { border-left: 3px solid var(--red); }
         .stat-card-head { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
-        .stat-card-emoji { font-size: 1.2rem; }
         .stat-card-label { font-size: 0.78rem; font-weight: 600; color: #fff; line-height: 1.3; }
         .stat-card-sub { font-size: 0.68rem; color: var(--text-dim); }
         .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; text-align: center; }
@@ -195,10 +170,10 @@
         .stat-card.overbought .stat-val { color: var(--red); }
         .stat-lbl { font-size: 0.65rem; color: var(--text-dim); margin-top: 2px; }
 
-        /* ═══ CURRENT SIGNALS ═══ */
+        /* CURRENT SIGNALS */
         .section-title {
             font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 12px;
-            display: flex; align-items: center; gap: 8px;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
         }
         .badge { font-size: 0.68rem; padding: 3px 7px; border-radius: 4px; font-weight: 600; }
         .badge-g { background: var(--green-dim); color: var(--green); }
@@ -209,7 +184,7 @@
             padding: 12px 14px; font-size: 0.82rem; font-weight: 600; color: #fff;
             background: var(--surface2); display: flex; align-items: center; gap: 6px;
         }
-        .current-scroll { max-height: 340px; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+        .current-scroll { overflow-y: visible; }
         .current-item {
             display: flex; justify-content: space-between; align-items: center;
             padding: 12px 14px; border-bottom: 1px solid var(--border);
@@ -222,7 +197,7 @@
         .c-rsi.oversold { background: var(--green-dim); color: var(--green); }
         .c-rsi.overbought { background: var(--red-dim); color: var(--red); }
 
-        /* ═══ TABLES ═══ */
+        /* TABLES */
         .table-wrap {
             background: var(--surface); border: 1px solid var(--border);
             border-radius: var(--radius); overflow: hidden; margin-bottom: var(--section-gap);
@@ -248,12 +223,12 @@
         .t-ret.pos { color: var(--green); }
         .t-ret.neg { color: var(--red); }
 
-        /* ═══ FOOTER ═══ */
+        /* FOOTER */
         .footer { text-align: center; padding: 8px 0 4px; }
         .footer-updated { font-size: 0.72rem; color: var(--text-muted); }
         .footer-disc { font-size: 0.66rem; color: #3f3f46; margin-top: 4px; }
 
-        /* ═══ DESKTOP ═══ */
+        /* DESKTOP */
         @media (min-width: 769px) {
             body { padding: 32px 24px; }
             .header h1 { font-size: 2.2rem; }
@@ -264,7 +239,7 @@
             .quick-buttons { justify-content: flex-start; }
         }
 
-        /* ═══ SMALL MOBILE ═══ */
+        /* SMALL MOBILE */
         @media (max-width: 480px) {
             .stats-grid { grid-template-columns: 1fr; }
             .current-grid { grid-template-columns: 1fr; }
@@ -273,7 +248,7 @@
             .stat-val { font-size: 1.05rem; }
         }
 
-        /* ═══ FADE ═══ */
+        /* FADE */
         @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
         .fade-up { animation: fadeUp 0.4s ease forwards; opacity: 0; }
         .fade-up:nth-child(1) { animation-delay: 0s; }
@@ -283,7 +258,6 @@
         .fade-up:nth-child(5) { animation-delay: 0.2s; }
         .fade-up:nth-child(6) { animation-delay: 0.25s; }
         .fade-up:nth-child(7) { animation-delay: 0.3s; }
-        .fade-up:nth-child(8) { animation-delay: 0.35s; }
     </style>
 </head>
 <body>
@@ -293,30 +267,6 @@
     <div class="header fade-up">
         <h1>RSI 스캐너</h1>
         <div class="header-sub">S&P 500 + ETF 과매도/과매수 신호 분석 (3년 백테스트)</div>
-    </div>
-
-    <!-- GUIDE -->
-    <div class="guide fade-up" id="guide">
-        <div class="guide-toggle" onclick="toggleGuide()">
-            <div class="guide-toggle-title">📊 RSI 활용 가이드</div>
-            <span class="guide-arrow">▼</span>
-        </div>
-        <div class="guide-body">
-            <div class="guide-inner">
-                <strong>RSI (Relative Strength Index)</strong>란?<br>
-                주가의 상승/하락 강도를 0~100 사이 수치로 나타낸 지표입니다.<br><br>
-                <strong class="g">📉 과매도 (RSI &lt; 20)</strong><br>
-                주가가 과도하게 하락한 상태. 역사적으로 이 시점에서 매수하면 <strong class="g">평균 수익률이 높음</strong>.<br>
-                "공포에 사라"는 전략의 근거가 됩니다.<br><br>
-                <strong class="r">📈 과매수 (RSI &gt; 80)</strong><br>
-                주가가 과도하게 상승한 상태. 역사적으로 이 시점에서 매수하면 <strong class="r">평균 수익률이 낮음</strong>.<br>
-                단기 차익실현 또는 신규 진입 대기가 유리할 수 있습니다.<br><br>
-                <strong>⚠️ 주의사항</strong><br>
-                이 데이터는 과거 실적이며 미래 수익을 보장하지 않습니다.
-                RSI 단독으로 투자 결정을 내리지 마세요.
-                개별 종목의 펀더멘털과 시장 상황을 함께 고려하세요.
-            </div>
-        </div>
     </div>
 
     <!-- SEARCH -->
@@ -343,7 +293,7 @@
     <!-- CHART -->
     <div class="chart-section fade-up">
         <div class="chart-bar">
-            <div class="chart-title">📈 <span id="chart-label">차트</span></div>
+            <div class="chart-title"><span id="chart-label">차트</span></div>
             <span id="signal-tag" class="signal-tag"></span>
         </div>
         <div id="chart-placeholder" class="chart-placeholder">티커를 검색하거나 버튼을 클릭하세요</div>
@@ -362,7 +312,6 @@
     <div class="stats-grid fade-up">
         <div class="stat-card oversold">
             <div class="stat-card-head">
-                <span class="stat-card-emoji">📉</span>
                 <div><div class="stat-card-label">과매도 (RSI&lt;20)</div><div class="stat-card-sub">3개월 후 수익률</div></div>
             </div>
             <div class="stat-row">
@@ -373,7 +322,6 @@
         </div>
         <div class="stat-card overbought">
             <div class="stat-card-head">
-                <span class="stat-card-emoji">📈</span>
                 <div><div class="stat-card-label">과매수 (RSI&gt;80)</div><div class="stat-card-sub">3개월 후 수익률</div></div>
             </div>
             <div class="stat-row">
@@ -386,7 +334,7 @@
 
     <!-- CURRENT SIGNALS -->
     <div class="fade-up">
-        <div class="section-title">🔔 현재 RSI 신호</div>
+        <div class="section-title">현재 RSI 신호</div>
         <div class="current-grid">
             <div class="current-panel">
                 <div class="current-panel-head"><span class="badge badge-g">RSI&lt;20</span> 과매도</div>
@@ -405,7 +353,7 @@
 
     <!-- TOP OVERSOLD -->
     <div class="fade-up">
-        <div class="section-title">🚀 Top 10 과매도 반등 <span class="badge badge-g">Best Bounces</span></div>
+        <div class="section-title">Top 10 과매도 반등 <span class="badge badge-g">Best Bounces</span></div>
         <div class="table-wrap"><div class="table-scroll">
             <table>
                 <thead><tr><th>#</th><th>티커</th><th>날짜</th><th>가격</th><th>RSI</th><th>3개월 수익률</th></tr></thead>
@@ -416,7 +364,7 @@
 
     <!-- TOP OVERBOUGHT -->
     <div class="fade-up">
-        <div class="section-title">💥 Top 10 과매수 하락 <span class="badge badge-r">Worst Crashes</span></div>
+        <div class="section-title">Top 10 과매수 하락 <span class="badge badge-r">Worst Crashes</span></div>
         <div class="table-wrap"><div class="table-scroll">
             <table>
                 <thead><tr><th>#</th><th>티커</th><th>날짜</th><th>가격</th><th>RSI</th><th>3개월 수익률</th></tr></thead>
@@ -437,7 +385,7 @@
     if (window.self !== window.top) document.documentElement.classList.add('in-iframe');
     else document.documentElement.classList.add('standalone');
 
-    /* ═══ State ═══ */
+    /* State */
     let availableTickers = [];
     let rsiLookup = {};
     let selectedIdx = -1;
@@ -450,9 +398,7 @@
     const $ = id => document.getElementById(id);
     const fmtRet = v => v == null ? '-' : (v >= 0 ? '+' : '') + v.toFixed(2) + '%';
 
-    function toggleGuide() { $('guide').classList.toggle('open'); }
-
-    /* ═══ Search ═══ */
+    /* Search */
     const sInput = $('search-input');
     const acList = $('autocomplete-list');
 
@@ -487,7 +433,7 @@
         document.querySelectorAll('.quick-btn').forEach(b => b.classList.toggle('active', b.textContent === ticker));
     }
 
-    /* ═══ Chart ═══ */
+    /* Chart */
     function destroyCharts() {
         if (priceChartObj) { priceChartObj.remove(); priceChartObj = null; candleSeries = null; }
         if (rsiChartObj) { rsiChartObj.remove(); rsiChartObj = null; rsiSeries = null; }
@@ -500,13 +446,11 @@
         setActive(ticker);
         sInput.value = ticker;
 
-        // UI state
         $('chart-placeholder').style.display = 'none';
         $('chart-wrap').classList.remove('active');
         $('chart-loading').classList.add('active');
         $('chart-label').innerHTML = `<span class="chart-ticker">${ticker}</span> 차트`;
 
-        // Signal tag
         const tag = $('signal-tag');
         if (signalDate && signalType) {
             tag.className = 'signal-tag ' + signalType;
@@ -530,7 +474,6 @@
             const priceEl = $('price-chart');
             const rsiEl = $('rsi-chart');
 
-            // ── Price Chart ──
             priceChartObj = LightweightCharts.createChart(priceEl, {
                 layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#71717a', fontFamily: "'JetBrains Mono', monospace", fontSize: 11 },
                 grid: { vertLines: { color: '#1a1a1a' }, horzLines: { color: '#1a1a1a' } },
@@ -553,7 +496,6 @@
             }));
             candleSeries.setData(ohlcData);
 
-            // ── Markers: all signals from chart data + highlight the clicked one ──
             const markers = [];
             if (data.signals && data.signals.length > 0) {
                 data.signals.forEach(sig => {
@@ -570,14 +512,10 @@
                 });
             }
 
-            // Sort markers by time (required by Lightweight Charts)
             markers.sort((a, b) => a.time < b.time ? -1 : a.time > b.time ? 1 : 0);
             candleSeries.setMarkers(markers);
 
-            // If we have a signal date, scroll to center it
             if (signalDate) {
-                priceChartObj.timeScale().scrollToPosition(-Math.max(0, ohlcData.findIndex(d => d.time === signalDate) - ohlcData.length + 30), false);
-                // Better approach: set visible range around signal
                 const sigIdx = ohlcData.findIndex(d => d.time === signalDate);
                 if (sigIdx >= 0) {
                     const from = Math.max(0, sigIdx - 40);
@@ -591,7 +529,6 @@
                 priceChartObj.timeScale().fitContent();
             }
 
-            // ── RSI Chart ──
             rsiChartObj = LightweightCharts.createChart(rsiEl, {
                 layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#71717a', fontFamily: "'JetBrains Mono', monospace", fontSize: 10 },
                 grid: { vertLines: { color: '#1a1a1a' }, horzLines: { color: '#1a1a1a' } },
@@ -611,7 +548,6 @@
                 .map(d => ({ time: d.time, value: d.rsi }));
             rsiSeries.setData(rsiData);
 
-            // RSI threshold lines
             const oversoldLine = rsiChartObj.addLineSeries({ color: '#22c55e44', lineWidth: 1, lineStyle: 2, crosshairMarkerVisible: false, priceLineVisible: false, lastValueVisible: false });
             const overboughtLine = rsiChartObj.addLineSeries({ color: '#ef444444', lineWidth: 1, lineStyle: 2, crosshairMarkerVisible: false, priceLineVisible: false, lastValueVisible: false });
             if (rsiData.length > 0) {
@@ -621,7 +557,6 @@
                 overboughtLine.setData([{ time: first, value: 80 }, { time: last, value: 80 }]);
             }
 
-            // Sync time scales
             priceChartObj.timeScale().subscribeVisibleLogicalRangeChange(range => {
                 if (range) rsiChartObj.timeScale().setVisibleLogicalRange(range);
             });
@@ -629,7 +564,6 @@
                 if (range) priceChartObj.timeScale().setVisibleLogicalRange(range);
             });
 
-            // Sync crosshairs
             priceChartObj.subscribeCrosshairMove(param => {
                 if (param.time) rsiChartObj.setCrosshairPosition(undefined, param.time, rsiSeries);
                 else rsiChartObj.clearCrosshairPosition();
@@ -639,7 +573,6 @@
                 else priceChartObj.clearCrosshairPosition();
             });
 
-            // Resize handler
             const resizeObserver = new ResizeObserver(() => {
                 priceChartObj.applyOptions({ width: priceEl.clientWidth, height: priceEl.clientHeight });
                 rsiChartObj.applyOptions({ width: rsiEl.clientWidth, height: rsiEl.clientHeight });
@@ -654,13 +587,12 @@
             $('chart-placeholder').textContent = ticker + ' 차트를 불러올 수 없습니다';
         }
 
-        // Scroll on mobile
         if (window.innerWidth < 769) {
             setTimeout(() => document.querySelector('.chart-section').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
         }
     }
 
-    /* ═══ Render ═══ */
+    /* Render */
     function renderTable(id, data, isOS) {
         const tb = $(id);
         if (!data?.length) { tb.innerHTML = '<tr><td colspan="6" style="text-align:center;color:var(--text-dim)">데이터 없음</td></tr>'; return; }
@@ -679,7 +611,7 @@
     function renderCurrent(id, data, isOS) {
         const el = $(id);
         if (!data?.length) { el.innerHTML = '<div class="current-item" style="cursor:default;color:var(--text-dim);justify-content:center">신호 없음</div>'; return; }
-        el.innerHTML = data.slice(0, 10).map(d =>
+        el.innerHTML = data.map(d =>
             `<div class="current-item" onclick="loadChart('${d.ticker}')">
                 <span class="c-ticker">${d.ticker}</span>
                 <span class="c-rsi ${isOS?'oversold':'overbought'}">RSI ${d.rsi}</span>
@@ -687,7 +619,7 @@
         ).join('');
     }
 
-    /* ═══ Init ═══ */
+    /* Init */
     async function init() {
         try {
             const res = await fetch('data.json');
@@ -727,14 +659,14 @@
 
     init();
 
-    /* ═══ iframe auto-resize ═══ */
+    /* iframe auto-resize */
     function reportHeight() {
         const h = document.documentElement.scrollHeight;
         window.parent.postMessage({ type: 'rsi-resize', height: h }, '*');
     }
     window.addEventListener('load', () => setTimeout(reportHeight, 500));
     window.addEventListener('resize', reportHeight);
-    new MutationObserver(reportHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+    new MutationObserver(reportHeight).observe(document.body, { childList: true, attributes: true, subtree: true });
     setInterval(reportHeight, 1000);
 </script>
 </body>
