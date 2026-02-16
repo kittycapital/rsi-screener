@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.4/kakao.min.js"></script>
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -258,6 +259,23 @@
         .fade-up:nth-child(5) { animation-delay: 0.2s; }
         .fade-up:nth-child(6) { animation-delay: 0.25s; }
         .fade-up:nth-child(7) { animation-delay: 0.3s; }
+
+        /* SHARE */
+        .share-bar{display:flex;gap:6px;justify-content:center;margin:12px 0 4px;flex-wrap:wrap}
+        .share-btn{display:flex;align-items:center;gap:5px;padding:6px 12px;border-radius:6px;border:1px solid #222;background:#0a0a0a;color:#a1a1aa;font-size:11px;cursor:pointer;font-family:var(--sans);transition:all 0.2s}
+        .share-btn:hover{border-color:#444;color:#e4e4e7}
+        .share-btn svg{width:14px;height:14px;flex-shrink:0}
+        .share-btn.twitter:hover{border-color:#1d9bf0;color:#1d9bf0}
+        .share-btn.kakao:hover{border-color:#fee500;color:#fee500}
+        .share-btn.telegram:hover{border-color:#26a5e4;color:#26a5e4}
+        .share-btn.instagram:hover{border-color:#e1306c;color:#e1306c}
+        .share-btn.instagram.copied{border-color:#22c55e;color:#22c55e}
+        .share-btn.copy:hover{border-color:#22c55e;color:#22c55e}
+        .share-btn.copied{border-color:#22c55e;color:#22c55e}
+
+        /* TOAST */
+        .toast{position:fixed;bottom:20px;right:20px;background:#22c55e;color:#000;padding:10px 16px;border-radius:8px;font-size:13px;font-weight:600;z-index:9999;opacity:0;transform:translateY(10px);transition:all 0.3s ease;pointer-events:none}
+        .toast.show{opacity:1;transform:translateY(0)}
     </style>
 </head>
 <body>
@@ -378,12 +396,72 @@
         <div class="footer-updated" id="last-updated"></div>
         <div class="footer-disc">* S&P 500 + ETF 대상, 3년 일봉 데이터 기준. 투자 권유가 아닙니다.</div>
     </div>
+
+    <!-- SHARE -->
+    <div class="share-bar fade-up">
+        <button class="share-btn twitter" onclick="shareTwitter()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>트위터</button>
+        <button class="share-btn kakao" onclick="shareKakao()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3c-5.52 0-10 3.36-10 7.5 0 2.66 1.74 5 4.36 6.33-.14.53-.9 3.4-.93 3.61 0 0-.02.17.09.23.11.07.24.03.24.03.32-.04 3.7-2.42 4.28-2.83.62.09 1.27.13 1.96.13 5.52 0 10-3.36 10-7.5S17.52 3 12 3z"/></svg>카카오톡</button>
+        <button class="share-btn telegram" onclick="shareTelegram()"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>텔레그램</button>
+        <button class="share-btn instagram" onclick="shareInstagram(this)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>인스타그램</button>
+        <button class="share-btn copy" onclick="copyLink(this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>링크복사</button>
+    </div>
 </div>
+
+<div class="toast" id="toast"></div>
 
 <script>
     // iframe detection
     if (window.self !== window.top) document.documentElement.classList.add('in-iframe');
     else document.documentElement.classList.add('standalone');
+
+    /* ═══ Share ═══ */
+    const SHARE_URL = 'https://herdvibe.com/rsi-scanner';
+    const SHARE_TITLE = 'RSI 스캐너 — S&P 500 과매도/과매수 신호';
+    const SHARE_DESC = 'S&P 500 + ETF RSI 과매도·과매수 신호 분석 | Herdvibe';
+
+    function showToast(msg) {
+        const t = document.getElementById('toast');
+        t.textContent = msg;
+        t.classList.add('show');
+        setTimeout(() => t.classList.remove('show'), 3000);
+    }
+    function shareTwitter() {
+        window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(SHARE_TITLE)}&url=${encodeURIComponent(SHARE_URL)}`, '_blank');
+    }
+    function shareKakao() {
+        if (window.Kakao && !Kakao.isInitialized()) Kakao.init('a43ed7b39fac35458f4f9df925a279b5');
+        if (window.Kakao) {
+            Kakao.Share.sendDefault({
+                objectType: 'feed',
+                content: { title: SHARE_TITLE, description: SHARE_DESC, imageUrl: 'https://herdvibe.com/og-rsi.png', link: { mobileWebUrl: SHARE_URL, webUrl: SHARE_URL } }
+            });
+        }
+    }
+    function shareTelegram() {
+        window.open(`https://t.me/share/url?url=${encodeURIComponent(SHARE_URL)}&text=${encodeURIComponent(SHARE_TITLE)}`, '_blank');
+    }
+    function shareInstagram(btn) {
+        try {
+            if (window.parent !== window) { window.parent.postMessage({ type: 'copy', text: SHARE_URL }, '*'); }
+            else { navigator.clipboard.writeText(SHARE_URL); }
+            const orig = btn.innerHTML;
+            btn.classList.add('copied');
+            btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>복사됨!';
+            showToast('링크가 복사되었습니다 - 인스타그램에 붙여넣기 하세요 ✓');
+            setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = orig; }, 2000);
+        } catch(e) { showToast('복사 실패'); }
+    }
+    function copyLink(btn) {
+        try {
+            if (window.parent !== window) { window.parent.postMessage({ type: 'copy', text: SHARE_URL }, '*'); }
+            else { navigator.clipboard.writeText(SHARE_URL); }
+            const orig = btn.innerHTML;
+            btn.classList.add('copied');
+            btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>복사됨!';
+            showToast('링크가 복사되었습니다 ✓');
+            setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = orig; }, 2000);
+        } catch(e) { showToast('복사 실패'); }
+    }
 
     /* State */
     let availableTickers = [];
