@@ -587,9 +587,7 @@
             $('chart-placeholder').textContent = ticker + ' 차트를 불러올 수 없습니다';
         }
 
-        if (window.innerWidth < 769) {
-            setTimeout(() => document.querySelector('.chart-section').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-        }
+        setTimeout(() => document.querySelector('.chart-section').scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
     }
 
     /* Render */
