@@ -67,7 +67,7 @@
     {
       "ticker": "MCHP",
       "date": "2025-04-08",
-      "price": 34.52,
+      "price": 34.31,
       "rsi": 17.7,
       "type": "oversold",
       "forward_return": 114.09
@@ -165,171 +165,147 @@
   ],
   "currentOversold": [
     {
-      "ticker": "FOXA",
-      "date": "2026-02-25",
-      "price": 54.12,
-      "rsi": 14.7
-    },
-    {
-      "ticker": "CTSH",
-      "date": "2026-02-25",
-      "price": 61.33,
-      "rsi": 15.5
-    },
-    {
-      "ticker": "WY",
-      "date": "2026-02-25",
-      "price": 24.36,
-      "rsi": 16.9
-    },
-    {
       "ticker": "GPC",
-      "date": "2026-02-25",
-      "price": 116.92,
-      "rsi": 17.3
-    },
-    {
-      "ticker": "FOX",
-      "date": "2026-02-25",
-      "price": 49.62,
-      "rsi": 17.4
+      "date": "2026-02-26",
+      "price": 116.86,
+      "rsi": 17.9
     }
   ],
   "currentOverbought": [
     {
       "ticker": "KMI",
-      "date": "2026-02-25",
-      "price": 32.77,
-      "rsi": 92.7
+      "date": "2026-02-26",
+      "price": 33.06,
+      "rsi": 92.8
     },
     {
       "ticker": "ZBH",
-      "date": "2026-02-25",
-      "price": 99.85,
-      "rsi": 91.9
+      "date": "2026-02-26",
+      "price": 100.99,
+      "rsi": 92.2
     },
     {
       "ticker": "WMB",
-      "date": "2026-02-25",
-      "price": 73.97,
-      "rsi": 91.0
-    },
-    {
-      "ticker": "HWM",
-      "date": "2026-02-25",
-      "price": 259.64,
-      "rsi": 90.2
+      "date": "2026-02-26",
+      "price": 74.77,
+      "rsi": 90.9
     },
     {
       "ticker": "KEYS",
-      "date": "2026-02-25",
-      "price": 302.18,
-      "rsi": 90.2
+      "date": "2026-02-26",
+      "price": 306.03,
+      "rsi": 90.6
     },
     {
-      "ticker": "NRG",
-      "date": "2026-02-25",
-      "price": 183.59,
-      "rsi": 89.1
+      "ticker": "HWM",
+      "date": "2026-02-26",
+      "price": 260.31,
+      "rsi": 90.1
+    },
+    {
+      "ticker": "GRMN",
+      "date": "2026-02-26",
+      "price": 254.16,
+      "rsi": 89.9
     },
     {
       "ticker": "PCG",
-      "date": "2026-02-25",
-      "price": 18.65,
-      "rsi": 89.0
-    },
-    {
-      "ticker": "AMAT",
-      "date": "2026-02-25",
-      "price": 394.95,
-      "rsi": 88.4
-    },
-    {
-      "ticker": "EIX",
-      "date": "2026-02-25",
-      "price": 75.2,
-      "rsi": 87.2
-    },
-    {
-      "ticker": "GLW",
-      "date": "2026-02-25",
-      "price": 160.43,
-      "rsi": 86.2
-    },
-    {
-      "ticker": "ADI",
-      "date": "2026-02-25",
-      "price": 360.8,
-      "rsi": 85.3
-    },
-    {
-      "ticker": "AEP",
-      "date": "2026-02-25",
-      "price": 132.46,
-      "rsi": 84.7
-    },
-    {
-      "ticker": "CEG",
-      "date": "2026-02-25",
-      "price": 325.84,
-      "rsi": 84.1
-    },
-    {
-      "ticker": "CMS",
-      "date": "2026-02-25",
-      "price": 76.59,
-      "rsi": 84.1
-    },
-    {
-      "ticker": "MSI",
-      "date": "2026-02-25",
-      "price": 471.33,
-      "rsi": 83.9
-    },
-    {
-      "ticker": "VST",
-      "date": "2026-02-25",
-      "price": 175.36,
-      "rsi": 83.9
-    },
-    {
-      "ticker": "VTR",
-      "date": "2026-02-25",
-      "price": 86.41,
-      "rsi": 83.6
-    },
-    {
-      "ticker": "KLAC",
-      "date": "2026-02-25",
-      "price": 1546.68,
-      "rsi": 83.5
-    },
-    {
-      "ticker": "FE",
-      "date": "2026-02-25",
-      "price": 50.64,
-      "rsi": 83.4
+      "date": "2026-02-26",
+      "price": 18.88,
+      "rsi": 89.6
     },
     {
       "ticker": "ATO",
-      "date": "2026-02-25",
-      "price": 182.06,
-      "rsi": 83.3
+      "date": "2026-02-26",
+      "price": 183.63,
+      "rsi": 87.3
+    },
+    {
+      "ticker": "MRNA",
+      "date": "2026-02-26",
+      "price": 51.71,
+      "rsi": 87.1
+    },
+    {
+      "ticker": "NRG",
+      "date": "2026-02-26",
+      "price": 181.34,
+      "rsi": 85.2
+    },
+    {
+      "ticker": "CEG",
+      "date": "2026-02-26",
+      "price": 323.56,
+      "rsi": 85.0
+    },
+    {
+      "ticker": "GNRC",
+      "date": "2026-02-26",
+      "price": 234.35,
+      "rsi": 84.8
+    },
+    {
+      "ticker": "VST",
+      "date": "2026-02-26",
+      "price": 176.82,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "MSI",
+      "date": "2026-02-26",
+      "price": 471.95,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "MKTX",
+      "date": "2026-02-26",
+      "price": 184.87,
+      "rsi": 83.6
+    },
+    {
+      "ticker": "ROST",
+      "date": "2026-02-26",
+      "price": 203.5,
+      "rsi": 83.5
+    },
+    {
+      "ticker": "AXON",
+      "date": "2026-02-26",
+      "price": 550.19,
+      "rsi": 83.2
+    },
+    {
+      "ticker": "WAB",
+      "date": "2026-02-26",
+      "price": 263.41,
+      "rsi": 83.0
+    },
+    {
+      "ticker": "BKR",
+      "date": "2026-02-26",
+      "price": 64.9,
+      "rsi": 82.7
+    },
+    {
+      "ticker": "AEP",
+      "date": "2026-02-26",
+      "price": 132.1,
+      "rsi": 82.6
     }
   ],
   "oversoldStats": {
-    "count": 9897,
-    "avg_return": 4.51,
-    "median_return": 3.66,
-    "win_rate": 60.2,
+    "count": 9892,
+    "avg_return": 4.52,
+    "median_return": 3.68,
+    "win_rate": 60.1,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18136,
+    "count": 18123,
     "avg_return": 4.65,
-    "median_return": 3.59,
-    "win_rate": 61.7,
+    "median_return": 3.6,
+    "win_rate": 61.8,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -338,7 +314,6 @@
     "AAPL",
     "ABBV",
     "ABNB",
-    "ABT",
     "ACGL",
     "ACN",
     "ADBE",
@@ -838,5 +813,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-02-25T22:22:15.809902Z"
+  "lastUpdated": "2026-02-26T22:23:19.250636Z"
 }
