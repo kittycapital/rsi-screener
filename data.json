@@ -166,152 +166,146 @@
   "currentOversold": [
     {
       "ticker": "GPC",
-      "date": "2026-02-27",
-      "price": 119.26,
-      "rsi": 18.1
-    },
-    {
-      "ticker": "CDW",
-      "date": "2026-02-27",
-      "price": 122.64,
-      "rsi": 18.2
+      "date": "2026-03-02",
+      "price": 118.55,
+      "rsi": 18.8
     }
   ],
   "currentOverbought": [
     {
       "ticker": "WMB",
-      "date": "2026-02-27",
-      "price": 74.72,
-      "rsi": 95.7
+      "date": "2026-03-02",
+      "price": 76.26,
+      "rsi": 96.0
     },
     {
       "ticker": "KMI",
-      "date": "2026-02-27",
-      "price": 33.27,
-      "rsi": 92.9
-    },
-    {
-      "ticker": "ATO",
-      "date": "2026-02-27",
-      "price": 186.79,
-      "rsi": 89.8
-    },
-    {
-      "ticker": "KEYS",
-      "date": "2026-02-27",
-      "price": 307.33,
-      "rsi": 89.8
+      "date": "2026-03-02",
+      "price": 33.89,
+      "rsi": 93.2
     },
     {
       "ticker": "PCG",
-      "date": "2026-02-27",
-      "price": 19.0,
-      "rsi": 89.6
+      "date": "2026-03-02",
+      "price": 19.11,
+      "rsi": 91.3
     },
     {
-      "ticker": "MRNA",
-      "date": "2026-02-27",
-      "price": 53.57,
-      "rsi": 88.5
+      "ticker": "ATO",
+      "date": "2026-03-02",
+      "price": 187.07,
+      "rsi": 89.9
+    },
+    {
+      "ticker": "KEYS",
+      "date": "2026-03-02",
+      "price": 313.27,
+      "rsi": 89.9
     },
     {
       "ticker": "HWM",
-      "date": "2026-02-27",
-      "price": 262.53,
-      "rsi": 88.0
-    },
-    {
-      "ticker": "LIN",
-      "date": "2026-02-27",
-      "price": 508.08,
-      "rsi": 87.7
+      "date": "2026-03-02",
+      "price": 265.11,
+      "rsi": 88.1
     },
     {
       "ticker": "GRMN",
-      "date": "2026-02-27",
-      "price": 252.83,
-      "rsi": 87.6
+      "date": "2026-03-02",
+      "price": 255.16,
+      "rsi": 87.3
     },
     {
-      "ticker": "MKTX",
-      "date": "2026-02-27",
-      "price": 192.0,
-      "rsi": 87.5
-    },
-    {
-      "ticker": "DTE",
-      "date": "2026-02-27",
-      "price": 148.24,
-      "rsi": 86.7
+      "ticker": "LIN",
+      "date": "2026-03-02",
+      "price": 509.34,
+      "rsi": 86.5
     },
     {
       "ticker": "MSI",
-      "date": "2026-02-27",
-      "price": 482.26,
-      "rsi": 84.8
+      "date": "2026-03-02",
+      "price": 486.11,
+      "rsi": 85.4
     },
     {
       "ticker": "CMS",
-      "date": "2026-02-27",
-      "price": 78.07,
-      "rsi": 84.7
+      "date": "2026-03-02",
+      "price": 78.08,
+      "rsi": 84.9
     },
     {
-      "ticker": "ES",
-      "date": "2026-02-27",
-      "price": 76.21,
-      "rsi": 84.7
+      "ticker": "AIG",
+      "date": "2026-03-02",
+      "price": 81.12,
+      "rsi": 84.6
     },
     {
-      "ticker": "ROST",
-      "date": "2026-02-27",
-      "price": 205.64,
+      "ticker": "MKTX",
+      "date": "2026-03-02",
+      "price": 192.05,
       "rsi": 84.0
     },
     {
-      "ticker": "AEP",
-      "date": "2026-02-27",
-      "price": 133.82,
-      "rsi": 83.9
-    },
-    {
-      "ticker": "CEG",
-      "date": "2026-02-27",
-      "price": 329.88,
+      "ticker": "DTE",
+      "date": "2026-03-02",
+      "price": 147.65,
       "rsi": 83.8
     },
     {
-      "ticker": "FE",
-      "date": "2026-02-27",
-      "price": 51.16,
-      "rsi": 83.1
+      "ticker": "MRNA",
+      "date": "2026-03-02",
+      "price": 52.85,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "WAB",
+      "date": "2026-03-02",
+      "price": 263.67,
+      "rsi": 83.4
+    },
+    {
+      "ticker": "DUK",
+      "date": "2026-03-02",
+      "price": 131.63,
+      "rsi": 82.4
+    },
+    {
+      "ticker": "SYK",
+      "date": "2026-03-02",
+      "price": 387.02,
+      "rsi": 82.3
     },
     {
       "ticker": "EIX",
-      "date": "2026-02-27",
-      "price": 74.74,
-      "rsi": 82.7
+      "date": "2026-03-02",
+      "price": 74.42,
+      "rsi": 82.2
+    },
+    {
+      "ticker": "AEP",
+      "date": "2026-03-02",
+      "price": 133.29,
+      "rsi": 81.5
     },
     {
       "ticker": "CTVA",
-      "date": "2026-02-27",
-      "price": 80.12,
-      "rsi": 81.4
+      "date": "2026-03-02",
+      "price": 80.52,
+      "rsi": 80.4
     }
   ],
   "oversoldStats": {
-    "count": 9900,
-    "avg_return": 4.53,
-    "median_return": 3.68,
-    "win_rate": 60.2,
+    "count": 9815,
+    "avg_return": 4.59,
+    "median_return": 3.75,
+    "win_rate": 60.4,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18176,
+    "count": 18193,
     "avg_return": 4.65,
     "median_return": 3.59,
-    "win_rate": 61.7,
+    "win_rate": 61.8,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -820,5 +814,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-02-27T22:14:44.377892Z"
+  "lastUpdated": "2026-03-02T22:20:12.037113Z"
 }
