@@ -165,144 +165,138 @@
   ],
   "currentOversold": [
     {
+      "ticker": "BLDR",
+      "date": "2026-03-03",
+      "price": 97.45,
+      "rsi": 10.9
+    },
+    {
+      "ticker": "MHK",
+      "date": "2026-03-03",
+      "price": 113.8,
+      "rsi": 11.6
+    },
+    {
       "ticker": "GPC",
-      "date": "2026-03-02",
-      "price": 118.55,
-      "rsi": 18.8
+      "date": "2026-03-03",
+      "price": 116.42,
+      "rsi": 16.8
+    },
+    {
+      "ticker": "MAS",
+      "date": "2026-03-03",
+      "price": 68.03,
+      "rsi": 17.8
+    },
+    {
+      "ticker": "IP",
+      "date": "2026-03-03",
+      "price": 42.05,
+      "rsi": 18.5
+    },
+    {
+      "ticker": "WY",
+      "date": "2026-03-03",
+      "price": 24.77,
+      "rsi": 19.6
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "WMB",
-      "date": "2026-03-02",
-      "price": 76.26,
-      "rsi": 96.0
+      "ticker": "KMI",
+      "date": "2026-03-03",
+      "price": 33.96,
+      "rsi": 93.3
     },
     {
-      "ticker": "KMI",
-      "date": "2026-03-02",
-      "price": 33.89,
-      "rsi": 93.2
+      "ticker": "WMB",
+      "date": "2026-03-03",
+      "price": 75.88,
+      "rsi": 91.2
+    },
+    {
+      "ticker": "VRSK",
+      "date": "2026-03-03",
+      "price": 214.75,
+      "rsi": 89.0
     },
     {
       "ticker": "PCG",
-      "date": "2026-03-02",
-      "price": 19.11,
-      "rsi": 91.3
+      "date": "2026-03-03",
+      "price": 18.92,
+      "rsi": 84.7
     },
     {
       "ticker": "ATO",
-      "date": "2026-03-02",
-      "price": 187.07,
-      "rsi": 89.9
-    },
-    {
-      "ticker": "KEYS",
-      "date": "2026-03-02",
-      "price": 313.27,
-      "rsi": 89.9
-    },
-    {
-      "ticker": "HWM",
-      "date": "2026-03-02",
-      "price": 265.11,
-      "rsi": 88.1
-    },
-    {
-      "ticker": "GRMN",
-      "date": "2026-03-02",
-      "price": 255.16,
-      "rsi": 87.3
-    },
-    {
-      "ticker": "LIN",
-      "date": "2026-03-02",
-      "price": 509.34,
-      "rsi": 86.5
-    },
-    {
-      "ticker": "MSI",
-      "date": "2026-03-02",
-      "price": 486.11,
-      "rsi": 85.4
-    },
-    {
-      "ticker": "CMS",
-      "date": "2026-03-02",
-      "price": 78.08,
-      "rsi": 84.9
-    },
-    {
-      "ticker": "AIG",
-      "date": "2026-03-02",
-      "price": 81.12,
-      "rsi": 84.6
-    },
-    {
-      "ticker": "MKTX",
-      "date": "2026-03-02",
-      "price": 192.05,
-      "rsi": 84.0
-    },
-    {
-      "ticker": "DTE",
-      "date": "2026-03-02",
-      "price": 147.65,
-      "rsi": 83.8
-    },
-    {
-      "ticker": "MRNA",
-      "date": "2026-03-02",
-      "price": 52.85,
-      "rsi": 83.8
-    },
-    {
-      "ticker": "WAB",
-      "date": "2026-03-02",
-      "price": 263.67,
+      "date": "2026-03-03",
+      "price": 186.0,
       "rsi": 83.4
     },
     {
-      "ticker": "DUK",
-      "date": "2026-03-02",
-      "price": 131.63,
-      "rsi": 82.4
+      "ticker": "MSI",
+      "date": "2026-03-03",
+      "price": 480.22,
+      "rsi": 82.7
     },
     {
-      "ticker": "SYK",
-      "date": "2026-03-02",
-      "price": 387.02,
-      "rsi": 82.3
+      "ticker": "KEYS",
+      "date": "2026-03-03",
+      "price": 302.54,
+      "rsi": 81.7
     },
     {
-      "ticker": "EIX",
-      "date": "2026-03-02",
-      "price": 74.42,
-      "rsi": 82.2
-    },
-    {
-      "ticker": "AEP",
-      "date": "2026-03-02",
-      "price": 133.29,
+      "ticker": "DTE",
+      "date": "2026-03-03",
+      "price": 148.11,
       "rsi": 81.5
     },
     {
-      "ticker": "CTVA",
+      "ticker": "MKTX",
+      "date": "2026-03-03",
+      "price": 193.61,
+      "rsi": 81.4
+    },
+    {
+      "ticker": "CBOE",
+      "date": "2026-03-03",
+      "price": 304.43,
+      "rsi": 81.2
+    },
+    {
+      "ticker": "GRMN",
+      "date": "2026-03-03",
+      "price": 250.69,
+      "rsi": 81.2
+    },
+    {
+      "ticker": "MMC",
       "date": "2026-03-02",
-      "price": 80.52,
-      "rsi": 80.4
+      "price": 186.43,
+      "rsi": 80.3
+    },
+    {
+      "ticker": "TRGP",
+      "date": "2026-03-03",
+      "price": 244.04,
+      "rsi": 80.2
+    },
+    {
+      "ticker": "CMS",
+      "date": "2026-03-03",
+      "price": 77.8,
+      "rsi": 80.0
     }
   ],
   "oversoldStats": {
-    "count": 9815,
-    "avg_return": 4.59,
-    "median_return": 3.75,
+    "count": 9813,
+    "avg_return": 4.6,
+    "median_return": 3.76,
     "win_rate": 60.4,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18193,
+    "count": 18203,
     "avg_return": 4.65,
     "median_return": 3.59,
     "win_rate": 61.8,
@@ -814,5 +808,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-03-02T22:20:12.037113Z"
+  "lastUpdated": "2026-03-03T22:19:53.583407Z"
 }
