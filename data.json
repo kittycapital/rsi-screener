@@ -165,130 +165,172 @@
   ],
   "currentOversold": [
     {
+      "ticker": "MCHP",
+      "date": "2026-03-04",
+      "price": 69.9,
+      "rsi": 8.8
+    },
+    {
+      "ticker": "BWA",
+      "date": "2026-03-04",
+      "price": 52.8,
+      "rsi": 10.4
+    },
+    {
       "ticker": "BLDR",
-      "date": "2026-03-03",
-      "price": 97.45,
+      "date": "2026-03-04",
+      "price": 95.99,
       "rsi": 10.9
     },
     {
-      "ticker": "MHK",
-      "date": "2026-03-03",
-      "price": 113.8,
+      "ticker": "GPC",
+      "date": "2026-03-04",
+      "price": 115.64,
       "rsi": 11.6
     },
     {
-      "ticker": "GPC",
-      "date": "2026-03-03",
-      "price": 116.42,
-      "rsi": 16.8
-    },
-    {
-      "ticker": "MAS",
-      "date": "2026-03-03",
-      "price": 68.03,
-      "rsi": 17.8
-    },
-    {
       "ticker": "IP",
-      "date": "2026-03-03",
-      "price": 42.05,
-      "rsi": 18.5
+      "date": "2026-03-04",
+      "price": 42.58,
+      "rsi": 11.9
+    },
+    {
+      "ticker": "TXN",
+      "date": "2026-03-04",
+      "price": 202.39,
+      "rsi": 15.7
+    },
+    {
+      "ticker": "MHK",
+      "date": "2026-03-04",
+      "price": 115.09,
+      "rsi": 16.3
+    },
+    {
+      "ticker": "NXPI",
+      "date": "2026-03-04",
+      "price": 216.37,
+      "rsi": 16.3
     },
     {
       "ticker": "WY",
-      "date": "2026-03-03",
-      "price": 24.77,
-      "rsi": 19.6
+      "date": "2026-03-04",
+      "price": 24.82,
+      "rsi": 17.1
+    },
+    {
+      "ticker": "POOL",
+      "date": "2026-03-04",
+      "price": 220.31,
+      "rsi": 19.0
+    },
+    {
+      "ticker": "CPB",
+      "date": "2026-03-04",
+      "price": 25.09,
+      "rsi": 19.7
+    },
+    {
+      "ticker": "PPG",
+      "date": "2026-03-04",
+      "price": 117.7,
+      "rsi": 19.7
     }
   ],
   "currentOverbought": [
     {
       "ticker": "KMI",
-      "date": "2026-03-03",
-      "price": 33.96,
-      "rsi": 93.3
-    },
-    {
-      "ticker": "WMB",
-      "date": "2026-03-03",
-      "price": 75.88,
-      "rsi": 91.2
+      "date": "2026-03-04",
+      "price": 33.92,
+      "rsi": 91.0
     },
     {
       "ticker": "VRSK",
-      "date": "2026-03-03",
-      "price": 214.75,
-      "rsi": 89.0
+      "date": "2026-03-04",
+      "price": 215.58,
+      "rsi": 88.3
     },
     {
-      "ticker": "PCG",
-      "date": "2026-03-03",
-      "price": 18.92,
-      "rsi": 84.7
+      "ticker": "BR",
+      "date": "2026-03-04",
+      "price": 188.74,
+      "rsi": 87.2
     },
     {
-      "ticker": "ATO",
-      "date": "2026-03-03",
-      "price": 186.0,
-      "rsi": 83.4
+      "ticker": "WMB",
+      "date": "2026-03-04",
+      "price": 75.77,
+      "rsi": 86.5
     },
     {
-      "ticker": "MSI",
-      "date": "2026-03-03",
-      "price": 480.22,
-      "rsi": 82.7
-    },
-    {
-      "ticker": "KEYS",
-      "date": "2026-03-03",
-      "price": 302.54,
-      "rsi": 81.7
-    },
-    {
-      "ticker": "DTE",
-      "date": "2026-03-03",
-      "price": 148.11,
-      "rsi": 81.5
-    },
-    {
-      "ticker": "MKTX",
-      "date": "2026-03-03",
-      "price": 193.61,
-      "rsi": 81.4
+      "ticker": "ICE",
+      "date": "2026-03-04",
+      "price": 166.29,
+      "rsi": 84.1
     },
     {
       "ticker": "CBOE",
-      "date": "2026-03-03",
-      "price": 304.43,
-      "rsi": 81.2
+      "date": "2026-03-04",
+      "price": 300.62,
+      "rsi": 84.0
+    },
+    {
+      "ticker": "MRNA",
+      "date": "2026-03-04",
+      "price": 57.8,
+      "rsi": 83.8
     },
     {
       "ticker": "GRMN",
-      "date": "2026-03-03",
-      "price": 250.69,
-      "rsi": 81.2
+      "date": "2026-03-04",
+      "price": 251.18,
+      "rsi": 83.5
     },
     {
-      "ticker": "MMC",
-      "date": "2026-03-02",
-      "price": 186.43,
-      "rsi": 80.3
+      "ticker": "ATO",
+      "date": "2026-03-04",
+      "price": 186.77,
+      "rsi": 82.5
     },
     {
-      "ticker": "TRGP",
-      "date": "2026-03-03",
-      "price": 244.04,
-      "rsi": 80.2
+      "ticker": "SPGI",
+      "date": "2026-03-04",
+      "price": 445.5,
+      "rsi": 82.2
     },
     {
-      "ticker": "CMS",
-      "date": "2026-03-03",
-      "price": 77.8,
-      "rsi": 80.0
+      "ticker": "EXC",
+      "date": "2026-03-04",
+      "price": 49.25,
+      "rsi": 82.1
+    },
+    {
+      "ticker": "DTE",
+      "date": "2026-03-04",
+      "price": 150.11,
+      "rsi": 81.7
+    },
+    {
+      "ticker": "PCG",
+      "date": "2026-03-04",
+      "price": 18.88,
+      "rsi": 81.6
+    },
+    {
+      "ticker": "AXON",
+      "date": "2026-03-04",
+      "price": 569.81,
+      "rsi": 80.7
+    },
+    {
+      "ticker": "MSI",
+      "date": "2026-03-04",
+      "price": 478.21,
+      "rsi": 80.6
     }
   ],
   "oversoldStats": {
-    "count": 9813,
+    "count": 9819,
     "avg_return": 4.6,
     "median_return": 3.76,
     "win_rate": 60.4,
@@ -296,8 +338,8 @@
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18203,
-    "avg_return": 4.65,
+    "count": 18213,
+    "avg_return": 4.66,
     "median_return": 3.59,
     "win_rate": 61.8,
     "best_return": 121.93,
@@ -808,5 +850,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-03-03T22:19:53.583407Z"
+  "lastUpdated": "2026-03-04T22:23:01.313275Z"
 }
