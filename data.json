@@ -165,180 +165,180 @@
   ],
   "currentOversold": [
     {
-      "ticker": "MCHP",
-      "date": "2026-03-04",
-      "price": 69.9,
-      "rsi": 8.8
-    },
-    {
       "ticker": "BWA",
-      "date": "2026-03-04",
-      "price": 52.8,
-      "rsi": 10.4
+      "date": "2026-03-05",
+      "price": 52.73,
+      "rsi": 7.9
     },
     {
-      "ticker": "BLDR",
-      "date": "2026-03-04",
-      "price": 95.99,
-      "rsi": 10.9
-    },
-    {
-      "ticker": "GPC",
-      "date": "2026-03-04",
-      "price": 115.64,
-      "rsi": 11.6
+      "ticker": "MCHP",
+      "date": "2026-03-05",
+      "price": 67.81,
+      "rsi": 8.6
     },
     {
       "ticker": "IP",
-      "date": "2026-03-04",
-      "price": 42.58,
-      "rsi": 11.9
+      "date": "2026-03-05",
+      "price": 41.31,
+      "rsi": 10.3
     },
     {
-      "ticker": "TXN",
-      "date": "2026-03-04",
-      "price": 202.39,
-      "rsi": 15.7
+      "ticker": "MAS",
+      "date": "2026-03-05",
+      "price": 65.3,
+      "rsi": 12.4
     },
     {
-      "ticker": "MHK",
-      "date": "2026-03-04",
-      "price": 115.09,
-      "rsi": 16.3
-    },
-    {
-      "ticker": "NXPI",
-      "date": "2026-03-04",
-      "price": 216.37,
-      "rsi": 16.3
-    },
-    {
-      "ticker": "WY",
-      "date": "2026-03-04",
-      "price": 24.82,
-      "rsi": 17.1
-    },
-    {
-      "ticker": "POOL",
-      "date": "2026-03-04",
-      "price": 220.31,
-      "rsi": 19.0
-    },
-    {
-      "ticker": "CPB",
-      "date": "2026-03-04",
-      "price": 25.09,
-      "rsi": 19.7
+      "ticker": "BLDR",
+      "date": "2026-03-05",
+      "price": 95.51,
+      "rsi": 12.8
     },
     {
       "ticker": "PPG",
-      "date": "2026-03-04",
-      "price": 117.7,
-      "rsi": 19.7
+      "date": "2026-03-05",
+      "price": 111.87,
+      "rsi": 13.6
+    },
+    {
+      "ticker": "UHS",
+      "date": "2026-03-05",
+      "price": 196.96,
+      "rsi": 13.6
+    },
+    {
+      "ticker": "MHK",
+      "date": "2026-03-05",
+      "price": 108.7,
+      "rsi": 13.9
+    },
+    {
+      "ticker": "GPC",
+      "date": "2026-03-05",
+      "price": 117.11,
+      "rsi": 15.0
+    },
+    {
+      "ticker": "TXN",
+      "date": "2026-03-05",
+      "price": 197.98,
+      "rsi": 15.3
+    },
+    {
+      "ticker": "WY",
+      "date": "2026-03-05",
+      "price": 24.63,
+      "rsi": 16.4
+    },
+    {
+      "ticker": "NXPI",
+      "date": "2026-03-05",
+      "price": 210.58,
+      "rsi": 16.9
+    },
+    {
+      "ticker": "AMCR",
+      "date": "2026-03-05",
+      "price": 43.69,
+      "rsi": 18.6
+    },
+    {
+      "ticker": "POOL",
+      "date": "2026-03-05",
+      "price": 217.92,
+      "rsi": 18.9
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "KMI",
-      "date": "2026-03-04",
-      "price": 33.92,
-      "rsi": 91.0
+      "ticker": "TYL",
+      "date": "2026-03-05",
+      "price": 365.87,
+      "rsi": 94.5
     },
     {
-      "ticker": "VRSK",
-      "date": "2026-03-04",
-      "price": 215.58,
-      "rsi": 88.3
+      "ticker": "NFLX",
+      "date": "2026-03-05",
+      "price": 99.17,
+      "rsi": 88.1
     },
     {
       "ticker": "BR",
-      "date": "2026-03-04",
-      "price": 188.74,
-      "rsi": 87.2
+      "date": "2026-03-05",
+      "price": 190.89,
+      "rsi": 86.8
     },
     {
-      "ticker": "WMB",
-      "date": "2026-03-04",
-      "price": 75.77,
-      "rsi": 86.5
+      "ticker": "ROP",
+      "date": "2026-03-05",
+      "price": 366.02,
+      "rsi": 86.7
+    },
+    {
+      "ticker": "VLO",
+      "date": "2026-03-05",
+      "price": 228.03,
+      "rsi": 85.4
     },
     {
       "ticker": "ICE",
-      "date": "2026-03-04",
-      "price": 166.29,
-      "rsi": 84.1
+      "date": "2026-03-05",
+      "price": 164.0,
+      "rsi": 83.6
     },
     {
-      "ticker": "CBOE",
-      "date": "2026-03-04",
-      "price": 300.62,
-      "rsi": 84.0
-    },
-    {
-      "ticker": "MRNA",
-      "date": "2026-03-04",
-      "price": 57.8,
-      "rsi": 83.8
-    },
-    {
-      "ticker": "GRMN",
-      "date": "2026-03-04",
-      "price": 251.18,
-      "rsi": 83.5
-    },
-    {
-      "ticker": "ATO",
-      "date": "2026-03-04",
-      "price": 186.77,
-      "rsi": 82.5
+      "ticker": "PYPL",
+      "date": "2026-03-05",
+      "price": 47.64,
+      "rsi": 82.0
     },
     {
       "ticker": "SPGI",
-      "date": "2026-03-04",
-      "price": 445.5,
-      "rsi": 82.2
+      "date": "2026-03-05",
+      "price": 451.11,
+      "rsi": 82.0
     },
     {
-      "ticker": "EXC",
-      "date": "2026-03-04",
-      "price": 49.25,
-      "rsi": 82.1
+      "ticker": "OMC",
+      "date": "2026-03-05",
+      "price": 84.77,
+      "rsi": 81.1
     },
     {
-      "ticker": "DTE",
-      "date": "2026-03-04",
-      "price": 150.11,
-      "rsi": 81.7
-    },
-    {
-      "ticker": "PCG",
-      "date": "2026-03-04",
-      "price": 18.88,
-      "rsi": 81.6
-    },
-    {
-      "ticker": "AXON",
-      "date": "2026-03-04",
-      "price": 569.81,
+      "ticker": "PLTR",
+      "date": "2026-03-05",
+      "price": 152.67,
       "rsi": 80.7
     },
     {
-      "ticker": "MSI",
-      "date": "2026-03-04",
-      "price": 478.21,
+      "ticker": "AXON",
+      "date": "2026-03-05",
+      "price": 570.49,
       "rsi": 80.6
+    },
+    {
+      "ticker": "HOLX",
+      "date": "2026-03-05",
+      "price": 75.75,
+      "rsi": 80.4
+    },
+    {
+      "ticker": "AJG",
+      "date": "2026-03-05",
+      "price": 229.65,
+      "rsi": 80.3
     }
   ],
   "oversoldStats": {
-    "count": 9819,
-    "avg_return": 4.6,
-    "median_return": 3.76,
+    "count": 9820,
+    "avg_return": 4.61,
+    "median_return": 3.77,
     "win_rate": 60.4,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18213,
+    "count": 18220,
     "avg_return": 4.66,
     "median_return": 3.59,
     "win_rate": 61.8,
@@ -850,5 +850,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-03-04T22:23:01.313275Z"
+  "lastUpdated": "2026-03-05T22:22:13.221075Z"
 }
