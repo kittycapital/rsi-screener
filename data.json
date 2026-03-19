@@ -166,175 +166,169 @@
   "currentOversold": [
     {
       "ticker": "ECL",
-      "date": "2026-03-18",
-      "price": 261.84,
-      "rsi": 3.8
-    },
-    {
-      "ticker": "SWK",
-      "date": "2026-03-18",
-      "price": 69.62,
-      "rsi": 4.9
+      "date": "2026-03-19",
+      "price": 258.7,
+      "rsi": 0.4
     },
     {
       "ticker": "VMC",
-      "date": "2026-03-18",
-      "price": 257.86,
-      "rsi": 5.5
-    },
-    {
-      "ticker": "MLM",
-      "date": "2026-03-18",
-      "price": 567.92,
-      "rsi": 6.3
-    },
-    {
-      "ticker": "UPS",
-      "date": "2026-03-18",
-      "price": 96.84,
-      "rsi": 6.7
-    },
-    {
-      "ticker": "AOS",
-      "date": "2026-03-18",
-      "price": 64.02,
-      "rsi": 7.3
-    },
-    {
-      "ticker": "ULTA",
-      "date": "2026-03-18",
-      "price": 520.65,
-      "rsi": 8.0
-    },
-    {
-      "ticker": "NKE",
-      "date": "2026-03-18",
-      "price": 53.47,
-      "rsi": 9.2
-    },
-    {
-      "ticker": "AMCR",
-      "date": "2026-03-18",
-      "price": 39.85,
-      "rsi": 9.4
-    },
-    {
-      "ticker": "BDX",
-      "date": "2026-03-18",
-      "price": 158.08,
-      "rsi": 10.6
-    },
-    {
-      "ticker": "GIS",
-      "date": "2026-03-18",
-      "price": 37.59,
-      "rsi": 11.0
-    },
-    {
-      "ticker": "FITB",
-      "date": "2026-03-18",
-      "price": 43.9,
-      "rsi": 11.4
-    },
-    {
-      "ticker": "PNR",
-      "date": "2026-03-18",
-      "price": 88.27,
-      "rsi": 11.5
-    },
-    {
-      "ticker": "TFC",
-      "date": "2026-03-18",
-      "price": 43.85,
-      "rsi": 12.4
-    },
-    {
-      "ticker": "SJM",
-      "date": "2026-03-18",
-      "price": 101.4,
-      "rsi": 12.6
-    },
-    {
-      "ticker": "ITW",
-      "date": "2026-03-18",
-      "price": 260.74,
-      "rsi": 12.8
-    },
-    {
-      "ticker": "UNP",
-      "date": "2026-03-18",
-      "price": 236.57,
-      "rsi": 12.9
-    },
-    {
-      "ticker": "ALLE",
-      "date": "2026-03-18",
-      "price": 144.66,
-      "rsi": 13.1
+      "date": "2026-03-19",
+      "price": 257.02,
+      "rsi": 3.8
     },
     {
       "ticker": "AVY",
-      "date": "2026-03-18",
-      "price": 164.67,
-      "rsi": 13.1
+      "date": "2026-03-19",
+      "price": 162.99,
+      "rsi": 4.1
     },
     {
-      "ticker": "HBAN",
-      "date": "2026-03-18",
-      "price": 15.11,
-      "rsi": 13.1
+      "ticker": "MKC",
+      "date": "2026-03-19",
+      "price": 54.05,
+      "rsi": 5.1
+    },
+    {
+      "ticker": "SWK",
+      "date": "2026-03-19",
+      "price": 69.05,
+      "rsi": 5.1
+    },
+    {
+      "ticker": "AOS",
+      "date": "2026-03-19",
+      "price": 64.54,
+      "rsi": 5.3
+    },
+    {
+      "ticker": "AES",
+      "date": "2026-03-19",
+      "price": 14.15,
+      "rsi": 5.7
+    },
+    {
+      "ticker": "MLM",
+      "date": "2026-03-19",
+      "price": 567.47,
+      "rsi": 6.4
+    },
+    {
+      "ticker": "AMCR",
+      "date": "2026-03-19",
+      "price": 38.69,
+      "rsi": 6.9
+    },
+    {
+      "ticker": "UPS",
+      "date": "2026-03-19",
+      "price": 96.56,
+      "rsi": 6.9
+    },
+    {
+      "ticker": "BALL",
+      "date": "2026-03-19",
+      "price": 58.99,
+      "rsi": 7.3
+    },
+    {
+      "ticker": "GPC",
+      "date": "2026-03-19",
+      "price": 99.09,
+      "rsi": 7.5
+    },
+    {
+      "ticker": "GIS",
+      "date": "2026-03-19",
+      "price": 37.5,
+      "rsi": 7.9
+    },
+    {
+      "ticker": "ALLE",
+      "date": "2026-03-19",
+      "price": 143.83,
+      "rsi": 9.5
+    },
+    {
+      "ticker": "DG",
+      "date": "2026-03-19",
+      "price": 123.45,
+      "rsi": 9.6
+    },
+    {
+      "ticker": "BDX",
+      "date": "2026-03-19",
+      "price": 156.53,
+      "rsi": 10.0
+    },
+    {
+      "ticker": "UNP",
+      "date": "2026-03-19",
+      "price": 234.18,
+      "rsi": 10.0
+    },
+    {
+      "ticker": "SYY",
+      "date": "2026-03-19",
+      "price": 81.67,
+      "rsi": 10.1
+    },
+    {
+      "ticker": "SW",
+      "date": "2026-03-19",
+      "price": 36.93,
+      "rsi": 10.6
+    },
+    {
+      "ticker": "CPRT",
+      "date": "2026-03-19",
+      "price": 32.52,
+      "rsi": 10.7
     }
   ],
   "currentOverbought": [
     {
       "ticker": "PANW",
-      "date": "2026-03-18",
-      "price": 168.91,
-      "rsi": 89.8
+      "date": "2026-03-19",
+      "price": 169.74,
+      "rsi": 91.8
     },
     {
       "ticker": "APA",
-      "date": "2026-03-18",
-      "price": 36.61,
-      "rsi": 85.0
-    },
-    {
-      "ticker": "LYB",
-      "date": "2026-03-18",
-      "price": 75.2,
-      "rsi": 83.7
-    },
-    {
-      "ticker": "EOG",
-      "date": "2026-03-18",
-      "price": 137.52,
-      "rsi": 82.0
-    },
-    {
-      "ticker": "DOW",
-      "date": "2026-03-18",
-      "price": 37.69,
-      "rsi": 80.6
+      "date": "2026-03-19",
+      "price": 38.06,
+      "rsi": 85.2
     },
     {
       "ticker": "PSX",
-      "date": "2026-03-18",
-      "price": 172.74,
-      "rsi": 80.5
+      "date": "2026-03-19",
+      "price": 178.34,
+      "rsi": 82.5
+    },
+    {
+      "ticker": "LYB",
+      "date": "2026-03-19",
+      "price": 74.57,
+      "rsi": 81.1
+    },
+    {
+      "ticker": "EOG",
+      "date": "2026-03-19",
+      "price": 138.82,
+      "rsi": 80.8
     }
   ],
   "oversoldStats": {
-    "count": 9356,
-    "avg_return": 4.66,
-    "median_return": 3.86,
+    "count": 9370,
+    "avg_return": 4.65,
+    "median_return": 3.85,
     "win_rate": 60.5,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18605,
-    "avg_return": 4.46,
-    "median_return": 3.42,
+    "count": 18640,
+    "avg_return": 4.44,
+    "median_return": 3.4,
     "win_rate": 61.1,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -843,5 +837,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-03-18T22:23:56.535640Z"
+  "lastUpdated": "2026-03-19T22:18:28.654872Z"
 }
