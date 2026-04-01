@@ -166,92 +166,62 @@
   "currentOversold": [
     {
       "ticker": "HCA",
-      "date": "2026-03-31",
-      "price": 473.24,
-      "rsi": 8.5
+      "date": "2026-04-01",
+      "price": 474.75,
+      "rsi": 11.0
     },
     {
       "ticker": "SJM",
-      "date": "2026-03-31",
-      "price": 96.44,
-      "rsi": 10.5
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-03-31",
-      "price": 155.52,
-      "rsi": 13.9
-    },
-    {
-      "ticker": "CTAS",
-      "date": "2026-03-31",
-      "price": 169.14,
-      "rsi": 15.3
+      "date": "2026-04-01",
+      "price": 95.49,
+      "rsi": 11.0
     },
     {
       "ticker": "MKTX",
-      "date": "2026-03-31",
-      "price": 164.98,
-      "rsi": 18.7
+      "date": "2026-04-01",
+      "price": 165.62,
+      "rsi": 11.4
     },
     {
-      "ticker": "DG",
-      "date": "2026-03-31",
-      "price": 118.73,
-      "rsi": 18.9
+      "ticker": "LDOS",
+      "date": "2026-04-01",
+      "price": 156.01,
+      "rsi": 14.1
     },
     {
       "ticker": "MCK",
-      "date": "2026-03-31",
-      "price": 865.36,
-      "rsi": 19.8
+      "date": "2026-04-01",
+      "price": 872.32,
+      "rsi": 17.5
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "COP",
-      "date": "2026-03-31",
-      "price": 132.0,
-      "rsi": 86.4
+      "ticker": "EA",
+      "date": "2026-04-01",
+      "price": 203.58,
+      "rsi": 84.8
     },
     {
-      "ticker": "APA",
-      "date": "2026-03-31",
-      "price": 42.44,
-      "rsi": 85.0
-    },
-    {
-      "ticker": "XOM",
-      "date": "2026-03-31",
-      "price": 169.66,
-      "rsi": 81.9
-    },
-    {
-      "ticker": "FANG",
-      "date": "2026-03-31",
-      "price": 197.79,
-      "rsi": 81.4
-    },
-    {
-      "ticker": "OXY",
-      "date": "2026-03-31",
-      "price": 65.0,
-      "rsi": 81.4
+      "ticker": "ODFL",
+      "date": "2026-04-01",
+      "price": 199.63,
+      "rsi": 83.3
     }
   ],
   "oversoldStats": {
-    "count": 9347,
-    "avg_return": 4.61,
-    "median_return": 3.78,
+    "count": 9346,
+    "avg_return": 4.62,
+    "median_return": 3.79,
     "win_rate": 60.2,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18810,
-    "avg_return": 4.27,
-    "median_return": 3.26,
-    "win_rate": 60.5,
+    "count": 18839,
+    "avg_return": 4.26,
+    "median_return": 3.24,
+    "win_rate": 60.4,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -759,5 +729,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-03-31T22:25:02.448000Z"
+  "lastUpdated": "2026-04-01T22:27:44.127670Z"
 }
