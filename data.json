@@ -166,60 +166,48 @@
   "currentOversold": [
     {
       "ticker": "HCA",
-      "date": "2026-04-01",
-      "price": 474.75,
-      "rsi": 11.0
+      "date": "2026-04-02",
+      "price": 471.84,
+      "rsi": 10.1
     },
     {
       "ticker": "SJM",
-      "date": "2026-04-01",
-      "price": 95.49,
-      "rsi": 11.0
+      "date": "2026-04-02",
+      "price": 95.47,
+      "rsi": 10.4
     },
     {
-      "ticker": "MKTX",
-      "date": "2026-04-01",
-      "price": 165.62,
-      "rsi": 11.4
+      "ticker": "UHS",
+      "date": "2026-04-02",
+      "price": 176.7,
+      "rsi": 17.2
     },
     {
-      "ticker": "LDOS",
-      "date": "2026-04-01",
-      "price": 156.01,
-      "rsi": 14.1
-    },
-    {
-      "ticker": "MCK",
-      "date": "2026-04-01",
-      "price": 872.32,
-      "rsi": 17.5
+      "ticker": "SYY",
+      "date": "2026-04-02",
+      "price": 71.16,
+      "rsi": 18.9
     }
   ],
   "currentOverbought": [
     {
       "ticker": "EA",
-      "date": "2026-04-01",
-      "price": 203.58,
-      "rsi": 84.8
-    },
-    {
-      "ticker": "ODFL",
-      "date": "2026-04-01",
-      "price": 199.63,
-      "rsi": 83.3
+      "date": "2026-04-02",
+      "price": 203.6,
+      "rsi": 84.5
     }
   ],
   "oversoldStats": {
-    "count": 9346,
-    "avg_return": 4.62,
-    "median_return": 3.79,
-    "win_rate": 60.2,
+    "count": 9364,
+    "avg_return": 4.61,
+    "median_return": 3.77,
+    "win_rate": 60.1,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18839,
-    "avg_return": 4.26,
+    "count": 18847,
+    "avg_return": 4.25,
     "median_return": 3.24,
     "win_rate": 60.4,
     "best_return": 121.93,
@@ -729,5 +717,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-01T22:27:44.127670Z"
+  "lastUpdated": "2026-04-02T22:23:25.915962Z"
 }
