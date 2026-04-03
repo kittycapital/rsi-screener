@@ -186,7 +186,7 @@
       "ticker": "SYY",
       "date": "2026-04-02",
       "price": 71.16,
-      "rsi": 18.9
+      "rsi": 19.3
     }
   ],
   "currentOverbought": [
@@ -198,7 +198,7 @@
     }
   ],
   "oversoldStats": {
-    "count": 9364,
+    "count": 9368,
     "avg_return": 4.61,
     "median_return": 3.77,
     "win_rate": 60.1,
@@ -206,9 +206,9 @@
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18847,
-    "avg_return": 4.25,
-    "median_return": 3.24,
+    "count": 18837,
+    "avg_return": 4.24,
+    "median_return": 3.23,
     "win_rate": 60.4,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -717,5 +717,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-02T22:23:25.915962Z"
+  "lastUpdated": "2026-04-03T22:23:13.123281Z"
 }
