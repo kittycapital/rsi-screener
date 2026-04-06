@@ -165,50 +165,50 @@
   ],
   "currentOversold": [
     {
-      "ticker": "HCA",
-      "date": "2026-04-02",
-      "price": 471.84,
-      "rsi": 10.1
-    },
-    {
       "ticker": "SJM",
-      "date": "2026-04-02",
-      "price": 95.47,
-      "rsi": 10.4
+      "date": "2026-04-06",
+      "price": 95.22,
+      "rsi": 11.1
     },
     {
-      "ticker": "UHS",
-      "date": "2026-04-02",
-      "price": 176.7,
-      "rsi": 17.2
+      "ticker": "NKE",
+      "date": "2026-04-06",
+      "price": 44.03,
+      "rsi": 18.0
     },
     {
-      "ticker": "SYY",
-      "date": "2026-04-02",
-      "price": 71.16,
-      "rsi": 19.3
+      "ticker": "PG",
+      "date": "2026-04-06",
+      "price": 142.77,
+      "rsi": 19.8
     }
   ],
   "currentOverbought": [
     {
       "ticker": "EA",
-      "date": "2026-04-02",
-      "price": 203.6,
-      "rsi": 84.5
+      "date": "2026-04-06",
+      "price": 204.16,
+      "rsi": 83.4
+    },
+    {
+      "ticker": "VRSN",
+      "date": "2026-04-06",
+      "price": 274.51,
+      "rsi": 82.7
     }
   ],
   "oversoldStats": {
-    "count": 9368,
-    "avg_return": 4.61,
-    "median_return": 3.77,
+    "count": 9386,
+    "avg_return": 4.59,
+    "median_return": 3.75,
     "win_rate": 60.1,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18837,
-    "avg_return": 4.24,
-    "median_return": 3.23,
+    "count": 18769,
+    "avg_return": 4.25,
+    "median_return": 3.24,
     "win_rate": 60.4,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -717,5 +717,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-03T22:23:13.123281Z"
+  "lastUpdated": "2026-04-06T22:25:35.254861Z"
 }
