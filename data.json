@@ -165,40 +165,64 @@
   ],
   "currentOversold": [
     {
+      "ticker": "PODD",
+      "date": "2026-04-07",
+      "price": 202.46,
+      "rsi": 11.0
+    },
+    {
       "ticker": "SJM",
-      "date": "2026-04-06",
-      "price": 95.22,
-      "rsi": 11.1
+      "date": "2026-04-07",
+      "price": 94.15,
+      "rsi": 12.4
+    },
+    {
+      "ticker": "AXON",
+      "date": "2026-04-07",
+      "price": 372.87,
+      "rsi": 14.1
     },
     {
       "ticker": "NKE",
-      "date": "2026-04-06",
-      "price": 44.03,
-      "rsi": 18.0
+      "date": "2026-04-07",
+      "price": 42.69,
+      "rsi": 15.1
+    },
+    {
+      "ticker": "ABT",
+      "date": "2026-04-07",
+      "price": 101.83,
+      "rsi": 15.8
     },
     {
       "ticker": "PG",
-      "date": "2026-04-06",
-      "price": 142.77,
-      "rsi": 19.8
+      "date": "2026-04-07",
+      "price": 141.3,
+      "rsi": 18.8
+    },
+    {
+      "ticker": "BSX",
+      "date": "2026-04-07",
+      "price": 61.86,
+      "rsi": 19.5
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "EA",
-      "date": "2026-04-06",
-      "price": 204.16,
-      "rsi": 83.4
+      "ticker": "VRSN",
+      "date": "2026-04-07",
+      "price": 274.75,
+      "rsi": 82.5
     },
     {
-      "ticker": "VRSN",
-      "date": "2026-04-06",
-      "price": 274.51,
-      "rsi": 82.7
+      "ticker": "EA",
+      "date": "2026-04-07",
+      "price": 203.95,
+      "rsi": 81.6
     }
   ],
   "oversoldStats": {
-    "count": 9386,
+    "count": 9385,
     "avg_return": 4.59,
     "median_return": 3.75,
     "win_rate": 60.1,
@@ -206,7 +230,7 @@
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18769,
+    "count": 18771,
     "avg_return": 4.25,
     "median_return": 3.24,
     "win_rate": 60.4,
@@ -717,5 +741,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-06T22:25:35.254861Z"
+  "lastUpdated": "2026-04-07T22:28:25.935138Z"
 }
