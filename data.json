@@ -165,145 +165,175 @@
   ],
   "currentOversold": [
     {
-      "ticker": "SJM",
-      "date": "2026-04-08",
-      "price": 93.79,
-      "rsi": 13.4
-    },
-    {
       "ticker": "PODD",
-      "date": "2026-04-08",
-      "price": 203.51,
-      "rsi": 13.6
+      "date": "2026-04-09",
+      "price": 199.42,
+      "rsi": 12.7
     },
     {
-      "ticker": "NKE",
-      "date": "2026-04-08",
-      "price": 43.13,
-      "rsi": 18.9
+      "ticker": "SJM",
+      "date": "2026-04-09",
+      "price": 92.47,
+      "rsi": 13.0
+    },
+    {
+      "ticker": "INTU",
+      "date": "2026-04-09",
+      "price": 361.69,
+      "rsi": 16.7
+    },
+    {
+      "ticker": "AXON",
+      "date": "2026-04-09",
+      "price": 351.33,
+      "rsi": 18.2
     },
     {
       "ticker": "VRSK",
-      "date": "2026-04-08",
-      "price": 175.43,
-      "rsi": 19.6
+      "date": "2026-04-09",
+      "price": 169.41,
+      "rsi": 18.3
+    },
+    {
+      "ticker": "NOW",
+      "date": "2026-04-09",
+      "price": 89.81,
+      "rsi": 18.9
     }
   ],
   "currentOverbought": [
     {
       "ticker": "TFC",
-      "date": "2026-04-08",
-      "price": 49.29,
-      "rsi": 88.0
+      "date": "2026-04-09",
+      "price": 50.48,
+      "rsi": 89.7
     },
     {
-      "ticker": "JBHT",
-      "date": "2026-04-08",
-      "price": 224.63,
-      "rsi": 87.3
+      "ticker": "UNP",
+      "date": "2026-04-09",
+      "price": 251.15,
+      "rsi": 88.5
     },
     {
-      "ticker": "BK",
-      "date": "2026-04-08",
-      "price": 127.94,
-      "rsi": 83.3
+      "ticker": "CSX",
+      "date": "2026-04-09",
+      "price": 42.49,
+      "rsi": 87.2
     },
     {
       "ticker": "MTB",
-      "date": "2026-04-08",
-      "price": 219.04,
-      "rsi": 83.1
+      "date": "2026-04-09",
+      "price": 222.99,
+      "rsi": 86.8
+    },
+    {
+      "ticker": "JBHT",
+      "date": "2026-04-09",
+      "price": 225.22,
+      "rsi": 86.6
+    },
+    {
+      "ticker": "NSC",
+      "date": "2026-04-09",
+      "price": 295.3,
+      "rsi": 86.1
+    },
+    {
+      "ticker": "FITB",
+      "date": "2026-04-09",
+      "price": 50.22,
+      "rsi": 85.4
+    },
+    {
+      "ticker": "BF-B",
+      "date": "2026-04-09",
+      "price": 30.31,
+      "rsi": 84.4
+    },
+    {
+      "ticker": "GWW",
+      "date": "2026-04-09",
+      "price": 1172.21,
+      "rsi": 84.4
+    },
+    {
+      "ticker": "ACGL",
+      "date": "2026-04-09",
+      "price": 98.84,
+      "rsi": 84.2
     },
     {
       "ticker": "PNC",
-      "date": "2026-04-08",
-      "price": 220.76,
-      "rsi": 83.0
+      "date": "2026-04-09",
+      "price": 223.23,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "STT",
+      "date": "2026-04-09",
+      "price": 138.49,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "USB",
+      "date": "2026-04-09",
+      "price": 56.33,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "BK",
+      "date": "2026-04-09",
+      "price": 128.58,
+      "rsi": 83.6
+    },
+    {
+      "ticker": "TSN",
+      "date": "2026-04-09",
+      "price": 65.42,
+      "rsi": 83.6
+    },
+    {
+      "ticker": "RF",
+      "date": "2026-04-09",
+      "price": 28.15,
+      "rsi": 83.4
+    },
+    {
+      "ticker": "CFG",
+      "date": "2026-04-09",
+      "price": 64.97,
+      "rsi": 83.2
+    },
+    {
+      "ticker": "COST",
+      "date": "2026-04-09",
+      "price": 1032.03,
+      "rsi": 83.2
+    },
+    {
+      "ticker": "KEY",
+      "date": "2026-04-09",
+      "price": 21.65,
+      "rsi": 82.5
     },
     {
       "ticker": "HOLX",
       "date": "2026-04-07",
       "price": 76.01,
       "rsi": 82.4
-    },
-    {
-      "ticker": "CFG",
-      "date": "2026-04-08",
-      "price": 63.78,
-      "rsi": 82.1
-    },
-    {
-      "ticker": "STT",
-      "date": "2026-04-08",
-      "price": 136.13,
-      "rsi": 81.9
-    },
-    {
-      "ticker": "FITB",
-      "date": "2026-04-08",
-      "price": 49.34,
-      "rsi": 81.8
-    },
-    {
-      "ticker": "KEY",
-      "date": "2026-04-08",
-      "price": 21.29,
-      "rsi": 81.7
-    },
-    {
-      "ticker": "USB",
-      "date": "2026-04-08",
-      "price": 55.36,
-      "rsi": 81.5
-    },
-    {
-      "ticker": "VRSN",
-      "date": "2026-04-08",
-      "price": 270.9,
-      "rsi": 81.5
-    },
-    {
-      "ticker": "WST",
-      "date": "2026-04-08",
-      "price": 265.93,
-      "rsi": 81.3
-    },
-    {
-      "ticker": "GWW",
-      "date": "2026-04-08",
-      "price": 1146.72,
-      "rsi": 80.6
-    },
-    {
-      "ticker": "NTRS",
-      "date": "2026-04-08",
-      "price": 151.74,
-      "rsi": 80.4
-    },
-    {
-      "ticker": "RF",
-      "date": "2026-04-08",
-      "price": 27.47,
-      "rsi": 80.4
-    },
-    {
-      "ticker": "EA",
-      "date": "2026-04-08",
-      "price": 203.99,
-      "rsi": 80.2
     }
   ],
   "oversoldStats": {
-    "count": 9374,
-    "avg_return": 4.58,
-    "median_return": 3.73,
+    "count": 9388,
+    "avg_return": 4.57,
+    "median_return": 3.72,
     "win_rate": 60.0,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18756,
-    "avg_return": 4.26,
+    "count": 18777,
+    "avg_return": 4.25,
     "median_return": 3.25,
     "win_rate": 60.4,
     "best_return": 121.93,
@@ -812,5 +842,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-08T22:29:58.614285Z"
+  "lastUpdated": "2026-04-09T22:31:53.138606Z"
 }
