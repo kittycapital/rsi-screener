@@ -166,131 +166,107 @@
   "currentOversold": [
     {
       "ticker": "VZ",
-      "date": "2026-04-14",
-      "price": 45.48,
-      "rsi": 7.8
+      "date": "2026-04-15",
+      "price": 45.03,
+      "rsi": 8.0
+    },
+    {
+      "ticker": "EQT",
+      "date": "2026-04-15",
+      "price": 56.76,
+      "rsi": 11.8
     },
     {
       "ticker": "T",
-      "date": "2026-04-14",
-      "price": 25.62,
-      "rsi": 13.1
+      "date": "2026-04-15",
+      "price": 25.46,
+      "rsi": 12.8
     },
     {
       "ticker": "KMI",
-      "date": "2026-04-14",
-      "price": 31.65,
+      "date": "2026-04-15",
+      "price": 31.7,
       "rsi": 16.7
     },
     {
       "ticker": "TMUS",
-      "date": "2026-04-14",
-      "price": 190.0,
-      "rsi": 16.8
+      "date": "2026-04-15",
+      "price": 190.19,
+      "rsi": 17.0
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "SPG",
-      "date": "2026-04-14",
-      "price": 202.96,
-      "rsi": 94.2
-    },
-    {
-      "ticker": "ZBH",
-      "date": "2026-04-14",
-      "price": 96.52,
-      "rsi": 93.9
-    },
-    {
       "ticker": "NFLX",
-      "date": "2026-04-14",
-      "price": 106.28,
+      "date": "2026-04-15",
+      "price": 107.71,
       "rsi": 93.4
     },
     {
       "ticker": "DLR",
-      "date": "2026-04-14",
-      "price": 195.79,
-      "rsi": 92.3
-    },
-    {
-      "ticker": "FRT",
-      "date": "2026-04-14",
-      "price": 110.21,
-      "rsi": 91.1
-    },
-    {
-      "ticker": "PPL",
-      "date": "2026-04-14",
-      "price": 39.61,
-      "rsi": 90.2
-    },
-    {
-      "ticker": "NSC",
-      "date": "2026-04-14",
-      "price": 299.7,
-      "rsi": 90.1
-    },
-    {
-      "ticker": "PSA",
-      "date": "2026-04-14",
-      "price": 304.0,
-      "rsi": 89.4
-    },
-    {
-      "ticker": "EQIX",
-      "date": "2026-04-14",
-      "price": 1057.37,
-      "rsi": 89.0
+      "date": "2026-04-15",
+      "price": 195.69,
+      "rsi": 91.3
     },
     {
       "ticker": "REG",
-      "date": "2026-04-14",
-      "price": 79.57,
-      "rsi": 89.0
+      "date": "2026-04-15",
+      "price": 79.52,
+      "rsi": 90.5
     },
     {
-      "ticker": "CSX",
-      "date": "2026-04-14",
-      "price": 42.51,
-      "rsi": 88.4
+      "ticker": "FRT",
+      "date": "2026-04-15",
+      "price": 110.15,
+      "rsi": 90.4
     },
     {
-      "ticker": "JBHT",
-      "date": "2026-04-14",
-      "price": 229.61,
-      "rsi": 86.9
+      "ticker": "SPG",
+      "date": "2026-04-15",
+      "price": 201.61,
+      "rsi": 88.6
     },
     {
-      "ticker": "ETR",
-      "date": "2026-04-14",
-      "price": 115.57,
-      "rsi": 83.8
+      "ticker": "NSC",
+      "date": "2026-04-15",
+      "price": 297.71,
+      "rsi": 86.0
     },
     {
-      "ticker": "NUE",
-      "date": "2026-04-14",
-      "price": 190.04,
-      "rsi": 83.7
+      "ticker": "O",
+      "date": "2026-04-15",
+      "price": 63.96,
+      "rsi": 86.0
     },
     {
-      "ticker": "UNP",
-      "date": "2026-04-14",
-      "price": 252.04,
-      "rsi": 83.0
+      "ticker": "EQIX",
+      "date": "2026-04-15",
+      "price": 1052.98,
+      "rsi": 85.7
     },
     {
       "ticker": "WELL",
-      "date": "2026-04-14",
-      "price": 210.99,
-      "rsi": 83.0
+      "date": "2026-04-15",
+      "price": 211.33,
+      "rsi": 83.2
+    },
+    {
+      "ticker": "PPL",
+      "date": "2026-04-15",
+      "price": 39.36,
+      "rsi": 83.1
     },
     {
       "ticker": "STT",
-      "date": "2026-04-14",
-      "price": 141.78,
-      "rsi": 82.6
+      "date": "2026-04-15",
+      "price": 142.74,
+      "rsi": 82.8
+    },
+    {
+      "ticker": "PSA",
+      "date": "2026-04-15",
+      "price": 299.83,
+      "rsi": 82.5
     },
     {
       "ticker": "HOLX",
@@ -299,31 +275,61 @@
       "rsi": 82.4
     },
     {
-      "ticker": "SBAC",
-      "date": "2026-04-14",
-      "price": 218.08,
-      "rsi": 81.8
+      "ticker": "AES",
+      "date": "2026-04-15",
+      "price": 14.45,
+      "rsi": 82.0
+    },
+    {
+      "ticker": "NUE",
+      "date": "2026-04-15",
+      "price": 189.6,
+      "rsi": 81.7
     },
     {
       "ticker": "FCX",
-      "date": "2026-04-14",
-      "price": 68.27,
-      "rsi": 81.5
+      "date": "2026-04-15",
+      "price": 68.7,
+      "rsi": 81.3
+    },
+    {
+      "ticker": "ETR",
+      "date": "2026-04-15",
+      "price": 114.95,
+      "rsi": 80.9
+    },
+    {
+      "ticker": "BK",
+      "date": "2026-04-15",
+      "price": 131.96,
+      "rsi": 80.8
+    },
+    {
+      "ticker": "MS",
+      "date": "2026-04-15",
+      "price": 191.62,
+      "rsi": 80.7
+    },
+    {
+      "ticker": "NTRS",
+      "date": "2026-04-15",
+      "price": 156.07,
+      "rsi": 80.7
     }
   ],
   "oversoldStats": {
-    "count": 9406,
-    "avg_return": 4.56,
+    "count": 9416,
+    "avg_return": 4.55,
     "median_return": 3.71,
     "win_rate": 59.9,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18558,
+    "count": 18581,
     "avg_return": 4.27,
     "median_return": 3.27,
-    "win_rate": 60.5,
+    "win_rate": 60.4,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -830,5 +836,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-14T22:37:45.431151Z"
+  "lastUpdated": "2026-04-15T22:34:02.882805Z"
 }
