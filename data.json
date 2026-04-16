@@ -165,169 +165,145 @@
   ],
   "currentOversold": [
     {
-      "ticker": "VZ",
-      "date": "2026-04-15",
-      "price": 45.03,
-      "rsi": 8.0
-    },
-    {
-      "ticker": "EQT",
-      "date": "2026-04-15",
-      "price": 56.76,
-      "rsi": 11.8
-    },
-    {
-      "ticker": "T",
-      "date": "2026-04-15",
-      "price": 25.46,
-      "rsi": 12.8
-    },
-    {
       "ticker": "KMI",
-      "date": "2026-04-15",
-      "price": 31.7,
+      "date": "2026-04-16",
+      "price": 31.79,
       "rsi": 16.7
-    },
-    {
-      "ticker": "TMUS",
-      "date": "2026-04-15",
-      "price": 190.19,
-      "rsi": 17.0
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "NFLX",
-      "date": "2026-04-15",
-      "price": 107.71,
-      "rsi": 93.4
+      "ticker": "DLR",
+      "date": "2026-04-16",
+      "price": 199.05,
+      "rsi": 98.6
     },
     {
-      "ticker": "DLR",
-      "date": "2026-04-15",
-      "price": 195.69,
-      "rsi": 91.3
+      "ticker": "NFLX",
+      "date": "2026-04-16",
+      "price": 107.79,
+      "rsi": 93.0
     },
     {
       "ticker": "REG",
-      "date": "2026-04-15",
-      "price": 79.52,
-      "rsi": 90.5
+      "date": "2026-04-16",
+      "price": 79.65,
+      "rsi": 91.5
     },
     {
-      "ticker": "FRT",
-      "date": "2026-04-15",
-      "price": 110.15,
-      "rsi": 90.4
-    },
-    {
-      "ticker": "SPG",
-      "date": "2026-04-15",
-      "price": 201.61,
-      "rsi": 88.6
-    },
-    {
-      "ticker": "NSC",
-      "date": "2026-04-15",
-      "price": 297.71,
-      "rsi": 86.0
-    },
-    {
-      "ticker": "O",
-      "date": "2026-04-15",
-      "price": 63.96,
-      "rsi": 86.0
-    },
-    {
-      "ticker": "EQIX",
-      "date": "2026-04-15",
-      "price": 1052.98,
-      "rsi": 85.7
-    },
-    {
-      "ticker": "WELL",
-      "date": "2026-04-15",
-      "price": 211.33,
-      "rsi": 83.2
-    },
-    {
-      "ticker": "PPL",
-      "date": "2026-04-15",
-      "price": 39.36,
-      "rsi": 83.1
-    },
-    {
-      "ticker": "STT",
-      "date": "2026-04-15",
-      "price": 142.74,
-      "rsi": 82.8
-    },
-    {
-      "ticker": "PSA",
-      "date": "2026-04-15",
-      "price": 299.83,
-      "rsi": 82.5
-    },
-    {
-      "ticker": "HOLX",
-      "date": "2026-04-07",
-      "price": 76.01,
-      "rsi": 82.4
+      "ticker": "AMD",
+      "date": "2026-04-16",
+      "price": 278.26,
+      "rsi": 91.4
     },
     {
       "ticker": "AES",
-      "date": "2026-04-15",
-      "price": 14.45,
-      "rsi": 82.0
+      "date": "2026-04-16",
+      "price": 14.5,
+      "rsi": 90.2
     },
     {
-      "ticker": "NUE",
-      "date": "2026-04-15",
-      "price": 189.6,
-      "rsi": 81.7
+      "ticker": "WELL",
+      "date": "2026-04-16",
+      "price": 214.51,
+      "rsi": 89.5
     },
     {
-      "ticker": "FCX",
-      "date": "2026-04-15",
-      "price": 68.7,
-      "rsi": 81.3
+      "ticker": "EQIX",
+      "date": "2026-04-16",
+      "price": 1070.9,
+      "rsi": 89.1
     },
     {
-      "ticker": "ETR",
-      "date": "2026-04-15",
-      "price": 114.95,
-      "rsi": 80.9
+      "ticker": "FRT",
+      "date": "2026-04-16",
+      "price": 110.04,
+      "rsi": 88.9
+    },
+    {
+      "ticker": "NSC",
+      "date": "2026-04-16",
+      "price": 302.63,
+      "rsi": 88.3
     },
     {
       "ticker": "BK",
-      "date": "2026-04-15",
-      "price": 131.96,
-      "rsi": 80.8
+      "date": "2026-04-16",
+      "price": 134.84,
+      "rsi": 87.6
     },
     {
-      "ticker": "MS",
-      "date": "2026-04-15",
-      "price": 191.62,
-      "rsi": 80.7
+      "ticker": "SPG",
+      "date": "2026-04-16",
+      "price": 201.35,
+      "rsi": 87.6
+    },
+    {
+      "ticker": "O",
+      "date": "2026-04-16",
+      "price": 64.64,
+      "rsi": 87.1
+    },
+    {
+      "ticker": "INTC",
+      "date": "2026-04-16",
+      "price": 68.5,
+      "rsi": 87.0
+    },
+    {
+      "ticker": "ANET",
+      "date": "2026-04-16",
+      "price": 161.01,
+      "rsi": 86.8
+    },
+    {
+      "ticker": "AVGO",
+      "date": "2026-04-16",
+      "price": 398.47,
+      "rsi": 86.7
     },
     {
       "ticker": "NTRS",
-      "date": "2026-04-15",
-      "price": 156.07,
-      "rsi": 80.7
+      "date": "2026-04-16",
+      "price": 156.77,
+      "rsi": 86.7
+    },
+    {
+      "ticker": "GOOG",
+      "date": "2026-04-16",
+      "price": 332.77,
+      "rsi": 85.7
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2026-04-16",
+      "price": 336.02,
+      "rsi": 85.4
+    },
+    {
+      "ticker": "STX",
+      "date": "2026-04-16",
+      "price": 531.81,
+      "rsi": 85.4
+    },
+    {
+      "ticker": "FCX",
+      "date": "2026-04-16",
+      "price": 68.28,
+      "rsi": 85.3
     }
   ],
   "oversoldStats": {
-    "count": 9416,
-    "avg_return": 4.55,
-    "median_return": 3.71,
+    "count": 9428,
+    "avg_return": 4.54,
+    "median_return": 3.7,
     "win_rate": 59.9,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18581,
-    "avg_return": 4.27,
+    "count": 18610,
+    "avg_return": 4.26,
     "median_return": 3.27,
     "win_rate": 60.4,
     "best_return": 121.93,
@@ -836,5 +812,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-15T22:34:02.882805Z"
+  "lastUpdated": "2026-04-16T22:30:40.374083Z"
 }
