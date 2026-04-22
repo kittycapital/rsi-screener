@@ -165,136 +165,154 @@
   ],
   "currentOversold": [
     {
+      "ticker": "NOC",
+      "date": "2026-04-22",
+      "price": 589.62,
+      "rsi": 11.6
+    },
+    {
       "ticker": "JNJ",
-      "date": "2026-04-21",
-      "price": 226.16,
-      "rsi": 17.8
+      "date": "2026-04-22",
+      "price": 226.1,
+      "rsi": 17.9
+    },
+    {
+      "ticker": "RSG",
+      "date": "2026-04-22",
+      "price": 205.29,
+      "rsi": 18.8
+    },
+    {
+      "ticker": "SO",
+      "date": "2026-04-22",
+      "price": 91.87,
+      "rsi": 19.1
     }
   ],
   "currentOverbought": [
     {
       "ticker": "ON",
-      "date": "2026-04-21",
-      "price": 86.91,
+      "date": "2026-04-22",
+      "price": 88.99,
       "rsi": 100.0
     },
     {
       "ticker": "MCHP",
-      "date": "2026-04-21",
-      "price": 80.93,
+      "date": "2026-04-22",
+      "price": 82.48,
       "rsi": 99.9
     },
     {
       "ticker": "ANET",
-      "date": "2026-04-21",
-      "price": 172.86,
+      "date": "2026-04-22",
+      "price": 177.73,
       "rsi": 99.1
     },
     {
-      "ticker": "NTRS",
-      "date": "2026-04-21",
-      "price": 171.74,
-      "rsi": 98.3
-    },
-    {
-      "ticker": "STT",
-      "date": "2026-04-21",
-      "price": 153.57,
-      "rsi": 97.2
-    },
-    {
       "ticker": "AMD",
-      "date": "2026-04-21",
-      "price": 284.49,
-      "rsi": 96.1
-    },
-    {
-      "ticker": "MPWR",
-      "date": "2026-04-21",
-      "price": 1527.95,
-      "rsi": 95.7
-    },
-    {
-      "ticker": "BK",
-      "date": "2026-04-21",
-      "price": 137.92,
-      "rsi": 95.2
+      "date": "2026-04-22",
+      "price": 303.46,
+      "rsi": 96.6
     },
     {
       "ticker": "QQQ",
-      "date": "2026-04-21",
-      "price": 644.33,
-      "rsi": 94.1
-    },
-    {
-      "ticker": "WDC",
-      "date": "2026-04-21",
-      "price": 383.81,
-      "rsi": 93.7
-    },
-    {
-      "ticker": "UNH",
-      "date": "2026-04-21",
-      "price": 346.01,
-      "rsi": 93.5
+      "date": "2026-04-22",
+      "price": 655.11,
+      "rsi": 94.3
     },
     {
       "ticker": "AVGO",
-      "date": "2026-04-21",
-      "price": 402.17,
-      "rsi": 93.4
+      "date": "2026-04-22",
+      "price": 422.65,
+      "rsi": 94.3
     },
     {
-      "ticker": "JBL",
-      "date": "2026-04-21",
-      "price": 333.68,
-      "rsi": 93.0
+      "ticker": "MPWR",
+      "date": "2026-04-22",
+      "price": 1522.04,
+      "rsi": 94.2
+    },
+    {
+      "ticker": "UNH",
+      "date": "2026-04-22",
+      "price": 353.52,
+      "rsi": 93.8
     },
     {
       "ticker": "AMZN",
-      "date": "2026-04-21",
-      "price": 249.91,
-      "rsi": 92.6
+      "date": "2026-04-22",
+      "price": 255.36,
+      "rsi": 93.1
     },
     {
-      "ticker": "KEYS",
-      "date": "2026-04-21",
-      "price": 339.3,
-      "rsi": 91.5
+      "ticker": "STT",
+      "date": "2026-04-22",
+      "price": 152.4,
+      "rsi": 92.9
+    },
+    {
+      "ticker": "JBL",
+      "date": "2026-04-22",
+      "price": 336.4,
+      "rsi": 92.7
+    },
+    {
+      "ticker": "WDC",
+      "date": "2026-04-22",
+      "price": 389.1,
+      "rsi": 92.4
     },
     {
       "ticker": "NVDA",
-      "date": "2026-04-21",
-      "price": 199.88,
-      "rsi": 91.3
+      "date": "2026-04-22",
+      "price": 202.5,
+      "rsi": 91.6
     },
     {
       "ticker": "NUE",
-      "date": "2026-04-21",
-      "price": 208.06,
-      "rsi": 90.5
+      "date": "2026-04-22",
+      "price": 214.26,
+      "rsi": 90.8
     },
     {
       "ticker": "SPY",
-      "date": "2026-04-21",
-      "price": 704.08,
-      "rsi": 90.2
+      "date": "2026-04-22",
+      "price": 711.21,
+      "rsi": 90.6
     },
     {
-      "ticker": "HPE",
-      "date": "2026-04-21",
-      "price": 28.76,
-      "rsi": 90.2
+      "ticker": "GEV",
+      "date": "2026-04-22",
+      "price": 1127.56,
+      "rsi": 90.6
+    },
+    {
+      "ticker": "BXP",
+      "date": "2026-04-22",
+      "price": 58.29,
+      "rsi": 90.3
     },
     {
       "ticker": "TXN",
-      "date": "2026-04-21",
-      "price": 233.15,
-      "rsi": 90.1
+      "date": "2026-04-22",
+      "price": 236.31,
+      "rsi": 90.3
+    },
+    {
+      "ticker": "POOL",
+      "date": "2026-04-22",
+      "price": 234.22,
+      "rsi": 90.2
+    },
+    {
+      "ticker": "KEYS",
+      "date": "2026-04-22",
+      "price": 338.97,
+      "rsi": 89.9
     }
   ],
   "oversoldStats": {
-    "count": 9449,
+    "count": 9461,
     "avg_return": 4.49,
     "median_return": 3.68,
     "win_rate": 59.8,
@@ -302,9 +320,9 @@
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18488,
+    "count": 18513,
     "avg_return": 4.24,
-    "median_return": 3.26,
+    "median_return": 3.25,
     "win_rate": 60.3,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -812,5 +830,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-21T22:31:06.916523Z"
+  "lastUpdated": "2026-04-22T22:39:26.422098Z"
 }
