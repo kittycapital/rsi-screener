@@ -166,181 +166,181 @@
   "currentOversold": [
     {
       "ticker": "LMT",
-      "date": "2026-04-24",
-      "price": 513.45,
-      "rsi": 4.9
+      "date": "2026-04-27",
+      "price": 513.35,
+      "rsi": 5.3
     },
     {
       "ticker": "NOC",
-      "date": "2026-04-24",
-      "price": 575.11,
-      "rsi": 7.5
+      "date": "2026-04-27",
+      "price": 575.28,
+      "rsi": 7.9
+    },
+    {
+      "ticker": "CTVA",
+      "date": "2026-04-27",
+      "price": 79.42,
+      "rsi": 10.4
+    },
+    {
+      "ticker": "CME",
+      "date": "2026-04-27",
+      "price": 281.94,
+      "rsi": 15.8
     },
     {
       "ticker": "GD",
-      "date": "2026-04-24",
-      "price": 313.21,
-      "rsi": 16.0
+      "date": "2026-04-27",
+      "price": 312.53,
+      "rsi": 16.7
     },
     {
-      "ticker": "LHX",
-      "date": "2026-04-24",
-      "price": 317.51,
-      "rsi": 19.1
+      "ticker": "KMI",
+      "date": "2026-04-27",
+      "price": 30.95,
+      "rsi": 17.5
     },
     {
       "ticker": "RTX",
-      "date": "2026-04-24",
-      "price": 174.26,
-      "rsi": 19.2
-    },
-    {
-      "ticker": "TSCO",
-      "date": "2026-04-24",
-      "price": 36.74,
-      "rsi": 19.6
-    },
-    {
-      "ticker": "HII",
-      "date": "2026-04-24",
-      "price": 359.29,
-      "rsi": 19.9
+      "date": "2026-04-27",
+      "price": 173.38,
+      "rsi": 19.0
     }
   ],
   "currentOverbought": [
     {
       "ticker": "ON",
-      "date": "2026-04-24",
-      "price": 98.4,
-      "rsi": 100.0
+      "date": "2026-04-27",
+      "price": 98.04,
+      "rsi": 99.0
     },
     {
       "ticker": "JBL",
-      "date": "2026-04-24",
-      "price": 341.65,
-      "rsi": 98.7
-    },
-    {
-      "ticker": "AMD",
-      "date": "2026-04-24",
-      "price": 347.81,
+      "date": "2026-04-27",
+      "price": 340.8,
       "rsi": 97.4
     },
     {
       "ticker": "NUE",
-      "date": "2026-04-24",
-      "price": 214.29,
-      "rsi": 96.4
-    },
-    {
-      "ticker": "MCHP",
-      "date": "2026-04-24",
-      "price": 89.44,
-      "rsi": 95.1
+      "date": "2026-04-27",
+      "price": 215.0,
+      "rsi": 96.1
     },
     {
       "ticker": "WDC",
-      "date": "2026-04-24",
-      "price": 404.0,
-      "rsi": 95.1
-    },
-    {
-      "ticker": "MPWR",
-      "date": "2026-04-24",
-      "price": 1632.06,
-      "rsi": 95.0
-    },
-    {
-      "ticker": "AMZN",
-      "date": "2026-04-24",
-      "price": 263.99,
-      "rsi": 94.6
-    },
-    {
-      "ticker": "STLD",
-      "date": "2026-04-24",
-      "price": 226.79,
-      "rsi": 93.5
-    },
-    {
-      "ticker": "UNH",
-      "date": "2026-04-24",
-      "price": 354.92,
-      "rsi": 93.4
-    },
-    {
-      "ticker": "NXPI",
-      "date": "2026-04-24",
-      "price": 244.04,
-      "rsi": 93.1
-    },
-    {
-      "ticker": "AVGO",
-      "date": "2026-04-24",
-      "price": 422.76,
-      "rsi": 92.5
-    },
-    {
-      "ticker": "TER",
-      "date": "2026-04-24",
-      "price": 418.08,
-      "rsi": 91.6
-    },
-    {
-      "ticker": "ANET",
-      "date": "2026-04-24",
-      "price": 176.91,
-      "rsi": 91.5
-    },
-    {
-      "ticker": "GEV",
-      "date": "2026-04-24",
-      "price": 1149.19,
-      "rsi": 91.5
+      "date": "2026-04-27",
+      "price": 400.73,
+      "rsi": 91.8
     },
     {
       "ticker": "QQQ",
-      "date": "2026-04-24",
-      "price": 663.88,
+      "date": "2026-04-27",
+      "price": 664.23,
       "rsi": 91.1
     },
     {
-      "ticker": "TXN",
-      "date": "2026-04-24",
-      "price": 277.14,
-      "rsi": 91.1
+      "ticker": "STLD",
+      "date": "2026-04-27",
+      "price": 225.04,
+      "rsi": 90.6
     },
     {
-      "ticker": "KEYS",
-      "date": "2026-04-24",
-      "price": 346.96,
-      "rsi": 90.7
+      "ticker": "AMZN",
+      "date": "2026-04-27",
+      "price": 261.12,
+      "rsi": 90.0
+    },
+    {
+      "ticker": "UNH",
+      "date": "2026-04-27",
+      "price": 354.69,
+      "rsi": 90.0
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-04-27",
+      "price": 216.61,
+      "rsi": 88.8
+    },
+    {
+      "ticker": "AMD",
+      "date": "2026-04-27",
+      "price": 334.63,
+      "rsi": 88.6
+    },
+    {
+      "ticker": "MOH",
+      "date": "2026-04-27",
+      "price": 179.22,
+      "rsi": 88.4
+    },
+    {
+      "ticker": "QCOM",
+      "date": "2026-04-27",
+      "price": 150.26,
+      "rsi": 88.1
     },
     {
       "ticker": "CMI",
-      "date": "2026-04-24",
-      "price": 660.75,
-      "rsi": 88.2
+      "date": "2026-04-27",
+      "price": 660.78,
+      "rsi": 87.8
     },
     {
       "ticker": "INTC",
-      "date": "2026-04-24",
-      "price": 82.54,
-      "rsi": 87.7
+      "date": "2026-04-27",
+      "price": 84.99,
+      "rsi": 87.8
+    },
+    {
+      "ticker": "STT",
+      "date": "2026-04-27",
+      "price": 154.02,
+      "rsi": 87.8
+    },
+    {
+      "ticker": "SPY",
+      "date": "2026-04-27",
+      "price": 715.17,
+      "rsi": 87.6
+    },
+    {
+      "ticker": "AVGO",
+      "date": "2026-04-27",
+      "price": 418.2,
+      "rsi": 87.4
+    },
+    {
+      "ticker": "MU",
+      "date": "2026-04-27",
+      "price": 524.56,
+      "rsi": 87.3
+    },
+    {
+      "ticker": "MPWR",
+      "date": "2026-04-27",
+      "price": 1587.57,
+      "rsi": 87.0
+    },
+    {
+      "ticker": "TROW",
+      "date": "2026-04-27",
+      "price": 101.36,
+      "rsi": 86.7
     }
   ],
   "oversoldStats": {
-    "count": 9460,
-    "avg_return": 4.46,
-    "median_return": 3.66,
+    "count": 9433,
+    "avg_return": 4.44,
+    "median_return": 3.64,
     "win_rate": 59.7,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18537,
+    "count": 18488,
     "avg_return": 4.22,
-    "median_return": 3.24,
+    "median_return": 3.23,
     "win_rate": 60.2,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -848,5 +848,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-24T22:32:09.971629Z"
+  "lastUpdated": "2026-04-27T22:40:37.320914Z"
 }
