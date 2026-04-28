@@ -166,179 +166,203 @@
   "currentOversold": [
     {
       "ticker": "LMT",
-      "date": "2026-04-27",
-      "price": 513.35,
-      "rsi": 5.3
+      "date": "2026-04-28",
+      "price": 512.29,
+      "rsi": 4.7
+    },
+    {
+      "ticker": "TSCO",
+      "date": "2026-04-28",
+      "price": 35.59,
+      "rsi": 9.6
     },
     {
       "ticker": "NOC",
-      "date": "2026-04-27",
-      "price": 575.28,
-      "rsi": 7.9
+      "date": "2026-04-28",
+      "price": 577.82,
+      "rsi": 9.8
     },
     {
-      "ticker": "CTVA",
-      "date": "2026-04-27",
-      "price": 79.42,
-      "rsi": 10.4
+      "ticker": "COO",
+      "date": "2026-04-28",
+      "price": 63.09,
+      "rsi": 10.7
     },
     {
-      "ticker": "CME",
-      "date": "2026-04-27",
-      "price": 281.94,
-      "rsi": 15.8
-    },
-    {
-      "ticker": "GD",
-      "date": "2026-04-27",
-      "price": 312.53,
-      "rsi": 16.7
-    },
-    {
-      "ticker": "KMI",
-      "date": "2026-04-27",
-      "price": 30.95,
-      "rsi": 17.5
+      "ticker": "PCG",
+      "date": "2026-04-28",
+      "price": 16.26,
+      "rsi": 11.8
     },
     {
       "ticker": "RTX",
-      "date": "2026-04-27",
-      "price": 173.38,
-      "rsi": 19.0
+      "date": "2026-04-28",
+      "price": 175.68,
+      "rsi": 11.8
+    },
+    {
+      "ticker": "CTVA",
+      "date": "2026-04-28",
+      "price": 78.94,
+      "rsi": 11.9
+    },
+    {
+      "ticker": "HII",
+      "date": "2026-04-28",
+      "price": 361.4,
+      "rsi": 14.3
+    },
+    {
+      "ticker": "GD",
+      "date": "2026-04-28",
+      "price": 313.68,
+      "rsi": 15.9
+    },
+    {
+      "ticker": "LHX",
+      "date": "2026-04-28",
+      "price": 324.88,
+      "rsi": 19.7
+    },
+    {
+      "ticker": "MKTX",
+      "date": "2026-04-28",
+      "price": 158.49,
+      "rsi": 19.9
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "ON",
-      "date": "2026-04-27",
-      "price": 98.04,
-      "rsi": 99.0
-    },
-    {
-      "ticker": "JBL",
-      "date": "2026-04-27",
-      "price": 340.8,
-      "rsi": 97.4
-    },
-    {
       "ticker": "NUE",
-      "date": "2026-04-27",
-      "price": 215.0,
-      "rsi": 96.1
-    },
-    {
-      "ticker": "WDC",
-      "date": "2026-04-27",
-      "price": 400.73,
-      "rsi": 91.8
-    },
-    {
-      "ticker": "QQQ",
-      "date": "2026-04-27",
-      "price": 664.23,
-      "rsi": 91.1
-    },
-    {
-      "ticker": "STLD",
-      "date": "2026-04-27",
-      "price": 225.04,
-      "rsi": 90.6
-    },
-    {
-      "ticker": "AMZN",
-      "date": "2026-04-27",
-      "price": 261.12,
-      "rsi": 90.0
+      "date": "2026-04-28",
+      "price": 225.11,
+      "rsi": 96.2
     },
     {
       "ticker": "UNH",
-      "date": "2026-04-27",
-      "price": 354.69,
-      "rsi": 90.0
+      "date": "2026-04-28",
+      "price": 366.77,
+      "rsi": 94.1
     },
     {
-      "ticker": "NVDA",
-      "date": "2026-04-27",
-      "price": 216.61,
-      "rsi": 88.8
+      "ticker": "CNC",
+      "date": "2026-04-28",
+      "price": 49.57,
+      "rsi": 90.2
     },
     {
-      "ticker": "AMD",
-      "date": "2026-04-27",
-      "price": 334.63,
-      "rsi": 88.6
+      "ticker": "STLD",
+      "date": "2026-04-28",
+      "price": 226.96,
+      "rsi": 89.1
     },
     {
       "ticker": "MOH",
-      "date": "2026-04-27",
-      "price": 179.22,
-      "rsi": 88.4
+      "date": "2026-04-28",
+      "price": 185.46,
+      "rsi": 88.5
+    },
+    {
+      "ticker": "AMZN",
+      "date": "2026-04-28",
+      "price": 259.7,
+      "rsi": 86.1
     },
     {
       "ticker": "QCOM",
-      "date": "2026-04-27",
-      "price": 150.26,
-      "rsi": 88.1
+      "date": "2026-04-28",
+      "price": 150.0,
+      "rsi": 86.1
     },
     {
-      "ticker": "CMI",
-      "date": "2026-04-27",
-      "price": 660.78,
-      "rsi": 87.8
+      "ticker": "ON",
+      "date": "2026-04-28",
+      "price": 93.3,
+      "rsi": 85.5
     },
     {
       "ticker": "INTC",
-      "date": "2026-04-27",
-      "price": 84.99,
-      "rsi": 87.8
+      "date": "2026-04-28",
+      "price": 84.52,
+      "rsi": 84.7
     },
     {
-      "ticker": "STT",
-      "date": "2026-04-27",
-      "price": 154.02,
-      "rsi": 87.8
+      "ticker": "URI",
+      "date": "2026-04-28",
+      "price": 962.72,
+      "rsi": 83.3
     },
     {
-      "ticker": "SPY",
-      "date": "2026-04-27",
-      "price": 715.17,
-      "rsi": 87.6
+      "ticker": "HOLX",
+      "date": "2026-04-07",
+      "price": 76.01,
+      "rsi": 82.4
     },
     {
-      "ticker": "AVGO",
-      "date": "2026-04-27",
-      "price": 418.2,
-      "rsi": 87.4
+      "ticker": "JBL",
+      "date": "2026-04-28",
+      "price": 330.83,
+      "rsi": 82.4
     },
     {
-      "ticker": "MU",
-      "date": "2026-04-27",
-      "price": 524.56,
-      "rsi": 87.3
+      "ticker": "MAS",
+      "date": "2026-04-28",
+      "price": 74.34,
+      "rsi": 82.0
     },
     {
-      "ticker": "MPWR",
-      "date": "2026-04-27",
-      "price": 1587.57,
-      "rsi": 87.0
+      "ticker": "QQQ",
+      "date": "2026-04-28",
+      "price": 657.55,
+      "rsi": 81.7
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-04-28",
+      "price": 213.17,
+      "rsi": 81.7
+    },
+    {
+      "ticker": "BEN",
+      "date": "2026-04-28",
+      "price": 29.46,
+      "rsi": 81.3
+    },
+    {
+      "ticker": "BXP",
+      "date": "2026-04-28",
+      "price": 59.16,
+      "rsi": 81.3
+    },
+    {
+      "ticker": "AMD",
+      "date": "2026-04-28",
+      "price": 323.21,
+      "rsi": 81.0
     },
     {
       "ticker": "TROW",
-      "date": "2026-04-27",
-      "price": 101.36,
-      "rsi": 86.7
+      "date": "2026-04-28",
+      "price": 100.77,
+      "rsi": 80.8
+    },
+    {
+      "ticker": "STT",
+      "date": "2026-04-28",
+      "price": 152.48,
+      "rsi": 80.5
     }
   ],
   "oversoldStats": {
-    "count": 9433,
-    "avg_return": 4.44,
-    "median_return": 3.64,
+    "count": 9442,
+    "avg_return": 4.43,
+    "median_return": 3.63,
     "win_rate": 59.7,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18488,
+    "count": 18491,
     "avg_return": 4.22,
     "median_return": 3.23,
     "win_rate": 60.2,
@@ -848,5 +872,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-27T22:40:37.320914Z"
+  "lastUpdated": "2026-04-28T22:46:10.738259Z"
 }
