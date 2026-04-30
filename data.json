@@ -165,230 +165,176 @@
   ],
   "currentOversold": [
     {
-      "ticker": "LMT",
-      "date": "2026-04-29",
-      "price": 509.81,
-      "rsi": 4.7
-    },
-    {
       "ticker": "TSCO",
-      "date": "2026-04-29",
-      "price": 34.77,
-      "rsi": 6.3
-    },
-    {
-      "ticker": "NOC",
-      "date": "2026-04-29",
-      "price": 572.41,
-      "rsi": 7.4
-    },
-    {
-      "ticker": "PCG",
-      "date": "2026-04-29",
-      "price": 16.37,
-      "rsi": 7.5
-    },
-    {
-      "ticker": "BF-B",
-      "date": "2026-04-29",
-      "price": 24.87,
+      "date": "2026-04-30",
+      "price": 35.1,
       "rsi": 9.2
     },
     {
-      "ticker": "COO",
-      "date": "2026-04-29",
-      "price": 61.34,
-      "rsi": 9.4
+      "ticker": "LMT",
+      "date": "2026-04-30",
+      "price": 517.97,
+      "rsi": 11.4
+    },
+    {
+      "ticker": "NOC",
+      "date": "2026-04-30",
+      "price": 579.48,
+      "rsi": 13.5
+    },
+    {
+      "ticker": "PCG",
+      "date": "2026-04-30",
+      "price": 16.62,
+      "rsi": 16.0
     },
     {
       "ticker": "RTX",
-      "date": "2026-04-29",
-      "price": 172.79,
-      "rsi": 11.0
+      "date": "2026-04-30",
+      "price": 176.07,
+      "rsi": 18.6
     },
     {
-      "ticker": "EIX",
-      "date": "2026-04-29",
-      "price": 67.94,
-      "rsi": 11.7
-    },
-    {
-      "ticker": "HON",
-      "date": "2026-04-29",
-      "price": 210.3,
-      "rsi": 14.1
-    },
-    {
-      "ticker": "PODD",
-      "date": "2026-04-29",
-      "price": 160.02,
-      "rsi": 15.8
-    },
-    {
-      "ticker": "HII",
-      "date": "2026-04-29",
-      "price": 362.17,
-      "rsi": 17.1
-    },
-    {
-      "ticker": "GILD",
-      "date": "2026-04-29",
-      "price": 128.84,
-      "rsi": 17.9
-    },
-    {
-      "ticker": "CTVA",
-      "date": "2026-04-29",
-      "price": 79.37,
-      "rsi": 18.3
-    },
-    {
-      "ticker": "SRE",
-      "date": "2026-04-29",
-      "price": 92.64,
-      "rsi": 19.6
-    },
-    {
-      "ticker": "LHX",
-      "date": "2026-04-29",
-      "price": 321.4,
-      "rsi": 19.9
+      "ticker": "COO",
+      "date": "2026-04-30",
+      "price": 62.9,
+      "rsi": 19.8
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "MOH",
-      "date": "2026-04-29",
-      "price": 196.49,
-      "rsi": 94.5
-    },
-    {
       "ticker": "UNH",
-      "date": "2026-04-29",
-      "price": 370.74,
-      "rsi": 94.3
-    },
-    {
-      "ticker": "CNC",
-      "date": "2026-04-29",
-      "price": 53.98,
-      "rsi": 92.3
-    },
-    {
-      "ticker": "NUE",
-      "date": "2026-04-29",
-      "price": 222.39,
-      "rsi": 90.6
+      "date": "2026-04-30",
+      "price": 370.48,
+      "rsi": 97.4
     },
     {
       "ticker": "QCOM",
-      "date": "2026-04-29",
-      "price": 156.0,
-      "rsi": 88.2
+      "date": "2026-04-30",
+      "price": 179.58,
+      "rsi": 92.8
     },
     {
-      "ticker": "ON",
-      "date": "2026-04-29",
-      "price": 98.86,
-      "rsi": 87.4
+      "ticker": "CNC",
+      "date": "2026-04-30",
+      "price": 53.69,
+      "rsi": 92.1
     },
     {
-      "ticker": "INTC",
-      "date": "2026-04-29",
-      "price": 94.75,
-      "rsi": 87.3
+      "ticker": "MOH",
+      "date": "2026-04-30",
+      "price": 194.62,
+      "rsi": 91.4
+    },
+    {
+      "ticker": "NUE",
+      "date": "2026-04-30",
+      "price": 225.29,
+      "rsi": 90.7
     },
     {
       "ticker": "NXPI",
-      "date": "2026-04-29",
-      "price": 289.25,
-      "rsi": 86.5
+      "date": "2026-04-30",
+      "price": 293.59,
+      "rsi": 88.0
     },
     {
-      "ticker": "HUM",
-      "date": "2026-04-29",
-      "price": 243.12,
+      "ticker": "ON",
+      "date": "2026-04-30",
+      "price": 100.81,
+      "rsi": 88.0
+    },
+    {
+      "ticker": "ELV",
+      "date": "2026-04-30",
+      "price": 376.42,
+      "rsi": 87.9
+    },
+    {
+      "ticker": "GOOGL",
+      "date": "2026-04-30",
+      "price": 384.8,
+      "rsi": 87.3
+    },
+    {
+      "ticker": "GOOG",
+      "date": "2026-04-30",
+      "price": 381.94,
+      "rsi": 86.8
+    },
+    {
+      "ticker": "PWR",
+      "date": "2026-04-30",
+      "price": 727.77,
+      "rsi": 86.7
+    },
+    {
+      "ticker": "INTC",
+      "date": "2026-04-30",
+      "price": 94.48,
+      "rsi": 86.6
+    },
+    {
+      "ticker": "MTCH",
+      "date": "2026-04-30",
+      "price": 37.42,
+      "rsi": 86.2
+    },
+    {
+      "ticker": "WDC",
+      "date": "2026-04-30",
+      "price": 434.52,
+      "rsi": 86.1
+    },
+    {
+      "ticker": "SWKS",
+      "date": "2026-04-30",
+      "price": 70.17,
       "rsi": 85.2
     },
     {
       "ticker": "STLD",
-      "date": "2026-04-29",
-      "price": 224.37,
-      "rsi": 84.0
+      "date": "2026-04-30",
+      "price": 228.66,
+      "rsi": 85.1
     },
     {
-      "ticker": "WDC",
-      "date": "2026-04-29",
-      "price": 412.76,
-      "rsi": 84.0
+      "ticker": "TROW",
+      "date": "2026-04-30",
+      "price": 102.88,
+      "rsi": 85.0
     },
     {
-      "ticker": "AMZN",
-      "date": "2026-04-29",
-      "price": 263.04,
-      "rsi": 83.3
+      "ticker": "PFG",
+      "date": "2026-04-30",
+      "price": 100.91,
+      "rsi": 84.6
     },
     {
-      "ticker": "ELV",
-      "date": "2026-04-29",
-      "price": 376.63,
-      "rsi": 83.0
-    },
-    {
-      "ticker": "HOLX",
-      "date": "2026-04-07",
-      "price": 76.01,
-      "rsi": 82.4
-    },
-    {
-      "ticker": "AMD",
-      "date": "2026-04-29",
-      "price": 337.11,
-      "rsi": 82.1
+      "ticker": "QRVO",
+      "date": "2026-04-30",
+      "price": 94.22,
+      "rsi": 84.3
     },
     {
       "ticker": "STX",
-      "date": "2026-04-29",
-      "price": 643.3,
-      "rsi": 82.0
-    },
-    {
-      "ticker": "QQQ",
-      "date": "2026-04-29",
-      "price": 661.57,
-      "rsi": 81.7
-    },
-    {
-      "ticker": "JBL",
-      "date": "2026-04-29",
-      "price": 333.86,
-      "rsi": 81.6
-    },
-    {
-      "ticker": "NTAP",
-      "date": "2026-04-29",
-      "price": 108.65,
-      "rsi": 81.4
-    },
-    {
-      "ticker": "BEN",
-      "date": "2026-04-29",
-      "price": 29.45,
-      "rsi": 80.8
+      "date": "2026-04-30",
+      "price": 673.64,
+      "rsi": 84.0
     }
   ],
   "oversoldStats": {
-    "count": 9455,
-    "avg_return": 4.42,
-    "median_return": 3.62,
-    "win_rate": 59.6,
+    "count": 9476,
+    "avg_return": 4.39,
+    "median_return": 3.6,
+    "win_rate": 59.5,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18525,
-    "avg_return": 4.22,
-    "median_return": 3.23,
+    "count": 18554,
+    "avg_return": 4.24,
+    "median_return": 3.24,
     "win_rate": 60.2,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -896,5 +842,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-04-29T22:45:38.164836Z"
+  "lastUpdated": "2026-04-30T22:41:38.839041Z"
 }
