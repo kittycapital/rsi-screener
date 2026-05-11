@@ -166,215 +166,227 @@
   "currentOversold": [
     {
       "ticker": "EPAM",
-      "date": "2026-05-08",
-      "price": 99.23,
-      "rsi": 3.1
-    },
-    {
-      "ticker": "TSCO",
-      "date": "2026-05-08",
-      "price": 30.65,
-      "rsi": 4.5
+      "date": "2026-05-11",
+      "price": 97.35,
+      "rsi": 2.4
     },
     {
       "ticker": "ZTS",
-      "date": "2026-05-08",
-      "price": 82.83,
-      "rsi": 6.4
+      "date": "2026-05-11",
+      "price": 76.67,
+      "rsi": 6.2
     },
     {
-      "ticker": "NOC",
-      "date": "2026-05-08",
-      "price": 549.52,
-      "rsi": 8.4
-    },
-    {
-      "ticker": "LHX",
-      "date": "2026-05-08",
-      "price": 299.64,
-      "rsi": 11.6
+      "ticker": "TSCO",
+      "date": "2026-05-11",
+      "price": 30.25,
+      "rsi": 6.5
     },
     {
       "ticker": "CTSH",
-      "date": "2026-05-08",
-      "price": 51.68,
-      "rsi": 11.7
-    },
-    {
-      "ticker": "COO",
-      "date": "2026-05-08",
-      "price": 60.0,
-      "rsi": 12.4
-    },
-    {
-      "ticker": "HII",
-      "date": "2026-05-08",
-      "price": 316.28,
-      "rsi": 13.1
-    },
-    {
-      "ticker": "SYK",
-      "date": "2026-05-08",
-      "price": 285.47,
-      "rsi": 13.8
-    },
-    {
-      "ticker": "CHTR",
-      "date": "2026-05-08",
-      "price": 154.86,
-      "rsi": 13.9
-    },
-    {
-      "ticker": "MCK",
-      "date": "2026-05-08",
-      "price": 736.09,
-      "rsi": 14.4
-    },
-    {
-      "ticker": "DHR",
-      "date": "2026-05-08",
-      "price": 171.16,
-      "rsi": 14.8
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-05-08",
-      "price": 130.11,
-      "rsi": 14.9
-    },
-    {
-      "ticker": "EA",
-      "date": "2026-05-08",
-      "price": 200.44,
-      "rsi": 15.1
-    },
-    {
-      "ticker": "LMT",
-      "date": "2026-05-08",
-      "price": 506.51,
-      "rsi": 16.8
+      "date": "2026-05-11",
+      "price": 49.25,
+      "rsi": 8.3
     },
     {
       "ticker": "BRO",
-      "date": "2026-05-08",
-      "price": 56.45,
-      "rsi": 16.9
+      "date": "2026-05-11",
+      "price": 55.35,
+      "rsi": 10.1
     },
     {
-      "ticker": "MSI",
-      "date": "2026-05-08",
-      "price": 383.99,
-      "rsi": 17.2
+      "ticker": "EA",
+      "date": "2026-05-11",
+      "price": 200.22,
+      "rsi": 10.5
+    },
+    {
+      "ticker": "NOC",
+      "date": "2026-05-11",
+      "price": 548.21,
+      "rsi": 12.8
+    },
+    {
+      "ticker": "DHR",
+      "date": "2026-05-11",
+      "price": 166.52,
+      "rsi": 13.4
+    },
+    {
+      "ticker": "CHTR",
+      "date": "2026-05-11",
+      "price": 147.79,
+      "rsi": 13.5
+    },
+    {
+      "ticker": "COO",
+      "date": "2026-05-11",
+      "price": 58.98,
+      "rsi": 13.6
+    },
+    {
+      "ticker": "TJX",
+      "date": "2026-05-11",
+      "price": 148.91,
+      "rsi": 14.0
+    },
+    {
+      "ticker": "CDW",
+      "date": "2026-05-11",
+      "price": 102.54,
+      "rsi": 14.2
+    },
+    {
+      "ticker": "LDOS",
+      "date": "2026-05-11",
+      "price": 127.68,
+      "rsi": 14.5
+    },
+    {
+      "ticker": "MCK",
+      "date": "2026-05-11",
+      "price": 725.17,
+      "rsi": 14.9
+    },
+    {
+      "ticker": "DG",
+      "date": "2026-05-11",
+      "price": 104.63,
+      "rsi": 15.6
+    },
+    {
+      "ticker": "SYK",
+      "date": "2026-05-11",
+      "price": 282.58,
+      "rsi": 15.6
+    },
+    {
+      "ticker": "BIO",
+      "date": "2026-05-11",
+      "price": 243.79,
+      "rsi": 16.0
     },
     {
       "ticker": "LULU",
-      "date": "2026-05-08",
-      "price": 131.18,
-      "rsi": 17.8
+      "date": "2026-05-11",
+      "price": 126.34,
+      "rsi": 16.4
     },
     {
-      "ticker": "COR",
-      "date": "2026-05-08",
-      "price": 261.08,
-      "rsi": 18.0
+      "ticker": "TRMB",
+      "date": "2026-05-11",
+      "price": 58.04,
+      "rsi": 16.4
     },
     {
-      "ticker": "CSGP",
-      "date": "2026-05-08",
-      "price": 32.77,
-      "rsi": 18.6
+      "ticker": "HII",
+      "date": "2026-05-11",
+      "price": 317.75,
+      "rsi": 16.5
     }
   ],
   "currentOverbought": [
     {
       "ticker": "CNC",
-      "date": "2026-05-08",
-      "price": 55.96,
-      "rsi": 91.6
-    },
-    {
-      "ticker": "GOOGL",
-      "date": "2026-05-08",
-      "price": 400.8,
-      "rsi": 89.3
-    },
-    {
-      "ticker": "INTC",
-      "date": "2026-05-08",
-      "price": 124.92,
-      "rsi": 88.4
-    },
-    {
-      "ticker": "GOOG",
-      "date": "2026-05-08",
-      "price": 397.05,
-      "rsi": 88.0
-    },
-    {
-      "ticker": "MU",
-      "date": "2026-05-08",
-      "price": 746.81,
-      "rsi": 88.0
-    },
-    {
-      "ticker": "STX",
-      "date": "2026-05-08",
-      "price": 782.64,
-      "rsi": 88.0
-    },
-    {
-      "ticker": "UNH",
-      "date": "2026-05-08",
-      "price": 379.98,
-      "rsi": 87.8
-    },
-    {
-      "ticker": "AKAM",
-      "date": "2026-05-08",
-      "price": 147.71,
-      "rsi": 87.2
-    },
-    {
-      "ticker": "DVA",
-      "date": "2026-05-08",
-      "price": 198.65,
-      "rsi": 87.2
-    },
-    {
-      "ticker": "ELV",
-      "date": "2026-05-08",
-      "price": 378.07,
-      "rsi": 86.5
-    },
-    {
-      "ticker": "HUM",
-      "date": "2026-05-08",
-      "price": 274.96,
-      "rsi": 86.5
-    },
-    {
-      "ticker": "QCOM",
-      "date": "2026-05-08",
-      "price": 219.09,
-      "rsi": 86.2
-    },
-    {
-      "ticker": "FTNT",
-      "date": "2026-05-08",
-      "price": 114.07,
-      "rsi": 86.0
+      "date": "2026-05-11",
+      "price": 56.36,
+      "rsi": 91.4
     },
     {
       "ticker": "GNRC",
-      "date": "2026-05-08",
-      "price": 269.41,
-      "rsi": 85.8
+      "date": "2026-05-11",
+      "price": 271.4,
+      "rsi": 90.3
+    },
+    {
+      "ticker": "QCOM",
+      "date": "2026-05-11",
+      "price": 237.53,
+      "rsi": 89.5
+    },
+    {
+      "ticker": "MU",
+      "date": "2026-05-11",
+      "price": 795.33,
+      "rsi": 89.3
+    },
+    {
+      "ticker": "STX",
+      "date": "2026-05-11",
+      "price": 834.01,
+      "rsi": 89.1
+    },
+    {
+      "ticker": "INTC",
+      "date": "2026-05-11",
+      "price": 129.44,
+      "rsi": 89.0
+    },
+    {
+      "ticker": "AKAM",
+      "date": "2026-05-11",
+      "price": 153.01,
+      "rsi": 88.0
+    },
+    {
+      "ticker": "DVA",
+      "date": "2026-05-11",
+      "price": 198.93,
+      "rsi": 87.2
     },
     {
       "ticker": "QQQ",
-      "date": "2026-05-08",
-      "price": 711.23,
-      "rsi": 84.2
+      "date": "2026-05-11",
+      "price": 713.29,
+      "rsi": 86.7
+    },
+    {
+      "ticker": "ELV",
+      "date": "2026-05-11",
+      "price": 381.75,
+      "rsi": 85.6
+    },
+    {
+      "ticker": "FTNT",
+      "date": "2026-05-11",
+      "price": 115.44,
+      "rsi": 85.6
+    },
+    {
+      "ticker": "MDLZ",
+      "date": "2026-05-11",
+      "price": 61.41,
+      "rsi": 84.8
+    },
+    {
+      "ticker": "DOC",
+      "date": "2026-05-11",
+      "price": 19.76,
+      "rsi": 84.6
+    },
+    {
+      "ticker": "HUM",
+      "date": "2026-05-11",
+      "price": 274.26,
+      "rsi": 84.6
+    },
+    {
+      "ticker": "UNH",
+      "date": "2026-05-11",
+      "price": 384.44,
+      "rsi": 84.0
+    },
+    {
+      "ticker": "GOOG",
+      "date": "2026-05-11",
+      "price": 386.77,
+      "rsi": 82.6
+    },
+    {
+      "ticker": "WDC",
+      "date": "2026-05-11",
+      "price": 515.83,
+      "rsi": 82.6
     },
     {
       "ticker": "HOLX",
@@ -383,57 +395,49 @@
       "rsi": 82.4
     },
     {
+      "ticker": "GOOGL",
+      "date": "2026-05-11",
+      "price": 388.64,
+      "rsi": 82.2
+    },
+    {
       "ticker": "ADM",
-      "date": "2026-05-08",
-      "price": 77.66,
-      "rsi": 80.9
-    },
-    {
-      "ticker": "AMD",
-      "date": "2026-05-08",
-      "price": 455.19,
-      "rsi": 80.7
-    },
-    {
-      "ticker": "VTRS",
-      "date": "2026-05-08",
-      "price": 17.17,
-      "rsi": 80.1
-    },
-    {
-      "ticker": "WDC",
-      "date": "2026-05-08",
-      "price": 480.0,
-      "rsi": 80.0
+      "date": "2026-05-11",
+      "price": 79.84,
+      "rsi": 81.8
     }
   ],
   "oversoldStats": {
-    "count": 9397,
-    "avg_return": 4.19,
-    "median_return": 3.31,
-    "win_rate": 58.8,
+    "count": 9519,
+    "avg_return": 4.22,
+    "median_return": 3.33,
+    "win_rate": 58.9,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18207,
-    "avg_return": 4.24,
-    "median_return": 3.21,
-    "win_rate": 60.1,
+    "count": 18648,
+    "avg_return": 4.22,
+    "median_return": 3.23,
+    "win_rate": 60.2,
     "best_return": 121.93,
     "worst_return": -50.99
   },
   "availableTickers": [
     "A",
     "AAPL",
+    "ABBV",
+    "ABNB",
     "ABT",
     "ACGL",
+    "ACN",
     "ADBE",
     "ADI",
     "ADM",
     "ADP",
     "ADSK",
     "AEE",
+    "AEP",
     "AES",
     "AFL",
     "AIG",
@@ -449,9 +453,11 @@
     "AMD",
     "AME",
     "AMGN",
+    "AMP",
     "AMT",
     "AMZN",
     "ANET",
+    "AON",
     "AOS",
     "APA",
     "APD",
@@ -490,6 +496,7 @@
     "BWA",
     "BX",
     "BXP",
+    "C",
     "CAG",
     "CAH",
     "CARR",
@@ -505,6 +512,7 @@
     "CEG",
     "CF",
     "CFG",
+    "CHD",
     "CHRW",
     "CHTR",
     "CI",
@@ -540,6 +548,7 @@
     "CVS",
     "CVX",
     "CZR",
+    "D",
     "DAL",
     "DD",
     "DE",
@@ -826,6 +835,7 @@
     "SOLV",
     "SPG",
     "SPGI",
+    "SPY",
     "SRE",
     "STE",
     "STLD",
@@ -916,5 +926,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-05-08T22:19:53.001686Z"
+  "lastUpdated": "2026-05-11T22:21:45.955359Z"
 }
