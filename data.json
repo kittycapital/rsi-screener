@@ -166,254 +166,260 @@
   "currentOversold": [
     {
       "ticker": "EPAM",
-      "date": "2026-05-12",
-      "price": 95.14,
-      "rsi": 2.4
+      "date": "2026-05-13",
+      "price": 90.39,
+      "rsi": 2.7
     },
     {
       "ticker": "ZTS",
-      "date": "2026-05-12",
-      "price": 76.94,
-      "rsi": 6.8
+      "date": "2026-05-13",
+      "price": 74.34,
+      "rsi": 6.7
+    },
+    {
+      "ticker": "CMCSA",
+      "date": "2026-05-13",
+      "price": 24.94,
+      "rsi": 7.6
     },
     {
       "ticker": "CTSH",
-      "date": "2026-05-12",
-      "price": 47.73,
-      "rsi": 8.4
+      "date": "2026-05-13",
+      "price": 45.97,
+      "rsi": 9.9
     },
     {
       "ticker": "TSCO",
-      "date": "2026-05-12",
-      "price": 30.59,
+      "date": "2026-05-13",
+      "price": 29.85,
       "rsi": 10.0
     },
     {
-      "ticker": "CDW",
-      "date": "2026-05-12",
-      "price": 99.3,
-      "rsi": 11.8
-    },
-    {
-      "ticker": "EA",
-      "date": "2026-05-12",
-      "price": 200.19,
-      "rsi": 12.7
-    },
-    {
-      "ticker": "BRO",
-      "date": "2026-05-12",
-      "price": 55.77,
-      "rsi": 13.2
-    },
-    {
-      "ticker": "CHTR",
-      "date": "2026-05-12",
-      "price": 147.92,
-      "rsi": 13.2
-    },
-    {
-      "ticker": "TRMB",
-      "date": "2026-05-12",
-      "price": 56.51,
-      "rsi": 14.4
-    },
-    {
-      "ticker": "POOL",
-      "date": "2026-05-12",
-      "price": 182.33,
-      "rsi": 14.9
-    },
-    {
-      "ticker": "DG",
-      "date": "2026-05-12",
-      "price": 102.98,
-      "rsi": 15.2
-    },
-    {
-      "ticker": "BIO",
-      "date": "2026-05-12",
-      "price": 241.71,
-      "rsi": 16.5
-    },
-    {
-      "ticker": "ROP",
-      "date": "2026-05-12",
-      "price": 323.94,
-      "rsi": 16.9
-    },
-    {
-      "ticker": "LULU",
-      "date": "2026-05-12",
-      "price": 125.13,
-      "rsi": 17.0
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-05-12",
-      "price": 128.39,
-      "rsi": 17.4
-    },
-    {
-      "ticker": "BSX",
-      "date": "2026-05-12",
-      "price": 54.1,
-      "rsi": 17.7
-    },
-    {
-      "ticker": "AJG",
-      "date": "2026-05-12",
-      "price": 197.4,
-      "rsi": 18.1
-    },
-    {
-      "ticker": "DHR",
-      "date": "2026-05-12",
-      "price": 166.26,
-      "rsi": 18.3
+      "ticker": "FE",
+      "date": "2026-05-13",
+      "price": 44.12,
+      "rsi": 10.1
     },
     {
       "ticker": "HUBB",
-      "date": "2026-05-12",
-      "price": 485.98,
-      "rsi": 18.9
+      "date": "2026-05-13",
+      "price": 483.79,
+      "rsi": 11.7
+    },
+    {
+      "ticker": "BRO",
+      "date": "2026-05-13",
+      "price": 54.38,
+      "rsi": 12.4
+    },
+    {
+      "ticker": "BSX",
+      "date": "2026-05-13",
+      "price": 53.06,
+      "rsi": 12.6
+    },
+    {
+      "ticker": "CHTR",
+      "date": "2026-05-13",
+      "price": 143.06,
+      "rsi": 12.8
+    },
+    {
+      "ticker": "EA",
+      "date": "2026-05-13",
+      "price": 200.18,
+      "rsi": 13.7
+    },
+    {
+      "ticker": "ROL",
+      "date": "2026-05-13",
+      "price": 52.82,
+      "rsi": 14.1
+    },
+    {
+      "ticker": "POOL",
+      "date": "2026-05-13",
+      "price": 175.37,
+      "rsi": 14.6
+    },
+    {
+      "ticker": "TRMB",
+      "date": "2026-05-13",
+      "price": 54.9,
+      "rsi": 14.8
+    },
+    {
+      "ticker": "CDW",
+      "date": "2026-05-13",
+      "price": 100.4,
+      "rsi": 15.1
+    },
+    {
+      "ticker": "DG",
+      "date": "2026-05-13",
+      "price": 101.75,
+      "rsi": 15.2
+    },
+    {
+      "ticker": "ROP",
+      "date": "2026-05-13",
+      "price": 316.25,
+      "rsi": 15.3
+    },
+    {
+      "ticker": "AJG",
+      "date": "2026-05-13",
+      "price": 192.0,
+      "rsi": 16.5
+    },
+    {
+      "ticker": "LDOS",
+      "date": "2026-05-13",
+      "price": 124.17,
+      "rsi": 16.8
+    },
+    {
+      "ticker": "PNR",
+      "date": "2026-05-13",
+      "price": 73.63,
+      "rsi": 17.7
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "CNC",
-      "date": "2026-05-12",
-      "price": 59.31,
-      "rsi": 93.3
-    },
-    {
-      "ticker": "GNRC",
-      "date": "2026-05-12",
-      "price": 269.59,
-      "rsi": 88.3
-    },
-    {
-      "ticker": "HUM",
-      "date": "2026-05-12",
-      "price": 295.35,
-      "rsi": 87.8
-    },
-    {
-      "ticker": "ELV",
-      "date": "2026-05-12",
-      "price": 393.3,
-      "rsi": 87.5
-    },
-    {
-      "ticker": "DOC",
-      "date": "2026-05-12",
-      "price": 19.78,
-      "rsi": 87.3
-    },
-    {
-      "ticker": "DVA",
-      "date": "2026-05-12",
-      "price": 200.54,
-      "rsi": 87.0
-    },
-    {
-      "ticker": "MDLZ",
-      "date": "2026-05-12",
-      "price": 61.7,
-      "rsi": 86.2
-    },
-    {
-      "ticker": "VTR",
-      "date": "2026-05-12",
-      "price": 88.53,
-      "rsi": 85.8
-    },
-    {
-      "ticker": "UDR",
-      "date": "2026-05-12",
-      "price": 37.37,
-      "rsi": 85.6
-    },
-    {
-      "ticker": "AKAM",
-      "date": "2026-05-12",
-      "price": 149.56,
-      "rsi": 85.1
-    },
-    {
-      "ticker": "CVS",
-      "date": "2026-05-12",
-      "price": 95.15,
-      "rsi": 85.1
-    },
-    {
-      "ticker": "UNH",
-      "date": "2026-05-12",
-      "price": 396.39,
-      "rsi": 85.1
-    },
-    {
-      "ticker": "ADM",
-      "date": "2026-05-12",
-      "price": 80.73,
-      "rsi": 84.8
-    },
-    {
-      "ticker": "VTRS",
-      "date": "2026-05-12",
-      "price": 17.17,
-      "rsi": 83.4
-    },
-    {
-      "ticker": "HOLX",
-      "date": "2026-04-07",
-      "price": 76.01,
-      "rsi": 82.4
-    },
-    {
-      "ticker": "MU",
-      "date": "2026-05-12",
-      "price": 766.58,
-      "rsi": 82.4
-    },
-    {
-      "ticker": "STX",
-      "date": "2026-05-12",
-      "price": 808.79,
-      "rsi": 82.2
+      "ticker": "PANW",
+      "date": "2026-05-13",
+      "price": 227.79,
+      "rsi": 92.2
     },
     {
       "ticker": "FTNT",
-      "date": "2026-05-12",
-      "price": 113.87,
-      "rsi": 81.7
+      "date": "2026-05-13",
+      "price": 117.69,
+      "rsi": 91.9
     },
     {
-      "ticker": "INTC",
-      "date": "2026-05-12",
-      "price": 120.61,
-      "rsi": 81.1
+      "ticker": "HUM",
+      "date": "2026-05-13",
+      "price": 304.85,
+      "rsi": 90.8
     },
     {
-      "ticker": "CBOE",
-      "date": "2026-05-12",
-      "price": 355.8,
-      "rsi": 80.8
+      "ticker": "CNC",
+      "date": "2026-05-13",
+      "price": 58.81,
+      "rsi": 90.5
+    },
+    {
+      "ticker": "CRWD",
+      "date": "2026-05-13",
+      "price": 562.57,
+      "rsi": 88.4
+    },
+    {
+      "ticker": "AKAM",
+      "date": "2026-05-13",
+      "price": 161.14,
+      "rsi": 88.1
+    },
+    {
+      "ticker": "BEN",
+      "date": "2026-05-13",
+      "price": 32.04,
+      "rsi": 87.0
+    },
+    {
+      "ticker": "ADM",
+      "date": "2026-05-13",
+      "price": 82.89,
+      "rsi": 86.2
+    },
+    {
+      "ticker": "UNH",
+      "date": "2026-05-13",
+      "price": 401.16,
+      "rsi": 86.0
+    },
+    {
+      "ticker": "ELV",
+      "date": "2026-05-13",
+      "price": 399.64,
+      "rsi": 85.5
+    },
+    {
+      "ticker": "GEN",
+      "date": "2026-05-13",
+      "price": 23.29,
+      "rsi": 85.4
+    },
+    {
+      "ticker": "CVS",
+      "date": "2026-05-13",
+      "price": 98.11,
+      "rsi": 85.0
+    },
+    {
+      "ticker": "MU",
+      "date": "2026-05-13",
+      "price": 803.63,
+      "rsi": 84.8
+    },
+    {
+      "ticker": "UDR",
+      "date": "2026-05-13",
+      "price": 37.56,
+      "rsi": 84.8
+    },
+    {
+      "ticker": "GNRC",
+      "date": "2026-05-13",
+      "price": 267.25,
+      "rsi": 84.6
+    },
+    {
+      "ticker": "VTR",
+      "date": "2026-05-13",
+      "price": 90.35,
+      "rsi": 84.5
+    },
+    {
+      "ticker": "QQQ",
+      "date": "2026-05-13",
+      "price": 714.71,
+      "rsi": 84.0
+    },
+    {
+      "ticker": "FFIV",
+      "date": "2026-05-13",
+      "price": 357.4,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "DVA",
+      "date": "2026-05-13",
+      "price": 198.1,
+      "rsi": 83.2
+    },
+    {
+      "ticker": "VTRS",
+      "date": "2026-05-13",
+      "price": 17.37,
+      "rsi": 83.2
     }
   ],
   "oversoldStats": {
-    "count": 9526,
-    "avg_return": 4.22,
-    "median_return": 3.33,
+    "count": 9558,
+    "avg_return": 4.21,
+    "median_return": 3.29,
     "win_rate": 58.8,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18676,
-    "avg_return": 4.2,
-    "median_return": 3.21,
-    "win_rate": 60.2,
+    "count": 18716,
+    "avg_return": 4.18,
+    "median_return": 3.2,
+    "win_rate": 60.1,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -920,5 +926,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-05-12T22:25:24.395774Z"
+  "lastUpdated": "2026-05-13T22:25:38.630121Z"
 }
