@@ -166,259 +166,223 @@
   "currentOversold": [
     {
       "ticker": "EPAM",
-      "date": "2026-05-13",
-      "price": 90.39,
-      "rsi": 2.7
+      "date": "2026-05-14",
+      "price": 89.69,
+      "rsi": 2.8
     },
     {
       "ticker": "ZTS",
-      "date": "2026-05-13",
-      "price": 74.34,
-      "rsi": 6.7
-    },
-    {
-      "ticker": "CMCSA",
-      "date": "2026-05-13",
-      "price": 24.94,
-      "rsi": 7.6
-    },
-    {
-      "ticker": "CTSH",
-      "date": "2026-05-13",
-      "price": 45.97,
-      "rsi": 9.9
-    },
-    {
-      "ticker": "TSCO",
-      "date": "2026-05-13",
-      "price": 29.85,
-      "rsi": 10.0
-    },
-    {
-      "ticker": "FE",
-      "date": "2026-05-13",
-      "price": 44.12,
-      "rsi": 10.1
-    },
-    {
-      "ticker": "HUBB",
-      "date": "2026-05-13",
-      "price": 483.79,
-      "rsi": 11.7
-    },
-    {
-      "ticker": "BRO",
-      "date": "2026-05-13",
-      "price": 54.38,
-      "rsi": 12.4
-    },
-    {
-      "ticker": "BSX",
-      "date": "2026-05-13",
-      "price": 53.06,
-      "rsi": 12.6
-    },
-    {
-      "ticker": "CHTR",
-      "date": "2026-05-13",
-      "price": 143.06,
-      "rsi": 12.8
-    },
-    {
-      "ticker": "EA",
-      "date": "2026-05-13",
-      "price": 200.18,
-      "rsi": 13.7
-    },
-    {
-      "ticker": "ROL",
-      "date": "2026-05-13",
-      "price": 52.82,
-      "rsi": 14.1
+      "date": "2026-05-14",
+      "price": 75.48,
+      "rsi": 7.3
     },
     {
       "ticker": "POOL",
-      "date": "2026-05-13",
-      "price": 175.37,
-      "rsi": 14.6
+      "date": "2026-05-14",
+      "price": 175.24,
+      "rsi": 9.9
+    },
+    {
+      "ticker": "CTSH",
+      "date": "2026-05-14",
+      "price": 46.05,
+      "rsi": 10.4
+    },
+    {
+      "ticker": "HUBB",
+      "date": "2026-05-14",
+      "price": 482.03,
+      "rsi": 12.1
+    },
+    {
+      "ticker": "FE",
+      "date": "2026-05-14",
+      "price": 44.5,
+      "rsi": 15.8
     },
     {
       "ticker": "TRMB",
-      "date": "2026-05-13",
-      "price": 54.9,
-      "rsi": 14.8
+      "date": "2026-05-14",
+      "price": 55.76,
+      "rsi": 17.4
     },
     {
-      "ticker": "CDW",
-      "date": "2026-05-13",
-      "price": 100.4,
-      "rsi": 15.1
-    },
-    {
-      "ticker": "DG",
-      "date": "2026-05-13",
-      "price": 101.75,
-      "rsi": 15.2
-    },
-    {
-      "ticker": "ROP",
-      "date": "2026-05-13",
-      "price": 316.25,
-      "rsi": 15.3
-    },
-    {
-      "ticker": "AJG",
-      "date": "2026-05-13",
-      "price": 192.0,
-      "rsi": 16.5
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-05-13",
-      "price": 124.17,
-      "rsi": 16.8
+      "ticker": "TSCO",
+      "date": "2026-05-14",
+      "price": 30.49,
+      "rsi": 17.5
     },
     {
       "ticker": "PNR",
-      "date": "2026-05-13",
-      "price": 73.63,
-      "rsi": 17.7
+      "date": "2026-05-14",
+      "price": 74.88,
+      "rsi": 17.6
+    },
+    {
+      "ticker": "CDW",
+      "date": "2026-05-14",
+      "price": 102.16,
+      "rsi": 18.3
+    },
+    {
+      "ticker": "SPGI",
+      "date": "2026-05-14",
+      "price": 403.92,
+      "rsi": 18.4
+    },
+    {
+      "ticker": "BIO",
+      "date": "2026-05-14",
+      "price": 246.27,
+      "rsi": 19.0
+    },
+    {
+      "ticker": "BSX",
+      "date": "2026-05-14",
+      "price": 53.55,
+      "rsi": 19.0
+    },
+    {
+      "ticker": "MCD",
+      "date": "2026-05-14",
+      "price": 274.97,
+      "rsi": 19.6
     }
   ],
   "currentOverbought": [
     {
       "ticker": "PANW",
-      "date": "2026-05-13",
-      "price": 227.79,
-      "rsi": 92.2
+      "date": "2026-05-14",
+      "price": 238.21,
+      "rsi": 92.8
     },
     {
       "ticker": "FTNT",
-      "date": "2026-05-13",
-      "price": 117.69,
-      "rsi": 91.9
-    },
-    {
-      "ticker": "HUM",
-      "date": "2026-05-13",
-      "price": 304.85,
-      "rsi": 90.8
+      "date": "2026-05-14",
+      "price": 121.86,
+      "rsi": 92.4
     },
     {
       "ticker": "CNC",
-      "date": "2026-05-13",
-      "price": 58.81,
-      "rsi": 90.5
+      "date": "2026-05-14",
+      "price": 58.7,
+      "rsi": 89.7
     },
     {
       "ticker": "CRWD",
-      "date": "2026-05-13",
-      "price": 562.57,
-      "rsi": 88.4
+      "date": "2026-05-14",
+      "price": 579.95,
+      "rsi": 89.4
     },
     {
-      "ticker": "AKAM",
-      "date": "2026-05-13",
-      "price": 161.14,
-      "rsi": 88.1
+      "ticker": "HUM",
+      "date": "2026-05-14",
+      "price": 301.35,
+      "rsi": 87.9
     },
     {
       "ticker": "BEN",
-      "date": "2026-05-13",
-      "price": 32.04,
+      "date": "2026-05-14",
+      "price": 32.35,
       "rsi": 87.0
     },
     {
-      "ticker": "ADM",
-      "date": "2026-05-13",
-      "price": 82.89,
-      "rsi": 86.2
-    },
-    {
-      "ticker": "UNH",
-      "date": "2026-05-13",
-      "price": 401.16,
-      "rsi": 86.0
-    },
-    {
-      "ticker": "ELV",
-      "date": "2026-05-13",
-      "price": 399.64,
-      "rsi": 85.5
-    },
-    {
-      "ticker": "GEN",
-      "date": "2026-05-13",
-      "price": 23.29,
-      "rsi": 85.4
-    },
-    {
-      "ticker": "CVS",
-      "date": "2026-05-13",
-      "price": 98.11,
-      "rsi": 85.0
-    },
-    {
-      "ticker": "MU",
-      "date": "2026-05-13",
-      "price": 803.63,
-      "rsi": 84.8
-    },
-    {
-      "ticker": "UDR",
-      "date": "2026-05-13",
-      "price": 37.56,
-      "rsi": 84.8
+      "ticker": "CSCO",
+      "date": "2026-05-14",
+      "price": 115.53,
+      "rsi": 86.7
     },
     {
       "ticker": "GNRC",
-      "date": "2026-05-13",
-      "price": 267.25,
-      "rsi": 84.6
+      "date": "2026-05-14",
+      "price": 276.49,
+      "rsi": 85.9
     },
     {
-      "ticker": "VTR",
-      "date": "2026-05-13",
-      "price": 90.35,
-      "rsi": 84.5
-    },
-    {
-      "ticker": "QQQ",
-      "date": "2026-05-13",
-      "price": 714.71,
-      "rsi": 84.0
+      "ticker": "CVS",
+      "date": "2026-05-14",
+      "price": 97.15,
+      "rsi": 84.9
     },
     {
       "ticker": "FFIV",
-      "date": "2026-05-13",
-      "price": 357.4,
-      "rsi": 83.9
-    },
-    {
-      "ticker": "DVA",
-      "date": "2026-05-13",
-      "price": 198.1,
-      "rsi": 83.2
+      "date": "2026-05-14",
+      "price": 364.59,
+      "rsi": 84.6
     },
     {
       "ticker": "VTRS",
-      "date": "2026-05-13",
-      "price": 17.37,
+      "date": "2026-05-14",
+      "price": 17.26,
+      "rsi": 84.3
+    },
+    {
+      "ticker": "ELV",
+      "date": "2026-05-14",
+      "price": 396.71,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "PM",
+      "date": "2026-05-14",
+      "price": 191.86,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "AKAM",
+      "date": "2026-05-14",
+      "price": 155.67,
+      "rsi": 83.6
+    },
+    {
+      "ticker": "GEN",
+      "date": "2026-05-14",
+      "price": 23.18,
+      "rsi": 83.4
+    },
+    {
+      "ticker": "UNH",
+      "date": "2026-05-14",
+      "price": 399.09,
       "rsi": 83.2
+    },
+    {
+      "ticker": "ADM",
+      "date": "2026-05-14",
+      "price": 81.41,
+      "rsi": 83.0
+    },
+    {
+      "ticker": "UDR",
+      "date": "2026-05-14",
+      "price": 37.34,
+      "rsi": 83.0
+    },
+    {
+      "ticker": "DOC",
+      "date": "2026-05-14",
+      "price": 19.56,
+      "rsi": 82.8
+    },
+    {
+      "ticker": "QQQ",
+      "date": "2026-05-14",
+      "price": 719.79,
+      "rsi": 82.7
     }
   ],
   "oversoldStats": {
-    "count": 9558,
-    "avg_return": 4.21,
-    "median_return": 3.29,
-    "win_rate": 58.8,
+    "count": 9595,
+    "avg_return": 4.2,
+    "median_return": 3.26,
+    "win_rate": 58.7,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18716,
-    "avg_return": 4.18,
-    "median_return": 3.2,
+    "count": 18767,
+    "avg_return": 4.17,
+    "median_return": 3.19,
     "win_rate": 60.1,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -926,5 +890,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-05-13T22:25:38.630121Z"
+  "lastUpdated": "2026-05-14T22:22:17.010041Z"
 }
