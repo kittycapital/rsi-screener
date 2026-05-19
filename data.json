@@ -166,176 +166,134 @@
   "currentOversold": [
     {
       "ticker": "HUBB",
-      "date": "2026-05-18",
-      "price": 470.87,
-      "rsi": 9.8
+      "date": "2026-05-19",
+      "price": 461.5,
+      "rsi": 7.8
+    },
+    {
+      "ticker": "PYPL",
+      "date": "2026-05-19",
+      "price": 43.83,
+      "rsi": 7.9
     },
     {
       "ticker": "ZTS",
-      "date": "2026-05-18",
-      "price": 77.72,
-      "rsi": 11.9
-    },
-    {
-      "ticker": "PPL",
-      "date": "2026-05-18",
-      "price": 34.93,
-      "rsi": 15.1
-    },
-    {
-      "ticker": "DHR",
-      "date": "2026-05-18",
-      "price": 163.86,
-      "rsi": 16.5
-    },
-    {
-      "ticker": "LULU",
-      "date": "2026-05-18",
-      "price": 120.26,
-      "rsi": 17.1
-    },
-    {
-      "ticker": "TRMB",
-      "date": "2026-05-18",
-      "price": 55.02,
-      "rsi": 17.4
-    },
-    {
-      "ticker": "FE",
-      "date": "2026-05-18",
-      "price": 44.32,
-      "rsi": 18.1
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-05-18",
-      "price": 124.84,
-      "rsi": 19.1
+      "date": "2026-05-19",
+      "price": 78.92,
+      "rsi": 14.7
     },
     {
       "ticker": "MLM",
-      "date": "2026-05-18",
-      "price": 555.78,
-      "rsi": 19.4
+      "date": "2026-05-19",
+      "price": 532.65,
+      "rsi": 15.7
     },
     {
-      "ticker": "CMCSA",
-      "date": "2026-05-18",
-      "price": 24.93,
-      "rsi": 19.6
+      "ticker": "TRMB",
+      "date": "2026-05-19",
+      "price": 54.56,
+      "rsi": 17.3
+    },
+    {
+      "ticker": "CDW",
+      "date": "2026-05-19",
+      "price": 104.35,
+      "rsi": 18.5
+    },
+    {
+      "ticker": "LULU",
+      "date": "2026-05-19",
+      "price": 119.22,
+      "rsi": 18.8
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "PANW",
-      "date": "2026-05-18",
-      "price": 247.55,
-      "rsi": 95.7
-    },
-    {
-      "ticker": "CSCO",
-      "date": "2026-05-18",
-      "price": 118.88,
-      "rsi": 92.9
-    },
-    {
       "ticker": "FTNT",
-      "date": "2026-05-18",
-      "price": 126.5,
+      "date": "2026-05-19",
+      "price": 127.64,
+      "rsi": 93.0
+    },
+    {
+      "ticker": "PM",
+      "date": "2026-05-19",
+      "price": 191.57,
       "rsi": 92.9
     },
     {
       "ticker": "CRWD",
-      "date": "2026-05-18",
-      "price": 618.83,
-      "rsi": 91.1
-    },
-    {
-      "ticker": "FFIV",
-      "date": "2026-05-18",
-      "price": 379.74,
-      "rsi": 89.3
-    },
-    {
-      "ticker": "HUM",
-      "date": "2026-05-18",
-      "price": 306.0,
-      "rsi": 86.8
-    },
-    {
-      "ticker": "DOC",
-      "date": "2026-05-18",
-      "price": 19.49,
-      "rsi": 86.4
+      "date": "2026-05-19",
+      "price": 616.88,
+      "rsi": 91.4
     },
     {
       "ticker": "GEN",
-      "date": "2026-05-18",
-      "price": 24.34,
-      "rsi": 85.8
+      "date": "2026-05-19",
+      "price": 24.32,
+      "rsi": 87.1
     },
     {
-      "ticker": "PM",
-      "date": "2026-05-18",
-      "price": 191.5,
-      "rsi": 84.9
+      "ticker": "PANW",
+      "date": "2026-05-19",
+      "price": 240.13,
+      "rsi": 86.8
     },
     {
-      "ticker": "DVA",
-      "date": "2026-05-18",
-      "price": 199.52,
-      "rsi": 84.0
+      "ticker": "FFIV",
+      "date": "2026-05-19",
+      "price": 383.5,
+      "rsi": 86.5
     },
     {
-      "ticker": "VRSN",
-      "date": "2026-05-18",
-      "price": 305.31,
-      "rsi": 83.6
+      "ticker": "HUM",
+      "date": "2026-05-19",
+      "price": 310.55,
+      "rsi": 85.6
+    },
+    {
+      "ticker": "DOC",
+      "date": "2026-05-19",
+      "price": 19.3,
+      "rsi": 84.4
     },
     {
       "ticker": "AAPL",
-      "date": "2026-05-18",
-      "price": 297.84,
-      "rsi": 82.6
+      "date": "2026-05-19",
+      "price": 298.97,
+      "rsi": 84.1
+    },
+    {
+      "ticker": "CSCO",
+      "date": "2026-05-19",
+      "price": 115.38,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "AES",
+      "date": "2026-05-19",
+      "price": 14.57,
+      "rsi": 82.5
     },
     {
       "ticker": "HOLX",
       "date": "2026-04-07",
       "price": 76.01,
       "rsi": 82.4
-    },
-    {
-      "ticker": "TTWO",
-      "date": "2026-05-18",
-      "price": 242.16,
-      "rsi": 82.2
-    },
-    {
-      "ticker": "SOLV",
-      "date": "2026-05-18",
-      "price": 76.13,
-      "rsi": 81.2
-    },
-    {
-      "ticker": "CNC",
-      "date": "2026-05-18",
-      "price": 58.23,
-      "rsi": 81.0
     }
   ],
   "oversoldStats": {
-    "count": 9617,
-    "avg_return": 4.2,
-    "median_return": 3.29,
-    "win_rate": 58.7,
+    "count": 9618,
+    "avg_return": 4.22,
+    "median_return": 3.32,
+    "win_rate": 58.8,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18791,
-    "avg_return": 4.1,
-    "median_return": 3.11,
-    "win_rate": 59.9,
+    "count": 18809,
+    "avg_return": 4.07,
+    "median_return": 3.08,
+    "win_rate": 59.8,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -842,5 +800,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-05-18T22:19:37.299074Z"
+  "lastUpdated": "2026-05-19T22:26:18.043048Z"
 }
