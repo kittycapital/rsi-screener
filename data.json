@@ -51,7 +51,7 @@
     {
       "ticker": "MCHP",
       "date": "2025-04-08",
-      "price": 34.31,
+      "price": 34.14,
       "rsi": 17.7,
       "type": "oversold",
       "forward_return": 114.09
@@ -318,17 +318,17 @@
     }
   ],
   "oversoldStats": {
-    "count": 9650,
-    "avg_return": 4.23,
-    "median_return": 3.33,
-    "win_rate": 58.8,
+    "count": 9552,
+    "avg_return": 4.28,
+    "median_return": 3.44,
+    "win_rate": 58.9,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18877,
-    "avg_return": 4.04,
-    "median_return": 3.03,
+    "count": 18839,
+    "avg_return": 4.02,
+    "median_return": 3.02,
     "win_rate": 59.7,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -836,5 +836,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-05-22T22:20:32.780947Z"
+  "lastUpdated": "2026-05-25T22:21:23.259846Z"
 }
