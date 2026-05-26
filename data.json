@@ -165,126 +165,78 @@
   ],
   "currentOversold": [
     {
-      "ticker": "PYPL",
-      "date": "2026-05-22",
-      "price": 44.23,
-      "rsi": 11.5
-    },
-    {
       "ticker": "CE",
-      "date": "2026-05-22",
-      "price": 52.39,
-      "rsi": 13.9
+      "date": "2026-05-26",
+      "price": 52.37,
+      "rsi": 12.9
     },
     {
       "ticker": "TRMB",
-      "date": "2026-05-22",
+      "date": "2026-05-26",
       "price": 56.34,
-      "rsi": 15.1
+      "rsi": 15.3
     },
     {
       "ticker": "ZTS",
-      "date": "2026-05-22",
-      "price": 81.32,
-      "rsi": 17.6
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-05-22",
-      "price": 126.01,
-      "rsi": 19.6
-    },
-    {
-      "ticker": "MLM",
-      "date": "2026-05-22",
-      "price": 536.48,
-      "rsi": 19.6
+      "date": "2026-05-26",
+      "price": 80.23,
+      "rsi": 17.3
     }
   ],
   "currentOverbought": [
     {
       "ticker": "FTNT",
-      "date": "2026-05-22",
-      "price": 133.93,
-      "rsi": 95.7
+      "date": "2026-05-26",
+      "price": 133.96,
+      "rsi": 95.6
     },
     {
       "ticker": "CRWD",
-      "date": "2026-05-22",
-      "price": 663.46,
+      "date": "2026-05-26",
+      "price": 671.55,
       "rsi": 94.4
     },
     {
       "ticker": "FFIV",
-      "date": "2026-05-22",
-      "price": 393.63,
-      "rsi": 91.6
-    },
-    {
-      "ticker": "AAPL",
-      "date": "2026-05-22",
-      "price": 308.82,
-      "rsi": 91.1
+      "date": "2026-05-26",
+      "price": 397.0,
+      "rsi": 90.8
     },
     {
       "ticker": "PANW",
-      "date": "2026-05-22",
-      "price": 260.58,
-      "rsi": 91.0
-    },
-    {
-      "ticker": "HUM",
-      "date": "2026-05-22",
-      "price": 307.95,
+      "date": "2026-05-26",
+      "price": 256.75,
       "rsi": 88.0
     },
     {
-      "ticker": "CINF",
-      "date": "2026-05-22",
-      "price": 168.1,
-      "rsi": 86.9
-    },
-    {
-      "ticker": "VRSN",
-      "date": "2026-05-22",
-      "price": 310.0,
-      "rsi": 86.9
+      "ticker": "AAPL",
+      "date": "2026-05-26",
+      "price": 308.33,
+      "rsi": 87.7
     },
     {
       "ticker": "DOC",
-      "date": "2026-05-22",
-      "price": 19.73,
-      "rsi": 86.4
-    },
-    {
-      "ticker": "NTAP",
-      "date": "2026-05-22",
-      "price": 139.36,
-      "rsi": 85.5
-    },
-    {
-      "ticker": "GEN",
-      "date": "2026-05-22",
-      "price": 24.82,
-      "rsi": 85.4
+      "date": "2026-05-26",
+      "price": 20.03,
+      "rsi": 86.6
     },
     {
       "ticker": "ENPH",
-      "date": "2026-05-22",
-      "price": 64.03,
-      "rsi": 84.8
+      "date": "2026-05-26",
+      "price": 66.9,
+      "rsi": 84.6
     },
     {
-      "ticker": "SOLV",
-      "date": "2026-05-22",
-      "price": 76.83,
-      "rsi": 83.8
+      "ticker": "GEN",
+      "date": "2026-05-26",
+      "price": 24.76,
+      "rsi": 84.5
     },
     {
-      "ticker": "CSCO",
-      "date": "2026-05-22",
-      "price": 120.41,
-      "rsi": 82.9
+      "ticker": "NTAP",
+      "date": "2026-05-26",
+      "price": 138.95,
+      "rsi": 83.3
     },
     {
       "ticker": "HOLX",
@@ -293,43 +245,31 @@
       "rsi": 82.4
     },
     {
-      "ticker": "PM",
-      "date": "2026-05-22",
-      "price": 188.99,
-      "rsi": 82.2
+      "ticker": "HUM",
+      "date": "2026-05-26",
+      "price": 301.69,
+      "rsi": 82.1
     },
     {
-      "ticker": "DVA",
-      "date": "2026-05-22",
-      "price": 198.52,
-      "rsi": 81.3
-    },
-    {
-      "ticker": "AIZ",
-      "date": "2026-05-22",
-      "price": 254.82,
-      "rsi": 80.5
-    },
-    {
-      "ticker": "AES",
-      "date": "2026-05-22",
-      "price": 14.68,
-      "rsi": 80.3
+      "ticker": "VRSN",
+      "date": "2026-05-26",
+      "price": 306.86,
+      "rsi": 81.2
     }
   ],
   "oversoldStats": {
-    "count": 9552,
-    "avg_return": 4.28,
-    "median_return": 3.44,
-    "win_rate": 58.9,
+    "count": 9497,
+    "avg_return": 4.32,
+    "median_return": 3.5,
+    "win_rate": 59.0,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18839,
+    "count": 18858,
     "avg_return": 4.02,
-    "median_return": 3.02,
-    "win_rate": 59.7,
+    "median_return": 3.0,
+    "win_rate": 59.6,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -836,5 +776,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-05-25T22:21:23.259846Z"
+  "lastUpdated": "2026-05-26T22:28:53.115396Z"
 }
