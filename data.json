@@ -165,78 +165,84 @@
   ],
   "currentOversold": [
     {
-      "ticker": "ZTS",
-      "date": "2026-05-27",
-      "price": 79.48,
-      "rsi": 17.5
+      "ticker": "UHS",
+      "date": "2026-05-28",
+      "price": 150.12,
+      "rsi": 12.5
     },
     {
-      "ticker": "UBER",
-      "date": "2026-05-27",
-      "price": 70.73,
-      "rsi": 18.3
-    },
-    {
-      "ticker": "TRMB",
-      "date": "2026-05-27",
-      "price": 54.88,
-      "rsi": 19.1
+      "ticker": "CBRE",
+      "date": "2026-05-28",
+      "price": 126.42,
+      "rsi": 13.8
     },
     {
       "ticker": "AZO",
-      "date": "2026-05-27",
-      "price": 3027.48,
-      "rsi": 19.3
+      "date": "2026-05-28",
+      "price": 3007.08,
+      "rsi": 17.6
     },
     {
-      "ticker": "DE",
-      "date": "2026-05-27",
-      "price": 529.39,
-      "rsi": 19.4
+      "ticker": "MKTX",
+      "date": "2026-05-28",
+      "price": 131.55,
+      "rsi": 18.8
     }
   ],
   "currentOverbought": [
     {
+      "ticker": "MAR",
+      "date": "2026-05-28",
+      "price": 385.76,
+      "rsi": 89.3
+    },
+    {
       "ticker": "NTAP",
-      "date": "2026-05-27",
-      "price": 142.74,
-      "rsi": 90.1
+      "date": "2026-05-28",
+      "price": 142.4,
+      "rsi": 89.0
+    },
+    {
+      "ticker": "AES",
+      "date": "2026-05-28",
+      "price": 14.69,
+      "rsi": 88.5
     },
     {
       "ticker": "AAPL",
-      "date": "2026-05-27",
-      "price": 310.85,
-      "rsi": 87.4
+      "date": "2026-05-28",
+      "price": 312.51,
+      "rsi": 88.2
     },
     {
       "ticker": "CRWD",
-      "date": "2026-05-27",
-      "price": 645.36,
-      "rsi": 87.4
+      "date": "2026-05-28",
+      "price": 671.0,
+      "rsi": 86.7
     },
     {
       "ticker": "ENPH",
-      "date": "2026-05-27",
-      "price": 70.28,
-      "rsi": 86.1
+      "date": "2026-05-28",
+      "price": 69.5,
+      "rsi": 85.3
     },
     {
-      "ticker": "FTNT",
-      "date": "2026-05-27",
-      "price": 127.93,
-      "rsi": 85.0
-    },
-    {
-      "ticker": "GEN",
-      "date": "2026-05-27",
-      "price": 24.6,
+      "ticker": "FSLR",
+      "date": "2026-05-28",
+      "price": 303.38,
       "rsi": 84.4
     },
     {
-      "ticker": "CSCO",
-      "date": "2026-05-27",
-      "price": 119.67,
-      "rsi": 84.0
+      "ticker": "BBY",
+      "date": "2026-05-28",
+      "price": 74.74,
+      "rsi": 82.7
+    },
+    {
+      "ticker": "GEN",
+      "date": "2026-05-28",
+      "price": 24.55,
+      "rsi": 82.4
     },
     {
       "ticker": "HOLX",
@@ -246,48 +252,48 @@
     },
     {
       "ticker": "HUM",
-      "date": "2026-05-27",
-      "price": 306.27,
+      "date": "2026-05-28",
+      "price": 308.7,
+      "rsi": 82.0
+    },
+    {
+      "ticker": "BIO",
+      "date": "2026-05-28",
+      "price": 318.22,
+      "rsi": 81.8
+    },
+    {
+      "ticker": "CSCO",
+      "date": "2026-05-28",
+      "price": 118.64,
       "rsi": 81.7
     },
     {
       "ticker": "PANW",
-      "date": "2026-05-27",
-      "price": 248.47,
-      "rsi": 81.2
+      "date": "2026-05-28",
+      "price": 257.77,
+      "rsi": 80.5
     },
     {
-      "ticker": "FICO",
-      "date": "2026-05-27",
-      "price": 1278.47,
-      "rsi": 80.8
-    },
-    {
-      "ticker": "AES",
-      "date": "2026-05-27",
-      "price": 14.68,
-      "rsi": 80.4
-    },
-    {
-      "ticker": "FFIV",
-      "date": "2026-05-27",
-      "price": 388.15,
-      "rsi": 80.3
+      "ticker": "CAH",
+      "date": "2026-05-28",
+      "price": 199.85,
+      "rsi": 80.2
     }
   ],
   "oversoldStats": {
-    "count": 9503,
-    "avg_return": 4.32,
+    "count": 9504,
+    "avg_return": 4.31,
     "median_return": 3.49,
     "win_rate": 59.0,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18886,
-    "avg_return": 4.01,
-    "median_return": 2.99,
-    "win_rate": 59.6,
+    "count": 18914,
+    "avg_return": 4.0,
+    "median_return": 2.98,
+    "win_rate": 59.5,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -794,5 +800,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-05-27T22:30:50.464579Z"
+  "lastUpdated": "2026-05-28T22:31:40.674132Z"
 }
