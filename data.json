@@ -165,126 +165,108 @@
   ],
   "currentOversold": [
     {
-      "ticker": "HCA",
-      "date": "2026-06-04",
-      "price": 361.83,
-      "rsi": 2.0
-    },
-    {
-      "ticker": "UHS",
-      "date": "2026-06-04",
-      "price": 142.72,
-      "rsi": 11.3
-    },
-    {
-      "ticker": "VTR",
-      "date": "2026-06-04",
-      "price": 79.1,
-      "rsi": 11.3
-    },
-    {
       "ticker": "SBUX",
-      "date": "2026-06-04",
-      "price": 94.14,
-      "rsi": 13.8
+      "date": "2026-06-05",
+      "price": 95.29,
+      "rsi": 14.4
     },
     {
-      "ticker": "TSN",
-      "date": "2026-06-04",
-      "price": 56.88,
-      "rsi": 16.2
+      "ticker": "LYB",
+      "date": "2026-06-05",
+      "price": 64.5,
+      "rsi": 14.6
+    },
+    {
+      "ticker": "HCA",
+      "date": "2026-06-05",
+      "price": 372.13,
+      "rsi": 15.9
     },
     {
       "ticker": "MKTX",
-      "date": "2026-06-04",
-      "price": 120.62,
-      "rsi": 16.9
-    },
-    {
-      "ticker": "APD",
-      "date": "2026-06-04",
-      "price": 282.85,
-      "rsi": 19.3
+      "date": "2026-06-05",
+      "price": 116.93,
+      "rsi": 16.0
     },
     {
       "ticker": "CBOE",
-      "date": "2026-06-04",
-      "price": 286.03,
-      "rsi": 19.7
+      "date": "2026-06-05",
+      "price": 281.91,
+      "rsi": 16.1
+    },
+    {
+      "ticker": "UHS",
+      "date": "2026-06-05",
+      "price": 145.17,
+      "rsi": 17.8
     }
   ],
   "currentOverbought": [
     {
       "ticker": "ODFL",
-      "date": "2026-06-04",
-      "price": 245.52,
-      "rsi": 95.8
+      "date": "2026-06-05",
+      "price": 242.57,
+      "rsi": 89.8
     },
     {
-      "ticker": "NTAP",
-      "date": "2026-06-04",
-      "price": 178.87,
-      "rsi": 88.7
-    },
-    {
-      "ticker": "CDW",
-      "date": "2026-06-04",
-      "price": 139.45,
-      "rsi": 88.0
-    },
-    {
-      "ticker": "A",
-      "date": "2026-06-04",
-      "price": 138.37,
-      "rsi": 87.9
-    },
-    {
-      "ticker": "UPS",
-      "date": "2026-06-04",
-      "price": 110.22,
-      "rsi": 85.5
-    },
-    {
-      "ticker": "CZR",
-      "date": "2026-06-04",
-      "price": 29.26,
-      "rsi": 84.8
-    },
-    {
-      "ticker": "FSLR",
-      "date": "2026-06-04",
-      "price": 314.95,
-      "rsi": 84.3
-    },
-    {
-      "ticker": "AXON",
-      "date": "2026-06-04",
-      "price": 513.2,
-      "rsi": 84.2
-    },
-    {
-      "ticker": "AMT",
-      "date": "2026-06-04",
-      "price": 193.91,
-      "rsi": 84.0
-    },
-    {
-      "ticker": "HPE",
-      "date": "2026-06-04",
-      "price": 53.69,
-      "rsi": 83.5
-    },
-    {
-      "ticker": "BIO",
-      "date": "2026-06-04",
-      "price": 307.47,
-      "rsi": 82.9
+      "ticker": "KMX",
+      "date": "2026-06-05",
+      "price": 47.15,
+      "rsi": 86.6
     },
     {
       "ticker": "HST",
-      "date": "2026-06-04",
-      "price": 24.45,
-      "rsi": 82.7
+      "date": "2026-06-05",
+      "price": 24.62,
+      "rsi": 86.3
+    },
+    {
+      "ticker": "CPT",
+      "date": "2026-06-05",
+      "price": 112.6,
+      "rsi": 85.1
+    },
+    {
+      "ticker": "NVR",
+      "date": "2026-06-05",
+      "price": 6182.55,
+      "rsi": 85.0
+    },
+    {
+      "ticker": "A",
+      "date": "2026-06-05",
+      "price": 135.44,
+      "rsi": 84.4
+    },
+    {
+      "ticker": "GE",
+      "date": "2026-06-05",
+      "price": 328.0,
+      "rsi": 84.3
+    },
+    {
+      "ticker": "AMT",
+      "date": "2026-06-05",
+      "price": 194.12,
+      "rsi": 84.0
+    },
+    {
+      "ticker": "HRL",
+      "date": "2026-06-05",
+      "price": 23.62,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "HSIC",
+      "date": "2026-06-05",
+      "price": 77.45,
+      "rsi": 83.4
+    },
+    {
+      "ticker": "FRT",
+      "date": "2026-06-05",
+      "price": 122.56,
+      "rsi": 83.1
     },
     {
       "ticker": "HOLX",
@@ -293,48 +275,42 @@
       "rsi": 82.4
     },
     {
-      "ticker": "DXCM",
-      "date": "2026-06-04",
-      "price": 72.59,
-      "rsi": 82.1
-    },
-    {
-      "ticker": "STLD",
-      "date": "2026-06-04",
-      "price": 276.85,
+      "ticker": "J",
+      "date": "2026-06-05",
+      "price": 122.55,
       "rsi": 82.0
     },
     {
-      "ticker": "VRSK",
-      "date": "2026-06-04",
-      "price": 180.0,
-      "rsi": 81.0
+      "ticker": "MAA",
+      "date": "2026-06-05",
+      "price": 137.54,
+      "rsi": 81.3
     },
     {
-      "ticker": "HSIC",
-      "date": "2026-06-04",
-      "price": 76.3,
-      "rsi": 80.5
+      "ticker": "WFC",
+      "date": "2026-06-05",
+      "price": 81.94,
+      "rsi": 81.3
     },
     {
-      "ticker": "FTNT",
-      "date": "2026-06-04",
-      "price": 149.67,
-      "rsi": 80.4
+      "ticker": "ESS",
+      "date": "2026-06-05",
+      "price": 285.43,
+      "rsi": 80.6
     }
   ],
   "oversoldStats": {
-    "count": 9371,
-    "avg_return": 4.4,
-    "median_return": 3.62,
+    "count": 9402,
+    "avg_return": 4.41,
+    "median_return": 3.6,
     "win_rate": 59.1,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18938,
-    "avg_return": 3.92,
-    "median_return": 2.85,
+    "count": 18936,
+    "avg_return": 3.91,
+    "median_return": 2.84,
     "win_rate": 59.2,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -842,5 +818,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-04T22:29:04.814054Z"
+  "lastUpdated": "2026-06-05T22:25:08.973223Z"
 }
