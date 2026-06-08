@@ -59,7 +59,7 @@
     {
       "ticker": "WDC",
       "date": "2025-04-04",
-      "price": 30.41,
+      "price": 30.4,
       "rsi": 13.2,
       "type": "oversold",
       "forward_return": 110.02
@@ -165,107 +165,101 @@
   ],
   "currentOversold": [
     {
-      "ticker": "SBUX",
-      "date": "2026-06-05",
-      "price": 95.29,
-      "rsi": 14.4
-    },
-    {
-      "ticker": "LYB",
-      "date": "2026-06-05",
-      "price": 64.5,
-      "rsi": 14.6
-    },
-    {
-      "ticker": "HCA",
-      "date": "2026-06-05",
-      "price": 372.13,
-      "rsi": 15.9
-    },
-    {
       "ticker": "MKTX",
-      "date": "2026-06-05",
-      "price": 116.93,
-      "rsi": 16.0
+      "date": "2026-06-08",
+      "price": 116.17,
+      "rsi": 7.8
+    },
+    {
+      "ticker": "CME",
+      "date": "2026-06-08",
+      "price": 252.03,
+      "rsi": 12.5
     },
     {
       "ticker": "CBOE",
-      "date": "2026-06-05",
-      "price": 281.91,
-      "rsi": 16.1
+      "date": "2026-06-08",
+      "price": 280.32,
+      "rsi": 13.6
+    },
+    {
+      "ticker": "HCA",
+      "date": "2026-06-08",
+      "price": 361.32,
+      "rsi": 13.9
+    },
+    {
+      "ticker": "SBUX",
+      "date": "2026-06-08",
+      "price": 94.82,
+      "rsi": 14.2
     },
     {
       "ticker": "UHS",
-      "date": "2026-06-05",
-      "price": 145.17,
-      "rsi": 17.8
+      "date": "2026-06-08",
+      "price": 142.87,
+      "rsi": 15.4
+    },
+    {
+      "ticker": "LYB",
+      "date": "2026-06-08",
+      "price": 64.43,
+      "rsi": 15.6
+    },
+    {
+      "ticker": "ICE",
+      "date": "2026-06-08",
+      "price": 139.05,
+      "rsi": 18.8
+    },
+    {
+      "ticker": "ROL",
+      "date": "2026-06-08",
+      "price": 46.58,
+      "rsi": 19.2
+    },
+    {
+      "ticker": "APD",
+      "date": "2026-06-08",
+      "price": 276.77,
+      "rsi": 19.7
+    },
+    {
+      "ticker": "NFLX",
+      "date": "2026-06-08",
+      "price": 82.64,
+      "rsi": 20.0
     }
   ],
   "currentOverbought": [
     {
       "ticker": "ODFL",
-      "date": "2026-06-05",
-      "price": 242.57,
-      "rsi": 89.8
+      "date": "2026-06-08",
+      "price": 247.01,
+      "rsi": 90.5
     },
     {
       "ticker": "KMX",
-      "date": "2026-06-05",
-      "price": 47.15,
-      "rsi": 86.6
+      "date": "2026-06-08",
+      "price": 47.5,
+      "rsi": 86.8
     },
     {
-      "ticker": "HST",
-      "date": "2026-06-05",
-      "price": 24.62,
-      "rsi": 86.3
-    },
-    {
-      "ticker": "CPT",
-      "date": "2026-06-05",
-      "price": 112.6,
-      "rsi": 85.1
-    },
-    {
-      "ticker": "NVR",
-      "date": "2026-06-05",
-      "price": 6182.55,
-      "rsi": 85.0
-    },
-    {
-      "ticker": "A",
-      "date": "2026-06-05",
-      "price": 135.44,
-      "rsi": 84.4
-    },
-    {
-      "ticker": "GE",
-      "date": "2026-06-05",
-      "price": 328.0,
-      "rsi": 84.3
-    },
-    {
-      "ticker": "AMT",
-      "date": "2026-06-05",
-      "price": 194.12,
-      "rsi": 84.0
-    },
-    {
-      "ticker": "HRL",
-      "date": "2026-06-05",
-      "price": 23.62,
-      "rsi": 83.8
+      "ticker": "CZR",
+      "date": "2026-06-08",
+      "price": 29.32,
+      "rsi": 85.7
     },
     {
       "ticker": "HSIC",
-      "date": "2026-06-05",
-      "price": 77.45,
-      "rsi": 83.4
+      "date": "2026-06-08",
+      "price": 78.05,
+      "rsi": 85.0
     },
     {
-      "ticker": "FRT",
-      "date": "2026-06-05",
-      "price": 122.56,
+      "ticker": "CPT",
+      "date": "2026-06-08",
+      "price": 112.97,
       "rsi": 83.1
     },
     {
@@ -275,42 +269,48 @@
       "rsi": 82.4
     },
     {
-      "ticker": "J",
-      "date": "2026-06-05",
-      "price": 122.55,
-      "rsi": 82.0
+      "ticker": "NVR",
+      "date": "2026-06-08",
+      "price": 6191.11,
+      "rsi": 82.1
     },
     {
-      "ticker": "MAA",
-      "date": "2026-06-05",
-      "price": 137.54,
-      "rsi": 81.3
+      "ticker": "HRL",
+      "date": "2026-06-08",
+      "price": 23.64,
+      "rsi": 81.8
     },
     {
-      "ticker": "WFC",
-      "date": "2026-06-05",
-      "price": 81.94,
-      "rsi": 81.3
+      "ticker": "UPS",
+      "date": "2026-06-08",
+      "price": 107.7,
+      "rsi": 81.8
     },
     {
-      "ticker": "ESS",
-      "date": "2026-06-05",
-      "price": 285.43,
-      "rsi": 80.6
+      "ticker": "URI",
+      "date": "2026-06-08",
+      "price": 1084.05,
+      "rsi": 81.5
+    },
+    {
+      "ticker": "HST",
+      "date": "2026-06-08",
+      "price": 24.44,
+      "rsi": 81.0
     }
   ],
   "oversoldStats": {
-    "count": 9402,
-    "avg_return": 4.41,
+    "count": 9413,
+    "avg_return": 4.42,
     "median_return": 3.6,
     "win_rate": 59.1,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18936,
-    "avg_return": 3.91,
-    "median_return": 2.84,
+    "count": 18899,
+    "avg_return": 3.9,
+    "median_return": 2.83,
     "win_rate": 59.2,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -818,5 +818,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-05T22:25:08.973223Z"
+  "lastUpdated": "2026-06-08T22:30:41.963725Z"
 }
