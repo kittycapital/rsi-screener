@@ -166,152 +166,194 @@
   "currentOversold": [
     {
       "ticker": "MKTX",
-      "date": "2026-06-08",
-      "price": 116.17,
-      "rsi": 7.8
+      "date": "2026-06-09",
+      "price": 116.51,
+      "rsi": 6.5
     },
     {
-      "ticker": "CME",
-      "date": "2026-06-08",
-      "price": 252.03,
-      "rsi": 12.5
+      "ticker": "EQT",
+      "date": "2026-06-09",
+      "price": 52.69,
+      "rsi": 14.6
     },
     {
-      "ticker": "CBOE",
-      "date": "2026-06-08",
-      "price": 280.32,
-      "rsi": 13.6
-    },
-    {
-      "ticker": "HCA",
-      "date": "2026-06-08",
-      "price": 361.32,
-      "rsi": 13.9
-    },
-    {
-      "ticker": "SBUX",
-      "date": "2026-06-08",
-      "price": 94.82,
-      "rsi": 14.2
-    },
-    {
-      "ticker": "UHS",
-      "date": "2026-06-08",
-      "price": 142.87,
-      "rsi": 15.4
+      "ticker": "HAS",
+      "date": "2026-06-09",
+      "price": 84.26,
+      "rsi": 15.7
     },
     {
       "ticker": "LYB",
-      "date": "2026-06-08",
-      "price": 64.43,
-      "rsi": 15.6
+      "date": "2026-06-09",
+      "price": 63.64,
+      "rsi": 15.9
     },
     {
-      "ticker": "ICE",
-      "date": "2026-06-08",
-      "price": 139.05,
-      "rsi": 18.8
+      "ticker": "COST",
+      "date": "2026-06-09",
+      "price": 968.59,
+      "rsi": 16.1
     },
     {
-      "ticker": "ROL",
-      "date": "2026-06-08",
-      "price": 46.58,
-      "rsi": 19.2
+      "ticker": "CME",
+      "date": "2026-06-09",
+      "price": 255.94,
+      "rsi": 17.7
     },
     {
-      "ticker": "APD",
-      "date": "2026-06-08",
-      "price": 276.77,
-      "rsi": 19.7
+      "ticker": "CF",
+      "date": "2026-06-09",
+      "price": 108.58,
+      "rsi": 17.8
     },
     {
       "ticker": "NFLX",
-      "date": "2026-06-08",
-      "price": 82.64,
-      "rsi": 20.0
+      "date": "2026-06-09",
+      "price": 81.41,
+      "rsi": 18.5
+    },
+    {
+      "ticker": "T",
+      "date": "2026-06-09",
+      "price": 22.71,
+      "rsi": 19.2
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "ODFL",
-      "date": "2026-06-08",
-      "price": 247.01,
-      "rsi": 90.5
-    },
-    {
       "ticker": "KMX",
-      "date": "2026-06-08",
-      "price": 47.5,
-      "rsi": 86.8
+      "date": "2026-06-09",
+      "price": 48.01,
+      "rsi": 92.2
     },
     {
       "ticker": "CZR",
-      "date": "2026-06-08",
-      "price": 29.32,
-      "rsi": 85.7
+      "date": "2026-06-09",
+      "price": 29.45,
+      "rsi": 90.8
     },
     {
-      "ticker": "HSIC",
-      "date": "2026-06-08",
-      "price": 78.05,
-      "rsi": 85.0
-    },
-    {
-      "ticker": "CPT",
-      "date": "2026-06-08",
-      "price": 112.97,
-      "rsi": 83.1
-    },
-    {
-      "ticker": "HOLX",
-      "date": "2026-04-07",
-      "price": 76.01,
-      "rsi": 82.4
-    },
-    {
-      "ticker": "NVR",
-      "date": "2026-06-08",
-      "price": 6191.11,
-      "rsi": 82.1
-    },
-    {
-      "ticker": "HRL",
-      "date": "2026-06-08",
-      "price": 23.64,
-      "rsi": 81.8
-    },
-    {
-      "ticker": "UPS",
-      "date": "2026-06-08",
-      "price": 107.7,
-      "rsi": 81.8
+      "ticker": "ODFL",
+      "date": "2026-06-09",
+      "price": 248.73,
+      "rsi": 90.7
     },
     {
       "ticker": "URI",
-      "date": "2026-06-08",
-      "price": 1084.05,
-      "rsi": 81.5
+      "date": "2026-06-09",
+      "price": 1094.17,
+      "rsi": 88.8
+    },
+    {
+      "ticker": "HSIC",
+      "date": "2026-06-09",
+      "price": 80.03,
+      "rsi": 87.8
+    },
+    {
+      "ticker": "CPT",
+      "date": "2026-06-09",
+      "price": 115.4,
+      "rsi": 85.4
+    },
+    {
+      "ticker": "NVR",
+      "date": "2026-06-09",
+      "price": 6406.57,
+      "rsi": 85.3
+    },
+    {
+      "ticker": "STLD",
+      "date": "2026-06-09",
+      "price": 269.8,
+      "rsi": 84.7
+    },
+    {
+      "ticker": "BXP",
+      "date": "2026-06-09",
+      "price": 66.61,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "PHM",
+      "date": "2026-06-09",
+      "price": 122.78,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "NCLH",
+      "date": "2026-06-09",
+      "price": 19.03,
+      "rsi": 83.7
+    },
+    {
+      "ticker": "GWW",
+      "date": "2026-06-09",
+      "price": 1329.8,
+      "rsi": 83.2
+    },
+    {
+      "ticker": "PKG",
+      "date": "2026-06-09",
+      "price": 227.33,
+      "rsi": 83.1
+    },
+    {
+      "ticker": "HRL",
+      "date": "2026-06-09",
+      "price": 23.98,
+      "rsi": 82.9
+    },
+    {
+      "ticker": "A",
+      "date": "2026-06-09",
+      "price": 135.48,
+      "rsi": 82.7
     },
     {
       "ticker": "HST",
-      "date": "2026-06-08",
-      "price": 24.44,
-      "rsi": 81.0
+      "date": "2026-06-09",
+      "price": 24.47,
+      "rsi": 82.7
+    },
+    {
+      "ticker": "KDP",
+      "date": "2026-06-09",
+      "price": 31.48,
+      "rsi": 82.3
+    },
+    {
+      "ticker": "PPG",
+      "date": "2026-06-09",
+      "price": 116.36,
+      "rsi": 82.1
+    },
+    {
+      "ticker": "IP",
+      "date": "2026-06-09",
+      "price": 34.12,
+      "rsi": 82.0
+    },
+    {
+      "ticker": "FRT",
+      "date": "2026-06-09",
+      "price": 124.44,
+      "rsi": 81.7
     }
   ],
   "oversoldStats": {
-    "count": 9413,
-    "avg_return": 4.42,
-    "median_return": 3.6,
+    "count": 9425,
+    "avg_return": 4.44,
+    "median_return": 3.63,
     "win_rate": 59.1,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18899,
+    "count": 18878,
     "avg_return": 3.9,
     "median_return": 2.83,
-    "win_rate": 59.2,
+    "win_rate": 59.1,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -536,7 +578,6 @@
     "HIG",
     "HII",
     "HLT",
-    "HOLX",
     "HON",
     "HPE",
     "HPQ",
@@ -818,5 +859,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-08T22:30:41.963725Z"
+  "lastUpdated": "2026-06-09T22:29:47.155527Z"
 }
