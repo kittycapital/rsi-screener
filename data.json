@@ -166,80 +166,68 @@
   "currentOversold": [
     {
       "ticker": "BSX",
-      "date": "2026-06-12",
-      "price": 46.91,
+      "date": "2026-06-15",
+      "price": 46.76,
       "rsi": 11.3
     },
     {
-      "ticker": "NFLX",
-      "date": "2026-06-12",
-      "price": 80.34,
-      "rsi": 14.6
-    },
-    {
       "ticker": "PTC",
-      "date": "2026-06-12",
-      "price": 113.68,
-      "rsi": 14.8
+      "date": "2026-06-15",
+      "price": 114.85,
+      "rsi": 18.0
     }
   ],
   "currentOverbought": [
     {
       "ticker": "KMX",
-      "date": "2026-06-12",
-      "price": 51.26,
-      "rsi": 89.8
+      "date": "2026-06-15",
+      "price": 52.21,
+      "rsi": 90.3
     },
     {
       "ticker": "CZR",
-      "date": "2026-06-12",
-      "price": 29.49,
-      "rsi": 84.0
+      "date": "2026-06-15",
+      "price": 29.5,
+      "rsi": 89.4
     },
     {
       "ticker": "HUM",
-      "date": "2026-06-12",
-      "price": 379.22,
-      "rsi": 83.9
+      "date": "2026-06-15",
+      "price": 380.26,
+      "rsi": 89.3
     },
     {
       "ticker": "HRL",
-      "date": "2026-06-12",
-      "price": 24.75,
-      "rsi": 82.7
-    },
-    {
-      "ticker": "STLD",
-      "date": "2026-06-12",
-      "price": 282.76,
-      "rsi": 82.3
+      "date": "2026-06-15",
+      "price": 24.58,
+      "rsi": 85.5
     },
     {
       "ticker": "CAH",
-      "date": "2026-06-12",
-      "price": 223.85,
-      "rsi": 81.1
+      "date": "2026-06-15",
+      "price": 226.4,
+      "rsi": 83.0
     },
     {
       "ticker": "HSIC",
-      "date": "2026-06-12",
-      "price": 81.25,
-      "rsi": 80.1
+      "date": "2026-06-15",
+      "price": 81.09,
+      "rsi": 81.1
     }
   ],
   "oversoldStats": {
-    "count": 9573,
-    "avg_return": 4.45,
-    "median_return": 3.61,
-    "win_rate": 59.1,
+    "count": 9509,
+    "avg_return": 4.48,
+    "median_return": 3.65,
+    "win_rate": 59.2,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18878,
-    "avg_return": 3.9,
-    "median_return": 2.83,
-    "win_rate": 59.1,
+    "count": 18509,
+    "avg_return": 4.04,
+    "median_return": 2.96,
+    "win_rate": 59.4,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -257,8 +245,6 @@
     "ADP",
     "ADSK",
     "AEE",
-    "AEP",
-    "AES",
     "AFL",
     "AIG",
     "AIZ",
@@ -279,11 +265,8 @@
     "ANET",
     "AON",
     "AOS",
-    "APA",
-    "APD",
     "APH",
     "APTV",
-    "ARE",
     "ATO",
     "AVB",
     "AVGO",
@@ -745,5 +728,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-12T22:30:12.107877Z"
+  "lastUpdated": "2026-06-15T22:39:50.509125Z"
 }
