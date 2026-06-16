@@ -93,7 +93,7 @@
     {
       "ticker": "UNH",
       "date": "2025-04-11",
-      "price": 583.03,
+      "price": 579.72,
       "rsi": 82.7,
       "type": "overbought",
       "forward_return": -50.99
@@ -117,7 +117,7 @@
     {
       "ticker": "UNH",
       "date": "2025-04-10",
-      "price": 578.1,
+      "price": 574.82,
       "rsi": 81.8,
       "type": "overbought",
       "forward_return": -49.07
@@ -165,69 +165,57 @@
   ],
   "currentOversold": [
     {
-      "ticker": "BSX",
-      "date": "2026-06-15",
-      "price": 46.76,
-      "rsi": 11.3
-    },
-    {
-      "ticker": "PTC",
-      "date": "2026-06-15",
-      "price": 114.85,
-      "rsi": 18.0
+      "ticker": "LDOS",
+      "date": "2026-06-16",
+      "price": 113.58,
+      "rsi": 11.1
     }
   ],
   "currentOverbought": [
     {
+      "ticker": "BAC",
+      "date": "2026-06-16",
+      "price": 56.84,
+      "rsi": 88.4
+    },
+    {
       "ticker": "KMX",
-      "date": "2026-06-15",
-      "price": 52.21,
-      "rsi": 90.3
-    },
-    {
-      "ticker": "CZR",
-      "date": "2026-06-15",
-      "price": 29.5,
-      "rsi": 89.4
-    },
-    {
-      "ticker": "HUM",
-      "date": "2026-06-15",
-      "price": 380.26,
-      "rsi": 89.3
+      "date": "2026-06-16",
+      "price": 52.11,
+      "rsi": 88.3
     },
     {
       "ticker": "HRL",
-      "date": "2026-06-15",
-      "price": 24.58,
+      "date": "2026-06-16",
+      "price": 24.65,
       "rsi": 85.5
     },
     {
       "ticker": "CAH",
-      "date": "2026-06-15",
-      "price": 226.4,
-      "rsi": 83.0
+      "date": "2026-06-16",
+      "price": 227.72,
+      "rsi": 84.6
     },
     {
-      "ticker": "HSIC",
-      "date": "2026-06-15",
-      "price": 81.09,
-      "rsi": 81.1
+      "ticker": "WFC",
+      "date": "2026-06-16",
+      "price": 85.05,
+      "rsi": 81.0
     }
   ],
   "oversoldStats": {
-    "count": 9509,
-    "avg_return": 4.48,
-    "median_return": 3.65,
-    "win_rate": 59.2,
+    "count": 9663,
+    "avg_return": 4.47,
+    "median_return": 3.61,
+    "win_rate": 59.1,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18509,
-    "avg_return": 4.04,
-    "median_return": 2.96,
-    "win_rate": 59.4,
+    "count": 18640,
+    "avg_return": 3.98,
+    "median_return": 2.94,
+    "win_rate": 59.3,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -245,6 +233,8 @@
     "ADP",
     "ADSK",
     "AEE",
+    "AEP",
+    "AES",
     "AFL",
     "AIG",
     "AIZ",
@@ -265,8 +255,11 @@
     "ANET",
     "AON",
     "AOS",
+    "APA",
+    "APD",
     "APH",
     "APTV",
+    "ARE",
     "ATO",
     "AVB",
     "AVGO",
@@ -728,5 +721,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-15T22:39:50.509125Z"
+  "lastUpdated": "2026-06-16T22:37:22.409670Z"
 }
