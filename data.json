@@ -166,56 +166,68 @@
   "currentOversold": [
     {
       "ticker": "LDOS",
-      "date": "2026-06-16",
-      "price": 113.58,
-      "rsi": 11.1
+      "date": "2026-06-17",
+      "price": 108.67,
+      "rsi": 5.6
+    },
+    {
+      "ticker": "NFLX",
+      "date": "2026-06-17",
+      "price": 76.96,
+      "rsi": 19.6
     }
   ],
   "currentOverbought": [
     {
+      "ticker": "RJF",
+      "date": "2026-06-17",
+      "price": 158.77,
+      "rsi": 88.9
+    },
+    {
       "ticker": "BAC",
-      "date": "2026-06-16",
-      "price": 56.84,
-      "rsi": 88.4
+      "date": "2026-06-17",
+      "price": 56.53,
+      "rsi": 88.6
     },
     {
-      "ticker": "KMX",
-      "date": "2026-06-16",
-      "price": 52.11,
-      "rsi": 88.3
+      "ticker": "JPM",
+      "date": "2026-06-17",
+      "price": 333.46,
+      "rsi": 83.6
     },
     {
-      "ticker": "HRL",
-      "date": "2026-06-16",
-      "price": 24.65,
-      "rsi": 85.5
+      "ticker": "GL",
+      "date": "2026-06-17",
+      "price": 171.25,
+      "rsi": 82.3
+    },
+    {
+      "ticker": "C",
+      "date": "2026-06-17",
+      "price": 143.78,
+      "rsi": 82.0
     },
     {
       "ticker": "CAH",
-      "date": "2026-06-16",
-      "price": 227.72,
-      "rsi": 84.6
-    },
-    {
-      "ticker": "WFC",
-      "date": "2026-06-16",
-      "price": 85.05,
-      "rsi": 81.0
+      "date": "2026-06-17",
+      "price": 226.28,
+      "rsi": 81.7
     }
   ],
   "oversoldStats": {
-    "count": 9663,
-    "avg_return": 4.47,
-    "median_return": 3.61,
-    "win_rate": 59.1,
+    "count": 9745,
+    "avg_return": 4.49,
+    "median_return": 3.64,
+    "win_rate": 59.2,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18640,
-    "avg_return": 3.98,
-    "median_return": 2.94,
-    "win_rate": 59.3,
+    "count": 18647,
+    "avg_return": 3.99,
+    "median_return": 2.95,
+    "win_rate": 59.4,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -721,5 +733,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-16T22:37:22.409670Z"
+  "lastUpdated": "2026-06-17T22:32:58.210984Z"
 }
