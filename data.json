@@ -166,68 +166,74 @@
   "currentOversold": [
     {
       "ticker": "LDOS",
-      "date": "2026-06-17",
-      "price": 108.67,
-      "rsi": 5.6
+      "date": "2026-06-18",
+      "price": 107.12,
+      "rsi": 6.1
     },
     {
-      "ticker": "NFLX",
-      "date": "2026-06-17",
-      "price": 76.96,
-      "rsi": 19.6
+      "ticker": "CTSH",
+      "date": "2026-06-18",
+      "price": 43.7,
+      "rsi": 15.1
+    },
+    {
+      "ticker": "F",
+      "date": "2026-06-18",
+      "price": 14.06,
+      "rsi": 15.2
+    },
+    {
+      "ticker": "ACN",
+      "date": "2026-06-18",
+      "price": 127.98,
+      "rsi": 16.0
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-06-18",
+      "price": 379.4,
+      "rsi": 18.6
+    },
+    {
+      "ticker": "ADBE",
+      "date": "2026-06-18",
+      "price": 195.16,
+      "rsi": 19.4
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "RJF",
-      "date": "2026-06-17",
-      "price": 158.77,
-      "rsi": 88.9
+      "ticker": "GWW",
+      "date": "2026-06-18",
+      "price": 1365.41,
+      "rsi": 85.6
     },
     {
       "ticker": "BAC",
-      "date": "2026-06-17",
-      "price": 56.53,
-      "rsi": 88.6
-    },
-    {
-      "ticker": "JPM",
-      "date": "2026-06-17",
-      "price": 333.46,
-      "rsi": 83.6
+      "date": "2026-06-18",
+      "price": 56.2,
+      "rsi": 83.3
     },
     {
       "ticker": "GL",
-      "date": "2026-06-17",
-      "price": 171.25,
-      "rsi": 82.3
-    },
-    {
-      "ticker": "C",
-      "date": "2026-06-17",
-      "price": 143.78,
-      "rsi": 82.0
-    },
-    {
-      "ticker": "CAH",
-      "date": "2026-06-17",
-      "price": 226.28,
-      "rsi": 81.7
+      "date": "2026-06-18",
+      "price": 170.76,
+      "rsi": 82.5
     }
   ],
   "oversoldStats": {
-    "count": 9745,
-    "avg_return": 4.49,
-    "median_return": 3.64,
+    "count": 9848,
+    "avg_return": 4.5,
+    "median_return": 3.66,
     "win_rate": 59.2,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18647,
+    "count": 18650,
     "avg_return": 3.99,
-    "median_return": 2.95,
-    "win_rate": 59.4,
+    "median_return": 2.94,
+    "win_rate": 59.3,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -733,5 +739,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-17T22:32:58.210984Z"
+  "lastUpdated": "2026-06-18T22:37:12.475769Z"
 }
