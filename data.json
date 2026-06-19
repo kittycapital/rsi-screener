@@ -203,10 +203,10 @@
   ],
   "currentOverbought": [
     {
-      "ticker": "GWW",
-      "date": "2026-06-18",
-      "price": 1365.41,
-      "rsi": 85.6
+      "ticker": "RJF",
+      "date": "2026-06-17",
+      "price": 158.77,
+      "rsi": 88.9
     },
     {
       "ticker": "BAC",
@@ -216,13 +216,19 @@
     },
     {
       "ticker": "GL",
-      "date": "2026-06-18",
-      "price": 170.76,
-      "rsi": 82.5
+      "date": "2026-06-17",
+      "price": 171.25,
+      "rsi": 82.3
+    },
+    {
+      "ticker": "CAH",
+      "date": "2026-06-17",
+      "price": 226.28,
+      "rsi": 81.7
     }
   ],
   "oversoldStats": {
-    "count": 9848,
+    "count": 9777,
     "avg_return": 4.5,
     "median_return": 3.66,
     "win_rate": 59.2,
@@ -230,7 +236,7 @@
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18650,
+    "count": 18647,
     "avg_return": 3.99,
     "median_return": 2.94,
     "win_rate": 59.3,
@@ -739,5 +745,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-18T22:37:12.475769Z"
+  "lastUpdated": "2026-06-19T22:18:41.889405Z"
 }
