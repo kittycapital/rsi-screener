@@ -165,81 +165,177 @@
   ],
   "currentOversold": [
     {
+      "ticker": "CRM",
+      "date": "2026-06-22",
+      "price": 150.12,
+      "rsi": 0.0
+    },
+    {
+      "ticker": "IT",
+      "date": "2026-06-22",
+      "price": 125.73,
+      "rsi": 0.2
+    },
+    {
+      "ticker": "ACN",
+      "date": "2026-06-22",
+      "price": 124.83,
+      "rsi": 5.4
+    },
+    {
       "ticker": "LDOS",
-      "date": "2026-06-18",
-      "price": 107.12,
+      "date": "2026-06-22",
+      "price": 104.84,
+      "rsi": 5.6
+    },
+    {
+      "ticker": "ADBE",
+      "date": "2026-06-22",
+      "price": 194.9,
       "rsi": 6.1
     },
     {
       "ticker": "CTSH",
-      "date": "2026-06-18",
-      "price": 43.7,
-      "rsi": 15.1
-    },
-    {
-      "ticker": "F",
-      "date": "2026-06-18",
-      "price": 14.06,
-      "rsi": 15.2
-    },
-    {
-      "ticker": "ACN",
-      "date": "2026-06-18",
-      "price": 127.98,
-      "rsi": 16.0
+      "date": "2026-06-22",
+      "price": 41.83,
+      "rsi": 6.9
     },
     {
       "ticker": "MSFT",
-      "date": "2026-06-18",
-      "price": 379.4,
-      "rsi": 18.6
+      "date": "2026-06-22",
+      "price": 367.34,
+      "rsi": 9.3
     },
     {
-      "ticker": "ADBE",
-      "date": "2026-06-18",
-      "price": 195.16,
-      "rsi": 19.4
+      "ticker": "EPAM",
+      "date": "2026-06-22",
+      "price": 76.04,
+      "rsi": 9.8
+    },
+    {
+      "ticker": "NOW",
+      "date": "2026-06-22",
+      "price": 93.01,
+      "rsi": 9.8
+    },
+    {
+      "ticker": "ADSK",
+      "date": "2026-06-22",
+      "price": 187.72,
+      "rsi": 10.2
+    },
+    {
+      "ticker": "INTU",
+      "date": "2026-06-22",
+      "price": 257.77,
+      "rsi": 11.2
+    },
+    {
+      "ticker": "VRSN",
+      "date": "2026-06-22",
+      "price": 247.69,
+      "rsi": 12.2
+    },
+    {
+      "ticker": "TRMB",
+      "date": "2026-06-22",
+      "price": 49.23,
+      "rsi": 12.8
+    },
+    {
+      "ticker": "GEN",
+      "date": "2026-06-22",
+      "price": 23.01,
+      "rsi": 13.7
+    },
+    {
+      "ticker": "PTC",
+      "date": "2026-06-22",
+      "price": 115.0,
+      "rsi": 13.7
+    },
+    {
+      "ticker": "BR",
+      "date": "2026-06-22",
+      "price": 136.22,
+      "rsi": 14.5
+    },
+    {
+      "ticker": "PAYC",
+      "date": "2026-06-22",
+      "price": 123.67,
+      "rsi": 14.6
+    },
+    {
+      "ticker": "PLTR",
+      "date": "2026-06-22",
+      "price": 119.5,
+      "rsi": 14.7
+    },
+    {
+      "ticker": "ORCL",
+      "date": "2026-06-22",
+      "price": 175.07,
+      "rsi": 14.8
+    },
+    {
+      "ticker": "FDS",
+      "date": "2026-06-22",
+      "price": 218.62,
+      "rsi": 15.2
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "RJF",
-      "date": "2026-06-17",
-      "price": 158.77,
-      "rsi": 88.9
+      "ticker": "GL",
+      "date": "2026-06-22",
+      "price": 172.05,
+      "rsi": 86.7
     },
     {
       "ticker": "BAC",
-      "date": "2026-06-18",
-      "price": 56.2,
-      "rsi": 83.3
+      "date": "2026-06-22",
+      "price": 57.37,
+      "rsi": 86.5
     },
     {
-      "ticker": "GL",
-      "date": "2026-06-17",
-      "price": 171.25,
-      "rsi": 82.3
+      "ticker": "PH",
+      "date": "2026-06-22",
+      "price": 962.14,
+      "rsi": 84.9
     },
     {
       "ticker": "CAH",
-      "date": "2026-06-17",
-      "price": 226.28,
-      "rsi": 81.7
+      "date": "2026-06-22",
+      "price": 222.74,
+      "rsi": 82.5
+    },
+    {
+      "ticker": "CINF",
+      "date": "2026-06-22",
+      "price": 172.46,
+      "rsi": 81.4
+    },
+    {
+      "ticker": "MMM",
+      "date": "2026-06-22",
+      "price": 163.22,
+      "rsi": 81.1
     }
   ],
   "oversoldStats": {
-    "count": 9777,
-    "avg_return": 4.5,
-    "median_return": 3.66,
-    "win_rate": 59.2,
+    "count": 9979,
+    "avg_return": 4.54,
+    "median_return": 3.71,
+    "win_rate": 59.3,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18647,
-    "avg_return": 3.99,
-    "median_return": 2.94,
-    "win_rate": 59.3,
+    "count": 18497,
+    "avg_return": 4.05,
+    "median_return": 3.04,
+    "win_rate": 59.6,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -745,5 +841,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-19T22:18:41.889405Z"
+  "lastUpdated": "2026-06-22T22:32:21.487432Z"
 }
