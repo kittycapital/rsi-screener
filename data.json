@@ -107,6 +107,14 @@
       "forward_return": -50.38
     },
     {
+      "ticker": "DD",
+      "date": "2025-08-27",
+      "price": 76.42,
+      "rsi": 80.3,
+      "type": "overbought",
+      "forward_return": -49.91
+    },
+    {
       "ticker": "MRNA",
       "date": "2024-05-23",
       "price": 164.01,
@@ -139,201 +147,199 @@
       "forward_return": -48.97
     },
     {
+      "ticker": "DD",
+      "date": "2025-08-28",
+      "price": 76.22,
+      "rsi": 81.9,
+      "type": "overbought",
+      "forward_return": -48.93
+    },
+    {
       "ticker": "IT",
       "date": "2025-05-12",
       "price": 446.95,
       "rsi": 85.7,
       "type": "overbought",
       "forward_return": -48.68
-    },
-    {
-      "ticker": "TSLA",
-      "date": "2024-12-17",
-      "price": 479.86,
-      "rsi": 90.0,
-      "type": "overbought",
-      "forward_return": -48.17
-    },
-    {
-      "ticker": "SMCI",
-      "date": "2025-10-09",
-      "price": 57.98,
-      "rsi": 85.6,
-      "type": "overbought",
-      "forward_return": -47.98
     }
   ],
   "currentOversold": [
     {
       "ticker": "CRM",
-      "date": "2026-06-22",
-      "price": 150.12,
-      "rsi": 0.0
-    },
-    {
-      "ticker": "IT",
-      "date": "2026-06-22",
-      "price": 125.73,
-      "rsi": 0.2
-    },
-    {
-      "ticker": "ACN",
-      "date": "2026-06-22",
-      "price": 124.83,
-      "rsi": 5.4
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-06-22",
-      "price": 104.84,
-      "rsi": 5.6
-    },
-    {
-      "ticker": "ADBE",
-      "date": "2026-06-22",
-      "price": 194.9,
-      "rsi": 6.1
+      "date": "2026-06-23",
+      "price": 153.42,
+      "rsi": 6.2
     },
     {
       "ticker": "CTSH",
-      "date": "2026-06-22",
-      "price": 41.83,
-      "rsi": 6.9
+      "date": "2026-06-23",
+      "price": 40.95,
+      "rsi": 7.3
     },
     {
-      "ticker": "MSFT",
-      "date": "2026-06-22",
-      "price": 367.34,
-      "rsi": 9.3
+      "ticker": "IT",
+      "date": "2026-06-23",
+      "price": 129.18,
+      "rsi": 7.3
     },
     {
-      "ticker": "EPAM",
-      "date": "2026-06-22",
-      "price": 76.04,
-      "rsi": 9.8
+      "ticker": "AKAM",
+      "date": "2026-06-23",
+      "price": 119.87,
+      "rsi": 8.7
     },
     {
-      "ticker": "NOW",
-      "date": "2026-06-22",
-      "price": 93.01,
-      "rsi": 9.8
+      "ticker": "ACN",
+      "date": "2026-06-23",
+      "price": 127.01,
+      "rsi": 9.0
     },
     {
-      "ticker": "ADSK",
-      "date": "2026-06-22",
-      "price": 187.72,
-      "rsi": 10.2
+      "ticker": "ADBE",
+      "date": "2026-06-23",
+      "price": 197.43,
+      "rsi": 9.9
     },
     {
-      "ticker": "INTU",
-      "date": "2026-06-22",
-      "price": 257.77,
-      "rsi": 11.2
+      "ticker": "LDOS",
+      "date": "2026-06-23",
+      "price": 106.11,
+      "rsi": 10.4
     },
     {
       "ticker": "VRSN",
-      "date": "2026-06-22",
-      "price": 247.69,
-      "rsi": 12.2
+      "date": "2026-06-23",
+      "price": 247.22,
+      "rsi": 11.0
     },
     {
       "ticker": "TRMB",
-      "date": "2026-06-22",
-      "price": 49.23,
-      "rsi": 12.8
+      "date": "2026-06-23",
+      "price": 49.19,
+      "rsi": 13.2
     },
     {
-      "ticker": "GEN",
-      "date": "2026-06-22",
-      "price": 23.01,
-      "rsi": 13.7
+      "ticker": "ADSK",
+      "date": "2026-06-23",
+      "price": 188.78,
+      "rsi": 13.4
+    },
+    {
+      "ticker": "EPAM",
+      "date": "2026-06-23",
+      "price": 76.89,
+      "rsi": 13.4
     },
     {
       "ticker": "PTC",
-      "date": "2026-06-22",
-      "price": 115.0,
+      "date": "2026-06-23",
+      "price": 112.33,
       "rsi": 13.7
     },
     {
-      "ticker": "BR",
-      "date": "2026-06-22",
-      "price": 136.22,
-      "rsi": 14.5
+      "ticker": "ORCL",
+      "date": "2026-06-23",
+      "price": 165.16,
+      "rsi": 13.9
     },
     {
-      "ticker": "PAYC",
-      "date": "2026-06-22",
-      "price": 123.67,
-      "rsi": 14.6
+      "ticker": "INTU",
+      "date": "2026-06-23",
+      "price": 258.05,
+      "rsi": 15.3
     },
     {
       "ticker": "PLTR",
-      "date": "2026-06-22",
-      "price": 119.5,
-      "rsi": 14.7
+      "date": "2026-06-23",
+      "price": 116.7,
+      "rsi": 16.2
     },
     {
-      "ticker": "ORCL",
-      "date": "2026-06-22",
-      "price": 175.07,
-      "rsi": 14.8
+      "ticker": "MSFT",
+      "date": "2026-06-23",
+      "price": 373.94,
+      "rsi": 16.9
     },
     {
-      "ticker": "FDS",
-      "date": "2026-06-22",
-      "price": 218.62,
-      "rsi": 15.2
+      "ticker": "NOW",
+      "date": "2026-06-23",
+      "price": 95.94,
+      "rsi": 16.9
+    },
+    {
+      "ticker": "GEN",
+      "date": "2026-06-23",
+      "price": 23.26,
+      "rsi": 17.5
+    },
+    {
+      "ticker": "LYB",
+      "date": "2026-06-23",
+      "price": 57.6,
+      "rsi": 17.5
+    },
+    {
+      "ticker": "BR",
+      "date": "2026-06-23",
+      "price": 136.33,
+      "rsi": 17.6
     }
   ],
   "currentOverbought": [
     {
       "ticker": "GL",
-      "date": "2026-06-22",
-      "price": 172.05,
-      "rsi": 86.7
+      "date": "2026-06-23",
+      "price": 175.58,
+      "rsi": 91.4
     },
     {
       "ticker": "BAC",
-      "date": "2026-06-22",
-      "price": 57.37,
-      "rsi": 86.5
-    },
-    {
-      "ticker": "PH",
-      "date": "2026-06-22",
-      "price": 962.14,
-      "rsi": 84.9
+      "date": "2026-06-23",
+      "price": 57.91,
+      "rsi": 85.8
     },
     {
       "ticker": "CAH",
-      "date": "2026-06-22",
-      "price": 222.74,
-      "rsi": 82.5
+      "date": "2026-06-23",
+      "price": 228.91,
+      "rsi": 85.2
     },
     {
       "ticker": "CINF",
-      "date": "2026-06-22",
-      "price": 172.46,
-      "rsi": 81.4
+      "date": "2026-06-23",
+      "price": 175.81,
+      "rsi": 82.9
     },
     {
-      "ticker": "MMM",
-      "date": "2026-06-22",
-      "price": 163.22,
-      "rsi": 81.1
+      "ticker": "BALL",
+      "date": "2026-06-23",
+      "price": 60.49,
+      "rsi": 82.5
+    },
+    {
+      "ticker": "DVA",
+      "date": "2026-06-23",
+      "price": 210.93,
+      "rsi": 82.2
+    },
+    {
+      "ticker": "CVS",
+      "date": "2026-06-23",
+      "price": 101.57,
+      "rsi": 81.0
     }
   ],
   "oversoldStats": {
-    "count": 9979,
-    "avg_return": 4.54,
-    "median_return": 3.71,
+    "count": 10051,
+    "avg_return": 4.57,
+    "median_return": 3.73,
     "win_rate": 59.3,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18497,
-    "avg_return": 4.05,
+    "count": 18466,
+    "avg_return": 4.04,
     "median_return": 3.04,
     "win_rate": 59.6,
     "best_return": 121.93,
@@ -841,5 +847,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-06-22T22:32:21.487432Z"
+  "lastUpdated": "2026-06-23T22:25:17.524085Z"
 }
