@@ -305,16 +305,16 @@
       "rsi": 84.8
     },
     {
+      "ticker": "AXP",
+      "date": "2026-07-02",
+      "price": 351.96,
+      "rsi": 84.3
+    },
+    {
       "ticker": "PANW",
       "date": "2026-07-02",
       "price": 348.06,
       "rsi": 84.3
-    },
-    {
-      "ticker": "AXP",
-      "date": "2026-07-02",
-      "price": 351.96,
-      "rsi": 84.0
     },
     {
       "ticker": "ALL",
@@ -354,18 +354,18 @@
     }
   ],
   "oversoldStats": {
-    "count": 10271,
-    "avg_return": 4.52,
-    "median_return": 3.67,
+    "count": 10267,
+    "avg_return": 4.51,
+    "median_return": 3.66,
     "win_rate": 59.2,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18336,
-    "avg_return": 4.13,
-    "median_return": 3.14,
-    "win_rate": 59.9,
+    "count": 18315,
+    "avg_return": 4.14,
+    "median_return": 3.15,
+    "win_rate": 60.0,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -871,5 +871,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-02T22:21:42.437184Z"
+  "lastUpdated": "2026-07-03T22:54:46.813926Z"
 }
