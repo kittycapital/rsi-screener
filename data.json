@@ -165,204 +165,156 @@
   ],
   "currentOversold": [
     {
-      "ticker": "LYB",
-      "date": "2026-07-06",
-      "price": 52.97,
-      "rsi": 5.9
-    },
-    {
-      "ticker": "DOW",
-      "date": "2026-07-06",
-      "price": 27.33,
-      "rsi": 8.7
-    },
-    {
-      "ticker": "SLB",
-      "date": "2026-07-06",
-      "price": 45.72,
-      "rsi": 11.4
-    },
-    {
-      "ticker": "HAL",
-      "date": "2026-07-06",
-      "price": 33.0,
-      "rsi": 12.1
-    },
-    {
-      "ticker": "BKR",
-      "date": "2026-07-06",
-      "price": 53.25,
-      "rsi": 13.2
+      "ticker": "ORCL",
+      "date": "2026-07-07",
+      "price": 141.6,
+      "rsi": 7.1
     },
     {
       "ticker": "ALB",
-      "date": "2026-07-06",
-      "price": 133.8,
-      "rsi": 13.6
+      "date": "2026-07-07",
+      "price": 129.02,
+      "rsi": 12.7
     },
     {
-      "ticker": "OXY",
-      "date": "2026-07-06",
-      "price": 48.81,
-      "rsi": 14.0
+      "ticker": "LYB",
+      "date": "2026-07-07",
+      "price": 54.6,
+      "rsi": 17.8
     },
     {
-      "ticker": "ODFL",
-      "date": "2026-07-06",
-      "price": 216.44,
-      "rsi": 16.9
+      "ticker": "FCX",
+      "date": "2026-07-07",
+      "price": 59.33,
+      "rsi": 18.8
     },
     {
-      "ticker": "COP",
-      "date": "2026-07-06",
-      "price": 103.58,
-      "rsi": 17.9
-    },
-    {
-      "ticker": "TJX",
-      "date": "2026-07-06",
-      "price": 151.31,
-      "rsi": 17.9
-    },
-    {
-      "ticker": "AKAM",
-      "date": "2026-07-06",
-      "price": 112.73,
-      "rsi": 19.0
-    },
-    {
-      "ticker": "ORCL",
-      "date": "2026-07-06",
-      "price": 143.76,
-      "rsi": 19.4
-    },
-    {
-      "ticker": "DVN",
-      "date": "2026-07-06",
-      "price": 40.36,
-      "rsi": 19.6
+      "ticker": "SLB",
+      "date": "2026-07-07",
+      "price": 46.42,
+      "rsi": 19.1
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "GE",
-      "date": "2026-07-06",
-      "price": 378.68,
-      "rsi": 90.8
-    },
-    {
-      "ticker": "VRTX",
-      "date": "2026-07-06",
-      "price": 529.59,
-      "rsi": 90.2
+      "ticker": "CTVA",
+      "date": "2026-07-07",
+      "price": 86.75,
+      "rsi": 91.4
     },
     {
       "ticker": "DVA",
-      "date": "2026-07-06",
-      "price": 235.71,
-      "rsi": 89.9
-    },
-    {
-      "ticker": "CTVA",
-      "date": "2026-07-06",
-      "price": 86.39,
-      "rsi": 88.2
-    },
-    {
-      "ticker": "MRNA",
-      "date": "2026-07-06",
-      "price": 81.8,
-      "rsi": 86.6
-    },
-    {
-      "ticker": "TTWO",
-      "date": "2026-07-06",
-      "price": 258.41,
-      "rsi": 86.1
-    },
-    {
-      "ticker": "PANW",
-      "date": "2026-07-06",
-      "price": 357.53,
-      "rsi": 85.7
-    },
-    {
-      "ticker": "CRL",
-      "date": "2026-07-06",
-      "price": 231.43,
-      "rsi": 84.8
-    },
-    {
-      "ticker": "TECH",
-      "date": "2026-07-06",
-      "price": 70.92,
-      "rsi": 83.9
-    },
-    {
-      "ticker": "AXP",
-      "date": "2026-07-06",
-      "price": 356.03,
-      "rsi": 83.4
+      "date": "2026-07-07",
+      "price": 234.31,
+      "rsi": 85.9
     },
     {
       "ticker": "AXON",
-      "date": "2026-07-06",
-      "price": 622.35,
-      "rsi": 83.2
+      "date": "2026-07-07",
+      "price": 640.46,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "TTWO",
+      "date": "2026-07-07",
+      "price": 257.79,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "VTR",
+      "date": "2026-07-07",
+      "price": 94.07,
+      "rsi": 84.1
     },
     {
       "ticker": "TRV",
-      "date": "2026-07-06",
-      "price": 339.17,
-      "rsi": 83.2
+      "date": "2026-07-07",
+      "price": 343.73,
+      "rsi": 84.0
     },
     {
-      "ticker": "BALL",
-      "date": "2026-07-06",
-      "price": 62.95,
-      "rsi": 82.8
+      "ticker": "PNC",
+      "date": "2026-07-07",
+      "price": 254.01,
+      "rsi": 83.9
     },
     {
-      "ticker": "CINF",
-      "date": "2026-07-06",
-      "price": 189.59,
-      "rsi": 82.6
+      "ticker": "FITB",
+      "date": "2026-07-07",
+      "price": 57.92,
+      "rsi": 83.6
     },
     {
-      "ticker": "CRWD",
-      "date": "2026-07-06",
-      "price": 199.38,
-      "rsi": 82.6
-    },
-    {
-      "ticker": "SE",
-      "date": "2026-07-06",
-      "price": 105.0,
-      "rsi": 82.4
+      "ticker": "VRTX",
+      "date": "2026-07-07",
+      "price": 522.25,
+      "rsi": 83.5
     },
     {
       "ticker": "EG",
-      "date": "2026-07-06",
-      "price": 372.93,
+      "date": "2026-07-07",
+      "price": 373.22,
+      "rsi": 82.6
+    },
+    {
+      "ticker": "MRNA",
+      "date": "2026-07-07",
+      "price": 79.77,
+      "rsi": 81.8
+    },
+    {
+      "ticker": "ACGL",
+      "date": "2026-07-07",
+      "price": 102.85,
       "rsi": 81.3
     },
     {
-      "ticker": "MTD",
-      "date": "2026-07-06",
-      "price": 1295.56,
+      "ticker": "TECH",
+      "date": "2026-07-07",
+      "price": 70.61,
+      "rsi": 81.3
+    },
+    {
+      "ticker": "CINF",
+      "date": "2026-07-07",
+      "price": 189.06,
+      "rsi": 81.1
+    },
+    {
+      "ticker": "CRL",
+      "date": "2026-07-07",
+      "price": 228.68,
       "rsi": 81.0
+    },
+    {
+      "ticker": "ALL",
+      "date": "2026-07-07",
+      "price": 251.46,
+      "rsi": 80.8
+    },
+    {
+      "ticker": "AJG",
+      "date": "2026-07-07",
+      "price": 254.67,
+      "rsi": 80.4
+    },
+    {
+      "ticker": "USB",
+      "date": "2026-07-07",
+      "price": 62.89,
+      "rsi": 80.0
     }
   ],
   "oversoldStats": {
-    "count": 10256,
-    "avg_return": 4.52,
+    "count": 10254,
+    "avg_return": 4.53,
     "median_return": 3.68,
     "win_rate": 59.2,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18273,
+    "count": 18276,
     "avg_return": 4.15,
     "median_return": 3.16,
     "win_rate": 60.0,
@@ -870,5 +822,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-06T22:56:53.813804Z"
+  "lastUpdated": "2026-07-07T22:50:44.498779Z"
 }
