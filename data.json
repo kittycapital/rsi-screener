@@ -59,7 +59,7 @@
     {
       "ticker": "WDC",
       "date": "2025-04-04",
-      "price": 30.4,
+      "price": 30.41,
       "rsi": 13.2,
       "type": "oversold",
       "forward_return": 110.02
@@ -166,147 +166,57 @@
   "currentOversold": [
     {
       "ticker": "ORCL",
-      "date": "2026-07-07",
-      "price": 141.6,
-      "rsi": 7.1
+      "date": "2026-07-08",
+      "price": 140.49,
+      "rsi": 7.5
     },
     {
       "ticker": "ALB",
-      "date": "2026-07-07",
-      "price": 129.02,
-      "rsi": 12.7
-    },
-    {
-      "ticker": "LYB",
-      "date": "2026-07-07",
-      "price": 54.6,
-      "rsi": 17.8
+      "date": "2026-07-08",
+      "price": 129.38,
+      "rsi": 14.0
     },
     {
       "ticker": "FCX",
-      "date": "2026-07-07",
-      "price": 59.33,
-      "rsi": 18.8
-    },
-    {
-      "ticker": "SLB",
-      "date": "2026-07-07",
-      "price": 46.42,
-      "rsi": 19.1
+      "date": "2026-07-08",
+      "price": 57.5,
+      "rsi": 16.9
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "CTVA",
-      "date": "2026-07-07",
-      "price": 86.75,
-      "rsi": 91.4
-    },
-    {
-      "ticker": "DVA",
-      "date": "2026-07-07",
-      "price": 234.31,
-      "rsi": 85.9
-    },
-    {
-      "ticker": "AXON",
-      "date": "2026-07-07",
-      "price": 640.46,
-      "rsi": 84.2
-    },
-    {
-      "ticker": "TTWO",
-      "date": "2026-07-07",
-      "price": 257.79,
-      "rsi": 84.2
-    },
-    {
-      "ticker": "VTR",
-      "date": "2026-07-07",
-      "price": 94.07,
-      "rsi": 84.1
-    },
-    {
-      "ticker": "TRV",
-      "date": "2026-07-07",
-      "price": 343.73,
-      "rsi": 84.0
-    },
-    {
-      "ticker": "PNC",
-      "date": "2026-07-07",
-      "price": 254.01,
-      "rsi": 83.9
-    },
-    {
-      "ticker": "FITB",
-      "date": "2026-07-07",
-      "price": 57.92,
-      "rsi": 83.6
-    },
-    {
-      "ticker": "VRTX",
-      "date": "2026-07-07",
-      "price": 522.25,
-      "rsi": 83.5
+      "ticker": "TECH",
+      "date": "2026-07-08",
+      "price": 70.96,
+      "rsi": 82.0
     },
     {
       "ticker": "EG",
-      "date": "2026-07-07",
-      "price": 373.22,
-      "rsi": 82.6
-    },
-    {
-      "ticker": "MRNA",
-      "date": "2026-07-07",
-      "price": 79.77,
-      "rsi": 81.8
-    },
-    {
-      "ticker": "ACGL",
-      "date": "2026-07-07",
-      "price": 102.85,
-      "rsi": 81.3
-    },
-    {
-      "ticker": "TECH",
-      "date": "2026-07-07",
-      "price": 70.61,
-      "rsi": 81.3
-    },
-    {
-      "ticker": "CINF",
-      "date": "2026-07-07",
-      "price": 189.06,
-      "rsi": 81.1
-    },
-    {
-      "ticker": "CRL",
-      "date": "2026-07-07",
-      "price": 228.68,
+      "date": "2026-07-08",
+      "price": 371.29,
       "rsi": 81.0
     },
     {
-      "ticker": "ALL",
-      "date": "2026-07-07",
-      "price": 251.46,
-      "rsi": 80.8
-    },
-    {
       "ticker": "AJG",
-      "date": "2026-07-07",
-      "price": 254.67,
-      "rsi": 80.4
+      "date": "2026-07-08",
+      "price": 256.61,
+      "rsi": 80.9
     },
     {
-      "ticker": "USB",
-      "date": "2026-07-07",
-      "price": 62.89,
-      "rsi": 80.0
+      "ticker": "CTVA",
+      "date": "2026-07-08",
+      "price": 85.18,
+      "rsi": 80.2
+    },
+    {
+      "ticker": "INCY",
+      "date": "2026-07-08",
+      "price": 117.26,
+      "rsi": 80.1
     }
   ],
   "oversoldStats": {
-    "count": 10254,
+    "count": 10268,
     "avg_return": 4.53,
     "median_return": 3.68,
     "win_rate": 59.2,
@@ -314,7 +224,7 @@
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18276,
+    "count": 18306,
     "avg_return": 4.15,
     "median_return": 3.16,
     "win_rate": 60.0,
@@ -440,6 +350,7 @@
     "CSGP",
     "CSX",
     "CTAS",
+    "CTRA",
     "CTSH",
     "CTVA",
     "CVS",
@@ -822,5 +733,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-07T22:50:44.498779Z"
+  "lastUpdated": "2026-07-08T22:55:56.151534Z"
 }
