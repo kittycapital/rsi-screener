@@ -165,68 +165,104 @@
   ],
   "currentOversold": [
     {
-      "ticker": "ORCL",
-      "date": "2026-07-08",
-      "price": 140.49,
-      "rsi": 7.5
-    },
-    {
       "ticker": "ALB",
-      "date": "2026-07-08",
-      "price": 129.38,
-      "rsi": 14.0
+      "date": "2026-07-09",
+      "price": 128.42,
+      "rsi": 13.0
     },
     {
-      "ticker": "FCX",
-      "date": "2026-07-08",
-      "price": 57.5,
-      "rsi": 16.9
+      "ticker": "ORCL",
+      "date": "2026-07-09",
+      "price": 144.22,
+      "rsi": 14.4
     }
   ],
   "currentOverbought": [
     {
+      "ticker": "JKHY",
+      "date": "2026-07-09",
+      "price": 150.22,
+      "rsi": 89.9
+    },
+    {
       "ticker": "TECH",
-      "date": "2026-07-08",
-      "price": 70.96,
-      "rsi": 82.0
+      "date": "2026-07-09",
+      "price": 71.15,
+      "rsi": 85.9
     },
     {
-      "ticker": "EG",
-      "date": "2026-07-08",
-      "price": 371.29,
-      "rsi": 81.0
+      "ticker": "UNP",
+      "date": "2026-07-09",
+      "price": 285.04,
+      "rsi": 85.8
     },
     {
-      "ticker": "AJG",
-      "date": "2026-07-08",
-      "price": 256.61,
-      "rsi": 80.9
+      "ticker": "CRL",
+      "date": "2026-07-09",
+      "price": 233.6,
+      "rsi": 85.1
     },
     {
-      "ticker": "CTVA",
-      "date": "2026-07-08",
-      "price": 85.18,
-      "rsi": 80.2
+      "ticker": "IQV",
+      "date": "2026-07-09",
+      "price": 208.97,
+      "rsi": 84.7
+    },
+    {
+      "ticker": "MOH",
+      "date": "2026-07-09",
+      "price": 232.09,
+      "rsi": 83.7
+    },
+    {
+      "ticker": "MPC",
+      "date": "2026-07-09",
+      "price": 283.3,
+      "rsi": 83.1
     },
     {
       "ticker": "INCY",
-      "date": "2026-07-08",
-      "price": 117.26,
-      "rsi": 80.1
+      "date": "2026-07-09",
+      "price": 118.52,
+      "rsi": 83.0
+    },
+    {
+      "ticker": "CSX",
+      "date": "2026-07-09",
+      "price": 49.35,
+      "rsi": 82.7
+    },
+    {
+      "ticker": "EG",
+      "date": "2026-07-09",
+      "price": 371.0,
+      "rsi": 80.9
+    },
+    {
+      "ticker": "VTR",
+      "date": "2026-07-09",
+      "price": 91.74,
+      "rsi": 80.6
+    },
+    {
+      "ticker": "NSC",
+      "date": "2026-07-09",
+      "price": 323.77,
+      "rsi": 80.2
     }
   ],
   "oversoldStats": {
-    "count": 10268,
+    "count": 10260,
     "avg_return": 4.53,
-    "median_return": 3.68,
+    "median_return": 3.69,
     "win_rate": 59.2,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18306,
-    "avg_return": 4.15,
-    "median_return": 3.16,
+    "count": 18291,
+    "avg_return": 4.16,
+    "median_return": 3.17,
     "win_rate": 60.0,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -350,7 +386,6 @@
     "CSGP",
     "CSX",
     "CTAS",
-    "CTRA",
     "CTSH",
     "CTVA",
     "CVS",
@@ -733,5 +768,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-08T22:55:56.151534Z"
+  "lastUpdated": "2026-07-09T23:02:04.673995Z"
 }
