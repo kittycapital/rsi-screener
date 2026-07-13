@@ -165,117 +165,165 @@
   ],
   "currentOversold": [
     {
+      "ticker": "QRVO",
+      "date": "2026-07-13",
+      "price": 84.35,
+      "rsi": 9.0
+    },
+    {
+      "ticker": "SWKS",
+      "date": "2026-07-13",
+      "price": 58.24,
+      "rsi": 9.0
+    },
+    {
       "ticker": "ORCL",
-      "date": "2026-07-10",
-      "price": 140.64,
-      "rsi": 12.4
+      "date": "2026-07-13",
+      "price": 131.54,
+      "rsi": 12.6
     },
     {
       "ticker": "ALB",
-      "date": "2026-07-10",
-      "price": 126.05,
-      "rsi": 14.1
+      "date": "2026-07-13",
+      "price": 125.79,
+      "rsi": 15.2
     }
   ],
   "currentOverbought": [
     {
       "ticker": "JKHY",
-      "date": "2026-07-10",
-      "price": 150.32,
-      "rsi": 89.2
-    },
-    {
-      "ticker": "UNP",
-      "date": "2026-07-10",
-      "price": 286.96,
-      "rsi": 89.1
-    },
-    {
-      "ticker": "IQV",
-      "date": "2026-07-10",
-      "price": 207.85,
-      "rsi": 87.5
-    },
-    {
-      "ticker": "MPC",
-      "date": "2026-07-10",
-      "price": 283.74,
-      "rsi": 85.6
-    },
-    {
-      "ticker": "CRL",
-      "date": "2026-07-10",
-      "price": 233.41,
-      "rsi": 84.3
-    },
-    {
-      "ticker": "MOH",
-      "date": "2026-07-10",
-      "price": 233.31,
-      "rsi": 84.3
+      "date": "2026-07-13",
+      "price": 150.73,
+      "rsi": 98.3
     },
     {
       "ticker": "TECH",
-      "date": "2026-07-10",
-      "price": 71.3,
-      "rsi": 83.9
+      "date": "2026-07-13",
+      "price": 71.36,
+      "rsi": 95.2
     },
     {
-      "ticker": "DVA",
-      "date": "2026-07-10",
-      "price": 232.8,
-      "rsi": 83.3
+      "ticker": "UNP",
+      "date": "2026-07-13",
+      "price": 289.13,
+      "rsi": 88.9
     },
     {
-      "ticker": "EG",
-      "date": "2026-07-10",
-      "price": 370.58,
-      "rsi": 83.1
+      "ticker": "MPC",
+      "date": "2026-07-13",
+      "price": 296.88,
+      "rsi": 87.6
     },
     {
-      "ticker": "NSC",
-      "date": "2026-07-10",
-      "price": 327.47,
-      "rsi": 82.8
+      "ticker": "AJG",
+      "date": "2026-07-13",
+      "price": 261.23,
+      "rsi": 87.1
     },
     {
-      "ticker": "CSX",
-      "date": "2026-07-10",
-      "price": 49.41,
-      "rsi": 82.7
+      "ticker": "IQV",
+      "date": "2026-07-13",
+      "price": 207.55,
+      "rsi": 87.0
     },
     {
-      "ticker": "EA",
-      "date": "2026-07-10",
-      "price": 206.41,
-      "rsi": 82.5
+      "ticker": "MOH",
+      "date": "2026-07-13",
+      "price": 242.88,
+      "rsi": 86.1
     },
     {
       "ticker": "ADBE",
-      "date": "2026-07-10",
-      "price": 223.64,
+      "date": "2026-07-13",
+      "price": 230.61,
+      "rsi": 85.0
+    },
+    {
+      "ticker": "EG",
+      "date": "2026-07-13",
+      "price": 377.89,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "SE",
+      "date": "2026-07-13",
+      "price": 110.66,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "CRL",
+      "date": "2026-07-13",
+      "price": 229.75,
+      "rsi": 84.0
+    },
+    {
+      "ticker": "DVA",
+      "date": "2026-07-13",
+      "price": 235.58,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "VRSN",
+      "date": "2026-07-13",
+      "price": 270.31,
+      "rsi": 83.1
+    },
+    {
+      "ticker": "WTW",
+      "date": "2026-07-13",
+      "price": 295.55,
+      "rsi": 82.5
+    },
+    {
+      "ticker": "PSX",
+      "date": "2026-07-13",
+      "price": 198.29,
+      "rsi": 82.2
+    },
+    {
+      "ticker": "CF",
+      "date": "2026-07-13",
+      "price": 120.92,
       "rsi": 82.1
     },
     {
-      "ticker": "INCY",
-      "date": "2026-07-10",
-      "price": 116.71,
-      "rsi": 80.2
+      "ticker": "VLTO",
+      "date": "2026-07-13",
+      "price": 92.91,
+      "rsi": 82.0
+    },
+    {
+      "ticker": "AON",
+      "date": "2026-07-13",
+      "price": 367.35,
+      "rsi": 81.7
+    },
+    {
+      "ticker": "CSX",
+      "date": "2026-07-13",
+      "price": 49.64,
+      "rsi": 81.6
+    },
+    {
+      "ticker": "VLO",
+      "date": "2026-07-13",
+      "price": 295.79,
+      "rsi": 81.6
     }
   ],
   "oversoldStats": {
-    "count": 10224,
-    "avg_return": 4.5,
-    "median_return": 3.69,
-    "win_rate": 59.2,
+    "count": 10257,
+    "avg_return": 4.57,
+    "median_return": 3.73,
+    "win_rate": 59.3,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18221,
-    "avg_return": 4.15,
-    "median_return": 3.14,
-    "win_rate": 59.9,
+    "count": 18174,
+    "avg_return": 4.2,
+    "median_return": 3.18,
+    "win_rate": 60.1,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -301,6 +349,7 @@
     "AJG",
     "AKAM",
     "ALB",
+    "ALGN",
     "ALL",
     "ALLE",
     "AMAT",
@@ -778,5 +827,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-10T22:50:24.025760Z"
+  "lastUpdated": "2026-07-13T22:44:23.074891Z"
 }
