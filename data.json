@@ -166,137 +166,83 @@
   "currentOversold": [
     {
       "ticker": "QRVO",
-      "date": "2026-07-14",
-      "price": 82.51,
-      "rsi": 9.3
+      "date": "2026-07-15",
+      "price": 83.44,
+      "rsi": 14.7
     },
     {
       "ticker": "SWKS",
-      "date": "2026-07-14",
-      "price": 56.58,
-      "rsi": 9.5
-    },
-    {
-      "ticker": "ORCL",
-      "date": "2026-07-14",
-      "price": 127.94,
-      "rsi": 14.1
-    },
-    {
-      "ticker": "TPR",
-      "date": "2026-07-14",
-      "price": 135.36,
-      "rsi": 16.3
+      "date": "2026-07-15",
+      "price": 57.51,
+      "rsi": 14.8
     }
   ],
   "currentOverbought": [
     {
       "ticker": "TECH",
-      "date": "2026-07-14",
-      "price": 71.23,
-      "rsi": 94.3
+      "date": "2026-07-15",
+      "price": 71.48,
+      "rsi": 93.4
     },
     {
       "ticker": "UNP",
-      "date": "2026-07-14",
-      "price": 288.3,
-      "rsi": 90.0
+      "date": "2026-07-15",
+      "price": 288.36,
+      "rsi": 89.6
     },
     {
       "ticker": "MPC",
-      "date": "2026-07-14",
-      "price": 303.4,
-      "rsi": 88.5
+      "date": "2026-07-15",
+      "price": 299.18,
+      "rsi": 85.8
     },
     {
-      "ticker": "IQV",
-      "date": "2026-07-14",
-      "price": 207.83,
-      "rsi": 86.2
+      "ticker": "PYPL",
+      "date": "2026-07-15",
+      "price": 55.52,
+      "rsi": 84.0
     },
     {
-      "ticker": "MOH",
-      "date": "2026-07-14",
-      "price": 241.56,
-      "rsi": 85.5
-    },
-    {
-      "ticker": "CRL",
-      "date": "2026-07-14",
-      "price": 231.21,
-      "rsi": 83.2
-    },
-    {
-      "ticker": "CSX",
-      "date": "2026-07-14",
-      "price": 49.92,
-      "rsi": 83.1
-    },
-    {
-      "ticker": "VLO",
-      "date": "2026-07-14",
-      "price": 301.43,
-      "rsi": 82.8
-    },
-    {
-      "ticker": "PSX",
-      "date": "2026-07-14",
-      "price": 201.45,
-      "rsi": 82.6
-    },
-    {
-      "ticker": "JKHY",
-      "date": "2026-07-14",
-      "price": 145.37,
-      "rsi": 81.6
-    },
-    {
-      "ticker": "CF",
-      "date": "2026-07-14",
-      "price": 119.19,
-      "rsi": 81.2
-    },
-    {
-      "ticker": "CHRW",
-      "date": "2026-07-14",
-      "price": 199.61,
-      "rsi": 81.2
-    },
-    {
-      "ticker": "NSC",
-      "date": "2026-07-14",
-      "price": 326.83,
-      "rsi": 81.1
-    },
-    {
-      "ticker": "VRSN",
-      "date": "2026-07-14",
-      "price": 268.85,
-      "rsi": 80.8
+      "ticker": "ADM",
+      "date": "2026-07-15",
+      "price": 82.3,
+      "rsi": 83.5
     },
     {
       "ticker": "EXPD",
-      "date": "2026-07-14",
-      "price": 178.22,
-      "rsi": 80.6
+      "date": "2026-07-15",
+      "price": 177.7,
+      "rsi": 82.5
     },
     {
-      "ticker": "XYL",
-      "date": "2026-07-14",
-      "price": 121.55,
-      "rsi": 80.6
+      "ticker": "NTRS",
+      "date": "2026-07-15",
+      "price": 191.12,
+      "rsi": 82.5
+    },
+    {
+      "ticker": "JKHY",
+      "date": "2026-07-15",
+      "price": 148.47,
+      "rsi": 81.8
+    },
+    {
+      "ticker": "NSC",
+      "date": "2026-07-15",
+      "price": 328.54,
+      "rsi": 81.7
     }
   ],
   "oversoldStats": {
-    "count": 10260,
-    "avg_return": 4.57,
-    "median_return": 3.72,
+    "count": 10262,
+    "avg_return": 4.56,
+    "median_return": 3.71,
     "win_rate": 59.3,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18130,
+    "count": 18159,
     "avg_return": 4.24,
     "median_return": 3.21,
     "win_rate": 60.2,
@@ -803,5 +749,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-14T22:45:54.109619Z"
+  "lastUpdated": "2026-07-15T22:48:23.675623Z"
 }
