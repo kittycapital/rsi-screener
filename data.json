@@ -165,159 +165,99 @@
   ],
   "currentOversold": [
     {
-      "ticker": "QRVO",
-      "date": "2026-07-16",
-      "price": 83.5,
-      "rsi": 16.5
-    },
-    {
-      "ticker": "SWKS",
-      "date": "2026-07-16",
-      "price": 57.63,
-      "rsi": 16.5
-    },
-    {
-      "ticker": "GNRC",
-      "date": "2026-07-16",
-      "price": 215.38,
-      "rsi": 17.6
+      "ticker": "UAL",
+      "date": "2026-07-17",
+      "price": 115.41,
+      "rsi": 14.6
     }
   ],
   "currentOverbought": [
     {
       "ticker": "UNP",
-      "date": "2026-07-16",
-      "price": 299.42,
-      "rsi": 90.5
+      "date": "2026-07-17",
+      "price": 301.75,
+      "rsi": 90.9
     },
     {
       "ticker": "AAPL",
-      "date": "2026-07-16",
-      "price": 333.26,
-      "rsi": 89.9
-    },
-    {
-      "ticker": "SCHW",
-      "date": "2026-07-16",
-      "price": 102.8,
-      "rsi": 86.9
-    },
-    {
-      "ticker": "MPC",
-      "date": "2026-07-16",
-      "price": 305.85,
-      "rsi": 85.7
-    },
-    {
-      "ticker": "MCO",
-      "date": "2026-07-16",
-      "price": 519.02,
-      "rsi": 85.5
-    },
-    {
-      "ticker": "PYPL",
-      "date": "2026-07-16",
-      "price": 56.73,
-      "rsi": 85.3
-    },
-    {
-      "ticker": "MSCI",
-      "date": "2026-07-16",
-      "price": 637.24,
-      "rsi": 85.2
-    },
-    {
-      "ticker": "ICE",
-      "date": "2026-07-16",
-      "price": 141.76,
-      "rsi": 85.0
-    },
-    {
-      "ticker": "VRSN",
-      "date": "2026-07-16",
-      "price": 275.22,
-      "rsi": 84.4
+      "date": "2026-07-17",
+      "price": 333.74,
+      "rsi": 88.6
     },
     {
       "ticker": "EXPD",
-      "date": "2026-07-16",
-      "price": 181.96,
-      "rsi": 84.1
+      "date": "2026-07-17",
+      "price": 182.8,
+      "rsi": 87.3
     },
     {
-      "ticker": "JKHY",
-      "date": "2026-07-16",
-      "price": 153.84,
-      "rsi": 84.1
-    },
-    {
-      "ticker": "SPGI",
-      "date": "2026-07-16",
-      "price": 457.38,
-      "rsi": 83.7
-    },
-    {
-      "ticker": "CHRW",
-      "date": "2026-07-16",
-      "price": 205.75,
-      "rsi": 82.5
-    },
-    {
-      "ticker": "CTAS",
-      "date": "2026-07-16",
-      "price": 206.25,
-      "rsi": 82.4
-    },
-    {
-      "ticker": "NSC",
-      "date": "2026-07-16",
-      "price": 338.06,
-      "rsi": 82.3
+      "ticker": "MPC",
+      "date": "2026-07-17",
+      "price": 312.6,
+      "rsi": 86.9
     },
     {
       "ticker": "ADM",
-      "date": "2026-07-16",
-      "price": 83.0,
-      "rsi": 82.2
+      "date": "2026-07-17",
+      "price": 85.9,
+      "rsi": 86.0
     },
     {
-      "ticker": "PLTR",
-      "date": "2026-07-16",
-      "price": 134.44,
-      "rsi": 82.1
+      "ticker": "CHRW",
+      "date": "2026-07-17",
+      "price": 208.5,
+      "rsi": 85.8
     },
     {
-      "ticker": "NWSA",
-      "date": "2026-07-16",
-      "price": 28.68,
-      "rsi": 82.0
+      "ticker": "VRSN",
+      "date": "2026-07-17",
+      "price": 277.66,
+      "rsi": 83.3
     },
     {
-      "ticker": "AMP",
-      "date": "2026-07-16",
-      "price": 533.21,
-      "rsi": 81.4
+      "ticker": "PYPL",
+      "date": "2026-07-17",
+      "price": 56.56,
+      "rsi": 83.0
     },
     {
-      "ticker": "RJF",
-      "date": "2026-07-16",
-      "price": 169.7,
-      "rsi": 81.0
+      "ticker": "NSC",
+      "date": "2026-07-17",
+      "price": 340.16,
+      "rsi": 82.8
+    },
+    {
+      "ticker": "ICE",
+      "date": "2026-07-17",
+      "price": 139.65,
+      "rsi": 80.2
+    },
+    {
+      "ticker": "EA",
+      "date": "2026-07-17",
+      "price": 208.9,
+      "rsi": 80.1
+    },
+    {
+      "ticker": "SCHW",
+      "date": "2026-07-17",
+      "price": 101.56,
+      "rsi": 80.1
     }
   ],
   "oversoldStats": {
-    "count": 10271,
+    "count": 10268,
     "avg_return": 4.56,
-    "median_return": 3.71,
+    "median_return": 3.7,
     "win_rate": 59.3,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18181,
-    "avg_return": 4.24,
-    "median_return": 3.21,
-    "win_rate": 60.2,
+    "count": 18165,
+    "avg_return": 4.28,
+    "median_return": 3.26,
+    "win_rate": 60.3,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -821,5 +761,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-16T22:48:22.041404Z"
+  "lastUpdated": "2026-07-17T22:38:46.179380Z"
 }
