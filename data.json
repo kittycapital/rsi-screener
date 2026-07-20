@@ -165,99 +165,117 @@
   ],
   "currentOversold": [
     {
-      "ticker": "UAL",
-      "date": "2026-07-17",
-      "price": 115.41,
-      "rsi": 14.6
+      "ticker": "GLW",
+      "date": "2026-07-20",
+      "price": 153.1,
+      "rsi": 10.0
+    },
+    {
+      "ticker": "GNRC",
+      "date": "2026-07-20",
+      "price": 213.25,
+      "rsi": 15.9
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "UNP",
-      "date": "2026-07-17",
-      "price": 301.75,
-      "rsi": 90.9
-    },
-    {
-      "ticker": "AAPL",
-      "date": "2026-07-17",
-      "price": 333.74,
-      "rsi": 88.6
-    },
-    {
-      "ticker": "EXPD",
-      "date": "2026-07-17",
-      "price": 182.8,
-      "rsi": 87.3
+      "ticker": "VRSN",
+      "date": "2026-07-20",
+      "price": 277.61,
+      "rsi": 91.9
     },
     {
       "ticker": "MPC",
-      "date": "2026-07-17",
-      "price": 312.6,
-      "rsi": 86.9
+      "date": "2026-07-20",
+      "price": 315.31,
+      "rsi": 86.4
     },
     {
-      "ticker": "ADM",
-      "date": "2026-07-17",
-      "price": 85.9,
-      "rsi": 86.0
-    },
-    {
-      "ticker": "CHRW",
-      "date": "2026-07-17",
-      "price": 208.5,
-      "rsi": 85.8
-    },
-    {
-      "ticker": "VRSN",
-      "date": "2026-07-17",
-      "price": 277.66,
-      "rsi": 83.3
-    },
-    {
-      "ticker": "PYPL",
-      "date": "2026-07-17",
-      "price": 56.56,
-      "rsi": 83.0
-    },
-    {
-      "ticker": "NSC",
-      "date": "2026-07-17",
-      "price": 340.16,
-      "rsi": 82.8
+      "ticker": "CBOE",
+      "date": "2026-07-20",
+      "price": 278.21,
+      "rsi": 84.4
     },
     {
       "ticker": "ICE",
-      "date": "2026-07-17",
-      "price": 139.65,
-      "rsi": 80.2
+      "date": "2026-07-20",
+      "price": 141.57,
+      "rsi": 84.4
+    },
+    {
+      "ticker": "ADM",
+      "date": "2026-07-20",
+      "price": 85.67,
+      "rsi": 84.3
     },
     {
       "ticker": "EA",
-      "date": "2026-07-17",
-      "price": 208.9,
-      "rsi": 80.1
+      "date": "2026-07-20",
+      "price": 209.29,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "ROST",
+      "date": "2026-07-20",
+      "price": 235.78,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "PYPL",
+      "date": "2026-07-20",
+      "price": 56.82,
+      "rsi": 83.2
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2026-07-20",
+      "price": 326.59,
+      "rsi": 82.1
     },
     {
       "ticker": "SCHW",
-      "date": "2026-07-17",
-      "price": 101.56,
-      "rsi": 80.1
+      "date": "2026-07-20",
+      "price": 102.54,
+      "rsi": 81.6
+    },
+    {
+      "ticker": "CME",
+      "date": "2026-07-20",
+      "price": 245.11,
+      "rsi": 81.3
+    },
+    {
+      "ticker": "CVX",
+      "date": "2026-07-20",
+      "price": 189.71,
+      "rsi": 81.2
+    },
+    {
+      "ticker": "RJF",
+      "date": "2026-07-20",
+      "price": 168.32,
+      "rsi": 81.2
+    },
+    {
+      "ticker": "AMP",
+      "date": "2026-07-20",
+      "price": 526.22,
+      "rsi": 81.0
     }
   ],
   "oversoldStats": {
-    "count": 10268,
+    "count": 10256,
     "avg_return": 4.56,
-    "median_return": 3.7,
+    "median_return": 3.68,
     "win_rate": 59.3,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18165,
-    "avg_return": 4.28,
-    "median_return": 3.26,
-    "win_rate": 60.3,
+    "count": 18129,
+    "avg_return": 4.36,
+    "median_return": 3.31,
+    "win_rate": 60.5,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -295,7 +313,6 @@
     "AMT",
     "AMZN",
     "ANET",
-    "AON",
     "AOS",
     "APA",
     "APD",
@@ -761,5 +778,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-17T22:38:46.179380Z"
+  "lastUpdated": "2026-07-20T22:46:11.204575Z"
 }
