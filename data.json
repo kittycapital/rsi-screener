@@ -165,117 +165,117 @@
   ],
   "currentOversold": [
     {
-      "ticker": "GLW",
-      "date": "2026-07-20",
-      "price": 153.1,
-      "rsi": 10.0
+      "ticker": "GNRC",
+      "date": "2026-07-21",
+      "price": 215.61,
+      "rsi": 10.1
     },
     {
-      "ticker": "GNRC",
-      "date": "2026-07-20",
-      "price": 213.25,
-      "rsi": 15.9
+      "ticker": "GLW",
+      "date": "2026-07-21",
+      "price": 162.41,
+      "rsi": 16.1
+    },
+    {
+      "ticker": "BLDR",
+      "date": "2026-07-21",
+      "price": 69.74,
+      "rsi": 19.3
+    },
+    {
+      "ticker": "UAL",
+      "date": "2026-07-21",
+      "price": 117.7,
+      "rsi": 19.3
+    },
+    {
+      "ticker": "PNR",
+      "date": "2026-07-21",
+      "price": 61.48,
+      "rsi": 19.8
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "VRSN",
-      "date": "2026-07-20",
-      "price": 277.61,
-      "rsi": 91.9
-    },
-    {
       "ticker": "MPC",
-      "date": "2026-07-20",
-      "price": 315.31,
-      "rsi": 86.4
-    },
-    {
-      "ticker": "CBOE",
-      "date": "2026-07-20",
-      "price": 278.21,
-      "rsi": 84.4
-    },
-    {
-      "ticker": "ICE",
-      "date": "2026-07-20",
-      "price": 141.57,
-      "rsi": 84.4
-    },
-    {
-      "ticker": "ADM",
-      "date": "2026-07-20",
-      "price": 85.67,
-      "rsi": 84.3
-    },
-    {
-      "ticker": "EA",
-      "date": "2026-07-20",
-      "price": 209.29,
-      "rsi": 83.9
-    },
-    {
-      "ticker": "ROST",
-      "date": "2026-07-20",
-      "price": 235.78,
-      "rsi": 83.8
-    },
-    {
-      "ticker": "PYPL",
-      "date": "2026-07-20",
-      "price": 56.82,
-      "rsi": 83.2
-    },
-    {
-      "ticker": "AAPL",
-      "date": "2026-07-20",
-      "price": 326.59,
-      "rsi": 82.1
-    },
-    {
-      "ticker": "SCHW",
-      "date": "2026-07-20",
-      "price": 102.54,
-      "rsi": 81.6
-    },
-    {
-      "ticker": "CME",
-      "date": "2026-07-20",
-      "price": 245.11,
-      "rsi": 81.3
+      "date": "2026-07-21",
+      "price": 319.76,
+      "rsi": 91.2
     },
     {
       "ticker": "CVX",
-      "date": "2026-07-20",
-      "price": 189.71,
-      "rsi": 81.2
+      "date": "2026-07-21",
+      "price": 191.07,
+      "rsi": 88.7
     },
     {
-      "ticker": "RJF",
-      "date": "2026-07-20",
-      "price": 168.32,
-      "rsi": 81.2
+      "ticker": "PSX",
+      "date": "2026-07-21",
+      "price": 212.27,
+      "rsi": 88.1
     },
     {
-      "ticker": "AMP",
-      "date": "2026-07-20",
-      "price": 526.22,
-      "rsi": 81.0
+      "ticker": "ADM",
+      "date": "2026-07-21",
+      "price": 86.2,
+      "rsi": 88.0
+    },
+    {
+      "ticker": "LYB",
+      "date": "2026-07-21",
+      "price": 61.19,
+      "rsi": 86.7
+    },
+    {
+      "ticker": "BBY",
+      "date": "2026-07-21",
+      "price": 85.22,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "PYPL",
+      "date": "2026-07-21",
+      "price": 55.85,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "ROST",
+      "date": "2026-07-21",
+      "price": 235.81,
+      "rsi": 82.0
+    },
+    {
+      "ticker": "VLO",
+      "date": "2026-07-21",
+      "price": 314.8,
+      "rsi": 80.9
+    },
+    {
+      "ticker": "EA",
+      "date": "2026-07-21",
+      "price": 209.04,
+      "rsi": 80.8
+    },
+    {
+      "ticker": "AAPL",
+      "date": "2026-07-21",
+      "price": 327.74,
+      "rsi": 80.3
     }
   ],
   "oversoldStats": {
-    "count": 10256,
-    "avg_return": 4.56,
-    "median_return": 3.68,
+    "count": 10272,
+    "avg_return": 4.57,
+    "median_return": 3.7,
     "win_rate": 59.3,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18129,
-    "avg_return": 4.36,
-    "median_return": 3.31,
-    "win_rate": 60.5,
+    "count": 18256,
+    "avg_return": 4.42,
+    "median_return": 3.37,
+    "win_rate": 60.7,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -313,6 +313,7 @@
     "AMT",
     "AMZN",
     "ANET",
+    "AON",
     "AOS",
     "APA",
     "APD",
@@ -778,5 +779,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-20T22:46:11.204575Z"
+  "lastUpdated": "2026-07-21T22:45:03.454896Z"
 }
