@@ -166,115 +166,115 @@
   "currentOversold": [
     {
       "ticker": "GNRC",
-      "date": "2026-07-21",
-      "price": 215.61,
-      "rsi": 10.1
+      "date": "2026-07-22",
+      "price": 213.42,
+      "rsi": 12.8
     },
     {
-      "ticker": "GLW",
-      "date": "2026-07-21",
-      "price": 162.41,
-      "rsi": 16.1
-    },
-    {
-      "ticker": "BLDR",
-      "date": "2026-07-21",
-      "price": 69.74,
-      "rsi": 19.3
+      "ticker": "ALB",
+      "date": "2026-07-22",
+      "price": 117.45,
+      "rsi": 17.6
     },
     {
       "ticker": "UAL",
-      "date": "2026-07-21",
-      "price": 117.7,
-      "rsi": 19.3
-    },
-    {
-      "ticker": "PNR",
-      "date": "2026-07-21",
-      "price": 61.48,
-      "rsi": 19.8
+      "date": "2026-07-22",
+      "price": 117.26,
+      "rsi": 19.6
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "MPC",
-      "date": "2026-07-21",
-      "price": 319.76,
-      "rsi": 91.2
-    },
-    {
       "ticker": "CVX",
-      "date": "2026-07-21",
-      "price": 191.07,
-      "rsi": 88.7
-    },
-    {
-      "ticker": "PSX",
-      "date": "2026-07-21",
-      "price": 212.27,
-      "rsi": 88.1
+      "date": "2026-07-22",
+      "price": 192.98,
+      "rsi": 89.5
     },
     {
       "ticker": "ADM",
-      "date": "2026-07-21",
-      "price": 86.2,
-      "rsi": 88.0
+      "date": "2026-07-22",
+      "price": 87.32,
+      "rsi": 88.8
     },
     {
       "ticker": "LYB",
-      "date": "2026-07-21",
-      "price": 61.19,
-      "rsi": 86.7
+      "date": "2026-07-22",
+      "price": 62.32,
+      "rsi": 88.4
     },
     {
-      "ticker": "BBY",
-      "date": "2026-07-21",
-      "price": 85.22,
-      "rsi": 84.2
+      "ticker": "BG",
+      "date": "2026-07-22",
+      "price": 123.88,
+      "rsi": 87.1
     },
     {
-      "ticker": "PYPL",
-      "date": "2026-07-21",
-      "price": 55.85,
-      "rsi": 84.2
+      "ticker": "T",
+      "date": "2026-07-22",
+      "price": 23.04,
+      "rsi": 86.6
+    },
+    {
+      "ticker": "PSX",
+      "date": "2026-07-22",
+      "price": 211.41,
+      "rsi": 85.4
     },
     {
       "ticker": "ROST",
-      "date": "2026-07-21",
-      "price": 235.81,
-      "rsi": 82.0
+      "date": "2026-07-22",
+      "price": 238.21,
+      "rsi": 85.3
     },
     {
-      "ticker": "VLO",
-      "date": "2026-07-21",
-      "price": 314.8,
-      "rsi": 80.9
+      "ticker": "FANG",
+      "date": "2026-07-22",
+      "price": 203.02,
+      "rsi": 85.1
     },
     {
-      "ticker": "EA",
-      "date": "2026-07-21",
-      "price": 209.04,
-      "rsi": 80.8
+      "ticker": "MPC",
+      "date": "2026-07-22",
+      "price": 315.82,
+      "rsi": 85.1
     },
     {
-      "ticker": "AAPL",
-      "date": "2026-07-21",
-      "price": 327.74,
-      "rsi": 80.3
+      "ticker": "BBY",
+      "date": "2026-07-22",
+      "price": 87.11,
+      "rsi": 84.8
+    },
+    {
+      "ticker": "OXY",
+      "date": "2026-07-22",
+      "price": 57.5,
+      "rsi": 82.6
+    },
+    {
+      "ticker": "PYPL",
+      "date": "2026-07-22",
+      "price": 55.51,
+      "rsi": 81.8
+    },
+    {
+      "ticker": "XOM",
+      "date": "2026-07-22",
+      "price": 154.45,
+      "rsi": 81.2
     }
   ],
   "oversoldStats": {
-    "count": 10272,
-    "avg_return": 4.57,
+    "count": 10270,
+    "avg_return": 4.56,
     "median_return": 3.7,
     "win_rate": 59.3,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18256,
-    "avg_return": 4.42,
-    "median_return": 3.37,
+    "count": 18332,
+    "avg_return": 4.45,
+    "median_return": 3.38,
     "win_rate": 60.7,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -779,5 +779,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-21T22:45:03.454896Z"
+  "lastUpdated": "2026-07-22T22:52:48.757585Z"
 }
