@@ -165,136 +165,154 @@
   ],
   "currentOversold": [
     {
-      "ticker": "EW",
-      "date": "2026-07-23",
-      "price": 83.82,
-      "rsi": 15.0
-    },
-    {
       "ticker": "GNRC",
-      "date": "2026-07-23",
-      "price": 210.5,
-      "rsi": 15.8
+      "date": "2026-07-24",
+      "price": 202.01,
+      "rsi": 7.1
     },
     {
-      "ticker": "VRTX",
-      "date": "2026-07-23",
-      "price": 473.09,
-      "rsi": 16.3
-    },
-    {
-      "ticker": "YUM",
-      "date": "2026-07-23",
-      "price": 147.37,
-      "rsi": 16.6
-    },
-    {
-      "ticker": "ALB",
-      "date": "2026-07-23",
-      "price": 116.91,
-      "rsi": 17.6
-    },
-    {
-      "ticker": "TDG",
-      "date": "2026-07-23",
-      "price": 1213.83,
-      "rsi": 17.6
+      "ticker": "EW",
+      "date": "2026-07-24",
+      "price": 82.63,
+      "rsi": 9.4
     },
     {
       "ticker": "MRNA",
-      "date": "2026-07-23",
-      "price": 57.02,
-      "rsi": 17.7
+      "date": "2026-07-24",
+      "price": 54.07,
+      "rsi": 11.6
     },
     {
-      "ticker": "UAL",
-      "date": "2026-07-23",
-      "price": 115.35,
-      "rsi": 19.5
+      "ticker": "TSLA",
+      "date": "2026-07-24",
+      "price": 313.03,
+      "rsi": 15.7
     },
     {
-      "ticker": "NFLX",
-      "date": "2026-07-23",
-      "price": 68.89,
-      "rsi": 19.8
+      "ticker": "ALB",
+      "date": "2026-07-24",
+      "price": 114.85,
+      "rsi": 17.4
+    },
+    {
+      "ticker": "YUM",
+      "date": "2026-07-24",
+      "price": 148.92,
+      "rsi": 17.5
+    },
+    {
+      "ticker": "BA",
+      "date": "2026-07-24",
+      "price": 209.52,
+      "rsi": 18.5
+    },
+    {
+      "ticker": "IBM",
+      "date": "2026-07-24",
+      "price": 214.19,
+      "rsi": 18.9
+    },
+    {
+      "ticker": "VRTX",
+      "date": "2026-07-24",
+      "price": 477.36,
+      "rsi": 19.0
+    },
+    {
+      "ticker": "SNPS",
+      "date": "2026-07-24",
+      "price": 373.47,
+      "rsi": 19.3
     }
   ],
   "currentOverbought": [
     {
       "ticker": "CVX",
-      "date": "2026-07-23",
-      "price": 194.42,
-      "rsi": 88.8
-    },
-    {
-      "ticker": "FANG",
-      "date": "2026-07-23",
-      "price": 205.49,
-      "rsi": 85.9
+      "date": "2026-07-24",
+      "price": 194.79,
+      "rsi": 92.1
     },
     {
       "ticker": "T",
-      "date": "2026-07-23",
-      "price": 22.96,
-      "rsi": 84.4
-    },
-    {
-      "ticker": "LYB",
-      "date": "2026-07-23",
-      "price": 61.72,
-      "rsi": 83.4
-    },
-    {
-      "ticker": "ADM",
-      "date": "2026-07-23",
-      "price": 86.35,
-      "rsi": 82.8
+      "date": "2026-07-24",
+      "price": 24.13,
+      "rsi": 88.1
     },
     {
       "ticker": "XOM",
-      "date": "2026-07-23",
-      "price": 156.89,
-      "rsi": 82.2
+      "date": "2026-07-24",
+      "price": 156.94,
+      "rsi": 84.0
     },
     {
-      "ticker": "EA",
-      "date": "2026-07-23",
-      "price": 209.0,
-      "rsi": 81.6
+      "ticker": "FANG",
+      "date": "2026-07-24",
+      "price": 204.68,
+      "rsi": 83.8
     },
     {
-      "ticker": "OXY",
-      "date": "2026-07-23",
-      "price": 57.6,
-      "rsi": 81.5
-    },
-    {
-      "ticker": "BG",
-      "date": "2026-07-23",
-      "price": 122.3,
-      "rsi": 81.0
+      "ticker": "COP",
+      "date": "2026-07-24",
+      "price": 120.26,
+      "rsi": 83.5
     },
     {
       "ticker": "PYPL",
-      "date": "2026-07-23",
-      "price": 56.0,
-      "rsi": 80.9
+      "date": "2026-07-24",
+      "price": 56.15,
+      "rsi": 82.9
     },
     {
-      "ticker": "MPC",
-      "date": "2026-07-23",
-      "price": 312.27,
-      "rsi": 80.8
+      "ticker": "CBOE",
+      "date": "2026-07-24",
+      "price": 285.07,
+      "rsi": 82.8
     },
     {
       "ticker": "WAB",
-      "date": "2026-07-23",
-      "price": 297.99,
+      "date": "2026-07-24",
+      "price": 302.5,
+      "rsi": 82.6
+    },
+    {
+      "ticker": "VZ",
+      "date": "2026-07-24",
+      "price": 46.38,
+      "rsi": 82.1
+    },
+    {
+      "ticker": "EA",
+      "date": "2026-07-24",
+      "price": 209.06,
+      "rsi": 81.8
+    },
+    {
+      "ticker": "IRM",
+      "date": "2026-07-24",
+      "price": 128.31,
+      "rsi": 80.4
+    },
+    {
+      "ticker": "OXY",
+      "date": "2026-07-24",
+      "price": 57.3,
+      "rsi": 80.3
+    },
+    {
+      "ticker": "SLB",
+      "date": "2026-07-24",
+      "price": 52.42,
+      "rsi": 80.2
+    },
+    {
+      "ticker": "AES",
+      "date": "2026-07-24",
+      "price": 14.84,
       "rsi": 80.0
     }
   ],
   "oversoldStats": {
-    "count": 10275,
+    "count": 10276,
     "avg_return": 4.57,
     "median_return": 3.71,
     "win_rate": 59.3,
@@ -302,10 +320,10 @@
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18402,
-    "avg_return": 4.48,
-    "median_return": 3.39,
-    "win_rate": 60.7,
+    "count": 18434,
+    "avg_return": 4.51,
+    "median_return": 3.42,
+    "win_rate": 60.8,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -809,5 +827,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-23T22:46:41.441028Z"
+  "lastUpdated": "2026-07-24T22:52:23.044093Z"
 }
