@@ -166,164 +166,116 @@
   "currentOversold": [
     {
       "ticker": "GNRC",
-      "date": "2026-07-24",
-      "price": 202.01,
-      "rsi": 7.1
+      "date": "2026-07-27",
+      "price": 197.54,
+      "rsi": 6.7
     },
     {
       "ticker": "EW",
-      "date": "2026-07-24",
-      "price": 82.63,
-      "rsi": 9.4
+      "date": "2026-07-27",
+      "price": 83.04,
+      "rsi": 9.6
     },
     {
       "ticker": "MRNA",
-      "date": "2026-07-24",
-      "price": 54.07,
-      "rsi": 11.6
-    },
-    {
-      "ticker": "TSLA",
-      "date": "2026-07-24",
-      "price": 313.03,
-      "rsi": 15.7
-    },
-    {
-      "ticker": "ALB",
-      "date": "2026-07-24",
-      "price": 114.85,
-      "rsi": 17.4
+      "date": "2026-07-27",
+      "price": 55.63,
+      "rsi": 12.1
     },
     {
       "ticker": "YUM",
-      "date": "2026-07-24",
-      "price": 148.92,
-      "rsi": 17.5
+      "date": "2026-07-27",
+      "price": 147.8,
+      "rsi": 13.8
     },
     {
-      "ticker": "BA",
-      "date": "2026-07-24",
-      "price": 209.52,
-      "rsi": 18.5
+      "ticker": "TSLA",
+      "date": "2026-07-27",
+      "price": 309.22,
+      "rsi": 15.3
     },
     {
-      "ticker": "IBM",
-      "date": "2026-07-24",
-      "price": 214.19,
-      "rsi": 18.9
-    },
-    {
-      "ticker": "VRTX",
-      "date": "2026-07-24",
-      "price": 477.36,
-      "rsi": 19.0
-    },
-    {
-      "ticker": "SNPS",
-      "date": "2026-07-24",
-      "price": 373.47,
-      "rsi": 19.3
+      "ticker": "ALB",
+      "date": "2026-07-27",
+      "price": 116.18,
+      "rsi": 18.2
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "CVX",
-      "date": "2026-07-24",
-      "price": 194.79,
-      "rsi": 92.1
-    },
-    {
       "ticker": "T",
-      "date": "2026-07-24",
-      "price": 24.13,
-      "rsi": 88.1
+      "date": "2026-07-27",
+      "price": 24.42,
+      "rsi": 88.7
     },
     {
-      "ticker": "XOM",
-      "date": "2026-07-24",
-      "price": 156.94,
+      "ticker": "VZ",
+      "date": "2026-07-27",
+      "price": 47.32,
       "rsi": 84.0
     },
     {
-      "ticker": "FANG",
-      "date": "2026-07-24",
-      "price": 204.68,
-      "rsi": 83.8
-    },
-    {
-      "ticker": "COP",
-      "date": "2026-07-24",
-      "price": 120.26,
-      "rsi": 83.5
+      "ticker": "CBOE",
+      "date": "2026-07-27",
+      "price": 288.87,
+      "rsi": 83.9
     },
     {
       "ticker": "PYPL",
-      "date": "2026-07-24",
-      "price": 56.15,
-      "rsi": 82.9
-    },
-    {
-      "ticker": "CBOE",
-      "date": "2026-07-24",
-      "price": 285.07,
+      "date": "2026-07-27",
+      "price": 56.07,
       "rsi": 82.8
     },
     {
       "ticker": "WAB",
-      "date": "2026-07-24",
-      "price": 302.5,
-      "rsi": 82.6
-    },
-    {
-      "ticker": "VZ",
-      "date": "2026-07-24",
-      "price": 46.38,
+      "date": "2026-07-27",
+      "price": 300.9,
       "rsi": 82.1
     },
     {
       "ticker": "EA",
-      "date": "2026-07-24",
-      "price": 209.06,
+      "date": "2026-07-27",
+      "price": 209.07,
       "rsi": 81.8
     },
     {
-      "ticker": "IRM",
-      "date": "2026-07-24",
-      "price": 128.31,
-      "rsi": 80.4
+      "ticker": "ROST",
+      "date": "2026-07-27",
+      "price": 243.35,
+      "rsi": 81.7
     },
     {
-      "ticker": "OXY",
-      "date": "2026-07-24",
-      "price": 57.3,
-      "rsi": 80.3
+      "ticker": "CTAS",
+      "date": "2026-07-27",
+      "price": 210.98,
+      "rsi": 81.1
     },
     {
-      "ticker": "SLB",
-      "date": "2026-07-24",
-      "price": 52.42,
-      "rsi": 80.2
+      "ticker": "CVX",
+      "date": "2026-07-27",
+      "price": 190.0,
+      "rsi": 80.6
     },
     {
-      "ticker": "AES",
-      "date": "2026-07-24",
-      "price": 14.84,
-      "rsi": 80.0
+      "ticker": "MPC",
+      "date": "2026-07-27",
+      "price": 312.35,
+      "rsi": 80.1
     }
   ],
   "oversoldStats": {
-    "count": 10276,
-    "avg_return": 4.57,
-    "median_return": 3.71,
-    "win_rate": 59.3,
+    "count": 10269,
+    "avg_return": 4.58,
+    "median_return": 3.73,
+    "win_rate": 59.4,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18434,
-    "avg_return": 4.51,
-    "median_return": 3.42,
-    "win_rate": 60.8,
+    "count": 18280,
+    "avg_return": 4.64,
+    "median_return": 3.54,
+    "win_rate": 61.2,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -827,5 +779,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-24T22:52:23.044093Z"
+  "lastUpdated": "2026-07-27T22:50:57.424490Z"
 }
