@@ -165,93 +165,75 @@
   ],
   "currentOversold": [
     {
-      "ticker": "GNRC",
-      "date": "2026-07-30",
-      "price": 191.91,
-      "rsi": 7.7
-    },
-    {
-      "ticker": "META",
-      "date": "2026-07-30",
-      "price": 539.03,
-      "rsi": 13.7
-    },
-    {
-      "ticker": "TSLA",
-      "date": "2026-07-30",
-      "price": 308.85,
-      "rsi": 15.1
+      "ticker": "MOH",
+      "date": "2026-07-31",
+      "price": 195.62,
+      "rsi": 13.3
     },
     {
       "ticker": "QCOM",
-      "date": "2026-07-30",
-      "price": 151.6,
-      "rsi": 16.9
+      "date": "2026-07-31",
+      "price": 147.61,
+      "rsi": 17.2
+    },
+    {
+      "ticker": "TSLA",
+      "date": "2026-07-31",
+      "price": 311.21,
+      "rsi": 18.1
+    },
+    {
+      "ticker": "GNRC",
+      "date": "2026-07-31",
+      "price": 197.11,
+      "rsi": 18.8
+    },
+    {
+      "ticker": "ROL",
+      "date": "2026-07-31",
+      "price": 37.97,
+      "rsi": 19.4
     }
   ],
   "currentOverbought": [
     {
       "ticker": "MKTX",
-      "date": "2026-07-30",
-      "price": 162.76,
-      "rsi": 91.5
+      "date": "2026-07-31",
+      "price": 162.3,
+      "rsi": 90.6
     },
     {
       "ticker": "EA",
-      "date": "2026-07-30",
-      "price": 209.59,
-      "rsi": 86.3
-    },
-    {
-      "ticker": "PYPL",
-      "date": "2026-07-30",
-      "price": 57.65,
-      "rsi": 84.5
-    },
-    {
-      "ticker": "ICE",
-      "date": "2026-07-30",
-      "price": 156.27,
-      "rsi": 83.7
-    },
-    {
-      "ticker": "XOM",
-      "date": "2026-07-30",
-      "price": 156.97,
-      "rsi": 83.4
+      "date": "2026-07-31",
+      "price": 209.86,
+      "rsi": 88.2
     },
     {
       "ticker": "ROST",
-      "date": "2026-07-30",
-      "price": 252.57,
+      "date": "2026-07-31",
+      "price": 251.07,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "PYPL",
+      "date": "2026-07-31",
+      "price": 57.21,
       "rsi": 80.8
-    },
-    {
-      "ticker": "GRMN",
-      "date": "2026-07-30",
-      "price": 297.55,
-      "rsi": 80.4
-    },
-    {
-      "ticker": "HAS",
-      "date": "2026-07-30",
-      "price": 94.53,
-      "rsi": 80.1
     }
   ],
   "oversoldStats": {
     "count": 10306,
-    "avg_return": 4.59,
-    "median_return": 3.74,
+    "avg_return": 4.61,
+    "median_return": 3.76,
     "win_rate": 59.4,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18372,
-    "avg_return": 4.7,
-    "median_return": 3.56,
-    "win_rate": 61.3,
+    "count": 18377,
+    "avg_return": 4.72,
+    "median_return": 3.58,
+    "win_rate": 61.4,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -755,5 +737,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-07-30T22:56:25.552191Z"
+  "lastUpdated": "2026-07-31T22:51:00.687308Z"
 }
