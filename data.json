@@ -166,127 +166,139 @@
   "currentOversold": [
     {
       "ticker": "MOH",
-      "date": "2026-08-03",
-      "price": 194.77,
-      "rsi": 13.4
-    },
-    {
-      "ticker": "NXPI",
-      "date": "2026-08-03",
-      "price": 224.17,
-      "rsi": 17.8
+      "date": "2026-08-04",
+      "price": 191.36,
+      "rsi": 14.5
     }
   ],
   "currentOverbought": [
     {
       "ticker": "MKTX",
-      "date": "2026-08-03",
-      "price": 162.28,
-      "rsi": 91.3
+      "date": "2026-08-04",
+      "price": 162.35,
+      "rsi": 91.2
+    },
+    {
+      "ticker": "ZBRA",
+      "date": "2026-08-04",
+      "price": 368.83,
+      "rsi": 89.9
     },
     {
       "ticker": "BMY",
-      "date": "2026-08-03",
-      "price": 65.47,
-      "rsi": 88.7
-    },
-    {
-      "ticker": "EA",
-      "date": "2026-08-03",
-      "price": 209.91,
-      "rsi": 87.6
+      "date": "2026-08-04",
+      "price": 65.89,
+      "rsi": 87.1
     },
     {
       "ticker": "WTW",
-      "date": "2026-08-03",
-      "price": 341.63,
-      "rsi": 84.6
-    },
-    {
-      "ticker": "ROST",
-      "date": "2026-08-03",
-      "price": 252.91,
-      "rsi": 84.3
-    },
-    {
-      "ticker": "ABT",
-      "date": "2026-08-03",
-      "price": 107.12,
-      "rsi": 84.1
-    },
-    {
-      "ticker": "PYPL",
-      "date": "2026-08-03",
-      "price": 57.87,
-      "rsi": 83.0
-    },
-    {
-      "ticker": "EPAM",
-      "date": "2026-08-03",
-      "price": 107.26,
-      "rsi": 81.8
-    },
-    {
-      "ticker": "BSX",
-      "date": "2026-08-03",
-      "price": 48.43,
-      "rsi": 81.5
-    },
-    {
-      "ticker": "MSFT",
-      "date": "2026-08-03",
-      "price": 487.65,
-      "rsi": 81.3
-    },
-    {
-      "ticker": "GRMN",
-      "date": "2026-08-03",
-      "price": 304.76,
-      "rsi": 81.2
-    },
-    {
-      "ticker": "RTX",
-      "date": "2026-08-03",
-      "price": 216.65,
-      "rsi": 80.6
+      "date": "2026-08-04",
+      "price": 339.63,
+      "rsi": 86.4
     },
     {
       "ticker": "ULTA",
-      "date": "2026-08-03",
-      "price": 534.41,
-      "rsi": 80.4
+      "date": "2026-08-04",
+      "price": 543.86,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "DGX",
+      "date": "2026-08-04",
+      "price": 233.72,
+      "rsi": 83.5
+    },
+    {
+      "ticker": "EPAM",
+      "date": "2026-08-04",
+      "price": 112.06,
+      "rsi": 83.4
+    },
+    {
+      "ticker": "BRK-B",
+      "date": "2026-08-04",
+      "price": 517.22,
+      "rsi": 83.2
+    },
+    {
+      "ticker": "BSX",
+      "date": "2026-08-04",
+      "price": 49.09,
+      "rsi": 81.9
+    },
+    {
+      "ticker": "ALLE",
+      "date": "2026-08-04",
+      "price": 165.36,
+      "rsi": 81.8
+    },
+    {
+      "ticker": "GRMN",
+      "date": "2026-08-04",
+      "price": 307.36,
+      "rsi": 81.6
+    },
+    {
+      "ticker": "NTAP",
+      "date": "2026-08-04",
+      "price": 190.46,
+      "rsi": 81.5
+    },
+    {
+      "ticker": "CDW",
+      "date": "2026-08-04",
+      "price": 154.0,
+      "rsi": 81.0
     },
     {
       "ticker": "LMT",
-      "date": "2026-08-03",
-      "price": 586.29,
-      "rsi": 80.2
+      "date": "2026-08-04",
+      "price": 589.33,
+      "rsi": 81.0
     },
     {
       "ticker": "CTSH",
-      "date": "2026-08-03",
-      "price": 55.17,
-      "rsi": 80.1
+      "date": "2026-08-04",
+      "price": 56.13,
+      "rsi": 80.9
     },
     {
-      "ticker": "REGN",
-      "date": "2026-08-03",
-      "price": 759.24,
-      "rsi": 80.1
+      "ticker": "EA",
+      "date": "2026-08-04",
+      "price": 209.7,
+      "rsi": 80.9
+    },
+    {
+      "ticker": "LW",
+      "date": "2026-08-04",
+      "price": 53.18,
+      "rsi": 80.7
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-08-04",
+      "price": 492.81,
+      "rsi": 80.6
+    },
+    {
+      "ticker": "BIO",
+      "date": "2026-08-04",
+      "price": 332.88,
+      "rsi": 80.4
     }
   ],
   "oversoldStats": {
-    "count": 10288,
-    "avg_return": 4.67,
-    "median_return": 3.8,
-    "win_rate": 59.6,
+    "count": 10282,
+    "avg_return": 4.72,
+    "median_return": 3.84,
+    "win_rate": 59.7,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18344,
-    "avg_return": 4.74,
-    "median_return": 3.6,
+    "count": 18348,
+    "avg_return": 4.75,
+    "median_return": 3.61,
     "win_rate": 61.5,
     "best_return": 121.93,
     "worst_return": -50.99
@@ -791,5 +803,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-08-03T22:51:38.283353Z"
+  "lastUpdated": "2026-08-04T22:52:07.652604Z"
 }
