@@ -166,86 +166,116 @@
   "currentOversold": [
     {
       "ticker": "ROL",
-      "date": "2026-08-05",
-      "price": 37.57,
-      "rsi": 7.8
+      "date": "2026-08-06",
+      "price": 36.83,
+      "rsi": 7.5
     },
     {
-      "ticker": "RSG",
-      "date": "2026-08-05",
-      "price": 207.02,
-      "rsi": 18.3
+      "ticker": "DVA",
+      "date": "2026-08-06",
+      "price": 180.67,
+      "rsi": 16.0
+    },
+    {
+      "ticker": "REG",
+      "date": "2026-08-06",
+      "price": 76.96,
+      "rsi": 16.7
+    },
+    {
+      "ticker": "CHRW",
+      "date": "2026-08-06",
+      "price": 146.66,
+      "rsi": 17.5
+    },
+    {
+      "ticker": "FRT",
+      "date": "2026-08-06",
+      "price": 117.91,
+      "rsi": 18.1
     }
   ],
   "currentOverbought": [
     {
       "ticker": "MKTX",
-      "date": "2026-08-05",
-      "price": 162.41,
-      "rsi": 91.5
-    },
-    {
-      "ticker": "ZBRA",
-      "date": "2026-08-05",
-      "price": 368.99,
-      "rsi": 89.2
-    },
-    {
-      "ticker": "RTX",
-      "date": "2026-08-05",
-      "price": 222.31,
-      "rsi": 85.3
-    },
-    {
-      "ticker": "BIO",
-      "date": "2026-08-05",
-      "price": 347.86,
-      "rsi": 83.1
-    },
-    {
-      "ticker": "WTW",
-      "date": "2026-08-05",
-      "price": 338.07,
-      "rsi": 82.5
+      "date": "2026-08-06",
+      "price": 162.62,
+      "rsi": 94.3
     },
     {
       "ticker": "BRK-B",
-      "date": "2026-08-05",
-      "price": 518.85,
-      "rsi": 81.9
+      "date": "2026-08-06",
+      "price": 524.61,
+      "rsi": 88.4
+    },
+    {
+      "ticker": "RTX",
+      "date": "2026-08-06",
+      "price": 223.25,
+      "rsi": 87.5
     },
     {
       "ticker": "ALLE",
-      "date": "2026-08-05",
-      "price": 168.58,
-      "rsi": 81.6
+      "date": "2026-08-06",
+      "price": 168.7,
+      "rsi": 85.8
     },
     {
-      "ticker": "DGX",
-      "date": "2026-08-05",
-      "price": 235.84,
-      "rsi": 81.3
+      "ticker": "ZBRA",
+      "date": "2026-08-06",
+      "price": 364.24,
+      "rsi": 85.8
     },
     {
       "ticker": "EA",
-      "date": "2026-08-04",
+      "date": "2026-08-05",
       "price": 209.7,
-      "rsi": 80.9
+      "rsi": 85.0
+    },
+    {
+      "ticker": "WTW",
+      "date": "2026-08-06",
+      "price": 340.01,
+      "rsi": 84.1
+    },
+    {
+      "ticker": "MSFT",
+      "date": "2026-08-06",
+      "price": 499.86,
+      "rsi": 82.4
+    },
+    {
+      "ticker": "PAYC",
+      "date": "2026-08-06",
+      "price": 215.97,
+      "rsi": 82.1
+    },
+    {
+      "ticker": "DGX",
+      "date": "2026-08-06",
+      "price": 238.5,
+      "rsi": 81.9
+    },
+    {
+      "ticker": "TPR",
+      "date": "2026-08-06",
+      "price": 162.0,
+      "rsi": 81.7
     }
   ],
   "oversoldStats": {
-    "count": 10301,
-    "avg_return": 4.72,
-    "median_return": 3.84,
-    "win_rate": 59.8,
+    "count": 10308,
+    "avg_return": 4.76,
+    "median_return": 3.87,
+    "win_rate": 59.9,
     "best_return": 234.54,
     "worst_return": -59.48
   },
   "overboughtStats": {
-    "count": 18375,
+    "count": 18386,
     "avg_return": 4.75,
     "median_return": 3.6,
-    "win_rate": 61.5,
+    "win_rate": 61.4,
     "best_return": 121.93,
     "worst_return": -50.99
   },
@@ -749,5 +779,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-08-05T22:48:23.314184Z"
+  "lastUpdated": "2026-08-07T01:28:10.141577Z"
 }
