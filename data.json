@@ -166,77 +166,71 @@
   "currentOversold": [
     {
       "ticker": "MNST",
-      "date": "2026-08-12",
-      "price": 45.98,
-      "rsi": 9.8
-    },
-    {
-      "ticker": "NI",
-      "date": "2026-08-12",
-      "price": 41.99,
-      "rsi": 16.1
+      "date": "2026-08-13",
+      "price": 46.68,
+      "rsi": 11.2
     },
     {
       "ticker": "CNP",
-      "date": "2026-08-12",
-      "price": 40.53,
-      "rsi": 17.0
+      "date": "2026-08-13",
+      "price": 40.48,
+      "rsi": 11.7
     },
     {
       "ticker": "DVA",
-      "date": "2026-08-12",
-      "price": 181.5,
-      "rsi": 17.5
+      "date": "2026-08-13",
+      "price": 179.17,
+      "rsi": 15.8
+    },
+    {
+      "ticker": "NI",
+      "date": "2026-08-13",
+      "price": 42.08,
+      "rsi": 17.4
     },
     {
       "ticker": "REG",
-      "date": "2026-08-12",
-      "price": 75.74,
-      "rsi": 17.5
+      "date": "2026-08-13",
+      "price": 76.86,
+      "rsi": 19.0
     },
     {
-      "ticker": "CHRW",
-      "date": "2026-08-12",
-      "price": 146.7,
-      "rsi": 18.5
+      "ticker": "DTE",
+      "date": "2026-08-13",
+      "price": 139.53,
+      "rsi": 19.7
     }
   ],
   "currentOverbought": [
     {
       "ticker": "MKTX",
-      "date": "2026-08-12",
+      "date": "2026-08-13",
       "price": 162.6,
-      "rsi": 98.8
+      "rsi": 98.7
     },
     {
       "ticker": "REGN",
-      "date": "2026-08-12",
-      "price": 797.99,
-      "rsi": 91.7
-    },
-    {
-      "ticker": "BDX",
-      "date": "2026-08-12",
-      "price": 183.58,
-      "rsi": 91.2
+      "date": "2026-08-13",
+      "price": 805.97,
+      "rsi": 91.9
     },
     {
       "ticker": "ZBRA",
-      "date": "2026-08-12",
-      "price": 378.37,
-      "rsi": 91.2
+      "date": "2026-08-13",
+      "price": 379.63,
+      "rsi": 91.1
     },
     {
       "ticker": "PTC",
-      "date": "2026-08-12",
-      "price": 147.99,
-      "rsi": 88.4
+      "date": "2026-08-13",
+      "price": 153.89,
+      "rsi": 88.5
     },
     {
-      "ticker": "WTW",
-      "date": "2026-08-12",
-      "price": 340.29,
-      "rsi": 87.7
+      "ticker": "PAYC",
+      "date": "2026-08-13",
+      "price": 223.63,
+      "rsi": 87.8
     },
     {
       "ticker": "EA",
@@ -245,96 +239,102 @@
       "rsi": 87.4
     },
     {
-      "ticker": "BSX",
-      "date": "2026-08-12",
-      "price": 51.42,
-      "rsi": 86.8
-    },
-    {
-      "ticker": "PAYC",
-      "date": "2026-08-12",
-      "price": 211.28,
-      "rsi": 86.6
-    },
-    {
       "ticker": "TGT",
-      "date": "2026-08-12",
-      "price": 154.0,
+      "date": "2026-08-13",
+      "price": 155.51,
+      "rsi": 86.5
+    },
+    {
+      "ticker": "BSX",
+      "date": "2026-08-13",
+      "price": 51.69,
       "rsi": 86.3
     },
     {
-      "ticker": "GRMN",
-      "date": "2026-08-12",
-      "price": 309.98,
+      "ticker": "MSFT",
+      "date": "2026-08-13",
+      "price": 496.88,
+      "rsi": 86.3
+    },
+    {
+      "ticker": "BDX",
+      "date": "2026-08-13",
+      "price": 181.97,
       "rsi": 86.2
     },
     {
-      "ticker": "MSFT",
-      "date": "2026-08-12",
-      "price": 492.43,
-      "rsi": 85.9
+      "ticker": "GRMN",
+      "date": "2026-08-13",
+      "price": 311.93,
+      "rsi": 86.1
     },
     {
       "ticker": "NTAP",
-      "date": "2026-08-12",
-      "price": 202.05,
-      "rsi": 85.9
-    },
-    {
-      "ticker": "CTSH",
-      "date": "2026-08-12",
-      "price": 58.2,
+      "date": "2026-08-13",
+      "price": 204.99,
       "rsi": 85.8
     },
     {
       "ticker": "ABNB",
-      "date": "2026-08-12",
-      "price": 180.1,
-      "rsi": 85.2
+      "date": "2026-08-13",
+      "price": 185.13,
+      "rsi": 85.6
     },
     {
-      "ticker": "ACN",
-      "date": "2026-08-12",
-      "price": 180.14,
-      "rsi": 83.7
+      "ticker": "CTSH",
+      "date": "2026-08-13",
+      "price": 59.29,
+      "rsi": 84.9
     },
     {
-      "ticker": "NEM",
-      "date": "2026-08-12",
-      "price": 117.84,
-      "rsi": 83.4
+      "ticker": "ORCL",
+      "date": "2026-08-13",
+      "price": 156.22,
+      "rsi": 83.6
     },
     {
-      "ticker": "FAST",
-      "date": "2026-08-12",
-      "price": 52.22,
-      "rsi": 83.2
-    },
-    {
-      "ticker": "ISRG",
-      "date": "2026-08-12",
-      "price": 401.27,
-      "rsi": 83.2
+      "ticker": "EW",
+      "date": "2026-08-13",
+      "price": 92.56,
+      "rsi": 82.9
     },
     {
       "ticker": "DXCM",
-      "date": "2026-08-12",
-      "price": 90.8,
-      "rsi": 83.0
+      "date": "2026-08-13",
+      "price": 91.48,
+      "rsi": 82.8
+    },
+    {
+      "ticker": "PANW",
+      "date": "2026-08-13",
+      "price": 396.0,
+      "rsi": 82.5
+    },
+    {
+      "ticker": "CRL",
+      "date": "2026-08-13",
+      "price": 281.27,
+      "rsi": 82.3
+    },
+    {
+      "ticker": "ISRG",
+      "date": "2026-08-13",
+      "price": 401.27,
+      "rsi": 82.3
     }
   ],
   "oversoldStats": {
-    "count": 10334,
-    "avg_return": 4.58,
-    "median_return": 4.0,
-    "win_rate": 60.1,
+    "count": 10362,
+    "avg_return": 4.6,
+    "median_return": 4.03,
+    "win_rate": 60.2,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18417,
-    "avg_return": 4.72,
-    "median_return": 3.6,
+    "count": 18440,
+    "avg_return": 4.73,
+    "median_return": 3.59,
     "win_rate": 61.4,
     "best_return": 121.93,
     "worst_return": -93.46
@@ -840,5 +840,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-08-12T22:29:45.883648Z"
+  "lastUpdated": "2026-08-13T22:30:23.763449Z"
 }
