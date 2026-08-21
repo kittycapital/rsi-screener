@@ -165,110 +165,122 @@
   ],
   "currentOversold": [
     {
-      "ticker": "MNST",
-      "date": "2026-08-20",
-      "price": 47.49,
-      "rsi": 7.1
+      "ticker": "L",
+      "date": "2026-08-21",
+      "price": 109.83,
+      "rsi": 8.2
     },
     {
       "ticker": "DVA",
-      "date": "2026-08-20",
-      "price": 175.24,
-      "rsi": 10.2
+      "date": "2026-08-21",
+      "price": 173.82,
+      "rsi": 10.9
     },
     {
-      "ticker": "L",
+      "ticker": "EQR",
       "date": "2026-08-20",
-      "price": 110.7,
-      "rsi": 12.3
+      "price": 63.66,
+      "rsi": 18.1
     },
     {
       "ticker": "AFL",
-      "date": "2026-08-20",
-      "price": 116.17,
-      "rsi": 17.9
+      "date": "2026-08-21",
+      "price": 116.07,
+      "rsi": 18.6
     },
     {
-      "ticker": "CDNS",
-      "date": "2026-08-20",
-      "price": 313.59,
+      "ticker": "NI",
+      "date": "2026-08-21",
+      "price": 40.62,
+      "rsi": 19.2
+    },
+    {
+      "ticker": "CNP",
+      "date": "2026-08-21",
+      "price": 38.77,
       "rsi": 19.3
     }
   ],
   "currentOverbought": [
     {
       "ticker": "A",
-      "date": "2026-08-20",
-      "price": 156.3,
-      "rsi": 88.4
+      "date": "2026-08-21",
+      "price": 159.0,
+      "rsi": 89.0
     },
     {
-      "ticker": "BDX",
-      "date": "2026-08-20",
-      "price": 187.62,
-      "rsi": 85.4
-    },
-    {
-      "ticker": "PAYC",
-      "date": "2026-08-20",
-      "price": 226.72,
-      "rsi": 84.5
+      "ticker": "MRK",
+      "date": "2026-08-21",
+      "price": 152.55,
+      "rsi": 86.7
     },
     {
       "ticker": "CRL",
-      "date": "2026-08-20",
-      "price": 291.45,
-      "rsi": 84.4
+      "date": "2026-08-21",
+      "price": 295.19,
+      "rsi": 86.6
+    },
+    {
+      "ticker": "BDX",
+      "date": "2026-08-21",
+      "price": 192.0,
+      "rsi": 85.3
     },
     {
       "ticker": "NEM",
-      "date": "2026-08-20",
-      "price": 127.64,
-      "rsi": 83.9
+      "date": "2026-08-21",
+      "price": 131.58,
+      "rsi": 84.6
     },
     {
-      "ticker": "CPRT",
-      "date": "2026-08-20",
-      "price": 34.33,
-      "rsi": 82.9
+      "ticker": "LH",
+      "date": "2026-08-21",
+      "price": 336.34,
+      "rsi": 84.5
     },
     {
-      "ticker": "BG",
-      "date": "2026-08-20",
-      "price": 116.57,
+      "ticker": "PSX",
+      "date": "2026-08-21",
+      "price": 242.87,
+      "rsi": 84.2
+    },
+    {
+      "ticker": "PAYC",
+      "date": "2026-08-21",
+      "price": 229.07,
+      "rsi": 83.7
+    },
+    {
+      "ticker": "WBD",
+      "date": "2026-08-21",
+      "price": 28.55,
       "rsi": 82.5
     },
     {
-      "ticker": "LKQ",
-      "date": "2026-08-20",
-      "price": 25.98,
-      "rsi": 82.3
+      "ticker": "AMGN",
+      "date": "2026-08-21",
+      "price": 439.33,
+      "rsi": 81.9
     },
     {
-      "ticker": "NDSN",
-      "date": "2026-08-20",
-      "price": 334.7,
-      "rsi": 80.9
-    },
-    {
-      "ticker": "BIO",
-      "date": "2026-08-20",
-      "price": 376.46,
-      "rsi": 80.2
+      "ticker": "ABT",
+      "date": "2026-08-21",
+      "price": 116.64,
+      "rsi": 80.7
     }
   ],
   "oversoldStats": {
-    "count": 10043,
-    "avg_return": 4.97,
-    "median_return": 4.58,
-    "win_rate": 61.3,
+    "count": 9967,
+    "avg_return": 5.03,
+    "median_return": 4.66,
+    "win_rate": 61.4,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18440,
-    "avg_return": 4.77,
-    "median_return": 3.63,
+    "count": 18450,
+    "avg_return": 4.78,
+    "median_return": 3.62,
     "win_rate": 61.5,
     "best_return": 121.93,
     "worst_return": -93.46
@@ -773,5 +785,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-08-20T22:15:54.710244Z"
+  "lastUpdated": "2026-08-21T22:12:59.793106Z"
 }
