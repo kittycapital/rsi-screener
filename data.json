@@ -165,120 +165,180 @@
   ],
   "currentOversold": [
     {
-      "ticker": "L",
-      "date": "2026-08-21",
-      "price": 109.83,
-      "rsi": 8.2
+      "ticker": "CARR",
+      "date": "2026-08-24",
+      "price": 59.97,
+      "rsi": 10.1
+    },
+    {
+      "ticker": "LUV",
+      "date": "2026-08-24",
+      "price": 40.71,
+      "rsi": 14.6
     },
     {
       "ticker": "DVA",
-      "date": "2026-08-21",
-      "price": 173.82,
-      "rsi": 10.9
+      "date": "2026-08-24",
+      "price": 176.5,
+      "rsi": 15.0
     },
     {
-      "ticker": "EQR",
-      "date": "2026-08-20",
-      "price": 63.66,
-      "rsi": 18.1
+      "ticker": "IR",
+      "date": "2026-08-24",
+      "price": 79.99,
+      "rsi": 15.3
     },
     {
-      "ticker": "AFL",
-      "date": "2026-08-21",
-      "price": 116.07,
-      "rsi": 18.6
+      "ticker": "BA",
+      "date": "2026-08-24",
+      "price": 210.46,
+      "rsi": 17.3
     },
     {
-      "ticker": "NI",
-      "date": "2026-08-21",
-      "price": 40.62,
-      "rsi": 19.2
+      "ticker": "AVGO",
+      "date": "2026-08-24",
+      "price": 358.76,
+      "rsi": 18.4
     },
     {
-      "ticker": "CNP",
-      "date": "2026-08-21",
-      "price": 38.77,
+      "ticker": "SNA",
+      "date": "2026-08-24",
+      "price": 394.49,
       "rsi": 19.3
+    },
+    {
+      "ticker": "RCL",
+      "date": "2026-08-24",
+      "price": 293.0,
+      "rsi": 19.4
+    },
+    {
+      "ticker": "UAL",
+      "date": "2026-08-24",
+      "price": 113.57,
+      "rsi": 19.8
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "A",
-      "date": "2026-08-21",
-      "price": 159.0,
-      "rsi": 89.0
-    },
-    {
-      "ticker": "MRK",
-      "date": "2026-08-21",
-      "price": 152.55,
-      "rsi": 86.7
-    },
-    {
-      "ticker": "CRL",
-      "date": "2026-08-21",
-      "price": 295.19,
-      "rsi": 86.6
-    },
-    {
-      "ticker": "BDX",
-      "date": "2026-08-21",
-      "price": 192.0,
-      "rsi": 85.3
-    },
-    {
-      "ticker": "NEM",
-      "date": "2026-08-21",
-      "price": 131.58,
-      "rsi": 84.6
-    },
-    {
-      "ticker": "LH",
-      "date": "2026-08-21",
-      "price": 336.34,
-      "rsi": 84.5
-    },
-    {
-      "ticker": "PSX",
-      "date": "2026-08-21",
-      "price": 242.87,
-      "rsi": 84.2
-    },
-    {
-      "ticker": "PAYC",
-      "date": "2026-08-21",
-      "price": 229.07,
-      "rsi": 83.7
-    },
-    {
-      "ticker": "WBD",
-      "date": "2026-08-21",
-      "price": 28.55,
-      "rsi": 82.5
-    },
-    {
-      "ticker": "AMGN",
-      "date": "2026-08-21",
-      "price": 439.33,
-      "rsi": 81.9
+      "ticker": "ICE",
+      "date": "2026-08-24",
+      "price": 162.99,
+      "rsi": 93.6
     },
     {
       "ticker": "ABT",
-      "date": "2026-08-21",
-      "price": 116.64,
-      "rsi": 80.7
+      "date": "2026-08-24",
+      "price": 116.67,
+      "rsi": 90.4
+    },
+    {
+      "ticker": "WBD",
+      "date": "2026-08-24",
+      "price": 28.7,
+      "rsi": 90.1
+    },
+    {
+      "ticker": "CRL",
+      "date": "2026-08-24",
+      "price": 298.58,
+      "rsi": 86.6
+    },
+    {
+      "ticker": "RSG",
+      "date": "2026-08-24",
+      "price": 223.08,
+      "rsi": 84.4
+    },
+    {
+      "ticker": "MKTX",
+      "date": "2026-08-24",
+      "price": 162.46,
+      "rsi": 84.0
+    },
+    {
+      "ticker": "NEM",
+      "date": "2026-08-24",
+      "price": 131.84,
+      "rsi": 84.0
+    },
+    {
+      "ticker": "KO",
+      "date": "2026-08-24",
+      "price": 91.99,
+      "rsi": 83.8
+    },
+    {
+      "ticker": "LH",
+      "date": "2026-08-24",
+      "price": 339.34,
+      "rsi": 83.7
+    },
+    {
+      "ticker": "PSX",
+      "date": "2026-08-24",
+      "price": 241.96,
+      "rsi": 83.3
+    },
+    {
+      "ticker": "PAYC",
+      "date": "2026-08-24",
+      "price": 229.62,
+      "rsi": 82.5
+    },
+    {
+      "ticker": "TGT",
+      "date": "2026-08-24",
+      "price": 169.89,
+      "rsi": 82.3
+    },
+    {
+      "ticker": "BDX",
+      "date": "2026-08-24",
+      "price": 190.74,
+      "rsi": 82.2
+    },
+    {
+      "ticker": "MRK",
+      "date": "2026-08-24",
+      "price": 150.66,
+      "rsi": 82.0
+    },
+    {
+      "ticker": "AMGN",
+      "date": "2026-08-24",
+      "price": 443.84,
+      "rsi": 81.1
+    },
+    {
+      "ticker": "BIO",
+      "date": "2026-08-24",
+      "price": 381.76,
+      "rsi": 81.1
+    },
+    {
+      "ticker": "TMO",
+      "date": "2026-08-24",
+      "price": 628.74,
+      "rsi": 80.8
+    },
+    {
+      "ticker": "ABNB",
+      "date": "2026-08-24",
+      "price": 190.21,
+      "rsi": 80.4
     }
   ],
   "oversoldStats": {
-    "count": 9967,
-    "avg_return": 5.03,
-    "median_return": 4.66,
-    "win_rate": 61.4,
+    "count": 9822,
+    "avg_return": 5.12,
+    "median_return": 4.78,
+    "win_rate": 61.6,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18450,
+    "count": 18460,
     "avg_return": 4.78,
     "median_return": 3.62,
     "win_rate": 61.5,
@@ -785,5 +845,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-08-21T22:12:59.793106Z"
+  "lastUpdated": "2026-08-24T22:14:59.900276Z"
 }
