@@ -51,7 +51,7 @@
     {
       "ticker": "MCHP",
       "date": "2025-04-08",
-      "price": 34.14,
+      "price": 33.94,
       "rsi": 17.7,
       "type": "oversold",
       "forward_return": 114.09
@@ -166,179 +166,167 @@
   "currentOversold": [
     {
       "ticker": "CARR",
-      "date": "2026-08-24",
-      "price": 59.97,
-      "rsi": 10.1
-    },
-    {
-      "ticker": "LUV",
-      "date": "2026-08-24",
-      "price": 40.71,
-      "rsi": 14.6
-    },
-    {
-      "ticker": "DVA",
-      "date": "2026-08-24",
-      "price": 176.5,
-      "rsi": 15.0
+      "date": "2026-08-25",
+      "price": 58.52,
+      "rsi": 8.6
     },
     {
       "ticker": "IR",
-      "date": "2026-08-24",
-      "price": 79.99,
-      "rsi": 15.3
+      "date": "2026-08-25",
+      "price": 78.57,
+      "rsi": 10.7
     },
     {
       "ticker": "BA",
-      "date": "2026-08-24",
-      "price": 210.46,
-      "rsi": 17.3
+      "date": "2026-08-25",
+      "price": 211.08,
+      "rsi": 12.1
     },
     {
-      "ticker": "AVGO",
-      "date": "2026-08-24",
-      "price": 358.76,
-      "rsi": 18.4
+      "ticker": "TJX",
+      "date": "2026-08-25",
+      "price": 139.48,
+      "rsi": 14.3
     },
     {
-      "ticker": "SNA",
-      "date": "2026-08-24",
-      "price": 394.49,
-      "rsi": 19.3
+      "ticker": "LUV",
+      "date": "2026-08-25",
+      "price": 40.82,
+      "rsi": 14.7
+    },
+    {
+      "ticker": "CMI",
+      "date": "2026-08-25",
+      "price": 572.67,
+      "rsi": 15.0
+    },
+    {
+      "ticker": "ITW",
+      "date": "2026-08-25",
+      "price": 281.65,
+      "rsi": 15.8
     },
     {
       "ticker": "RCL",
-      "date": "2026-08-24",
-      "price": 293.0,
-      "rsi": 19.4
+      "date": "2026-08-25",
+      "price": 292.29,
+      "rsi": 16.5
     },
     {
-      "ticker": "UAL",
-      "date": "2026-08-24",
-      "price": 113.57,
-      "rsi": 19.8
+      "ticker": "AVGO",
+      "date": "2026-08-25",
+      "price": 356.74,
+      "rsi": 17.9
+    },
+    {
+      "ticker": "SNA",
+      "date": "2026-08-25",
+      "price": 394.56,
+      "rsi": 18.3
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "ICE",
-      "date": "2026-08-24",
-      "price": 162.99,
-      "rsi": 93.6
-    },
-    {
-      "ticker": "ABT",
-      "date": "2026-08-24",
-      "price": 116.67,
-      "rsi": 90.4
-    },
-    {
       "ticker": "WBD",
-      "date": "2026-08-24",
-      "price": 28.7,
+      "date": "2026-08-25",
+      "price": 28.9,
       "rsi": 90.1
     },
     {
-      "ticker": "CRL",
-      "date": "2026-08-24",
-      "price": 298.58,
-      "rsi": 86.6
+      "ticker": "T",
+      "date": "2026-08-25",
+      "price": 25.77,
+      "rsi": 87.3
     },
     {
-      "ticker": "RSG",
-      "date": "2026-08-24",
-      "price": 223.08,
+      "ticker": "ABT",
+      "date": "2026-08-25",
+      "price": 116.13,
+      "rsi": 86.7
+    },
+    {
+      "ticker": "ICE",
+      "date": "2026-08-25",
+      "price": 161.78,
+      "rsi": 86.4
+    },
+    {
+      "ticker": "MRK",
+      "date": "2026-08-25",
+      "price": 156.45,
       "rsi": 84.4
     },
     {
       "ticker": "MKTX",
-      "date": "2026-08-24",
-      "price": 162.46,
-      "rsi": 84.0
-    },
-    {
-      "ticker": "NEM",
-      "date": "2026-08-24",
-      "price": 131.84,
-      "rsi": 84.0
-    },
-    {
-      "ticker": "KO",
-      "date": "2026-08-24",
-      "price": 91.99,
+      "date": "2026-08-25",
+      "price": 162.5,
       "rsi": 83.8
     },
     {
-      "ticker": "LH",
-      "date": "2026-08-24",
-      "price": 339.34,
+      "ticker": "VZ",
+      "date": "2026-08-25",
+      "price": 50.25,
       "rsi": 83.7
     },
     {
-      "ticker": "PSX",
-      "date": "2026-08-24",
-      "price": 241.96,
-      "rsi": 83.3
-    },
-    {
       "ticker": "PAYC",
-      "date": "2026-08-24",
-      "price": 229.62,
-      "rsi": 82.5
+      "date": "2026-08-25",
+      "price": 231.7,
+      "rsi": 83.5
     },
     {
-      "ticker": "TGT",
-      "date": "2026-08-24",
-      "price": 169.89,
-      "rsi": 82.3
+      "ticker": "NEM",
+      "date": "2026-08-25",
+      "price": 135.14,
+      "rsi": 82.9
     },
     {
-      "ticker": "BDX",
-      "date": "2026-08-24",
-      "price": 190.74,
-      "rsi": 82.2
+      "ticker": "FOX",
+      "date": "2026-08-25",
+      "price": 62.69,
+      "rsi": 82.6
     },
     {
-      "ticker": "MRK",
-      "date": "2026-08-24",
-      "price": 150.66,
-      "rsi": 82.0
+      "ticker": "FOXA",
+      "date": "2026-08-25",
+      "price": 70.33,
+      "rsi": 82.6
     },
     {
-      "ticker": "AMGN",
-      "date": "2026-08-24",
-      "price": 443.84,
-      "rsi": 81.1
+      "ticker": "MPC",
+      "date": "2026-08-25",
+      "price": 354.88,
+      "rsi": 81.8
     },
     {
-      "ticker": "BIO",
-      "date": "2026-08-24",
-      "price": 381.76,
-      "rsi": 81.1
+      "ticker": "GILD",
+      "date": "2026-08-25",
+      "price": 148.77,
+      "rsi": 81.0
     },
     {
-      "ticker": "TMO",
-      "date": "2026-08-24",
-      "price": 628.74,
+      "ticker": "PSX",
+      "date": "2026-08-25",
+      "price": 236.9,
       "rsi": 80.8
     },
     {
-      "ticker": "ABNB",
-      "date": "2026-08-24",
-      "price": 190.21,
-      "rsi": 80.4
+      "ticker": "COP",
+      "date": "2026-08-25",
+      "price": 131.84,
+      "rsi": 80.1
     }
   ],
   "oversoldStats": {
-    "count": 9822,
-    "avg_return": 5.12,
-    "median_return": 4.78,
+    "count": 9761,
+    "avg_return": 5.13,
+    "median_return": 4.8,
     "win_rate": 61.6,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18460,
+    "count": 18430,
     "avg_return": 4.78,
     "median_return": 3.62,
     "win_rate": 61.5,
@@ -387,7 +375,6 @@
     "APTV",
     "ARE",
     "ATO",
-    "AVB",
     "AVGO",
     "AVY",
     "AWK",
@@ -505,7 +492,6 @@
     "EOG",
     "EPAM",
     "EQIX",
-    "EQR",
     "EQT",
     "ERIE",
     "ES",
@@ -845,5 +831,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-08-24T22:14:59.900276Z"
+  "lastUpdated": "2026-08-25T22:15:24.997288Z"
 }
