@@ -165,156 +165,180 @@
   ],
   "currentOversold": [
     {
-      "ticker": "RL",
-      "date": "2026-09-01",
-      "price": 340.82,
-      "rsi": 5.9
-    },
-    {
-      "ticker": "BA",
-      "date": "2026-09-01",
-      "price": 205.66,
-      "rsi": 9.4
-    },
-    {
-      "ticker": "LUV",
-      "date": "2026-09-01",
-      "price": 37.68,
-      "rsi": 10.2
-    },
-    {
-      "ticker": "CARR",
-      "date": "2026-09-01",
-      "price": 57.25,
-      "rsi": 10.9
-    },
-    {
-      "ticker": "FITB",
-      "date": "2026-09-01",
-      "price": 53.01,
-      "rsi": 11.3
-    },
-    {
       "ticker": "TJX",
-      "date": "2026-09-01",
-      "price": 133.27,
-      "rsi": 11.3
+      "date": "2026-09-02",
+      "price": 131.31,
+      "rsi": 4.4
+    },
+    {
+      "ticker": "RL",
+      "date": "2026-09-02",
+      "price": 336.5,
+      "rsi": 6.4
     },
     {
       "ticker": "GRMN",
-      "date": "2026-09-01",
-      "price": 275.17,
-      "rsi": 11.4
+      "date": "2026-09-02",
+      "price": 276.04,
+      "rsi": 9.2
     },
     {
-      "ticker": "KLAC",
-      "date": "2026-09-01",
-      "price": 170.89,
-      "rsi": 11.7
-    },
-    {
-      "ticker": "PARA",
-      "date": "2026-09-01",
-      "price": 1.07,
-      "rsi": 13.2
+      "ticker": "EXR",
+      "date": "2026-09-02",
+      "price": 139.93,
+      "rsi": 9.7
     },
     {
       "ticker": "RCL",
-      "date": "2026-09-01",
-      "price": 265.7,
-      "rsi": 13.5
+      "date": "2026-09-02",
+      "price": 265.6,
+      "rsi": 10.6
     },
     {
-      "ticker": "HUBB",
-      "date": "2026-09-01",
-      "price": 443.31,
-      "rsi": 13.7
+      "ticker": "CARR",
+      "date": "2026-09-02",
+      "price": 57.58,
+      "rsi": 11.6
+    },
+    {
+      "ticker": "KLAC",
+      "date": "2026-09-02",
+      "price": 172.26,
+      "rsi": 12.1
+    },
+    {
+      "ticker": "NCLH",
+      "date": "2026-09-02",
+      "price": 15.57,
+      "rsi": 12.6
+    },
+    {
+      "ticker": "PARA",
+      "date": "2026-09-02",
+      "price": 1.07,
+      "rsi": 13.8
     },
     {
       "ticker": "CMI",
-      "date": "2026-09-01",
-      "price": 551.15,
-      "rsi": 14.0
+      "date": "2026-09-02",
+      "price": 550.9,
+      "rsi": 14.7
+    },
+    {
+      "ticker": "ODFL",
+      "date": "2026-09-02",
+      "price": 187.61,
+      "rsi": 16.0
+    },
+    {
+      "ticker": "HON",
+      "date": "2026-09-02",
+      "price": 206.07,
+      "rsi": 16.3
     },
     {
       "ticker": "TDY",
-      "date": "2026-09-01",
-      "price": 610.51,
-      "rsi": 15.2
+      "date": "2026-09-02",
+      "price": 606.36,
+      "rsi": 16.5
+    },
+    {
+      "ticker": "PSA",
+      "date": "2026-09-02",
+      "price": 301.33,
+      "rsi": 16.6
     },
     {
       "ticker": "ITW",
-      "date": "2026-09-01",
-      "price": 269.88,
-      "rsi": 16.4
+      "date": "2026-09-02",
+      "price": 269.09,
+      "rsi": 16.8
     },
     {
-      "ticker": "AME",
-      "date": "2026-09-01",
-      "price": 231.32,
-      "rsi": 16.5
+      "ticker": "JBL",
+      "date": "2026-09-02",
+      "price": 299.39,
+      "rsi": 17.0
     },
     {
-      "ticker": "PKG",
-      "date": "2026-09-01",
-      "price": 229.12,
-      "rsi": 16.5
+      "ticker": "HII",
+      "date": "2026-09-02",
+      "price": 288.72,
+      "rsi": 17.1
     },
     {
-      "ticker": "WYNN",
-      "date": "2026-09-01",
-      "price": 90.6,
-      "rsi": 16.6
+      "ticker": "MMM",
+      "date": "2026-09-02",
+      "price": 168.75,
+      "rsi": 17.1
     },
     {
       "ticker": "XYL",
-      "date": "2026-09-01",
-      "price": 106.89,
-      "rsi": 16.6
+      "date": "2026-09-02",
+      "price": 106.74,
+      "rsi": 17.8
     },
     {
-      "ticker": "HBAN",
-      "date": "2026-09-01",
-      "price": 16.42,
-      "rsi": 16.7
-    },
-    {
-      "ticker": "MGM",
-      "date": "2026-09-01",
-      "price": 40.77,
-      "rsi": 16.8
+      "ticker": "CCL",
+      "date": "2026-09-02",
+      "price": 23.74,
+      "rsi": 17.9
     }
   ],
   "currentOverbought": [
     {
       "ticker": "CTVA",
-      "date": "2026-09-01",
-      "price": 87.73,
-      "rsi": 91.1
+      "date": "2026-09-02",
+      "price": 89.97,
+      "rsi": 92.2
     },
     {
-      "ticker": "CRM",
-      "date": "2026-09-01",
-      "price": 258.11,
+      "ticker": "APH",
+      "date": "2026-09-02",
+      "price": 160.08,
+      "rsi": 86.8
+    },
+    {
+      "ticker": "FMC",
+      "date": "2026-09-02",
+      "price": 13.33,
+      "rsi": 84.8
+    },
+    {
+      "ticker": "CF",
+      "date": "2026-09-02",
+      "price": 139.27,
       "rsi": 84.5
     },
     {
       "ticker": "MKTX",
-      "date": "2026-09-01",
-      "price": 162.65,
-      "rsi": 81.7
+      "date": "2026-09-02",
+      "price": 162.83,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "CRM",
+      "date": "2026-09-02",
+      "price": 256.93,
+      "rsi": 81.9
+    },
+    {
+      "ticker": "CMG",
+      "date": "2026-09-02",
+      "price": 38.52,
+      "rsi": 81.6
     }
   ],
   "oversoldStats": {
-    "count": 9728,
+    "count": 9744,
     "avg_return": 5.16,
-    "median_return": 4.85,
+    "median_return": 4.84,
     "win_rate": 61.6,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18507,
+    "count": 18523,
     "avg_return": 4.77,
     "median_return": 3.62,
     "win_rate": 61.5,
@@ -819,5 +843,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-09-01T23:40:00.858877Z"
+  "lastUpdated": "2026-09-02T23:41:16.016538Z"
 }
