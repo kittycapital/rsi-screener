@@ -183,12 +183,6 @@
       "rsi": 12.7
     },
     {
-      "ticker": "APH",
-      "date": "2026-09-04",
-      "price": 82.78,
-      "rsi": 13.2
-    },
-    {
       "ticker": "TDY",
       "date": "2026-09-04",
       "price": 610.65,
@@ -318,17 +312,17 @@
     }
   ],
   "oversoldStats": {
-    "count": 9760,
+    "count": 9733,
     "avg_return": 5.16,
-    "median_return": 4.86,
-    "win_rate": 61.7,
+    "median_return": 4.84,
+    "win_rate": 61.6,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18557,
-    "avg_return": 4.76,
-    "median_return": 3.61,
+    "count": 18528,
+    "avg_return": 4.77,
+    "median_return": 3.62,
     "win_rate": 61.5,
     "best_return": 121.93,
     "worst_return": -93.46
@@ -831,5 +825,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-09-04T23:32:46.785354Z"
+  "lastUpdated": "2026-09-07T23:51:34.445799Z"
 }
