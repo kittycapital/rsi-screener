@@ -85,7 +85,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-30",
-      "price": 107090.0,
+      "price": 87531.54,
       "rsi": 81.1,
       "type": "overbought",
       "forward_return": -93.46
@@ -93,7 +93,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-29",
-      "price": 106900.0,
+      "price": 87376.24,
       "rsi": 81.2,
       "type": "overbought",
       "forward_return": -93.35
@@ -101,7 +101,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-28",
-      "price": 107100.0,
+      "price": 87539.72,
       "rsi": 92.9,
       "type": "overbought",
       "forward_return": -93.27
@@ -109,7 +109,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-20",
-      "price": 106700.0,
+      "price": 87212.77,
       "rsi": 84.6,
       "type": "overbought",
       "forward_return": -90.78
@@ -117,15 +117,23 @@
     {
       "ticker": "PARA",
       "date": "2023-10-16",
-      "price": 106000.0,
+      "price": 86640.62,
       "rsi": 84.5,
       "type": "overbought",
       "forward_return": -84.43
     },
     {
       "ticker": "PARA",
+      "date": "2026-01-07",
+      "price": 36.0,
+      "rsi": 81.7,
+      "type": "overbought",
+      "forward_return": -67.11
+    },
+    {
+      "ticker": "PARA",
       "date": "2023-09-22",
-      "price": 105800.0,
+      "price": 86477.14,
       "rsi": 84.6,
       "type": "overbought",
       "forward_return": -65.97
@@ -133,7 +141,7 @@
     {
       "ticker": "PARA",
       "date": "2023-09-21",
-      "price": 105700.0,
+      "price": 86395.4,
       "rsi": 84.6,
       "type": "overbought",
       "forward_return": -64.24
@@ -153,170 +161,168 @@
       "rsi": 82.7,
       "type": "overbought",
       "forward_return": -50.99
-    },
-    {
-      "ticker": "MRNA",
-      "date": "2024-05-22",
-      "price": 163.33,
-      "rsi": 82.8,
-      "type": "overbought",
-      "forward_return": -50.38
     }
   ],
   "currentOversold": [
     {
       "ticker": "CLX",
-      "date": "2026-09-09",
-      "price": 89.62,
-      "rsi": 5.6
-    },
-    {
-      "ticker": "LLY",
-      "date": "2026-09-09",
-      "price": 1124.21,
-      "rsi": 7.9
-    },
-    {
-      "ticker": "EXR",
-      "date": "2026-09-09",
-      "price": 135.63,
-      "rsi": 8.0
-    },
-    {
-      "ticker": "GEHC",
-      "date": "2026-09-09",
-      "price": 65.17,
-      "rsi": 8.0
-    },
-    {
-      "ticker": "TJX",
-      "date": "2026-09-09",
-      "price": 126.12,
-      "rsi": 8.8
+      "date": "2026-09-10",
+      "price": 88.77,
+      "rsi": 5.9
     },
     {
       "ticker": "COO",
-      "date": "2026-09-09",
-      "price": 63.48,
-      "rsi": 9.9
+      "date": "2026-09-10",
+      "price": 54.17,
+      "rsi": 6.5
     },
     {
-      "ticker": "RCL",
-      "date": "2026-09-09",
-      "price": 259.76,
-      "rsi": 10.4
+      "ticker": "GEHC",
+      "date": "2026-09-10",
+      "price": 64.24,
+      "rsi": 7.7
     },
     {
       "ticker": "WY",
-      "date": "2026-09-09",
-      "price": 22.59,
-      "rsi": 10.5
+      "date": "2026-09-10",
+      "price": 21.99,
+      "rsi": 8.3
     },
     {
-      "ticker": "PNR",
-      "date": "2026-09-09",
-      "price": 57.52,
-      "rsi": 12.8
-    },
-    {
-      "ticker": "GD",
-      "date": "2026-09-09",
-      "price": 352.67,
-      "rsi": 13.4
-    },
-    {
-      "ticker": "MTD",
-      "date": "2026-09-09",
-      "price": 1290.36,
-      "rsi": 13.4
-    },
-    {
-      "ticker": "RTX",
-      "date": "2026-09-09",
-      "price": 197.55,
-      "rsi": 13.5
-    },
-    {
-      "ticker": "MMM",
-      "date": "2026-09-09",
-      "price": 164.4,
-      "rsi": 13.8
-    },
-    {
-      "ticker": "STE",
-      "date": "2026-09-09",
-      "price": 215.09,
-      "rsi": 13.8
-    },
-    {
-      "ticker": "SYK",
-      "date": "2026-09-09",
-      "price": 275.39,
-      "rsi": 14.4
+      "ticker": "LLY",
+      "date": "2026-09-10",
+      "price": 1123.0,
+      "rsi": 9.7
     },
     {
       "ticker": "INVH",
-      "date": "2026-09-09",
-      "price": 28.18,
-      "rsi": 14.9
+      "date": "2026-09-10",
+      "price": 27.56,
+      "rsi": 10.5
+    },
+    {
+      "ticker": "TJX",
+      "date": "2026-09-10",
+      "price": 126.42,
+      "rsi": 12.0
+    },
+    {
+      "ticker": "STE",
+      "date": "2026-09-10",
+      "price": 212.45,
+      "rsi": 13.1
+    },
+    {
+      "ticker": "EXR",
+      "date": "2026-09-10",
+      "price": 136.45,
+      "rsi": 13.5
+    },
+    {
+      "ticker": "RCL",
+      "date": "2026-09-10",
+      "price": 259.01,
+      "rsi": 13.7
+    },
+    {
+      "ticker": "PNR",
+      "date": "2026-09-10",
+      "price": 56.73,
+      "rsi": 14.1
+    },
+    {
+      "ticker": "MMM",
+      "date": "2026-09-10",
+      "price": 162.86,
+      "rsi": 14.4
+    },
+    {
+      "ticker": "MTD",
+      "date": "2026-09-10",
+      "price": 1280.58,
+      "rsi": 15.2
+    },
+    {
+      "ticker": "SYK",
+      "date": "2026-09-10",
+      "price": 270.01,
+      "rsi": 15.6
+    },
+    {
+      "ticker": "NDSN",
+      "date": "2026-09-10",
+      "price": 307.45,
+      "rsi": 16.4
+    },
+    {
+      "ticker": "PARA",
+      "date": "2026-09-10",
+      "price": 0.98,
+      "rsi": 16.4
     },
     {
       "ticker": "GRMN",
-      "date": "2026-09-09",
-      "price": 272.18,
-      "rsi": 15.3
+      "date": "2026-09-10",
+      "price": 272.2,
+      "rsi": 16.6
     },
     {
-      "ticker": "LHX",
-      "date": "2026-09-09",
-      "price": 250.41,
-      "rsi": 15.8
+      "ticker": "VICI",
+      "date": "2026-09-10",
+      "price": 24.73,
+      "rsi": 17.1
     },
     {
-      "ticker": "NOC",
-      "date": "2026-09-09",
-      "price": 515.57,
-      "rsi": 16.5
+      "ticker": "VLTO",
+      "date": "2026-09-10",
+      "price": 93.45,
+      "rsi": 17.6
     },
     {
-      "ticker": "SHW",
-      "date": "2026-09-09",
-      "price": 320.64,
-      "rsi": 16.8
+      "ticker": "GD",
+      "date": "2026-09-10",
+      "price": 354.25,
+      "rsi": 17.8
     }
   ],
   "currentOverbought": [
     {
+      "ticker": "QRVO",
+      "date": "2026-09-10",
+      "price": 112.36,
+      "rsi": 84.3
+    },
+    {
       "ticker": "META",
-      "date": "2026-09-09",
-      "price": 653.69,
-      "rsi": 89.6
+      "date": "2026-09-10",
+      "price": 644.38,
+      "rsi": 83.9
     },
     {
-      "ticker": "MKTX",
-      "date": "2026-09-09",
-      "price": 163.26,
-      "rsi": 86.9
+      "ticker": "SWKS",
+      "date": "2026-09-10",
+      "price": 84.03,
+      "rsi": 83.5
     },
     {
-      "ticker": "MPC",
-      "date": "2026-09-09",
-      "price": 399.44,
-      "rsi": 82.8
+      "ticker": "VLO",
+      "date": "2026-09-10",
+      "price": 385.43,
+      "rsi": 81.0
     }
   ],
   "oversoldStats": {
-    "count": 9744,
-    "avg_return": 5.18,
+    "count": 9750,
+    "avg_return": 5.19,
     "median_return": 4.86,
     "win_rate": 61.7,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18543,
-    "avg_return": 4.75,
-    "median_return": 3.6,
+    "count": 18551,
+    "avg_return": 4.74,
+    "median_return": 3.59,
     "win_rate": 61.4,
     "best_return": 121.93,
     "worst_return": -93.46
@@ -819,5 +825,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-09-09T23:39:04.673418Z"
+  "lastUpdated": "2026-09-10T23:32:54.449288Z"
 }
