@@ -85,7 +85,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-30",
-      "price": 87531.55,
+      "price": 87531.54,
       "rsi": 81.1,
       "type": "overbought",
       "forward_return": -93.46
@@ -93,8 +93,8 @@
     {
       "ticker": "PARA",
       "date": "2023-11-29",
-      "price": 87376.25,
-      "rsi": 81.3,
+      "price": 87376.24,
+      "rsi": 81.2,
       "type": "overbought",
       "forward_return": -93.35
     },
@@ -165,168 +165,150 @@
   ],
   "currentOversold": [
     {
-      "ticker": "RCL",
-      "date": "2026-09-15",
-      "price": 249.3,
-      "rsi": 2.5
-    },
-    {
       "ticker": "INVH",
-      "date": "2026-09-15",
-      "price": 27.64,
-      "rsi": 3.9
+      "date": "2026-09-16",
+      "price": 27.21,
+      "rsi": 3.8
     },
     {
       "ticker": "GEHC",
-      "date": "2026-09-15",
-      "price": 64.07,
+      "date": "2026-09-16",
+      "price": 63.49,
       "rsi": 4.3
     },
     {
-      "ticker": "CLX",
-      "date": "2026-09-15",
-      "price": 87.16,
-      "rsi": 7.5
-    },
-    {
-      "ticker": "UDR",
-      "date": "2026-09-15",
-      "price": 34.91,
-      "rsi": 7.8
-    },
-    {
-      "ticker": "COO",
-      "date": "2026-09-15",
-      "price": 53.27,
-      "rsi": 8.0
-    },
-    {
-      "ticker": "CHD",
-      "date": "2026-09-15",
-      "price": 94.51,
-      "rsi": 9.5
-    },
-    {
       "ticker": "NSC",
-      "date": "2026-09-15",
-      "price": 320.22,
-      "rsi": 10.2
+      "date": "2026-09-16",
+      "price": 317.0,
+      "rsi": 6.3
     },
     {
       "ticker": "UNP",
-      "date": "2026-09-15",
-      "price": 283.99,
-      "rsi": 10.5
+      "date": "2026-09-16",
+      "price": 280.92,
+      "rsi": 6.7
     },
     {
-      "ticker": "LW",
-      "date": "2026-09-15",
-      "price": 47.09,
-      "rsi": 10.7
+      "ticker": "CLX",
+      "date": "2026-09-16",
+      "price": 84.86,
+      "rsi": 7.0
     },
     {
-      "ticker": "NCLH",
-      "date": "2026-09-15",
-      "price": 14.28,
-      "rsi": 10.8
-    },
-    {
-      "ticker": "TJX",
-      "date": "2026-09-15",
-      "price": 124.6,
-      "rsi": 10.9
-    },
-    {
-      "ticker": "O",
-      "date": "2026-09-15",
-      "price": 58.71,
-      "rsi": 12.5
-    },
-    {
-      "ticker": "STE",
-      "date": "2026-09-15",
-      "price": 210.28,
-      "rsi": 13.6
+      "ticker": "UDR",
+      "date": "2026-09-16",
+      "price": 34.4,
+      "rsi": 7.5
     },
     {
       "ticker": "PNR",
-      "date": "2026-09-15",
-      "price": 56.58,
-      "rsi": 14.2
+      "date": "2026-09-16",
+      "price": 56.46,
+      "rsi": 9.7
+    },
+    {
+      "ticker": "O",
+      "date": "2026-09-16",
+      "price": 57.15,
+      "rsi": 10.5
     },
     {
       "ticker": "IP",
-      "date": "2026-09-15",
-      "price": 33.99,
-      "rsi": 14.4
+      "date": "2026-09-16",
+      "price": 34.06,
+      "rsi": 11.4
     },
     {
-      "ticker": "CCL",
-      "date": "2026-09-15",
-      "price": 22.11,
-      "rsi": 14.5
+      "ticker": "TJX",
+      "date": "2026-09-16",
+      "price": 122.84,
+      "rsi": 11.5
     },
     {
-      "ticker": "BKNG",
-      "date": "2026-09-15",
-      "price": 171.32,
-      "rsi": 15.4
-    },
-    {
-      "ticker": "TROW",
-      "date": "2026-09-15",
-      "price": 104.23,
-      "rsi": 15.5
+      "ticker": "RCL",
+      "date": "2026-09-16",
+      "price": 253.92,
+      "rsi": 12.1
     },
     {
       "ticker": "MGM",
-      "date": "2026-09-15",
-      "price": 39.22,
-      "rsi": 15.8
+      "date": "2026-09-16",
+      "price": 38.39,
+      "rsi": 12.3
+    },
+    {
+      "ticker": "STE",
+      "date": "2026-09-16",
+      "price": 209.9,
+      "rsi": 12.6
+    },
+    {
+      "ticker": "COO",
+      "date": "2026-09-16",
+      "price": 54.61,
+      "rsi": 13.1
+    },
+    {
+      "ticker": "TDG",
+      "date": "2026-09-16",
+      "price": 1080.11,
+      "rsi": 13.3
+    },
+    {
+      "ticker": "IR",
+      "date": "2026-09-16",
+      "price": 71.44,
+      "rsi": 14.4
+    },
+    {
+      "ticker": "LW",
+      "date": "2026-09-16",
+      "price": 47.53,
+      "rsi": 14.4
+    },
+    {
+      "ticker": "SBUX",
+      "date": "2026-09-16",
+      "price": 97.34,
+      "rsi": 14.4
+    },
+    {
+      "ticker": "TROW",
+      "date": "2026-09-16",
+      "price": 102.4,
+      "rsi": 15.2
+    },
+    {
+      "ticker": "CHD",
+      "date": "2026-09-16",
+      "price": 95.51,
+      "rsi": 15.4
     }
   ],
   "currentOverbought": [
     {
       "ticker": "MPC",
-      "date": "2026-09-15",
-      "price": 410.84,
-      "rsi": 90.0
-    },
-    {
-      "ticker": "OXY",
-      "date": "2026-09-15",
-      "price": 63.52,
-      "rsi": 86.7
+      "date": "2026-09-16",
+      "price": 413.92,
+      "rsi": 89.3
     },
     {
       "ticker": "VLO",
-      "date": "2026-09-15",
-      "price": 397.04,
-      "rsi": 84.7
+      "date": "2026-09-16",
+      "price": 403.28,
+      "rsi": 84.5
     },
     {
       "ticker": "META",
-      "date": "2026-09-15",
-      "price": 670.24,
-      "rsi": 84.1
-    },
-    {
-      "ticker": "QCOM",
-      "date": "2026-09-15",
-      "price": 187.8,
+      "date": "2026-09-16",
+      "price": 673.31,
       "rsi": 83.8
-    },
-    {
-      "ticker": "PSX",
-      "date": "2026-09-15",
-      "price": 264.93,
-      "rsi": 81.1
     }
   ],
   "oversoldStats": {
-    "count": 9721,
+    "count": 9723,
     "avg_return": 5.2,
-    "median_return": 4.84,
+    "median_return": 4.86,
     "win_rate": 61.6,
     "best_return": 234.54,
     "worst_return": -92.74
@@ -837,5 +819,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-09-15T23:49:35.349092Z"
+  "lastUpdated": "2026-09-16T23:58:13.220957Z"
 }
