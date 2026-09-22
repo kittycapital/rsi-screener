@@ -85,7 +85,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-30",
-      "price": 87531.55,
+      "price": 87531.54,
       "rsi": 81.1,
       "type": "overbought",
       "forward_return": -93.46
@@ -94,7 +94,7 @@
       "ticker": "PARA",
       "date": "2023-11-29",
       "price": 87376.24,
-      "rsi": 81.3,
+      "rsi": 81.2,
       "type": "overbought",
       "forward_return": -93.35
     },
@@ -109,7 +109,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-20",
-      "price": 87212.76,
+      "price": 87212.77,
       "rsi": 84.6,
       "type": "overbought",
       "forward_return": -90.78
@@ -117,7 +117,7 @@
     {
       "ticker": "PARA",
       "date": "2023-10-16",
-      "price": 86640.62,
+      "price": 86640.61,
       "rsi": 84.5,
       "type": "overbought",
       "forward_return": -84.43
@@ -129,22 +129,6 @@
       "rsi": 81.7,
       "type": "overbought",
       "forward_return": -67.11
-    },
-    {
-      "ticker": "PARA",
-      "date": "2023-09-22",
-      "price": 86477.14,
-      "rsi": 84.6,
-      "type": "overbought",
-      "forward_return": -65.97
-    },
-    {
-      "ticker": "PARA",
-      "date": "2023-09-21",
-      "price": 86395.41,
-      "rsi": 84.6,
-      "type": "overbought",
-      "forward_return": -64.24
     },
     {
       "ticker": "MRNA",
@@ -161,6 +145,22 @@
       "rsi": 82.7,
       "type": "overbought",
       "forward_return": -50.99
+    },
+    {
+      "ticker": "MRNA",
+      "date": "2024-05-22",
+      "price": 163.33,
+      "rsi": 82.8,
+      "type": "overbought",
+      "forward_return": -50.38
+    },
+    {
+      "ticker": "MRNA",
+      "date": "2024-05-23",
+      "price": 164.01,
+      "rsi": 83.8,
+      "type": "overbought",
+      "forward_return": -49.73
     }
   ],
   "currentOversold": [
@@ -306,16 +306,16 @@
     }
   ],
   "oversoldStats": {
-    "count": 9721,
-    "avg_return": 5.22,
-    "median_return": 4.84,
-    "win_rate": 61.6,
+    "count": 9509,
+    "avg_return": 5.07,
+    "median_return": 4.66,
+    "win_rate": 61.1,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18498,
-    "avg_return": 4.74,
+    "count": 18490,
+    "avg_return": 4.75,
     "median_return": 3.58,
     "win_rate": 61.4,
     "best_return": 121.93,
@@ -819,5 +819,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-09-18T23:44:40.735007Z"
+  "lastUpdated": "2026-09-22T00:22:30.374524Z"
 }
