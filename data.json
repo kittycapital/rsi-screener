@@ -85,7 +85,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-30",
-      "price": 87531.54,
+      "price": 87531.55,
       "rsi": 81.1,
       "type": "overbought",
       "forward_return": -93.46
@@ -101,7 +101,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-28",
-      "price": 87539.72,
+      "price": 87539.71,
       "rsi": 92.9,
       "type": "overbought",
       "forward_return": -93.27
@@ -117,7 +117,7 @@
     {
       "ticker": "PARA",
       "date": "2023-10-16",
-      "price": 86640.61,
+      "price": 86640.62,
       "rsi": 84.5,
       "type": "overbought",
       "forward_return": -84.43
@@ -165,158 +165,158 @@
   ],
   "currentOversold": [
     {
-      "ticker": "INVH",
-      "date": "2026-09-18",
-      "price": 26.91,
-      "rsi": 4.0
+      "ticker": "TFX",
+      "date": "2026-09-22",
+      "price": 124.9,
+      "rsi": 5.0
     },
     {
-      "ticker": "MKC",
-      "date": "2026-09-18",
-      "price": 48.72,
-      "rsi": 6.1
-    },
-    {
-      "ticker": "UDR",
-      "date": "2026-09-18",
-      "price": 33.9,
+      "ticker": "CVS",
+      "date": "2026-09-22",
+      "price": 87.1,
       "rsi": 7.2
     },
     {
-      "ticker": "CLX",
-      "date": "2026-09-18",
-      "price": 83.1,
-      "rsi": 7.5
-    },
-    {
-      "ticker": "NSC",
-      "date": "2026-09-18",
-      "price": 314.16,
-      "rsi": 9.0
-    },
-    {
       "ticker": "O",
-      "date": "2026-09-18",
-      "price": 56.66,
-      "rsi": 10.0
-    },
-    {
-      "ticker": "WYNN",
-      "date": "2026-09-18",
-      "price": 81.68,
-      "rsi": 10.0
-    },
-    {
-      "ticker": "STE",
-      "date": "2026-09-18",
-      "price": 205.04,
-      "rsi": 10.2
-    },
-    {
-      "ticker": "SBUX",
-      "date": "2026-09-18",
-      "price": 95.83,
-      "rsi": 10.8
-    },
-    {
-      "ticker": "UNP",
-      "date": "2026-09-18",
-      "price": 279.37,
-      "rsi": 11.0
+      "date": "2026-09-22",
+      "price": 56.53,
+      "rsi": 9.3
     },
     {
       "ticker": "MAA",
-      "date": "2026-09-18",
-      "price": 118.93,
-      "rsi": 11.7
+      "date": "2026-09-22",
+      "price": 119.15,
+      "rsi": 10.8
     },
     {
-      "ticker": "PEP",
-      "date": "2026-09-18",
-      "price": 129.75,
-      "rsi": 12.1
+      "ticker": "KIM",
+      "date": "2026-09-22",
+      "price": 22.55,
+      "rsi": 12.3
     },
     {
-      "ticker": "BAX",
-      "date": "2026-09-18",
-      "price": 22.8,
-      "rsi": 12.2
+      "ticker": "INVH",
+      "date": "2026-09-22",
+      "price": 27.14,
+      "rsi": 12.5
     },
     {
-      "ticker": "PNR",
-      "date": "2026-09-18",
-      "price": 55.92,
-      "rsi": 12.6
-    },
-    {
-      "ticker": "BKNG",
-      "date": "2026-09-18",
-      "price": 167.9,
+      "ticker": "SBUX",
+      "date": "2026-09-22",
+      "price": 95.11,
       "rsi": 12.7
     },
     {
-      "ticker": "RCL",
-      "date": "2026-09-18",
-      "price": 245.81,
+      "ticker": "GIS",
+      "date": "2026-09-22",
+      "price": 35.45,
+      "rsi": 13.1
+    },
+    {
+      "ticker": "UDR",
+      "date": "2026-09-22",
+      "price": 34.1,
       "rsi": 13.2
     },
     {
-      "ticker": "GIS",
-      "date": "2026-09-18",
-      "price": 36.32,
-      "rsi": 13.4
+      "ticker": "FRT",
+      "date": "2026-09-22",
+      "price": 110.46,
+      "rsi": 13.7
     },
     {
-      "ticker": "MGM",
-      "date": "2026-09-18",
-      "price": 37.81,
-      "rsi": 13.5
+      "ticker": "PNR",
+      "date": "2026-09-22",
+      "price": 55.49,
+      "rsi": 14.1
     },
     {
-      "ticker": "ZTS",
-      "date": "2026-09-18",
-      "price": 71.4,
-      "rsi": 13.5
+      "ticker": "BKNG",
+      "date": "2026-09-22",
+      "price": 164.22,
+      "rsi": 15.5
     },
     {
-      "ticker": "GEHC",
-      "date": "2026-09-18",
-      "price": 64.13,
-      "rsi": 13.6
+      "ticker": "MKC",
+      "date": "2026-09-22",
+      "price": 49.42,
+      "rsi": 15.8
+    },
+    {
+      "ticker": "ROP",
+      "date": "2026-09-22",
+      "price": 363.85,
+      "rsi": 15.9
+    },
+    {
+      "ticker": "ATO",
+      "date": "2026-09-22",
+      "price": 157.34,
+      "rsi": 17.0
+    },
+    {
+      "ticker": "DTE",
+      "date": "2026-09-22",
+      "price": 125.41,
+      "rsi": 17.2
+    },
+    {
+      "ticker": "LHX",
+      "date": "2026-09-22",
+      "price": 239.89,
+      "rsi": 17.5
+    },
+    {
+      "ticker": "EQT",
+      "date": "2026-09-22",
+      "price": 50.81,
+      "rsi": 17.6
+    },
+    {
+      "ticker": "BRO",
+      "date": "2026-09-22",
+      "price": 62.44,
+      "rsi": 17.8
+    },
+    {
+      "ticker": "VTR",
+      "date": "2026-09-22",
+      "price": 86.86,
+      "rsi": 17.9
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "MPC",
-      "date": "2026-09-18",
-      "price": 424.89,
-      "rsi": 90.0
+      "ticker": "META",
+      "date": "2026-09-22",
+      "price": 736.59,
+      "rsi": 85.1
     },
     {
-      "ticker": "VLO",
-      "date": "2026-09-18",
-      "price": 413.28,
-      "rsi": 86.7
+      "ticker": "AMD",
+      "date": "2026-09-22",
+      "price": 623.77,
+      "rsi": 82.6
     },
     {
-      "ticker": "PSX",
-      "date": "2026-09-18",
-      "price": 273.13,
-      "rsi": 83.0
+      "ticker": "LUV",
+      "date": "2026-09-22",
+      "price": 42.08,
+      "rsi": 81.7
     }
   ],
   "oversoldStats": {
-    "count": 9509,
-    "avg_return": 5.07,
-    "median_return": 4.66,
-    "win_rate": 61.1,
+    "count": 9565,
+    "avg_return": 5.2,
+    "median_return": 4.73,
+    "win_rate": 61.2,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18490,
-    "avg_return": 4.75,
-    "median_return": 3.58,
+    "count": 18496,
+    "avg_return": 4.74,
+    "median_return": 3.57,
     "win_rate": 61.4,
     "best_return": 121.93,
     "worst_return": -93.46
@@ -819,5 +819,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-09-22T00:22:30.374524Z"
+  "lastUpdated": "2026-09-22T23:55:47.664545Z"
 }
