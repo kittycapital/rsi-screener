@@ -166,151 +166,151 @@
   "currentOversold": [
     {
       "ticker": "TFX",
-      "date": "2026-09-21",
-      "price": 124.8,
-      "rsi": 4.1
-    },
-    {
-      "ticker": "UDR",
-      "date": "2026-09-21",
-      "price": 33.89,
-      "rsi": 7.6
-    },
-    {
-      "ticker": "NSC",
-      "date": "2026-09-21",
-      "price": 309.07,
-      "rsi": 9.1
-    },
-    {
-      "ticker": "MKC",
-      "date": "2026-09-21",
-      "price": 48.89,
-      "rsi": 9.6
-    },
-    {
-      "ticker": "UNP",
-      "date": "2026-09-21",
-      "price": 269.63,
-      "rsi": 9.7
-    },
-    {
-      "ticker": "INVH",
-      "date": "2026-09-21",
-      "price": 27.08,
-      "rsi": 10.4
-    },
-    {
-      "ticker": "O",
-      "date": "2026-09-21",
-      "price": 56.65,
-      "rsi": 10.7
-    },
-    {
-      "ticker": "SBUX",
-      "date": "2026-09-21",
-      "price": 94.9,
-      "rsi": 11.3
-    },
-    {
-      "ticker": "MAA",
-      "date": "2026-09-21",
-      "price": 118.86,
-      "rsi": 12.3
-    },
-    {
-      "ticker": "PEP",
-      "date": "2026-09-21",
-      "price": 129.59,
-      "rsi": 12.6
-    },
-    {
-      "ticker": "GIS",
-      "date": "2026-09-22",
-      "price": 35.45,
-      "rsi": 13.1
-    },
-    {
-      "ticker": "ZTS",
-      "date": "2026-09-21",
-      "price": 71.33,
-      "rsi": 13.8
-    },
-    {
-      "ticker": "PNR",
-      "date": "2026-09-21",
-      "price": 55.78,
-      "rsi": 14.7
-    },
-    {
-      "ticker": "ROP",
-      "date": "2026-09-21",
-      "price": 365.4,
-      "rsi": 15.0
-    },
-    {
-      "ticker": "BAX",
-      "date": "2026-09-21",
-      "price": 22.93,
-      "rsi": 15.2
-    },
-    {
-      "ticker": "STE",
-      "date": "2026-09-21",
-      "price": 206.97,
-      "rsi": 15.3
+      "date": "2026-09-23",
+      "price": 121.75,
+      "rsi": 3.8
     },
     {
       "ticker": "BKNG",
-      "date": "2026-09-22",
-      "price": 164.22,
-      "rsi": 15.5
+      "date": "2026-09-23",
+      "price": 155.9,
+      "rsi": 6.2
     },
     {
-      "ticker": "POOL",
-      "date": "2026-09-21",
-      "price": 167.92,
-      "rsi": 15.7
+      "ticker": "CVS",
+      "date": "2026-09-23",
+      "price": 85.86,
+      "rsi": 6.6
     },
     {
-      "ticker": "WY",
-      "date": "2026-09-21",
-      "price": 21.01,
-      "rsi": 15.9
+      "ticker": "UDR",
+      "date": "2026-09-23",
+      "price": 33.79,
+      "rsi": 7.5
+    },
+    {
+      "ticker": "O",
+      "date": "2026-09-23",
+      "price": 55.61,
+      "rsi": 8.0
+    },
+    {
+      "ticker": "MAA",
+      "date": "2026-09-23",
+      "price": 117.78,
+      "rsi": 8.1
+    },
+    {
+      "ticker": "INVH",
+      "date": "2026-09-23",
+      "price": 26.93,
+      "rsi": 9.9
+    },
+    {
+      "ticker": "KIM",
+      "date": "2026-09-23",
+      "price": 22.21,
+      "rsi": 9.9
+    },
+    {
+      "ticker": "SBUX",
+      "date": "2026-09-23",
+      "price": 94.14,
+      "rsi": 10.8
+    },
+    {
+      "ticker": "MKC",
+      "date": "2026-09-23",
+      "price": 49.09,
+      "rsi": 11.7
+    },
+    {
+      "ticker": "FRT",
+      "date": "2026-09-23",
+      "price": 109.39,
+      "rsi": 12.3
     },
     {
       "ticker": "CPT",
-      "date": "2026-09-21",
-      "price": 98.82,
-      "rsi": 16.0
+      "date": "2026-09-23",
+      "price": 97.68,
+      "rsi": 13.2
+    },
+    {
+      "ticker": "CMG",
+      "date": "2026-09-23",
+      "price": 32.71,
+      "rsi": 13.6
+    },
+    {
+      "ticker": "PNR",
+      "date": "2026-09-23",
+      "price": 55.25,
+      "rsi": 13.6
+    },
+    {
+      "ticker": "ABNB",
+      "date": "2026-09-23",
+      "price": 149.58,
+      "rsi": 14.3
+    },
+    {
+      "ticker": "DTE",
+      "date": "2026-09-23",
+      "price": 122.89,
+      "rsi": 14.7
+    },
+    {
+      "ticker": "CMCSA",
+      "date": "2026-09-23",
+      "price": 22.55,
+      "rsi": 15.2
+    },
+    {
+      "ticker": "ZTS",
+      "date": "2026-09-23",
+      "price": 71.61,
+      "rsi": 15.2
+    },
+    {
+      "ticker": "BAC",
+      "date": "2026-09-23",
+      "price": 56.0,
+      "rsi": 15.5
+    },
+    {
+      "ticker": "PAYX",
+      "date": "2026-09-23",
+      "price": 104.49,
+      "rsi": 15.7
     }
   ],
   "currentOverbought": [
     {
       "ticker": "META",
-      "date": "2026-09-22",
-      "price": 736.6,
-      "rsi": 85.1
+      "date": "2026-09-23",
+      "price": 744.1,
+      "rsi": 84.6
     },
     {
       "ticker": "AMD",
-      "date": "2026-09-22",
-      "price": 623.77,
-      "rsi": 82.6
+      "date": "2026-09-23",
+      "price": 614.61,
+      "rsi": 80.5
     }
   ],
   "oversoldStats": {
-    "count": 9545,
-    "avg_return": 5.16,
-    "median_return": 4.7,
-    "win_rate": 61.2,
+    "count": 9512,
+    "avg_return": 5.14,
+    "median_return": 4.66,
+    "win_rate": 61.1,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18489,
+    "count": 18490,
     "avg_return": 4.75,
-    "median_return": 3.58,
+    "median_return": 3.57,
     "win_rate": 61.4,
     "best_return": 121.93,
     "worst_return": -93.46
@@ -813,5 +813,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-09-24T00:06:30.808040Z"
+  "lastUpdated": "2026-09-25T00:08:11.263989Z"
 }
