@@ -94,7 +94,7 @@
       "ticker": "PARA",
       "date": "2023-11-29",
       "price": 87376.24,
-      "rsi": 81.3,
+      "rsi": 81.2,
       "type": "overbought",
       "forward_return": -93.35
     },
@@ -109,7 +109,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-20",
-      "price": 87212.76,
+      "price": 87212.77,
       "rsi": 84.6,
       "type": "overbought",
       "forward_return": -90.78
@@ -233,12 +233,6 @@
       "rsi": 86.8
     },
     {
-      "ticker": "WBD",
-      "date": "2026-10-06",
-      "price": 30.95,
-      "rsi": 85.8
-    },
-    {
       "ticker": "CDNS",
       "date": "2026-10-08",
       "price": 348.84,
@@ -252,17 +246,17 @@
     }
   ],
   "oversoldStats": {
-    "count": 9024,
-    "avg_return": 4.44,
-    "median_return": 3.64,
+    "count": 9005,
+    "avg_return": 4.42,
+    "median_return": 3.62,
     "win_rate": 59.0,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18635,
-    "avg_return": 4.69,
-    "median_return": 3.5,
+    "count": 18590,
+    "avg_return": 4.65,
+    "median_return": 3.47,
     "win_rate": 61.0,
     "best_return": 165.61,
     "worst_return": -93.46
@@ -736,7 +730,6 @@
     "VZ",
     "WAB",
     "WAT",
-    "WBD",
     "WDC",
     "WEC",
     "WELL",
@@ -764,5 +757,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-10-09T01:33:16.641794Z"
+  "lastUpdated": "2026-10-10T01:23:55.233609Z"
 }
