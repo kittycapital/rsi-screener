@@ -85,7 +85,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-30",
-      "price": 87531.54,
+      "price": 87531.55,
       "rsi": 81.1,
       "type": "overbought",
       "forward_return": -93.46
@@ -101,7 +101,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-28",
-      "price": 87539.72,
+      "price": 87539.71,
       "rsi": 92.9,
       "type": "overbought",
       "forward_return": -93.27
@@ -799,5 +799,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-10-13T02:46:41.072906Z"
+  "lastUpdated": "2026-10-14T00:44:27.739977Z"
 }
