@@ -85,7 +85,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-30",
-      "price": 87531.53,
+      "price": 87531.54,
       "rsi": 81.1,
       "type": "overbought",
       "forward_return": -93.46
@@ -94,14 +94,14 @@
       "ticker": "PARA",
       "date": "2023-11-29",
       "price": 87376.24,
-      "rsi": 81.2,
+      "rsi": 81.3,
       "type": "overbought",
       "forward_return": -93.35
     },
     {
       "ticker": "PARA",
       "date": "2023-11-28",
-      "price": 87539.72,
+      "price": 87539.71,
       "rsi": 92.9,
       "type": "overbought",
       "forward_return": -93.27
@@ -113,14 +113,6 @@
       "rsi": 84.6,
       "type": "overbought",
       "forward_return": -90.78
-    },
-    {
-      "ticker": "PARA",
-      "date": "2023-10-16",
-      "price": 86640.62,
-      "rsi": 84.5,
-      "type": "overbought",
-      "forward_return": -84.43
     },
     {
       "ticker": "PARA",
@@ -161,6 +153,14 @@
       "rsi": 83.8,
       "type": "overbought",
       "forward_return": -49.73
+    },
+    {
+      "ticker": "UNH",
+      "date": "2025-04-10",
+      "price": 571.3,
+      "rsi": 81.8,
+      "type": "overbought",
+      "forward_return": -49.07
     }
   ],
   "currentOversold": [
@@ -324,15 +324,15 @@
     }
   ],
   "oversoldStats": {
-    "count": 8981,
-    "avg_return": 4.39,
-    "median_return": 3.59,
-    "win_rate": 58.9,
+    "count": 8973,
+    "avg_return": 4.38,
+    "median_return": 3.58,
+    "win_rate": 58.8,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18661,
+    "count": 18645,
     "avg_return": 4.65,
     "median_return": 3.45,
     "win_rate": 61.0,
@@ -835,5 +835,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-10-15T23:58:27.403513Z"
+  "lastUpdated": "2026-10-17T00:02:30.896084Z"
 }
