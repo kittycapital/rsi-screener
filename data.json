@@ -85,7 +85,7 @@
     {
       "ticker": "PARA",
       "date": "2023-11-30",
-      "price": 87531.54,
+      "price": 87531.55,
       "rsi": 81.1,
       "type": "overbought",
       "forward_return": -93.46
@@ -94,7 +94,7 @@
       "ticker": "PARA",
       "date": "2023-11-29",
       "price": 87376.24,
-      "rsi": 81.3,
+      "rsi": 81.2,
       "type": "overbought",
       "forward_return": -93.35
     },
@@ -166,173 +166,203 @@
   "currentOversold": [
     {
       "ticker": "FMC",
-      "date": "2026-10-15",
-      "price": 5.62,
-      "rsi": 12.6
-    },
-    {
-      "ticker": "SW",
-      "date": "2026-10-15",
-      "price": 41.24,
+      "date": "2026-10-16",
+      "price": 5.66,
       "rsi": 14.2
     },
     {
-      "ticker": "MOS",
-      "date": "2026-10-15",
-      "price": 18.95,
-      "rsi": 14.5
-    },
-    {
-      "ticker": "INTC",
-      "date": "2026-10-15",
-      "price": 95.37,
+      "ticker": "ALB",
+      "date": "2026-10-16",
+      "price": 95.48,
       "rsi": 15.8
     },
     {
-      "ticker": "ARE",
-      "date": "2026-10-15",
-      "price": 42.34,
-      "rsi": 16.0
+      "ticker": "MOS",
+      "date": "2026-10-16",
+      "price": 18.82,
+      "rsi": 16.3
     },
     {
-      "ticker": "ALB",
-      "date": "2026-10-15",
-      "price": 98.18,
-      "rsi": 16.1
+      "ticker": "INTC",
+      "date": "2026-10-16",
+      "price": 89.85,
+      "rsi": 16.4
+    },
+    {
+      "ticker": "CZR",
+      "date": "2026-10-16",
+      "price": 28.8,
+      "rsi": 16.8
+    },
+    {
+      "ticker": "ARE",
+      "date": "2026-10-16",
+      "price": 41.62,
+      "rsi": 16.9
+    },
+    {
+      "ticker": "SW",
+      "date": "2026-10-16",
+      "price": 41.16,
+      "rsi": 17.3
+    },
+    {
+      "ticker": "STX",
+      "date": "2026-10-16",
+      "price": 639.01,
+      "rsi": 18.1
+    },
+    {
+      "ticker": "MGM",
+      "date": "2026-10-16",
+      "price": 28.6,
+      "rsi": 19.5
+    },
+    {
+      "ticker": "WDC",
+      "date": "2026-10-16",
+      "price": 332.0,
+      "rsi": 19.8
+    },
+    {
+      "ticker": "STT",
+      "date": "2026-10-16",
+      "price": 165.72,
+      "rsi": 19.9
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "PTC",
-      "date": "2026-10-15",
-      "price": 193.15,
-      "rsi": 91.2
-    },
-    {
-      "ticker": "STZ",
-      "date": "2026-10-15",
-      "price": 129.58,
-      "rsi": 89.8
-    },
-    {
-      "ticker": "WRB",
-      "date": "2026-10-15",
-      "price": 73.97,
-      "rsi": 89.6
-    },
-    {
-      "ticker": "PPL",
-      "date": "2026-10-15",
-      "price": 34.48,
-      "rsi": 87.7
-    },
-    {
-      "ticker": "CAH",
-      "date": "2026-10-15",
-      "price": 253.71,
-      "rsi": 87.2
-    },
-    {
-      "ticker": "PNW",
-      "date": "2026-10-15",
-      "price": 101.58,
-      "rsi": 86.9
+      "ticker": "EIX",
+      "date": "2026-10-16",
+      "price": 55.93,
+      "rsi": 94.8
     },
     {
       "ticker": "CMS",
-      "date": "2026-10-15",
-      "price": 66.94,
-      "rsi": 86.7
+      "date": "2026-10-16",
+      "price": 68.7,
+      "rsi": 94.6
+    },
+    {
+      "ticker": "STZ",
+      "date": "2026-10-16",
+      "price": 131.35,
+      "rsi": 93.7
     },
     {
       "ticker": "CNP",
-      "date": "2026-10-15",
-      "price": 39.8,
-      "rsi": 86.6
-    },
-    {
-      "ticker": "EBAY",
-      "date": "2026-10-15",
-      "price": 122.91,
-      "rsi": 86.0
-    },
-    {
-      "ticker": "TJX",
-      "date": "2026-10-15",
-      "price": 144.58,
-      "rsi": 85.8
+      "date": "2026-10-16",
+      "price": 40.55,
+      "rsi": 93.0
     },
     {
       "ticker": "SO",
-      "date": "2026-10-15",
-      "price": 89.18,
-      "rsi": 85.5
-    },
-    {
-      "ticker": "BALL",
-      "date": "2026-10-15",
-      "price": 62.8,
-      "rsi": 85.4
+      "date": "2026-10-16",
+      "price": 91.18,
+      "rsi": 92.7
     },
     {
       "ticker": "COP",
-      "date": "2026-10-15",
-      "price": 141.73,
-      "rsi": 84.8
+      "date": "2026-10-16",
+      "price": 146.51,
+      "rsi": 92.2
+    },
+    {
+      "ticker": "PNW",
+      "date": "2026-10-16",
+      "price": 103.42,
+      "rsi": 91.0
     },
     {
       "ticker": "XEL",
-      "date": "2026-10-15",
-      "price": 75.12,
-      "rsi": 84.7
+      "date": "2026-10-16",
+      "price": 76.31,
+      "rsi": 91.0
     },
     {
-      "ticker": "CNC",
-      "date": "2026-10-15",
-      "price": 70.51,
-      "rsi": 84.3
+      "ticker": "PTC",
+      "date": "2026-10-16",
+      "price": 192.98,
+      "rsi": 90.8
+    },
+    {
+      "ticker": "WRB",
+      "date": "2026-10-16",
+      "price": 75.42,
+      "rsi": 90.2
+    },
+    {
+      "ticker": "PPL",
+      "date": "2026-10-16",
+      "price": 35.17,
+      "rsi": 89.6
     },
     {
       "ticker": "MCK",
-      "date": "2026-10-15",
-      "price": 998.64,
-      "rsi": 83.4
+      "date": "2026-10-16",
+      "price": 1004.84,
+      "rsi": 88.4
     },
     {
-      "ticker": "MPC",
-      "date": "2026-10-15",
-      "price": 476.92,
-      "rsi": 83.0
+      "ticker": "FE",
+      "date": "2026-10-16",
+      "price": 46.19,
+      "rsi": 87.8
     },
     {
-      "ticker": "YUM",
-      "date": "2026-10-15",
-      "price": 150.83,
-      "rsi": 82.7
+      "ticker": "TJX",
+      "date": "2026-10-16",
+      "price": 147.33,
+      "rsi": 87.4
     },
     {
-      "ticker": "ULTA",
-      "date": "2026-10-15",
-      "price": 609.24,
-      "rsi": 82.6
+      "ticker": "ATO",
+      "date": "2026-10-16",
+      "price": 167.34,
+      "rsi": 87.3
+    },
+    {
+      "ticker": "CAH",
+      "date": "2026-10-16",
+      "price": 254.06,
+      "rsi": 87.3
+    },
+    {
+      "ticker": "CHD",
+      "date": "2026-10-16",
+      "price": 104.53,
+      "rsi": 87.3
     },
     {
       "ticker": "EXC",
-      "date": "2026-10-15",
-      "price": 42.48,
-      "rsi": 82.4
+      "date": "2026-10-16",
+      "price": 43.5,
+      "rsi": 87.0
+    },
+    {
+      "ticker": "SRE",
+      "date": "2026-10-16",
+      "price": 83.41,
+      "rsi": 86.9
+    },
+    {
+      "ticker": "CCI",
+      "date": "2026-10-16",
+      "price": 82.26,
+      "rsi": 86.8
     }
   ],
   "oversoldStats": {
-    "count": 8973,
-    "avg_return": 4.38,
-    "median_return": 3.58,
+    "count": 8958,
+    "avg_return": 4.37,
+    "median_return": 3.55,
     "win_rate": 58.8,
     "best_return": 234.54,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18645,
+    "count": 18639,
     "avg_return": 4.65,
     "median_return": 3.45,
     "win_rate": 61.0,
@@ -835,5 +865,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-10-17T00:02:30.896084Z"
+  "lastUpdated": "2026-10-20T00:48:01.298000Z"
 }
