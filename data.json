@@ -25,6 +25,14 @@
       "forward_return": 259.7
     },
     {
+      "ticker": "MRNA",
+      "date": "2026-07-28",
+      "price": 55.81,
+      "rsi": 19.9,
+      "type": "oversold",
+      "forward_return": 256.33
+    },
+    {
       "ticker": "SMCI",
       "date": "2024-11-14",
       "price": 18.01,
@@ -71,14 +79,6 @@
       "rsi": 9.0,
       "type": "oversold",
       "forward_return": 117.65
-    },
-    {
-      "ticker": "MCHP",
-      "date": "2025-04-08",
-      "price": 33.94,
-      "rsi": 17.7,
-      "type": "oversold",
-      "forward_return": 114.09
     }
   ],
   "topOverbought": [
@@ -165,212 +165,212 @@
   ],
   "currentOversold": [
     {
-      "ticker": "KLAC",
-      "date": "2026-10-23",
-      "price": 145.61,
-      "rsi": 3.6
+      "ticker": "FMC",
+      "date": "2026-10-26",
+      "price": 4.61,
+      "rsi": 2.8
     },
     {
-      "ticker": "FMC",
-      "date": "2026-10-23",
-      "price": 5.05,
-      "rsi": 3.7
+      "ticker": "KLAC",
+      "date": "2026-10-26",
+      "price": 149.21,
+      "rsi": 9.9
     },
     {
       "ticker": "AMAT",
-      "date": "2026-10-23",
-      "price": 377.24,
-      "rsi": 5.1
-    },
-    {
-      "ticker": "LRCX",
-      "date": "2026-10-23",
-      "price": 230.1,
-      "rsi": 6.2
-    },
-    {
-      "ticker": "TER",
-      "date": "2026-10-23",
-      "price": 308.85,
-      "rsi": 13.3
-    },
-    {
-      "ticker": "HWM",
-      "date": "2026-10-23",
-      "price": 185.91,
-      "rsi": 14.4
+      "date": "2026-10-26",
+      "price": 387.59,
+      "rsi": 10.9
     },
     {
       "ticker": "CAT",
-      "date": "2026-10-23",
-      "price": 687.0,
-      "rsi": 15.0
+      "date": "2026-10-26",
+      "price": 692.13,
+      "rsi": 11.7
+    },
+    {
+      "ticker": "BWA",
+      "date": "2026-10-26",
+      "price": 55.12,
+      "rsi": 12.1
+    },
+    {
+      "ticker": "LRCX",
+      "date": "2026-10-26",
+      "price": 237.5,
+      "rsi": 12.3
+    },
+    {
+      "ticker": "TER",
+      "date": "2026-10-26",
+      "price": 309.0,
+      "rsi": 14.5
+    },
+    {
+      "ticker": "ALB",
+      "date": "2026-10-26",
+      "price": 93.42,
+      "rsi": 15.1
     },
     {
       "ticker": "SE",
-      "date": "2026-10-23",
-      "price": 74.63,
-      "rsi": 16.0
+      "date": "2026-10-26",
+      "price": 74.01,
+      "rsi": 15.9
     },
     {
-      "ticker": "INTC",
-      "date": "2026-10-23",
-      "price": 86.96,
-      "rsi": 16.2
+      "ticker": "PWR",
+      "date": "2026-10-26",
+      "price": 563.93,
+      "rsi": 17.9
     },
     {
-      "ticker": "STX",
-      "date": "2026-10-23",
-      "price": 630.49,
-      "rsi": 17.3
+      "ticker": "GLW",
+      "date": "2026-10-26",
+      "price": 127.74,
+      "rsi": 18.9
     },
     {
       "ticker": "MOS",
-      "date": "2026-10-23",
-      "price": 17.84,
-      "rsi": 18.5
-    },
-    {
-      "ticker": "MPWR",
-      "date": "2026-10-23",
-      "price": 1140.12,
-      "rsi": 18.6
+      "date": "2026-10-26",
+      "price": 17.71,
+      "rsi": 19.2
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "IFF",
-      "date": "2026-10-23",
-      "price": 94.15,
-      "rsi": 97.6
+      "ticker": "HAS",
+      "date": "2026-10-26",
+      "price": 117.96,
+      "rsi": 96.4
     },
     {
       "ticker": "CTAS",
-      "date": "2026-10-23",
-      "price": 224.1,
-      "rsi": 95.6
+      "date": "2026-10-26",
+      "price": 225.93,
+      "rsi": 95.8
     },
     {
       "ticker": "ROP",
-      "date": "2026-10-23",
-      "price": 438.14,
-      "rsi": 93.5
+      "date": "2026-10-26",
+      "price": 441.65,
+      "rsi": 94.9
     },
     {
-      "ticker": "STZ",
-      "date": "2026-10-23",
-      "price": 138.68,
-      "rsi": 92.4
-    },
-    {
-      "ticker": "HAS",
-      "date": "2026-10-23",
-      "price": 117.44,
-      "rsi": 92.0
-    },
-    {
-      "ticker": "COP",
-      "date": "2026-10-23",
-      "price": 150.8,
-      "rsi": 91.5
+      "ticker": "IFF",
+      "date": "2026-10-26",
+      "price": 93.69,
+      "rsi": 93.4
     },
     {
       "ticker": "CME",
-      "date": "2026-10-23",
-      "price": 305.71,
-      "rsi": 91.0
+      "date": "2026-10-26",
+      "price": 308.06,
+      "rsi": 91.4
+    },
+    {
+      "ticker": "COP",
+      "date": "2026-10-26",
+      "price": 151.37,
+      "rsi": 91.4
+    },
+    {
+      "ticker": "RMD",
+      "date": "2026-10-26",
+      "price": 253.2,
+      "rsi": 91.2
     },
     {
       "ticker": "EOG",
-      "date": "2026-10-23",
-      "price": 163.03,
-      "rsi": 90.4
+      "date": "2026-10-26",
+      "price": 163.68,
+      "rsi": 90.6
     },
     {
       "ticker": "WM",
-      "date": "2026-10-23",
-      "price": 239.38,
-      "rsi": 90.4
-    },
-    {
-      "ticker": "PAYC",
-      "date": "2026-10-23",
-      "price": 274.59,
-      "rsi": 90.3
-    },
-    {
-      "ticker": "PAYX",
-      "date": "2026-10-23",
-      "price": 118.04,
-      "rsi": 90.1
-    },
-    {
-      "ticker": "ADP",
-      "date": "2026-10-23",
-      "price": 304.16,
-      "rsi": 89.8
-    },
-    {
-      "ticker": "BALL",
-      "date": "2026-10-23",
-      "price": 64.76,
-      "rsi": 89.2
-    },
-    {
-      "ticker": "SPGI",
-      "date": "2026-10-23",
-      "price": 450.31,
-      "rsi": 88.2
-    },
-    {
-      "ticker": "APA",
-      "date": "2026-10-23",
-      "price": 51.9,
-      "rsi": 87.8
-    },
-    {
-      "ticker": "TYL",
-      "date": "2026-10-23",
-      "price": 390.14,
-      "rsi": 87.7
+      "date": "2026-10-26",
+      "price": 241.02,
+      "rsi": 90.5
     },
     {
       "ticker": "BRK-B",
-      "date": "2026-10-23",
-      "price": 542.19,
-      "rsi": 87.6
+      "date": "2026-10-26",
+      "price": 548.56,
+      "rsi": 88.7
+    },
+    {
+      "ticker": "SPGI",
+      "date": "2026-10-26",
+      "price": 450.65,
+      "rsi": 87.4
+    },
+    {
+      "ticker": "LMT",
+      "date": "2026-10-26",
+      "price": 635.2,
+      "rsi": 86.7
+    },
+    {
+      "ticker": "EPAM",
+      "date": "2026-10-26",
+      "price": 137.56,
+      "rsi": 86.6
+    },
+    {
+      "ticker": "IBM",
+      "date": "2026-10-26",
+      "price": 253.44,
+      "rsi": 86.6
     },
     {
       "ticker": "OTIS",
-      "date": "2026-10-23",
-      "price": 75.15,
-      "rsi": 87.1
+      "date": "2026-10-26",
+      "price": 75.27,
+      "rsi": 86.6
     },
     {
-      "ticker": "APD",
-      "date": "2026-10-23",
-      "price": 307.15,
-      "rsi": 87.0
+      "ticker": "XOM",
+      "date": "2026-10-26",
+      "price": 184.54,
+      "rsi": 86.1
     },
     {
-      "ticker": "FDS",
-      "date": "2026-10-23",
-      "price": 331.32,
-      "rsi": 86.8
+      "ticker": "BALL",
+      "date": "2026-10-26",
+      "price": 64.45,
+      "rsi": 86.0
+    },
+    {
+      "ticker": "PAYC",
+      "date": "2026-10-26",
+      "price": 268.25,
+      "rsi": 86.0
+    },
+    {
+      "ticker": "DOW",
+      "date": "2026-10-26",
+      "price": 33.99,
+      "rsi": 85.7
+    },
+    {
+      "ticker": "APA",
+      "date": "2026-10-26",
+      "price": 51.66,
+      "rsi": 85.6
     }
   ],
   "oversoldStats": {
-    "count": 8822,
-    "avg_return": 4.77,
-    "median_return": 3.54,
-    "win_rate": 58.9,
+    "count": 8899,
+    "avg_return": 4.37,
+    "median_return": 3.4,
+    "win_rate": 58.5,
     "best_return": 331.09,
-    "worst_return": -59.48
+    "worst_return": -81.28
   },
   "overboughtStats": {
-    "count": 18681,
+    "count": 18712,
     "avg_return": 4.68,
-    "median_return": 3.45,
+    "median_return": 3.44,
     "win_rate": 61.0,
     "best_return": 165.61,
     "worst_return": -50.99
@@ -721,6 +721,7 @@
     "OTIS",
     "OXY",
     "PANW",
+    "PARA",
     "PAYC",
     "PAYX",
     "PCAR",
@@ -870,5 +871,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-10-27T00:59:50.514247Z"
+  "lastUpdated": "2026-10-28T00:49:38.221772Z"
 }
