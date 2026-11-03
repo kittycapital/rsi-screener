@@ -165,195 +165,213 @@
   ],
   "currentOversold": [
     {
-      "ticker": "FMC",
-      "date": "2026-10-29",
-      "price": 4.75,
-      "rsi": 10.0
+      "ticker": "META",
+      "date": "2026-11-02",
+      "price": 606.73,
+      "rsi": 8.2
     },
     {
       "ticker": "GOOG",
-      "date": "2026-10-29",
-      "price": 282.32,
-      "rsi": 14.9
+      "date": "2026-11-02",
+      "price": 278.04,
+      "rsi": 12.7
     },
     {
       "ticker": "GOOGL",
-      "date": "2026-10-29",
-      "price": 283.82,
-      "rsi": 15.6
-    },
-    {
-      "ticker": "BWA",
-      "date": "2026-10-29",
-      "price": 53.3,
-      "rsi": 17.3
+      "date": "2026-11-02",
+      "price": 278.99,
+      "rsi": 13.1
     },
     {
       "ticker": "FFIV",
-      "date": "2026-10-29",
-      "price": 363.46,
-      "rsi": 17.3
+      "date": "2026-11-02",
+      "price": 324.55,
+      "rsi": 13.5
     },
     {
-      "ticker": "CAT",
-      "date": "2026-10-29",
-      "price": 647.39,
-      "rsi": 18.1
+      "ticker": "BWA",
+      "date": "2026-11-02",
+      "price": 51.75,
+      "rsi": 13.9
     },
     {
-      "ticker": "SE",
-      "date": "2026-10-29",
-      "price": 76.55,
-      "rsi": 18.3
+      "ticker": "BG",
+      "date": "2026-11-02",
+      "price": 94.22,
+      "rsi": 15.4
+    },
+    {
+      "ticker": "ADM",
+      "date": "2026-11-02",
+      "price": 75.77,
+      "rsi": 17.1
     },
     {
       "ticker": "FTNT",
-      "date": "2026-10-29",
-      "price": 139.1,
-      "rsi": 19.3
+      "date": "2026-11-02",
+      "price": 126.21,
+      "rsi": 17.6
+    },
+    {
+      "ticker": "CAT",
+      "date": "2026-11-02",
+      "price": 613.62,
+      "rsi": 17.7
+    },
+    {
+      "ticker": "SE",
+      "date": "2026-11-02",
+      "price": 75.48,
+      "rsi": 18.4
     },
     {
       "ticker": "TER",
-      "date": "2026-10-29",
-      "price": 296.23,
-      "rsi": 20.0
+      "date": "2026-11-02",
+      "price": 261.01,
+      "rsi": 18.6
+    },
+    {
+      "ticker": "INTC",
+      "date": "2026-11-02",
+      "price": 59.97,
+      "rsi": 19.3
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "HAS",
-      "date": "2026-10-29",
-      "price": 119.57,
-      "rsi": 97.3
-    },
-    {
-      "ticker": "WST",
-      "date": "2026-10-29",
-      "price": 416.67,
-      "rsi": 96.4
-    },
-    {
-      "ticker": "ALLE",
-      "date": "2026-10-29",
-      "price": 187.06,
-      "rsi": 93.0
-    },
-    {
-      "ticker": "PARA",
-      "date": "2026-10-29",
-      "price": 4.28,
-      "rsi": 92.7
+      "ticker": "LDOS",
+      "date": "2026-11-02",
+      "price": 144.16,
+      "rsi": 99.0
     },
     {
       "ticker": "ROP",
-      "date": "2026-10-29",
-      "price": 449.65,
-      "rsi": 92.3
+      "date": "2026-11-02",
+      "price": 479.54,
+      "rsi": 93.8
     },
     {
-      "ticker": "APD",
-      "date": "2026-10-29",
-      "price": 311.75,
-      "rsi": 90.8
+      "ticker": "ALLE",
+      "date": "2026-11-02",
+      "price": 191.73,
+      "rsi": 93.0
     },
     {
-      "ticker": "SBUX",
-      "date": "2026-10-29",
-      "price": 105.51,
-      "rsi": 90.7
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-10-29",
-      "price": 141.02,
-      "rsi": 90.6
+      "ticker": "HAS",
+      "date": "2026-11-02",
+      "price": 118.36,
+      "rsi": 92.6
     },
     {
       "ticker": "PNR",
-      "date": "2026-10-29",
-      "price": 65.84,
-      "rsi": 89.6
-    },
-    {
-      "ticker": "FTV",
-      "date": "2026-10-29",
-      "price": 65.84,
-      "rsi": 89.5
-    },
-    {
-      "ticker": "SWKS",
-      "date": "2026-10-29",
-      "price": 89.43,
-      "rsi": 89.5
-    },
-    {
-      "ticker": "MSI",
-      "date": "2026-10-29",
-      "price": 492.08,
-      "rsi": 89.4
-    },
-    {
-      "ticker": "SWK",
-      "date": "2026-10-29",
-      "price": 103.61,
-      "rsi": 89.4
+      "date": "2026-11-02",
+      "price": 70.56,
+      "rsi": 92.2
     },
     {
       "ticker": "AMCR",
-      "date": "2026-10-29",
-      "price": 47.13,
-      "rsi": 88.2
+      "date": "2026-11-02",
+      "price": 49.02,
+      "rsi": 91.9
     },
     {
-      "ticker": "LH",
-      "date": "2026-10-29",
-      "price": 368.16,
-      "rsi": 86.9
-    },
-    {
-      "ticker": "LMT",
-      "date": "2026-10-29",
-      "price": 643.59,
-      "rsi": 86.8
-    },
-    {
-      "ticker": "MTD",
-      "date": "2026-10-29",
-      "price": 1718.61,
-      "rsi": 86.3
+      "ticker": "EXR",
+      "date": "2026-11-02",
+      "price": 155.98,
+      "rsi": 90.4
     },
     {
       "ticker": "SPGI",
-      "date": "2026-10-29",
-      "price": 460.66,
-      "rsi": 86.3
-    },
-    {
-      "ticker": "CRL",
-      "date": "2026-10-29",
-      "price": 376.1,
-      "rsi": 86.1
+      "date": "2026-11-02",
+      "price": 475.17,
+      "rsi": 90.4
     },
     {
       "ticker": "UPS",
-      "date": "2026-10-29",
-      "price": 107.33,
-      "rsi": 85.6
+      "date": "2026-11-02",
+      "price": 109.71,
+      "rsi": 89.3
+    },
+    {
+      "ticker": "SWK",
+      "date": "2026-11-02",
+      "price": 106.71,
+      "rsi": 89.2
+    },
+    {
+      "ticker": "APD",
+      "date": "2026-11-02",
+      "price": 316.03,
+      "rsi": 88.9
+    },
+    {
+      "ticker": "REGN",
+      "date": "2026-11-02",
+      "price": 961.26,
+      "rsi": 88.0
+    },
+    {
+      "ticker": "LMT",
+      "date": "2026-11-02",
+      "price": 643.15,
+      "rsi": 87.7
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-11-02",
+      "price": 115.7,
+      "rsi": 87.7
+    },
+    {
+      "ticker": "AON",
+      "date": "2026-11-02",
+      "price": 333.38,
+      "rsi": 87.5
+    },
+    {
+      "ticker": "GD",
+      "date": "2026-11-02",
+      "price": 373.46,
+      "rsi": 87.4
+    },
+    {
+      "ticker": "LHX",
+      "date": "2026-11-02",
+      "price": 278.96,
+      "rsi": 87.0
+    },
+    {
+      "ticker": "CPRT",
+      "date": "2026-11-02",
+      "price": 31.93,
+      "rsi": 86.6
+    },
+    {
+      "ticker": "MLM",
+      "date": "2026-11-02",
+      "price": 552.22,
+      "rsi": 86.2
+    },
+    {
+      "ticker": "FTV",
+      "date": "2026-11-02",
+      "price": 66.84,
+      "rsi": 85.7
     }
   ],
   "oversoldStats": {
-    "count": 8840,
-    "avg_return": 4.34,
-    "median_return": 3.24,
-    "win_rate": 58.3,
+    "count": 8792,
+    "avg_return": 4.26,
+    "median_return": 3.15,
+    "win_rate": 58.1,
     "best_return": 331.09,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18737,
-    "avg_return": 4.62,
-    "median_return": 3.42,
-    "win_rate": 60.9,
+    "count": 18747,
+    "avg_return": 4.61,
+    "median_return": 3.41,
+    "win_rate": 60.8,
     "best_return": 165.61,
     "worst_return": -93.46
   },
@@ -853,5 +871,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-10-31T01:12:09.584785Z"
+  "lastUpdated": "2026-11-03T03:08:17.092924Z"
 }
