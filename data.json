@@ -94,7 +94,7 @@
       "ticker": "PARA",
       "date": "2023-11-29",
       "price": 3693.27,
-      "rsi": 81.3,
+      "rsi": 81.2,
       "type": "overbought",
       "forward_return": -93.35
     },
@@ -166,29 +166,47 @@
   "currentOversold": [
     {
       "ticker": "ADM",
-      "date": "2026-11-09",
-      "price": 69.84,
-      "rsi": 12.3
+      "date": "2026-11-10",
+      "price": 69.3,
+      "rsi": 12.8
     },
     {
       "ticker": "FFIV",
-      "date": "2026-11-09",
-      "price": 317.75,
-      "rsi": 14.0
+      "date": "2026-11-10",
+      "price": 317.31,
+      "rsi": 13.1
+    },
+    {
+      "ticker": "ZBRA",
+      "date": "2026-11-10",
+      "price": 321.38,
+      "rsi": 13.8
     },
     {
       "ticker": "NOW",
       "date": "2026-11-09",
       "price": 102.76,
       "rsi": 18.9
+    },
+    {
+      "ticker": "NVDA",
+      "date": "2026-11-10",
+      "price": 168.89,
+      "rsi": 19.3
     }
   ],
   "currentOverbought": [
     {
-      "ticker": "MSI",
-      "date": "2026-11-09",
-      "price": 527.97,
-      "rsi": 88.6
+      "ticker": "CLX",
+      "date": "2026-11-10",
+      "price": 106.6,
+      "rsi": 90.0
+    },
+    {
+      "ticker": "SPG",
+      "date": "2026-11-10",
+      "price": 234.48,
+      "rsi": 89.6
     },
     {
       "ticker": "VLTO",
@@ -197,76 +215,94 @@
       "rsi": 88.1
     },
     {
-      "ticker": "EXR",
-      "date": "2026-11-09",
-      "price": 160.16,
-      "rsi": 87.8
-    },
-    {
       "ticker": "TFX",
-      "date": "2026-11-09",
-      "price": 154.73,
-      "rsi": 85.8
+      "date": "2026-11-10",
+      "price": 155.3,
+      "rsi": 88.0
     },
     {
-      "ticker": "SPG",
-      "date": "2026-11-09",
-      "price": 233.01,
-      "rsi": 85.6
+      "ticker": "EXR",
+      "date": "2026-11-10",
+      "price": 158.95,
+      "rsi": 87.7
     },
     {
-      "ticker": "EW",
-      "date": "2026-11-09",
-      "price": 104.71,
-      "rsi": 85.2
-    },
-    {
-      "ticker": "SWK",
-      "date": "2026-11-09",
-      "price": 118.1,
-      "rsi": 83.7
+      "ticker": "MSI",
+      "date": "2026-11-10",
+      "price": 527.38,
+      "rsi": 87.4
     },
     {
       "ticker": "AIZ",
-      "date": "2026-11-09",
-      "price": 317.21,
-      "rsi": 82.5
+      "date": "2026-11-10",
+      "price": 322.16,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "CMG",
+      "date": "2026-11-10",
+      "price": 35.92,
+      "rsi": 82.9
+    },
+    {
+      "ticker": "EW",
+      "date": "2026-11-10",
+      "price": 104.01,
+      "rsi": 82.6
+    },
+    {
+      "ticker": "MKTX",
+      "date": "2026-11-10",
+      "price": 165.08,
+      "rsi": 82.0
+    },
+    {
+      "ticker": "KIM",
+      "date": "2026-11-10",
+      "price": 25.68,
+      "rsi": 81.9
     },
     {
       "ticker": "PNR",
-      "date": "2026-11-09",
-      "price": 70.2,
-      "rsi": 82.2
+      "date": "2026-11-10",
+      "price": 69.63,
+      "rsi": 80.6
     },
     {
-      "ticker": "CLX",
-      "date": "2026-11-09",
-      "price": 105.53,
-      "rsi": 81.8
+      "ticker": "MOS",
+      "date": "2026-11-10",
+      "price": 22.99,
+      "rsi": 80.4
     },
     {
-      "ticker": "MHK",
-      "date": "2026-11-09",
-      "price": 156.6,
-      "rsi": 80.2
+      "ticker": "GEN",
+      "date": "2026-11-10",
+      "price": 30.01,
+      "rsi": 80.3
     },
     {
       "ticker": "ALLE",
       "date": "2026-11-09",
       "price": 190.52,
       "rsi": 80.1
+    },
+    {
+      "ticker": "MCD",
+      "date": "2026-11-10",
+      "price": 282.17,
+      "rsi": 80.1
     }
   ],
   "oversoldStats": {
-    "count": 8756,
+    "count": 8757,
     "avg_return": 4.16,
-    "median_return": 3.07,
+    "median_return": 3.06,
     "win_rate": 57.9,
     "best_return": 331.09,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18739,
+    "count": 18770,
     "avg_return": 4.56,
     "median_return": 3.38,
     "win_rate": 60.7,
@@ -768,5 +804,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-10T03:53:32.389767Z"
+  "lastUpdated": "2026-11-11T01:34:46.811804Z"
 }
