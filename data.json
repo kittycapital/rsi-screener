@@ -94,7 +94,7 @@
       "ticker": "PARA",
       "date": "2023-11-29",
       "price": 3693.27,
-      "rsi": 81.2,
+      "rsi": 81.3,
       "type": "overbought",
       "forward_return": -93.35
     },
@@ -165,147 +165,111 @@
   ],
   "currentOversold": [
     {
-      "ticker": "ADM",
-      "date": "2026-11-10",
-      "price": 69.3,
-      "rsi": 12.8
+      "ticker": "NOW",
+      "date": "2026-11-11",
+      "price": 102.76,
+      "rsi": 13.4
     },
     {
       "ticker": "FFIV",
-      "date": "2026-11-10",
-      "price": 317.31,
-      "rsi": 13.1
+      "date": "2026-11-11",
+      "price": 320.01,
+      "rsi": 14.9
     },
     {
-      "ticker": "ZBRA",
-      "date": "2026-11-10",
-      "price": 321.38,
-      "rsi": 13.8
+      "ticker": "ADBE",
+      "date": "2026-11-11",
+      "price": 237.6,
+      "rsi": 16.3
     },
     {
-      "ticker": "NOW",
-      "date": "2026-11-09",
-      "price": 102.76,
-      "rsi": 18.9
-    },
-    {
-      "ticker": "NVDA",
-      "date": "2026-11-10",
-      "price": 168.89,
-      "rsi": 19.3
+      "ticker": "ADM",
+      "date": "2026-11-11",
+      "price": 70.92,
+      "rsi": 19.6
     }
   ],
   "currentOverbought": [
     {
       "ticker": "CLX",
-      "date": "2026-11-10",
-      "price": 106.6,
-      "rsi": 90.0
+      "date": "2026-11-11",
+      "price": 106.86,
+      "rsi": 88.5
     },
     {
       "ticker": "SPG",
-      "date": "2026-11-10",
-      "price": 234.48,
-      "rsi": 89.6
-    },
-    {
-      "ticker": "VLTO",
-      "date": "2026-11-09",
-      "price": 118.06,
-      "rsi": 88.1
-    },
-    {
-      "ticker": "TFX",
-      "date": "2026-11-10",
-      "price": 155.3,
-      "rsi": 88.0
-    },
-    {
-      "ticker": "EXR",
-      "date": "2026-11-10",
-      "price": 158.95,
-      "rsi": 87.7
-    },
-    {
-      "ticker": "MSI",
-      "date": "2026-11-10",
-      "price": 527.38,
+      "date": "2026-11-11",
+      "price": 234.75,
       "rsi": 87.4
     },
     {
-      "ticker": "AIZ",
-      "date": "2026-11-10",
-      "price": 322.16,
-      "rsi": 83.9
+      "ticker": "MSI",
+      "date": "2026-11-11",
+      "price": 535.22,
+      "rsi": 87.0
+    },
+    {
+      "ticker": "VLTO",
+      "date": "2026-11-11",
+      "price": 118.77,
+      "rsi": 86.5
+    },
+    {
+      "ticker": "EXR",
+      "date": "2026-11-11",
+      "price": 159.21,
+      "rsi": 86.0
+    },
+    {
+      "ticker": "TFX",
+      "date": "2026-11-11",
+      "price": 156.33,
+      "rsi": 85.8
     },
     {
       "ticker": "CMG",
-      "date": "2026-11-10",
-      "price": 35.92,
+      "date": "2026-11-11",
+      "price": 36.64,
+      "rsi": 83.9
+    },
+    {
+      "ticker": "AIZ",
+      "date": "2026-11-11",
+      "price": 323.38,
       "rsi": 82.9
     },
     {
       "ticker": "EW",
-      "date": "2026-11-10",
-      "price": 104.01,
-      "rsi": 82.6
-    },
-    {
-      "ticker": "MKTX",
-      "date": "2026-11-10",
-      "price": 165.08,
-      "rsi": 82.0
-    },
-    {
-      "ticker": "KIM",
-      "date": "2026-11-10",
-      "price": 25.68,
-      "rsi": 81.9
-    },
-    {
-      "ticker": "PNR",
-      "date": "2026-11-10",
-      "price": 69.63,
-      "rsi": 80.6
+      "date": "2026-11-11",
+      "price": 105.81,
+      "rsi": 82.7
     },
     {
       "ticker": "MOS",
-      "date": "2026-11-10",
-      "price": 22.99,
-      "rsi": 80.4
+      "date": "2026-11-11",
+      "price": 22.8,
+      "rsi": 82.5
     },
     {
-      "ticker": "GEN",
-      "date": "2026-11-10",
-      "price": 30.01,
-      "rsi": 80.3
-    },
-    {
-      "ticker": "ALLE",
-      "date": "2026-11-09",
-      "price": 190.52,
-      "rsi": 80.1
-    },
-    {
-      "ticker": "MCD",
-      "date": "2026-11-10",
-      "price": 282.17,
-      "rsi": 80.1
+      "ticker": "MKTX",
+      "date": "2026-11-11",
+      "price": 165.31,
+      "rsi": 80.7
     }
   ],
   "oversoldStats": {
-    "count": 8757,
-    "avg_return": 4.16,
-    "median_return": 3.06,
+    "count": 8751,
+    "avg_return": 4.15,
+    "median_return": 3.05,
     "win_rate": 57.9,
     "best_return": 331.09,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18770,
+    "count": 18768,
     "avg_return": 4.56,
-    "median_return": 3.38,
-    "win_rate": 60.7,
+    "median_return": 3.4,
+    "win_rate": 60.8,
     "best_return": 165.61,
     "worst_return": -93.46
   },
@@ -313,7 +277,6 @@
     "A",
     "AAPL",
     "ABBV",
-    "ABNB",
     "ABT",
     "ACGL",
     "ACN",
@@ -804,5 +767,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-11T01:34:46.811804Z"
+  "lastUpdated": "2026-11-12T02:35:45.458910Z"
 }
