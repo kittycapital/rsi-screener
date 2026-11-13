@@ -94,7 +94,7 @@
       "ticker": "PARA",
       "date": "2023-11-29",
       "price": 3693.27,
-      "rsi": 81.3,
+      "rsi": 81.2,
       "type": "overbought",
       "forward_return": -93.35
     },
@@ -258,18 +258,18 @@
     }
   ],
   "oversoldStats": {
-    "count": 8751,
-    "avg_return": 4.15,
-    "median_return": 3.05,
-    "win_rate": 57.9,
+    "count": 8759,
+    "avg_return": 4.16,
+    "median_return": 3.06,
+    "win_rate": 58.0,
     "best_return": 331.09,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18768,
-    "avg_return": 4.56,
-    "median_return": 3.4,
-    "win_rate": 60.8,
+    "count": 18761,
+    "avg_return": 4.53,
+    "median_return": 3.36,
+    "win_rate": 60.7,
     "best_return": 165.61,
     "worst_return": -93.46
   },
@@ -277,6 +277,7 @@
     "A",
     "AAPL",
     "ABBV",
+    "ABNB",
     "ABT",
     "ACGL",
     "ACN",
@@ -767,5 +768,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-12T02:35:45.458910Z"
+  "lastUpdated": "2026-11-13T02:15:40.444010Z"
 }
