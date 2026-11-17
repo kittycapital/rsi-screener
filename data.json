@@ -166,110 +166,176 @@
   "currentOversold": [
     {
       "ticker": "FFIV",
-      "date": "2026-11-13",
-      "price": 309.14,
-      "rsi": 8.8
+      "date": "2026-11-16",
+      "price": 304.68,
+      "rsi": 8.7
     },
     {
       "ticker": "NOW",
-      "date": "2026-11-12",
-      "price": 100.66,
-      "rsi": 10.7
+      "date": "2026-11-16",
+      "price": 99.37,
+      "rsi": 12.8
     },
     {
       "ticker": "FTNT",
-      "date": "2026-11-13",
-      "price": 127.22,
-      "rsi": 17.8
+      "date": "2026-11-16",
+      "price": 123.27,
+      "rsi": 15.5
     },
     {
       "ticker": "NVDA",
-      "date": "2026-11-13",
-      "price": 162.85,
-      "rsi": 19.1
+      "date": "2026-11-16",
+      "price": 156.14,
+      "rsi": 16.0
+    },
+    {
+      "ticker": "CMI",
+      "date": "2026-11-16",
+      "price": 432.72,
+      "rsi": 18.3
+    },
+    {
+      "ticker": "PANW",
+      "date": "2026-11-16",
+      "price": 316.09,
+      "rsi": 18.5
     }
   ],
   "currentOverbought": [
     {
       "ticker": "CLX",
-      "date": "2026-11-13",
-      "price": 109.46,
-      "rsi": 97.3
-    },
-    {
-      "ticker": "EW",
-      "date": "2026-11-13",
-      "price": 107.15,
-      "rsi": 86.3
-    },
-    {
-      "ticker": "CPAY",
-      "date": "2026-11-13",
-      "price": 462.22,
-      "rsi": 85.7
-    },
-    {
-      "ticker": "AIZ",
-      "date": "2026-11-13",
-      "price": 322.11,
-      "rsi": 85.4
-    },
-    {
-      "ticker": "VLTO",
-      "date": "2026-11-12",
-      "price": 117.49,
-      "rsi": 83.4
-    },
-    {
-      "ticker": "SPG",
-      "date": "2026-11-13",
-      "price": 232.97,
-      "rsi": 83.1
-    },
-    {
-      "ticker": "EXR",
-      "date": "2026-11-13",
-      "price": 158.5,
-      "rsi": 82.5
+      "date": "2026-11-16",
+      "price": 110.17,
+      "rsi": 97.4
     },
     {
       "ticker": "CAH",
-      "date": "2026-11-13",
-      "price": 281.1,
-      "rsi": 81.4
+      "date": "2026-11-16",
+      "price": 283.85,
+      "rsi": 91.8
     },
     {
-      "ticker": "BDX",
-      "date": "2026-11-13",
-      "price": 218.03,
-      "rsi": 81.1
+      "ticker": "VLTO",
+      "date": "2026-11-16",
+      "price": 120.31,
+      "rsi": 90.0
     },
     {
-      "ticker": "TPR",
-      "date": "2026-11-13",
-      "price": 132.41,
-      "rsi": 80.8
+      "ticker": "KO",
+      "date": "2026-11-16",
+      "price": 99.48,
+      "rsi": 88.1
+    },
+    {
+      "ticker": "CPAY",
+      "date": "2026-11-16",
+      "price": 461.73,
+      "rsi": 87.9
+    },
+    {
+      "ticker": "AIZ",
+      "date": "2026-11-16",
+      "price": 323.8,
+      "rsi": 87.4
+    },
+    {
+      "ticker": "MCK",
+      "date": "2026-11-16",
+      "price": 1105.04,
+      "rsi": 86.8
+    },
+    {
+      "ticker": "EW",
+      "date": "2026-11-16",
+      "price": 107.11,
+      "rsi": 86.0
+    },
+    {
+      "ticker": "BRK-B",
+      "date": "2026-11-16",
+      "price": 592.85,
+      "rsi": 84.8
+    },
+    {
+      "ticker": "SPG",
+      "date": "2026-11-16",
+      "price": 232.78,
+      "rsi": 83.7
+    },
+    {
+      "ticker": "CME",
+      "date": "2026-11-16",
+      "price": 319.37,
+      "rsi": 83.6
     },
     {
       "ticker": "MSI",
-      "date": "2026-11-13",
-      "price": 531.2,
-      "rsi": 80.2
+      "date": "2026-11-16",
+      "price": 534.17,
+      "rsi": 83.1
+    },
+    {
+      "ticker": "TSN",
+      "date": "2026-11-16",
+      "price": 63.95,
+      "rsi": 81.5
+    },
+    {
+      "ticker": "ICE",
+      "date": "2026-11-16",
+      "price": 178.29,
+      "rsi": 81.1
+    },
+    {
+      "ticker": "CBOE",
+      "date": "2026-11-16",
+      "price": 377.5,
+      "rsi": 81.0
+    },
+    {
+      "ticker": "CMG",
+      "date": "2026-11-16",
+      "price": 35.94,
+      "rsi": 81.0
+    },
+    {
+      "ticker": "BR",
+      "date": "2026-11-16",
+      "price": 195.24,
+      "rsi": 80.9
+    },
+    {
+      "ticker": "TPR",
+      "date": "2026-11-16",
+      "price": 132.95,
+      "rsi": 80.8
+    },
+    {
+      "ticker": "BDX",
+      "date": "2026-11-16",
+      "price": 216.47,
+      "rsi": 80.7
+    },
+    {
+      "ticker": "EXR",
+      "date": "2026-11-16",
+      "price": 158.23,
+      "rsi": 80.6
     }
   ],
   "oversoldStats": {
-    "count": 8782,
-    "avg_return": 4.16,
+    "count": 8790,
+    "avg_return": 4.17,
     "median_return": 3.06,
     "win_rate": 58.0,
     "best_return": 331.09,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18680,
-    "avg_return": 4.46,
-    "median_return": 3.29,
-    "win_rate": 60.5,
+    "count": 18280,
+    "avg_return": 4.24,
+    "median_return": 3.05,
+    "win_rate": 59.8,
     "best_return": 165.61,
     "worst_return": -93.46
   },
@@ -768,5 +834,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-14T01:54:35.590453Z"
+  "lastUpdated": "2026-11-17T04:14:29.220702Z"
 }
