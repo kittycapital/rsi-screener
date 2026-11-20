@@ -108,14 +108,6 @@
     },
     {
       "ticker": "PARA",
-      "date": "2023-11-20",
-      "price": 3686.36,
-      "rsi": 84.6,
-      "type": "overbought",
-      "forward_return": -90.78
-    },
-    {
-      "ticker": "PARA",
       "date": "2026-01-07",
       "price": 36.0,
       "rsi": 87.6,
@@ -161,20 +153,34 @@
       "rsi": 88.1,
       "type": "overbought",
       "forward_return": -56.03
+    },
+    {
+      "ticker": "PARA",
+      "date": "2025-06-23",
+      "price": 60.51,
+      "rsi": 89.9,
+      "type": "overbought",
+      "forward_return": -53.42
     }
   ],
   "currentOversold": [
     {
-      "ticker": "AXON",
-      "date": "2026-11-18",
-      "price": 300.69,
-      "rsi": 15.5
+      "ticker": "SRE",
+      "date": "2026-11-19",
+      "price": 76.29,
+      "rsi": 14.2
+    },
+    {
+      "ticker": "CRM",
+      "date": "2026-11-19",
+      "price": 183.31,
+      "rsi": 16.2
     },
     {
       "ticker": "NVDA",
-      "date": "2026-11-18",
-      "price": 150.96,
-      "rsi": 15.8
+      "date": "2026-11-19",
+      "price": 145.98,
+      "rsi": 16.5
     },
     {
       "ticker": "PARA",
@@ -183,67 +189,37 @@
       "rsi": 16.7
     },
     {
-      "ticker": "SRE",
-      "date": "2026-11-18",
-      "price": 77.52,
-      "rsi": 16.7
+      "ticker": "XOM",
+      "date": "2026-11-19",
+      "price": 158.93,
+      "rsi": 17.0
     },
     {
-      "ticker": "CRM",
-      "date": "2026-11-18",
-      "price": 190.4,
-      "rsi": 17.6
+      "ticker": "IT",
+      "date": "2026-11-19",
+      "price": 172.3,
+      "rsi": 17.9
     },
     {
-      "ticker": "CMI",
-      "date": "2026-11-18",
-      "price": 427.16,
-      "rsi": 19.4
+      "ticker": "OXY",
+      "date": "2026-11-19",
+      "price": 53.81,
+      "rsi": 18.8
     },
     {
-      "ticker": "INTC",
-      "date": "2026-11-18",
-      "price": 54.67,
-      "rsi": 19.6
+      "ticker": "AXON",
+      "date": "2026-11-19",
+      "price": 306.98,
+      "rsi": 19.1
+    },
+    {
+      "ticker": "TRMB",
+      "date": "2026-11-19",
+      "price": 51.99,
+      "rsi": 19.3
     }
   ],
   "currentOverbought": [
-    {
-      "ticker": "MGM",
-      "date": "2026-11-18",
-      "price": 33.74,
-      "rsi": 85.8
-    },
-    {
-      "ticker": "CLX",
-      "date": "2026-11-18",
-      "price": 108.39,
-      "rsi": 85.2
-    },
-    {
-      "ticker": "TFX",
-      "date": "2026-11-18",
-      "price": 165.85,
-      "rsi": 82.3
-    },
-    {
-      "ticker": "CAH",
-      "date": "2026-11-18",
-      "price": 278.32,
-      "rsi": 82.2
-    },
-    {
-      "ticker": "TSCO",
-      "date": "2026-11-18",
-      "price": 39.01,
-      "rsi": 81.9
-    },
-    {
-      "ticker": "TSN",
-      "date": "2026-11-18",
-      "price": 64.25,
-      "rsi": 81.6
-    },
     {
       "ticker": "VLTO",
       "date": "2026-11-18",
@@ -251,31 +227,31 @@
       "rsi": 81.1
     },
     {
-      "ticker": "DPZ",
-      "date": "2026-11-18",
-      "price": 353.54,
-      "rsi": 80.7
+      "ticker": "AES",
+      "date": "2026-11-19",
+      "price": 15.02,
+      "rsi": 80.6
     },
     {
-      "ticker": "CPAY",
-      "date": "2026-11-18",
-      "price": 455.22,
-      "rsi": 80.3
+      "ticker": "TFX",
+      "date": "2026-11-19",
+      "price": 163.4,
+      "rsi": 80.6
     }
   ],
   "oversoldStats": {
-    "count": 8797,
-    "avg_return": 4.15,
+    "count": 8800,
+    "avg_return": 4.16,
     "median_return": 3.06,
     "win_rate": 58.0,
     "best_return": 331.09,
     "worst_return": -92.74
   },
   "overboughtStats": {
-    "count": 18306,
-    "avg_return": 4.24,
-    "median_return": 3.05,
-    "win_rate": 59.8,
+    "count": 18186,
+    "avg_return": 4.17,
+    "median_return": 2.96,
+    "win_rate": 59.6,
     "best_return": 165.61,
     "worst_return": -93.46
   },
@@ -774,5 +750,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-19T02:53:00.748675Z"
+  "lastUpdated": "2026-11-20T02:44:49.064268Z"
 }
