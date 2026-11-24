@@ -49,14 +49,6 @@
       "forward_return": 234.54
     },
     {
-      "ticker": "PARA",
-      "date": "2025-06-13",
-      "price": 7.26,
-      "rsi": 9.2,
-      "type": "oversold",
-      "forward_return": 232.3
-    },
-    {
       "ticker": "SMCI",
       "date": "2024-11-15",
       "price": 18.58,
@@ -79,204 +71,140 @@
       "rsi": 18.3,
       "type": "oversold",
       "forward_return": 160.31
+    },
+    {
+      "ticker": "STX",
+      "date": "2025-04-08",
+      "price": 65.59,
+      "rsi": 11.8,
+      "type": "oversold",
+      "forward_return": 118.32
     }
   ],
   "topOverbought": [
     {
       "ticker": "PARA",
-      "date": "2023-11-30",
-      "price": 3699.83,
-      "rsi": 81.1,
+      "date": "2025-07-07",
+      "price": 99916.88,
+      "rsi": 99.6,
       "type": "overbought",
-      "forward_return": -93.46
+      "forward_return": -102.62
     },
     {
       "ticker": "PARA",
-      "date": "2023-11-29",
-      "price": 3693.27,
-      "rsi": 81.3,
+      "date": "2025-06-26",
+      "price": 101122.77,
+      "rsi": 97.1,
       "type": "overbought",
-      "forward_return": -93.35
+      "forward_return": -102.56
     },
     {
       "ticker": "PARA",
-      "date": "2023-11-28",
-      "price": 3700.18,
-      "rsi": 92.9,
+      "date": "2025-06-27",
+      "price": 98194.16,
+      "rsi": 96.8,
       "type": "overbought",
-      "forward_return": -93.27
+      "forward_return": -102.42
     },
     {
       "ticker": "PARA",
-      "date": "2026-01-07",
-      "price": 36.0,
-      "rsi": 87.6,
+      "date": "2025-11-25",
+      "price": -1011.49,
+      "rsi": 80.2,
       "type": "overbought",
-      "forward_return": -67.11
+      "forward_return": -102.41
     },
     {
       "ticker": "PARA",
-      "date": "2026-01-06",
-      "price": 32.0,
-      "rsi": 81.9,
+      "date": "2025-07-03",
+      "price": 105774.07,
+      "rsi": 99.7,
       "type": "overbought",
-      "forward_return": -62.5
+      "forward_return": -102.34
     },
     {
       "ticker": "PARA",
-      "date": "2026-01-05",
-      "price": 31.4,
-      "rsi": 82.2,
+      "date": "2025-06-25",
+      "price": 101984.12,
+      "rsi": 97.1,
       "type": "overbought",
-      "forward_return": -62.42
+      "forward_return": -102.33
     },
     {
       "ticker": "PARA",
-      "date": "2025-06-17",
-      "price": 57.59,
-      "rsi": 89.6,
+      "date": "2025-06-30",
+      "price": 101467.31,
+      "rsi": 96.8,
       "type": "overbought",
-      "forward_return": -58.47
+      "forward_return": -102.26
     },
     {
       "ticker": "PARA",
-      "date": "2025-06-20",
-      "price": 61.22,
-      "rsi": 90.7,
+      "date": "2025-07-01",
+      "price": 111975.8,
+      "rsi": 99.8,
       "type": "overbought",
-      "forward_return": -57.08
+      "forward_return": -102.25
     },
     {
       "ticker": "PARA",
-      "date": "2025-06-16",
-      "price": 54.13,
-      "rsi": 88.1,
+      "date": "2025-07-02",
+      "price": 111114.46,
+      "rsi": 99.8,
       "type": "overbought",
-      "forward_return": -56.03
+      "forward_return": -102.24
     },
     {
       "ticker": "PARA",
-      "date": "2025-06-23",
-      "price": 60.51,
-      "rsi": 89.9,
+      "date": "2025-06-24",
+      "price": 106463.15,
+      "rsi": 94.7,
       "type": "overbought",
-      "forward_return": -53.42
+      "forward_return": -102.03
     }
   ],
   "currentOversold": [
     {
       "ticker": "COF",
-      "date": "2026-11-20",
-      "price": 178.66,
-      "rsi": 7.5
+      "date": "2026-11-23",
+      "price": 180.01,
+      "rsi": 11.4
     },
     {
       "ticker": "SYF",
-      "date": "2026-11-20",
-      "price": 67.76,
-      "rsi": 8.6
-    },
-    {
-      "ticker": "IT",
-      "date": "2026-11-20",
-      "price": 174.49,
-      "rsi": 13.7
-    },
-    {
-      "ticker": "NVDA",
-      "date": "2026-11-20",
-      "price": 125.53,
-      "rsi": 13.7
-    },
-    {
-      "ticker": "SRE",
-      "date": "2026-11-20",
-      "price": 76.16,
-      "rsi": 14.1
-    },
-    {
-      "ticker": "TRMB",
-      "date": "2026-11-20",
-      "price": 50.62,
-      "rsi": 14.7
-    },
-    {
-      "ticker": "FIS",
-      "date": "2026-11-20",
-      "price": 25.83,
-      "rsi": 15.0
+      "date": "2026-11-23",
+      "price": 67.96,
+      "rsi": 12.2
     },
     {
       "ticker": "CTVA",
-      "date": "2026-11-20",
-      "price": 7.89,
-      "rsi": 15.3
+      "date": "2026-11-23",
+      "price": 8.1,
+      "rsi": 18.4
     },
     {
-      "ticker": "CRM",
-      "date": "2026-11-20",
-      "price": 180.62,
-      "rsi": 16.3
-    },
-    {
-      "ticker": "LDOS",
-      "date": "2026-11-20",
-      "price": 122.21,
-      "rsi": 17.0
-    },
-    {
-      "ticker": "INTU",
-      "date": "2026-11-20",
-      "price": 270.44,
-      "rsi": 17.4
-    },
-    {
-      "ticker": "AXON",
-      "date": "2026-11-20",
-      "price": 291.14,
-      "rsi": 17.8
-    },
-    {
-      "ticker": "FMC",
-      "date": "2026-11-20",
-      "price": 3.89,
-      "rsi": 18.1
-    },
-    {
-      "ticker": "IFF",
-      "date": "2026-11-20",
-      "price": 79.62,
-      "rsi": 18.1
-    },
-    {
-      "ticker": "CMI",
-      "date": "2026-11-20",
-      "price": 403.61,
-      "rsi": 18.7
-    },
-    {
-      "ticker": "AMCR",
-      "date": "2026-11-20",
-      "price": 42.35,
-      "rsi": 19.4
+      "ticker": "FIS",
+      "date": "2026-11-23",
+      "price": 26.73,
+      "rsi": 19.7
     }
   ],
   "currentOverbought": [],
   "oversoldStats": {
-    "count": 8812,
-    "avg_return": 4.14,
-    "median_return": 3.05,
-    "win_rate": 57.9,
+    "count": 8822,
+    "avg_return": 3.84,
+    "median_return": 2.96,
+    "win_rate": 57.7,
     "best_return": 331.09,
-    "worst_return": -92.74
+    "worst_return": -104.29
   },
   "overboughtStats": {
-    "count": 18104,
-    "avg_return": 4.1,
-    "median_return": 2.89,
-    "win_rate": 59.4,
+    "count": 17980,
+    "avg_return": 3.88,
+    "median_return": 2.77,
+    "win_rate": 59.0,
     "best_return": 165.61,
-    "worst_return": -93.46
+    "worst_return": -102.62
   },
   "availableTickers": [
     "A",
@@ -773,5 +701,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-21T02:55:00.883397Z"
+  "lastUpdated": "2026-11-24T05:41:02.631689Z"
 }
