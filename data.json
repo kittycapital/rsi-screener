@@ -85,7 +85,7 @@
     {
       "ticker": "PARA",
       "date": "2025-07-07",
-      "price": 99916.88,
+      "price": 99916.87,
       "rsi": 99.6,
       "type": "overbought",
       "forward_return": -102.62
@@ -133,7 +133,7 @@
     {
       "ticker": "PARA",
       "date": "2025-06-30",
-      "price": 101467.31,
+      "price": 101467.3,
       "rsi": 96.8,
       "type": "overbought",
       "forward_return": -102.26
@@ -149,7 +149,7 @@
     {
       "ticker": "PARA",
       "date": "2025-07-02",
-      "price": 111114.46,
+      "price": 111114.45,
       "rsi": 99.8,
       "type": "overbought",
       "forward_return": -102.24
@@ -165,43 +165,79 @@
   ],
   "currentOversold": [
     {
-      "ticker": "COF",
-      "date": "2026-11-23",
-      "price": 180.01,
-      "rsi": 11.4
-    },
-    {
       "ticker": "SYF",
-      "date": "2026-11-23",
-      "price": 67.96,
-      "rsi": 12.2
+      "date": "2026-11-24",
+      "price": 67.91,
+      "rsi": 12.3
     },
     {
       "ticker": "CTVA",
-      "date": "2026-11-23",
-      "price": 8.1,
-      "rsi": 18.4
+      "date": "2026-11-24",
+      "price": 8.16,
+      "rsi": 13.8
     },
     {
-      "ticker": "FIS",
-      "date": "2026-11-23",
-      "price": 26.73,
-      "rsi": 19.7
+      "ticker": "EXPE",
+      "date": "2026-11-24",
+      "price": 239.26,
+      "rsi": 14.1
+    },
+    {
+      "ticker": "COF",
+      "date": "2026-11-24",
+      "price": 181.36,
+      "rsi": 15.5
+    },
+    {
+      "ticker": "ENPH",
+      "date": "2026-11-24",
+      "price": 20.37,
+      "rsi": 15.5
+    },
+    {
+      "ticker": "MNST",
+      "date": "2026-11-24",
+      "price": 42.17,
+      "rsi": 16.3
+    },
+    {
+      "ticker": "INTU",
+      "date": "2026-11-24",
+      "price": 279.42,
+      "rsi": 16.4
+    },
+    {
+      "ticker": "BKNG",
+      "date": "2026-11-24",
+      "price": 146.64,
+      "rsi": 17.4
+    },
+    {
+      "ticker": "PM",
+      "date": "2026-11-24",
+      "price": 183.95,
+      "rsi": 17.4
+    },
+    {
+      "ticker": "FMC",
+      "date": "2026-11-24",
+      "price": 4.17,
+      "rsi": 19.0
     }
   ],
   "currentOverbought": [],
   "oversoldStats": {
-    "count": 8822,
-    "avg_return": 3.84,
-    "median_return": 2.96,
+    "count": 8831,
+    "avg_return": 3.82,
+    "median_return": 2.95,
     "win_rate": 57.7,
     "best_return": 331.09,
-    "worst_return": -104.29
+    "worst_return": -104.4
   },
   "overboughtStats": {
-    "count": 17980,
+    "count": 17991,
     "avg_return": 3.88,
-    "median_return": 2.77,
+    "median_return": 2.76,
     "win_rate": 59.0,
     "best_return": 165.61,
     "worst_return": -102.62
@@ -701,5 +737,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-24T05:41:02.631689Z"
+  "lastUpdated": "2026-11-25T04:40:42.074715Z"
 }
