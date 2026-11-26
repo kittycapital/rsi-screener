@@ -165,79 +165,50 @@
   ],
   "currentOversold": [
     {
-      "ticker": "SYF",
-      "date": "2026-11-24",
-      "price": 67.91,
-      "rsi": 12.3
-    },
-    {
       "ticker": "CTVA",
-      "date": "2026-11-24",
-      "price": 8.16,
-      "rsi": 13.8
-    },
-    {
-      "ticker": "EXPE",
-      "date": "2026-11-24",
-      "price": 239.26,
-      "rsi": 14.1
-    },
-    {
-      "ticker": "COF",
-      "date": "2026-11-24",
-      "price": 181.36,
-      "rsi": 15.5
-    },
-    {
-      "ticker": "ENPH",
-      "date": "2026-11-24",
-      "price": 20.37,
-      "rsi": 15.5
-    },
-    {
-      "ticker": "MNST",
-      "date": "2026-11-24",
-      "price": 42.17,
-      "rsi": 16.3
+      "date": "2026-11-25",
+      "price": 8.23,
+      "rsi": 15.4
     },
     {
       "ticker": "INTU",
-      "date": "2026-11-24",
-      "price": 279.42,
-      "rsi": 16.4
+      "date": "2026-11-25",
+      "price": 271.72,
+      "rsi": 15.6
     },
     {
-      "ticker": "BKNG",
-      "date": "2026-11-24",
-      "price": 146.64,
-      "rsi": 17.4
-    },
-    {
-      "ticker": "PM",
-      "date": "2026-11-24",
-      "price": 183.95,
-      "rsi": 17.4
-    },
-    {
-      "ticker": "FMC",
-      "date": "2026-11-24",
-      "price": 4.17,
-      "rsi": 19.0
+      "ticker": "COF",
+      "date": "2026-11-25",
+      "price": 182.52,
+      "rsi": 19.6
     }
   ],
-  "currentOverbought": [],
+  "currentOverbought": [
+    {
+      "ticker": "PARA",
+      "date": "2026-11-25",
+      "price": 2.73,
+      "rsi": 82.8
+    },
+    {
+      "ticker": "AES",
+      "date": "2026-11-25",
+      "price": 15.02,
+      "rsi": 81.0
+    }
+  ],
   "oversoldStats": {
-    "count": 8831,
-    "avg_return": 3.82,
-    "median_return": 2.95,
+    "count": 8852,
+    "avg_return": 3.73,
+    "median_return": 2.94,
     "win_rate": 57.7,
     "best_return": 331.09,
     "worst_return": -104.4
   },
   "overboughtStats": {
-    "count": 17991,
-    "avg_return": 3.88,
-    "median_return": 2.76,
+    "count": 18002,
+    "avg_return": 3.85,
+    "median_return": 2.74,
     "win_rate": 59.0,
     "best_return": 165.61,
     "worst_return": -102.62
@@ -737,5 +708,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-25T04:40:42.074715Z"
+  "lastUpdated": "2026-11-26T03:50:56.871320Z"
 }
