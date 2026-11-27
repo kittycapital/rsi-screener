@@ -198,7 +198,7 @@
     }
   ],
   "oversoldStats": {
-    "count": 8852,
+    "count": 8855,
     "avg_return": 3.73,
     "median_return": 2.94,
     "win_rate": 57.7,
@@ -206,10 +206,10 @@
     "worst_return": -104.4
   },
   "overboughtStats": {
-    "count": 18002,
-    "avg_return": 3.85,
-    "median_return": 2.74,
-    "win_rate": 59.0,
+    "count": 17921,
+    "avg_return": 3.81,
+    "median_return": 2.68,
+    "win_rate": 58.8,
     "best_return": 165.61,
     "worst_return": -102.62
   },
@@ -708,5 +708,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-26T03:50:56.871320Z"
+  "lastUpdated": "2026-11-27T03:52:03.455418Z"
 }
