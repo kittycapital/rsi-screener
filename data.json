@@ -166,39 +166,57 @@
   "currentOversold": [
     {
       "ticker": "CTVA",
-      "date": "2026-11-25",
-      "price": 8.23,
-      "rsi": 15.4
+      "date": "2026-11-27",
+      "price": 8.26,
+      "rsi": 16.3
+    },
+    {
+      "ticker": "FSLR",
+      "date": "2026-11-27",
+      "price": 149.77,
+      "rsi": 17.0
     },
     {
       "ticker": "INTU",
-      "date": "2026-11-25",
-      "price": 271.72,
-      "rsi": 15.6
-    },
-    {
-      "ticker": "COF",
-      "date": "2026-11-25",
-      "price": 182.52,
-      "rsi": 19.6
+      "date": "2026-11-27",
+      "price": 271.94,
+      "rsi": 17.7
     }
   ],
   "currentOverbought": [
     {
+      "ticker": "AES",
+      "date": "2026-11-27",
+      "price": 15.03,
+      "rsi": 90.0
+    },
+    {
       "ticker": "PARA",
-      "date": "2026-11-25",
-      "price": 2.73,
+      "date": "2026-11-27",
+      "price": 2.72,
+      "rsi": 86.2
+    },
+    {
+      "ticker": "CHRW",
+      "date": "2026-11-27",
+      "price": 146.98,
+      "rsi": 85.5
+    },
+    {
+      "ticker": "ORLY",
+      "date": "2026-11-27",
+      "price": 96.28,
       "rsi": 82.8
     },
     {
-      "ticker": "AES",
-      "date": "2026-11-25",
-      "price": 15.02,
-      "rsi": 81.0
+      "ticker": "EIX",
+      "date": "2026-11-27",
+      "price": 63.53,
+      "rsi": 81.1
     }
   ],
   "oversoldStats": {
-    "count": 8855,
+    "count": 8861,
     "avg_return": 3.73,
     "median_return": 2.94,
     "win_rate": 57.7,
@@ -206,10 +224,10 @@
     "worst_return": -104.4
   },
   "overboughtStats": {
-    "count": 17921,
-    "avg_return": 3.81,
-    "median_return": 2.68,
-    "win_rate": 58.8,
+    "count": 17864,
+    "avg_return": 3.78,
+    "median_return": 2.66,
+    "win_rate": 58.7,
     "best_return": 165.61,
     "worst_return": -102.62
   },
@@ -708,5 +726,5 @@
     "overboughtThreshold": 80,
     "lookbackYears": 3
   },
-  "lastUpdated": "2026-11-27T03:52:03.455418Z"
+  "lastUpdated": "2026-11-28T03:38:22.198443Z"
 }
